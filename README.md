@@ -2,7 +2,8 @@
 <h3 align="center"> 2023.1 </h3>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=STARTING UP&color=RED&style=for-the-badge"/>
+<!-- badge com status do projeto, deixe comentado ate o comeco do codigo e testes--->
+<!-- <img src="http://img.shields.io/static/v1?label=STATUS&message=COMPLETE UP&color=RED&style=for-the-badge"/> --->
 </p>
 
 ## 📚 Índice 
@@ -33,9 +34,12 @@ $ cd 2023.1-VenciNaPromo
 Ferramentas necessárias para o aplicativo:
 
 * [Git](https://git-scm.com/)
+* [NPM](https://www.npmjs.com/)
 * [Node.js](https://nodejs.org/)
 * [React](https://react.dev/)
-* [NPM](https://www.npmjs.com/)
+* [NestJS](https://nestjs.com/)
+* [Jest](https://jestjs.io/)
+
 
 
 ## 💻 Equipe <a name="team"></a>

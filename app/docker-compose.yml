@@ -1,0 +1,34 @@
+version: '3'
+services:
+
+  vencinapromo-backend:
+    container_name: vencinapromo-backend
+    build:
+      context: ./backend
+      dockerfile: ./dev.Dockerfile
+    volumes:
+      - ./backend:/app/
+    environment:
+      - NODE_ENV=development
+    tty: true
+    entrypoint: npm run start
+    ports:
+      - '3000:3000'
+    expose:
+      - 3000
+      
+  vencinapromo-frontend:
+    container_name: vencinapromo-frontend
+    build:
+      context: ./frontend
+      dockerfile: ./dev.Dockerfile
+    volumes:
+      - ./frontend:/app/
+    environment:
+      - NODE_ENV=development
+    tty: true
+    entrypoint: npm run start
+    ports:
+      - '3001:3001'
+    expose:
+      - 3001

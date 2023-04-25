@@ -27,7 +27,7 @@ O Venci na Promo é um site cujo objetivo principal é auxiliar na resolução d
 
 ### 1.3. Tecnologias a Serem Utilizadas
 
-Para o front-end e o back-end, utilizaremos JavaScript e os frameworks React e Node.Js, respectivamente. Já o banco de dados será feito em SQL, devido ao maior conhecimento da equipe. Os testes serão feitos em Nest.Js. Além disso, estamos usando o WhatsApp para comunicação, Discord para reuniões, o Git para controle de versionamento e o GitHub Pages para a documentação do projeto. Ademais, utilizaremos o Zenhub para organização dos requisitos e o Figma para construção das interfaces.
+Para o front-end e o back-end, utilizaremos JavaScript e os frameworks React e Node.Js, respectivamente. Já o banco de dados será feito em SQL, devido ao maior conhecimento da equipe. Os testes serão feitos em Jest. Além disso, estamos usando o WhatsApp para comunicação, Discord para reuniões, o Git para controle de versionamento e o GitHub Pages para a exposição da documentação do projeto. Ademais, utilizaremos o Zenhub para organização dos requisitos e o Figma para prototipação das interfaces.
 
 ## 2. Visão Geral do Projeto
 

@@ -112,13 +112,51 @@ São condições que podem ocorrer durante o projeto que exijam uma revisão e a
 - **Alterações não previstas**: Pode ser que haja mudanças no ambiente externo que possam impactar o desenvolvimento do projeto, como uma mudança de legislação, por exemplo, diante disso é importante que o projeto esteja estruturado de forma flexível para se adaptar a essas mudanças.
 - **Atrasos**: É importante que o planejamento do projeto seja realista e que a equipe trabalhe dentro dos prazo e metas estabelecidos, trabalhando de forma colaborativa visando maximizar a produtividade.
 
-### 3. Referências
+### 3 Processo de Desenvolvimento de Software
+### 3.1 Metodologia
+  De acordo com Ian Sommerville, para garantir a entrega de um produto de alta qualidade, é fundamental adotar uma abordagem iterativa e colaborativa no processo de Engenharia de Requisitos. No caso do produto em questão, que visa a distribuição, mesmo que tenha apenas um cliente no momento, é essencial haver uma iteração contínua entre o dono do produto, os desenvolvedores e o feedback do cliente, como proposto por Sommerville. É importante que o backlog do produto e protótipos sejam utilizados para validar as necessidades do cliente. A adaptação contínua do processo de ER, também proposta por Sommerville, é necessária para atender às necessidades específicas do produto e do projeto, garantindo que o desenvolvimento seja eficaz. 
+
+#### Questões Técnicas
+- Integração Contínua
+- Refatoração Contínua
+- TDD
+- Design Emergencial
+#### Questões Organizacionais
+- Planejamento do projeto
+- Scrum (Daily, Code Review e Pairing)
+- Comunicação
+- Sprint reviews e retrospectivas
+- Equipe multidisciplinar
+  
+### 3.2 Ferramentas
+#### Ferramentas de Execução do Projeto
+
+Para alcançar os objetivos do projeto utilizaremos Javascript que é uma linguagem de programação usada tanto no frontend quanto no backend, para auxiliar sua utilização utilizaresmos os frameworks ReactJS e NodeJS, respectivamente. Utilizaremos também o NestJS que é um framework modular que ajuda a desenvolver aplicativos NodeJS. Usaremos o Jest como ferramenta de testes do JavaScript para identificar e corrigir bugs, o Docker para empacotar aplicativos em contêineres isolados e, por fim, o MySQL para gerenciamento de banco de dados.
+
+#### Ferramentas de Organização
+- Github: repositório, versionamento e documentação 
+- ZenHub: gerenciamneto das sprints
+- Figma: prototipação;
+- Discord e Whatsapp: comunicação entre a equipe;
+
+### 3.3 Processos
+- Sprint: ciclos se uma semana, conforme descrito no tópico 2.2.
+- Sprint planning: Será feito o planejamento da sprint antes do início da mesma.
+- Daily: Ocorrerá diariamente para os membros do grupo para informarem seus feitos, planejamentos e impedimentos.
+- Sprint review: Ocorrerá a cada final de sprint para os integrantes mostrarem e revisarem o que foi trabalhado durante a sprint finalizada.
+- Sprint retrospective: Ocorrerá junto com o Sprint Review ao final de cada sprint para serem levantados os aspectos de melhorias da equipe, afim de melhorar a sua qualidade de desenvolvimento. 
+
+
+### 4. Lições Aprendidas
+
+### Unidade 1
+### 5. Referências
 
 > - Visão do Produto e Projeto. Wiki Requisitos - Dubium. Disponível em: https://mdsreq-fga-unb.github.io/2022.2-Dubium/visao/. Acesso em: 19 de abril de 2023.
 
 > - Visão do Produto e Projeto. Wiki Requisitos - GetPet. Disponível em: https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto. Acesso em: 19 de abril de 2023.
 
-### 4. Histórico de Versão
+### 6. Histórico de Versão
 | Data       | Versão | Descrição                                      | Autor(es)              |
 | :--------: | :----: | :--------------------------------------------: | :--------------------: |
 | 19/04/2023 | 1.0    | Criação do documento, adição dos tópicos 1 e 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |

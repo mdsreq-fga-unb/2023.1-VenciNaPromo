@@ -11,7 +11,6 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.sections
-    - toc.integrate
   icon:
     repo: fontawesome/brands/git-alt
   # logo: "icon-640.png"

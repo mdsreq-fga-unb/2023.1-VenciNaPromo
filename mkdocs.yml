@@ -1,8 +1,8 @@
+docs_dir: "ghpages/docs"
 site_name: Venci na Promo
 site_author: Grupo GPT - 2023.1 - Requisitos de Software - FGA - UnB
 copyright: |
   &copy; 2023.1 <a href="https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo.git"  target="_blank" rel="noopener">Grupo GPT - 2023.1 - Requisitos de Software - FGA - UnB</a>
-
 
 theme:
   name: material
@@ -18,27 +18,25 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: indigo
-      accent: indigo 
-    - scheme: slate 
+      accent: indigo
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
       primary: indigo
       accent: indigo
-      
 
 nav:
-  - Início: "index.md"   
+  - Início: "index.md"
   - Documentação:
-    - Visão do Produto e Projeto: "projeto/visao.md" 
+      - Visão do Produto e Projeto: "projeto/visao.md"
 
 repo_url: https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
 repo_name: mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
- 
- 
+
 markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tasklist
@@ -54,4 +52,3 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
-

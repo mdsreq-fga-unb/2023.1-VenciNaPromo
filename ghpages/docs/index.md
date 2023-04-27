@@ -4,6 +4,9 @@
 <p align="justify">
 O projeto "VenciNaPromo" está em desenvolvimento pela equipe "GPT" durante a disciplina Requisitos de Software no semestre 2023/1. O propósito do projeto consiste em dar uma solução de software para a dificuldade na compra e venda de alimentos próximos ao vencimento, criando um hub de venda e compra desses alimentos por um preço mais acessivel.</p>
 
+<p align="justify">
+Atualmente, buscamos tornar o mundo um lugar mais sustentável, realizando um site que participe dos Objetivos de Desenvolvimento Sustentável, em especial a ODS 12.1, da Agenda de 2023.</p>
+
 ## 💻 Equipe <a name="team"></a>
 
 <div>

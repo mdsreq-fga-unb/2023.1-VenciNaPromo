@@ -54,21 +54,21 @@ Abaixo, na Tabela 3, apresentamos como está planejado o desenvolvimento do proj
 | Sprint    | Entrega | Data de início | Data de fim |
 | :-------- | :------ | :------------: | :---------: |
 | Sprint 0  | Definição do problema e solução | 04/04/2023 | 10/04/2023 |
-| Sprint 1  | Versão inicial da Visão do Produto e Projeto, definição das tecnologias | 11/04/2023 | 17/04/2023 |
-| Sprint 2  | Metodologia, processos e procedimentos, configuração de ambiente | 18/04/2023 | 24/04/2023 |
-| Sprint 3  | Elicitação de requisitos, análise e negociação | 25/04/2023 | 01/05/2023 |
-| Sprint 4  | Backlog do Produto, Escopo dos MVPs, CI/CD | 02/05/2023 | 08/05/2023 |
-| Sprint 5  | Protótipos e Validação | 09/05/2023 | 15/05/2023 |
-| Sprint 6  | Desenvolvimento/Implementação | 16/05/2023 | 22/05/2023 |
-| Sprint 7  | Desenvolvimento/Implementação | 23/05/2023 | 29/05/2023 |
+| Sprint 1  | Definição do produto, projeto e tecnologias | 11/04/2023 | 17/04/2023 |
+| Sprint 2  | Metodologia, processos,  procedimentos e alinhamento do produto | 18/04/2023 | 24/04/2023 |
+| Sprint 3  | Visão do Produto e Projeto | 25/04/2023 | 01/05/2023 |
+| Sprint 4  | Backlog do Produto | 02/05/2023 | 08/05/2023 |
+| Sprint 5  | Definição do MVP | 09/05/2023 | 15/05/2023 |
+| Sprint 6  | Protótipos e Validação | 16/05/2023 | 22/05/2023 |
+| Sprint 7  | Configuração do ambiente e desenvolvimento/implementação | 23/05/2023 | 29/05/2023 |
 | Sprint 8  | Desenvolvimento/Implementação | 30/05/2023 | 05/06/2023 |
 | Sprint 9  | Desenvolvimento/Implementação | 06/06/2023 | 12/06/2023 |
 | Sprint 10 | Desenvolvimento/Implementação | 13/06/2023 | 19/06/2023 |
-| Sprint 11 | Desenvolvimento/Implementação | 20/06/2023 | 26/06/2023 |
+| Sprint 11 | Validação do MVP 1 | 20/06/2023 | 26/06/2023 |
 | Sprint 12 | Desenvolvimento/Implementação | 27/06/2023 | 03/07/2023 |
 | Sprint 13 | Desenvolvimento/Implementação | 04/07/2023 | 10/07/2023 |
 | Sprint 14 | Desenvolvimento/Implementação | 11/07/2023 | 17/07/2023 |
-| Sprint 15 | Desenvolvimento/Implementação | 18/07/2023 | 27/07/2023 |
+| Sprint 15 | Validação do MVP 2 | 18/07/2023 | 27/07/2023 |
 
 <div align="center" style="text-align: center">
 <p>Tabela 3: Planejamento das fases do projeto. Fonte: Grupo GPT, 2023.</p>
@@ -82,7 +82,7 @@ O WhatsApp e o Discord serão as principais formas de comunicação utilizadas p
 | :-------- | :--------- | :------------ | :--------------- |
 | Planejamento das atividades | Equipe do Projeto | Semanalmente | Planejamento do que será feito no ciclo da Sprint |
 | Acompanhamento das atividades | Equipe do Projeto | Diariamente | Relato por parte dos membros da equipe no discord sobre o andamento individual das partes do projeto |
-| Encontros com o cliente | Equipe do Projeto e cliente | Uma vez por sprint | Validação do Produto |
+| Encontros com o cliente | Equipe do Projeto e cliente | Quinzenal | Validação do Produto |
 | Retrospectiva | Equipe do Projeto | Semanalmente | Identificação de oportunidades de melhoria |
 | Comunicar situação do projeto | Equipe do Projeto e professor | Pontos de Controle | Apresentação dos resultados gerados |
 
@@ -150,6 +150,13 @@ Para alcançar os objetivos do projeto utilizaremos Javascript que é uma lingua
 ### 4. Lições Aprendidas
 
 ### Unidade 1
+
+Durante esta unidade, tivemos a oportunidade de aprender algumas lições importantes sobre a organização de requisitos de um projeto. Uma das principais lições foi a importância de compreender as necessidades do usuário antes de começar a organizar os requisitos. Ao entender o que o usuário deseja e precisa, podemos garantir que o projeto atenda às suas expectativas e requisitos. Aprendemos também a dar prioridade aos requisitos, que são essenciais para o sucesso do projeto. Também aprendemos a manter uma comunicação aberta e constante com todas as partes interessadas, incluindo usuários e membros da equipe do projeto, a fim de garantir que todos estejam alinhados e trabalhando juntos para alcançar os objetivos do projeto. Essas lições são fundamentais para garantir que o projeto seja bem-sucedido e entregue resultados satisfatórios aos usuários.
+
+Outro aspecto muito importante bastante discutido foi a escolha de métodos de desenvolvimento, definição de ciclos de vida e de processos de engenharia de requisitos. Essas escolhas são realizadas a partir da reflexão sobre o projeto que se planeja fazer e são determinantes sobre todo o processo de construção do projeto. Foi possível perceber como esses diferentes pontos se complementam e codependem entre si, e durante a unidade houve o esforço da turma e do grupo em buscar a combinação mais adequada e harmônica para o projeto, dados o tempo e os recursos disponíveis e o escopo desejado.
+
+Houveram desafios quanto à organização da equipe no que diz respeito à divisão de tarefas entre os membros e também ao gerenciamento de tempo. Por vezes, algumas pessoas acabaram ficando sobrecarregadas com as tarefas. Quanto ao gerenciamento do tempo, o grupo teve dificuldade em realizar as tarefas com antecedência, conforme havíamos planejado inicialmente, assim como houve dificuldade em marcar reuniões, tendo sido necessário realizá-las em horários inadequados.
+
 ### 5. Referências
 
 > - Visão do Produto e Projeto. Wiki Requisitos - Dubium. Disponível em: https://mdsreq-fga-unb.github.io/2022.2-Dubium/visao/. Acesso em: 19 de abril de 2023.

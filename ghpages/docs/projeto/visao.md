@@ -185,4 +185,4 @@ Houveram desafios quanto à organização da equipe no que diz respeito à divis
 | Data       | Versão | Descrição                                      | Autor(es)              |
 | :--------: | :----: | :--------------------------------------------: | :--------------------: |
 | 19/04/2023 | 1.0    | Criação do documento, adição dos tópicos 1 e 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
-| 26/04/2023 | 1.1 | Adição do tópico 3 |  [Gabrielly Assunção](https://github.com/GabriellyAssuncao) |
+| 26/04/2023 | 1.1 | Criação da aba entregas, adição dos tópicos 3 e 4  | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno)|

@@ -139,7 +139,7 @@ De acordo com Ian Sommerville, para garantir a entrega de um produto de alta qua
 - Design Emergencial
 #### Questões Organizacionais
 - Planejamento do projeto
-- Scrum (Daily, Code Review e Pairing)
+- ScrumXP
 - Comunicação
 - Sprint reviews e retrospectivas
 - Equipe multidisciplinar

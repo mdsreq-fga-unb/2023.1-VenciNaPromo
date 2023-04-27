@@ -35,8 +35,8 @@ nav:
       - Visão do Produto e Projeto: "projeto/visao.md"
   - Entregas:
       - Unidade 1: 
-          - Visão Geral do Produto: "produto-entrega-1.md"
-          - Material do Seminário XP: "seminario-1.md"
+          - Visão Geral do Produto: "entregas/produto-entrega-1.md"
+          - Material do Seminário XP: "entregas/seminario-1.md"
 
 repo_url: https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
 repo_name: mdsreq-fga-unb.github.io/2023.1-VenciNaPromo

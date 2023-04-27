@@ -4,9 +4,12 @@
 
 ### 1.1. Declaração de Posição
 
+<p align="justify">
 O Venci na Promo é um site focado em diminuir o desperdício de alimentos e produtos em razão da falta de visibilidade dos mesmos quando estão perto do vencimento. Para isso, um estabelecimento comercial em Brasília irá fornecer incentivos (pontos ou cupom de desconto) para esta compra. 
 De acordo com dados do IBGE, cerca de 30% dos alimentos produzidos no país acabam sendo jogados fora, o equivalente a cerca de 46 milhões de toneladas de alimentos por ano. Por isso, buscamos despertar nas pessoas uma mentalidade e comportamento mais humanos, responsáveis e empáticos, usando o voluntariado como grande ferramenta de transformação.
 Na Tabela 1, apresentamos um quadro geral que resume o posicionamento do produto.
+</p>
+
 
 | Fator                | Descrição |
 | -------------------- | --------- |
@@ -23,11 +26,15 @@ Na Tabela 1, apresentamos um quadro geral que resume o posicionamento do produto
 
 ### 1.2. Objetivos do Produto
 
+<p align="justify">
 O Venci na Promo é um site cujo objetivo principal é auxiliar na resolução do problema do desperdício de alimentos e produtos próximos ao prazo de validade, através da disponibilização de um sistema que faça a ponte entre estabelecimentos comerciais e seus clientes, divulgando promoções sobre esses produtos, fornecendo meios de compra e/ou distribuição de cupons de desconto e facilitando a organização da logística destas transações.
+</p>
 
 ### 1.3. Tecnologias a Serem Utilizadas
 
+<p align="justify">
 Para o front-end e o back-end, utilizaremos JavaScript e os frameworks React e Node.Js, respectivamente. Já o banco de dados será feito em SQL, devido ao maior conhecimento da equipe. Os testes serão feitos em Jest. Além disso, estamos usando o WhatsApp para comunicação, Discord para reuniões, o Git para controle de versionamento e o GitHub Pages para a exposição da documentação do projeto. Ademais, utilizaremos o Zenhub para organização dos requisitos e o Figma para prototipação das interfaces.
+</p>
 
 ## 2. Visão Geral do Projeto
 
@@ -76,7 +83,9 @@ Abaixo, na Tabela 3, apresentamos como está planejado o desenvolvimento do proj
 
 ### 2.3. Matriz de Comunicação 
 
+<p align="justify">
 O WhatsApp e o Discord serão as principais formas de comunicação utilizadas pela equipe. A seguir, na Tabela 4, apresentamos o quadro da matriz de comunicação definida pela equipe.
+</p>
 
 | Descrição | Envolvidos | Periodicidade | Produtos Gerados |
 | :-------- | :--------- | :------------ | :--------------- |
@@ -92,7 +101,9 @@ O WhatsApp e o Discord serão as principais formas de comunicação utilizadas p
 
 ### 2.4. Gerenciamento de Riscos
 
+<p align="justify">
 O gerenciamento de riscos refere-se ao planejamento de como a equipe lidará com questões que podem ameaçar o desenvolvimento esperado do projeto. É feito através da identificação de fatores de risco potenciais, do planejamento de como lidar com estes fatores caso venham a acontecer e também do monitoramento dos mesmos ao longo da duração do projeto. É um processo que ocorre durante todo o ciclo de vida do projeto, e novos fatores de risco podem ser adicionados à medida que sejam identificados.
+</p>
 
 - **Abandono do projeto**: A equipe pode tomar medidas para minimizar as chances de abandono do projeto, como a realocação de responsabilidades e a diminuição no escopo.
 - **Abandono da disciplina por parte dos integrantes**: É importante  garantir que haja uma comunicação clara e aberta entre a equipe e que as expectativas sejam estabelecidas e comunicadas claramente. Isso pode ajudar a minimizar o abandono da disciplina, pois os membros da equipe entenderão as expectativas esperadas para o projeto.
@@ -105,7 +116,9 @@ O gerenciamento de riscos refere-se ao planejamento de como a equipe lidará com
 
 ### 2.5. Critérios de Replanejamento
 
+<p align="justify">
 São condições que podem ocorrer durante o projeto que exijam uma revisão e adaptação do planejamento original. Deve ser feito o acompanhamento desses critérios a cada sprint, garantindo a qualidade do projeto até sua finalização.
+</p>
 
 - **Alteração nos requisitos**: Pode ser que ao longo do projeto surjam novas necessidades, diante disso, é importante que a equipe esteja preparada para lidar com essas alterações, avaliando seus impactos e definindo um plano adequado.
 - **Riscos não previstos**: Mesmo com um planejamento bem feito, sempre existe a possibilidade de que riscos não previstos ocorram durante o projeto. A equipe deve estar preparada para identificar esses riscos e definir um plano de ação para amenizá-los.
@@ -114,7 +127,10 @@ São condições que podem ocorrer durante o projeto que exijam uma revisão e a
 
 ### 3 Processo de Desenvolvimento de Software
 ### 3.1 Metodologia
-  De acordo com Ian Sommerville, para garantir a entrega de um produto de alta qualidade, é fundamental adotar uma abordagem iterativa e colaborativa no processo de Engenharia de Requisitos. No caso do produto em questão, que visa a distribuição, mesmo que tenha apenas um cliente no momento, é essencial haver uma iteração contínua entre o dono do produto, os desenvolvedores e o feedback do cliente, como proposto por Sommerville. É importante que o backlog do produto e protótipos sejam utilizados para validar as necessidades do cliente. A adaptação contínua do processo de ER, também proposta por Sommerville, é necessária para atender às necessidades específicas do produto e do projeto, garantindo que o desenvolvimento seja eficaz. 
+
+<p align="justify">
+De acordo com Ian Sommerville, para garantir a entrega de um produto de alta qualidade, é fundamental adotar uma abordagem iterativa e colaborativa no processo de Engenharia de Requisitos. No caso do produto em questão, que visa a distribuição, mesmo que tenha apenas um cliente no momento, é essencial haver uma iteração contínua entre o dono do produto, os desenvolvedores e o feedback do cliente, como proposto por Sommerville. É importante que o backlog do produto e protótipos sejam utilizados para validar as necessidades do cliente. A adaptação contínua do processo de ER, também proposta por Sommerville, é necessária para atender às necessidades específicas do produto e do projeto, garantindo que o desenvolvimento seja eficaz. 
+</p>
 
 #### Questões Técnicas
 - Integração Contínua
@@ -131,7 +147,9 @@ São condições que podem ocorrer durante o projeto que exijam uma revisão e a
 ### 3.2 Ferramentas
 #### Ferramentas de Execução do Projeto
 
+<p align="justify">
 Para alcançar os objetivos do projeto utilizaremos Javascript que é uma linguagem de programação usada tanto no frontend quanto no backend, para auxiliar sua utilização utilizaresmos os frameworks ReactJS e NodeJS, respectivamente. Utilizaremos também o NestJS que é um framework modular que ajuda a desenvolver aplicativos NodeJS. Usaremos o Jest como ferramenta de testes do JavaScript para identificar e corrigir bugs, o Docker para empacotar aplicativos em contêineres isolados e, por fim, o MySQL para gerenciamento de banco de dados.
+</p>
 
 #### Ferramentas de Organização
 - Github: repositório, versionamento e documentação 
@@ -167,3 +185,4 @@ Houveram desafios quanto à organização da equipe no que diz respeito à divis
 | Data       | Versão | Descrição                                      | Autor(es)              |
 | :--------: | :----: | :--------------------------------------------: | :--------------------: |
 | 19/04/2023 | 1.0    | Criação do documento, adição dos tópicos 1 e 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
+| 26/04/2023 | 1.1 | Adição do tópico 3 |  [Gabrielly Assunção](https://github.com/GabriellyAssuncao) |

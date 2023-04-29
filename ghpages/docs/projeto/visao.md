@@ -236,7 +236,7 @@ Analisando as descrições das facetas do processo de ER, chegamos à conclusão
 - os requisitos serão prioritariamente elicitados pela equipe do projeto, mas com participação do cliente.
 
 <p align="justify"> &emsp;&emsp;
-A partir destas observações e também da definição da abordagem e ciclo de vida ágil e da utilização do processo de desenvolvimento ScrumXP, conclui-se que o processo de Engenharia de Requisitos a ser utilizado será o <i>Orientado a Produto</i>.
+A partir destas observações e também da definição da abordagem e ciclo de vida ágil e da utilização do processo de desenvolvimento ScrumXP, conclui-se que o processo de Engenharia de Requisitos a ser utilizado será o <i>Orientado a Produto</i>.</p>
 
 ### 3.4. Ferramentas
 
@@ -272,7 +272,7 @@ Durante esta unidade, tivemos a oportunidade de aprender algumas lições import
 <p align="justify"> &emsp;&emsp;
 Houveram desafios quanto à organização da equipe no que diz respeito à divisão de tarefas entre os membros e também ao gerenciamento de tempo. Por vezes, algumas pessoas acabaram ficando sobrecarregadas com as tarefas. Quanto ao gerenciamento do tempo, o grupo teve dificuldade em realizar as tarefas com antecedência, conforme havíamos planejado inicialmente, assim como houve dificuldade em marcar reuniões, tendo sido necessário realizá-las em horários inadequados.</p>
 
-### 5. Referências
+## 5. Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.
 
@@ -280,11 +280,11 @@ Houveram desafios quanto à organização da equipe no que diz respeito à divis
 
 > SOMMERVILLE, Ian. Engenharia de software. 10.ed. São Paulo: Pearson Education do Brasil, 2018.
 
-> Visão do Produto e Projeto. Wiki Requisitos - Dubium. Disponível em: https://mdsreq-fga-unb.github.io/2022.2-Dubium/visao/. Acesso em: 19 de abril de 2023.
+> Visão do Produto e Projeto. Wiki Requisitos - Dubium. Disponível em: <https://mdsreq-fga-unb.github.io/2022.2-Dubium/visao/>. Acesso em: 19 de abril de 2023.
 
-> Visão do Produto e Projeto. Wiki Requisitos - GetPet. Disponível em: https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto. Acesso em: 19 de abril de 2023.
+> Visão do Produto e Projeto. Wiki Requisitos - GetPet. Disponível em: <https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto>. Acesso em: 19 de abril de 2023.
 
-### 6. Histórico de Versão
+## 6. Histórico de Versão
 
 |    Data    | Versão |                                            Descrição                                            |                                                                                                                            Autor(es)                                                                                                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |

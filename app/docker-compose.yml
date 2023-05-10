@@ -7,15 +7,12 @@ services:
       context: ./backend
       dockerfile: ./dev.Dockerfile
     volumes:
-      - ./backend:/app/
-    environment:
-      - NODE_ENV=development
-    tty: true
-    entrypoint: npm run start
+      - ./backend:/usr/src/app-backend
+      - /usr/src/app-backend/node_modules
     ports:
-      - '3000:3000'
+      - '8080:8080'
     expose:
-      - 3000
+      - 8080
       
   vencinapromo-frontend:
     container_name: vencinapromo-frontend
@@ -23,12 +20,11 @@ services:
       context: ./frontend
       dockerfile: ./dev.Dockerfile
     volumes:
-      - ./frontend:/app/
-    environment:
-      - NODE_ENV=development
-    tty: true
-    entrypoint: npm run start
+      - ./frontend:/usr/src/app-frontend
+      - /usr/src/app-frontend/node_modules
     ports:
-      - '3001:3001'
+      - '3000:3000'
     expose:
-      - 3001
+      - 3000
+    depends_on:
+      - vencinapromo-backend

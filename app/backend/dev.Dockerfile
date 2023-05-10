@@ -1,17 +1,16 @@
 FROM node:18-alpine
 
-RUN mkdir -p /svr/app
+RUN mkdir -p /usr/src/app-backend
+WORKDIR /usr/src/app-backend
 
-WORKDIR /svr/app
-
-RUN npm i -g @nestjs/cli --silent
-
-COPY package.json .
-COPY package-lock.json .
+COPY package*.json ./
 
 RUN npm install --silent
+
 COPY . .
 
-EXPOSE 3000
+RUN npm run build
 
-CMD ["npm", "run", "start:debug"]
+EXPOSE 8080
+
+CMD ["npm" , "start"]

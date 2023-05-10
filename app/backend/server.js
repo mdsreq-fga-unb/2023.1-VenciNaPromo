@@ -20,7 +20,20 @@ app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
 
-const port = 8080;
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+app.get('/api/login', (req, res) => {
+  // TODO: login user
 });
+
+app.get('/api/register', (req, res) => {
+  // TODO: register user
+});
+
+app.get('/api/shoppinglist', (req, res) => {
+  // TODO: get shopping list
+});
+
+app.post('/api/userProfile', (req, res) => {
+  // TODO: get user profile
+});
+
+app.listen(8080, () => console.log('Listening on port 8080'));

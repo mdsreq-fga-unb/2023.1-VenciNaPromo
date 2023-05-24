@@ -71,10 +71,10 @@ Abaixo, na Tabela 3, apresentamos como está planejado o desenvolvimento do proj
 | Sprint 1  | Definição do produto, projeto e tecnologias                    |   11/04/2023   | 17/04/2023  |
 | Sprint 2  | Metodologia, processos, procedimentos e alinhamento do produto |   18/04/2023   | 24/04/2023  |
 | Sprint 3  | Visão do Produto e Projeto                                     |   25/04/2023   | 01/05/2023  |
-| Sprint 4  | Backlog do Produto                                             |   02/05/2023   | 08/05/2023  |
-| Sprint 5  | Definição do MVP                                               |   09/05/2023   | 15/05/2023  |
-| Sprint 6  | Protótipos e Validação                                         |   16/05/2023   | 22/05/2023  |
-| Sprint 7  | Configuração do ambiente e desenvolvimento/implementação       |   23/05/2023   | 29/05/2023  |
+| Sprint 4  | Definição do Backlog do Produto                                |   02/05/2023   | 08/05/2023  |
+| Sprint 5  | Validação do Backlog do Produto e Definição do MVP             |   09/05/2023   | 15/05/2023  |
+| Sprint 6  | Protótipo de alta fidelidade                                   |   16/05/2023   | 22/05/2023  |
+| Sprint 7  | US03 e US04                                                    |   23/05/2023   | 29/05/2023  |
 | Sprint 8  | Desenvolvimento/Implementação                                  |   30/05/2023   | 05/06/2023  |
 | Sprint 9  | Desenvolvimento/Implementação                                  |   06/06/2023   | 12/06/2023  |
 | Sprint 10 | Desenvolvimento/Implementação                                  |   13/06/2023   | 19/06/2023  |

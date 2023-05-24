@@ -1,4 +1,4 @@
-# Requisitos Não-funcionais
+# URPS+: Requisitos Não-funcionais
  -->escrever um texto sobre a escolha urps
 
 |  **URPS+**| **Num**  | **Descrição** |
@@ -19,4 +19,4 @@
 
 |  **Data**  |**Versão** |    **Descrição**     |   **Editores**   |
 | :--------: | :-------: | :-------------------: | :--------------: |
-| 23/05/2023 |   `1.0`   |  Elencação dos Requisitos      | Sabrina  |
+| 23/05/2023 |   `1.0`   |  Adição dos Requisitos      | Sabrina  |

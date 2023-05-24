@@ -10,7 +10,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - navigation.sections
+    - navigation.tabs.sticky
   icon:
     repo: fontawesome/brands/git-alt
   # logo: "icon-640.png"
@@ -33,10 +33,14 @@ nav:
   - Início: "index.md"
   - Documentação:
       - Visão do Produto e Projeto: "projeto/visao.md"
+      - Backlog do Produto: "projeto/backlog.md"
+      - Definição dos MVP's: "projeto/mvp.md"
+      - URPS+: "projeto/nao-fun.md"
   - Entregas:
       - Unidade 1:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"
           - Material do Seminário XP: "entregas/seminario-1.md"
+      - Unidade 2: "entregas/unidade-2.md"
 
 repo_url: https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo
 repo_name: mdsreq-fga-unb.github.io/2023.1-VenciNaPromo

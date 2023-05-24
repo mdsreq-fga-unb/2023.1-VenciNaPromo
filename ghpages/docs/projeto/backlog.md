@@ -1,5 +1,8 @@
 # Product Backlog
 
+<p align="justify"> &emsp;&emsp;
+O Backlog do Produto é um componente essencial da metodologia ágil SCRUM, que consiste em uma lista contendo todos os requisitos funcionais que vão sendo identificados ao longo do desenvolvimento do produto. Esse artefato é dinâmico e emergente, sendo atualizado constantemente para refletir as necessidades e prioridades do produto.Para auxiliar no planejamento e desenvolvimento do Backlog do Produto, a estrutura SAFe (Scaled Agile Framework) é frequentemente utilizada. Essa estrutura proporciona diretrizes e boas práticas para a gestão ágil de projetos em larga escala, oferecendo uma abordagem eficiente para o alinhamento estratégico, coordenação e colaboração entre as equipes de desenvolvimento.</p>
+
 
 ## Tema
 

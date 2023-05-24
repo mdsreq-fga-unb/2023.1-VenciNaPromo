@@ -42,20 +42,24 @@ O Docker Compose é uma ferramenta para definir e executar aplicativos Docker de
 
 ## Interface do projeto
 
-lorem ipsun
+### Estrutura da interface e navegabilidade
+A interface será organizada majoritariamente em uma aplicação de 2 páginas sendo uma a autenticação e a outra a lista (que varia a exibição dependendo do tipo de usuário) como no **protótipo de alta fidelidade** a seguir:
 
-### Paleta de cores
-| Cor          | Código  |
-| ------------ | :-----: |
-| Branco       | #FFFFFF |
-| Preto        | #232323 |
-| Cinza        | #DFE1E5 |
-| Cinza escuro | #818594 |
-| Roxo         | #834DF0 |
-| Amarelo      | #FFAF0F |
-| Vermelho     | #DB3B4B |
-| Azul         | #3574F0 |
-| Verde        | #208A3C |
+- **Tela de Autenticação:** 
+
+![Login](../../assets/images/documentacao/prototipo/login.png)
+
+- **Tela da lista de produtos (visao do comprador):** 
+
+![Comprador](../../assets/images/documentacao/prototipo/descricao.png)
+
+- **Tela da lista de produtos (visao do vendedor):** 
+
+![Vendedor](../../assets/images/documentacao/prototipo/vendedorlista.png)
+
+- **Extras, caixas de aviso, cupons e butoes** 
+
+![Vendedor](../../assets/images/documentacao/prototipo/misc.png)
 
 
 ## Histórico de revisão

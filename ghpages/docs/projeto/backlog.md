@@ -3,6 +3,13 @@
 <p align="justify"> &emsp;&emsp;
 O Backlog do Produto é um componente essencial da metodologia ágil SCRUM, que consiste em uma lista contendo todos os requisitos funcionais que vão sendo identificados ao longo do desenvolvimento do produto. Esse artefato é dinâmico e emergente, sendo atualizado constantemente para refletir as necessidades e prioridades do produto.Para auxiliar no planejamento e desenvolvimento do Backlog do Produto, a estrutura SAFe (Scaled Agile Framework) é frequentemente utilizada. Essa estrutura proporciona diretrizes e boas práticas para a gestão ágil de projetos em larga escala, oferecendo uma abordagem eficiente para o alinhamento estratégico, coordenação e colaboração entre as equipes de desenvolvimento.</p>
 
+<p align="justify">
+os critérios de aceite apresentados seguem o padrão "Given-When-Then", onde:</p>
+- Given (Dado): Descreve a condição inicial ou o contexto em que o teste será realizado, como "Dado que o usuário-comprador criou sua conta com sucesso".
+- When (Quando): Indica a ação que será executada, como "Quando tentar fazer login usando o endereço de e-mail e a senha fornecidos durante o processo de criação".
+- Then (Então): Especifica o resultado esperado ou o comportamento esperado do sistema, como "Então deve ser capaz de acessar sua conta com sucesso e ter permissão para realizar as ações disponíveis para usuários autenticados".
+<p align="justify">
+Essa estrutura ajuda a descrever os critérios de aceite de forma clara e concisa, estabelecendo uma relação direta entre a condição inicial, a ação realizada e o resultado esperado. </p>
 
 ## Tema
 
@@ -65,5 +72,5 @@ O Backlog do Produto é um componente essencial da metodologia ágil SCRUM, que 
 | :--------: | :-------: | :--------------------------------------------: | :--------------: |
 | 29/04/2023 |   `1.0`   | Elencação dos requistos                        | Sabrina e Cainã  |
 | 23/05/2023 |   `1.1`   | Adiconando histórias de usuário                | Sabrina  |
-| 23/05/2023 |   `1.2`   | Adicionando critérios de aceitação                      | Gabrielly  |
+| 23/05/2023 |   `1.2`   | Adicionando critérios de aceitação             | Gabrielly  |
 

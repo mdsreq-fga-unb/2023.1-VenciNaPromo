@@ -1,5 +1,10 @@
 # Mínimo Produto Viável
 
+<p align="justify"> &emsp;&emsp;
+A metodologia utilizada para a escolha do nosso MVP foi a Matriz de Priorização. Essa técnica permite classificar os requisitos do produto com base em critérios específicos. Na matriz apresentada, foram utilizadas três dimensões para avaliar cada User Story: o valor de negócios, a viabilidade e a complexidade técnica. Cada dimensão recebeu uma pontuação de 1 a 5, representando o impacto, a viabilidade e a complexidade, respectivamente.</p>
+<p align="justify"> &emsp;&emsp;
+Após atribuir as pontuações a cada dimensão, foi calculada a pontuação total para cada User Story, somando as pontuações das três dimensões. Com base nessa priorização, foram selecionadas as User Stories com as pontuações mais altas para compor o MVP1 e MVP2. o MVP 1 foi definido com base nas User Stories mais relevantes, considerando tanto a pontuação total quanto a combinação dos requisitos funcionais que proporcionariam o maior valor de negócios, viabilidade e menor complexidade técnica.</p>
+
 
 **Pontuações** 
 
@@ -88,3 +93,4 @@
 |  **Data**  |**Versão** |    **Descrição**     |   **Editores**   |
 | :--------: | :-------: | :-------------------: | :--------------: |
 | 23/05/2023 |   `1.0`   |  Processos de Engenharia de Requisitos  | Sabrina e Cainã  |
+| 24/05/2023 |   `1.1`   |  Procecsso de definição do MVP 1 e 2  | Gabrielly |

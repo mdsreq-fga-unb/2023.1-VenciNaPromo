@@ -192,7 +192,10 @@ Para garantir a entrega de um produto de alta qualidade, é fundamental adotar u
 ### 3.2. Processo de Software
 
 <p align="justify"> &emsp;&emsp;
-Explicar os motivos e método de escolha do ScrumXP e também o próprio ScrumXP levemente.</p>
+
+Foi definida a utilização do ScrumXP que é uma metodologia ágil que combina duas abordagens: Scrum e Extreme Programming (XP). O objetivo dessa metodologia é melhorar a qualidade do produto e aumentar a produtividade da equipe. O fator decisivo para a escolha desse método foi seu foco na colaboração entre a equipe e o cliente que é envolvido no processo de desenvolvimento desde o início e fornece feedback regular para a equipe. Isso ajuda a garantir que o produto final atenda às necessidades do cliente e evita retrabalho desnecessário.</p>
+<p align="justify"> &emsp;&emsp;
+Essa metodologia é baseada em práticas do scrum como o desenvolvimento em ciclos curtos denominados sprints, além de cerimônias como a daily scrum, a sprint planning, sprint review e sprint retrospective. Além disso, incorpora várias práticas do XP, incluindo a programação em pares, desenvolvimento orientado a testes e integração contínua.</p>
 
 ### 3.3. Processo de Engenharia de Requisitos
 
@@ -291,3 +294,4 @@ Houveram desafios quanto à organização da equipe no que diz respeito à divis
 | 19/04/2023 |  1.0   |                         Criação do documento, adição dos tópicos 1 e 2                          | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
 | 26/04/2023 |  1.1   |                        Criação da aba entregas, adição dos tópicos 3 e 4                        | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
 | 29/04/2023 |  1.2   | Adição do método de Sommerville, processo de software e processo de ER, correções nos objetivos |                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
+| 29/04/2023 |  1.3   | Adição da metodologia ScrumXP|                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |

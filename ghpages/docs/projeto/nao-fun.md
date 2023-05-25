@@ -23,3 +23,4 @@ URPS+ é uma abordagem para a especificação de requisitos não funcionais em u
 |  **Data**  |**Versão** |    **Descrição**     |   **Editores**   |
 | :--------: | :-------: | :-------------------: | :--------------: |
 | 23/05/2023 |   `1.0`   |  Adição dos Requisitos      | Sabrina  |
+| 24/05/2023 |   `1.1`   |  técnica urps+      | Gabrielly |

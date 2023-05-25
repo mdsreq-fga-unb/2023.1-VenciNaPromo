@@ -21,3 +21,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDEs
+
+# IntelliJ
+.idea
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/*.iml
+/.idea/modules.xml
+/.idea/.gitignore
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

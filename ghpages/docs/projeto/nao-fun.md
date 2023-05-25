@@ -1,5 +1,8 @@
 # URPS+: Requisitos Não-funcionais
- -->escrever um texto sobre a escolha urps
+
+<p align="justify"> &emsp;&emsp;
+URPS+ é uma abordagem para a especificação de requisitos não funcionais em um projeto de desenvolvimento de software. A sigla URPS+ representa quatro categorias principais de requisitos: Usabilidade (U), Confiabilidade (R), Desempenho (P), Suportabilidade (S), além de restrições de Design, requisitos de implementação, requisitos de interface e requisitos físicos (+). Escolhemos essa abordagem para identificar e documentar de forma clara e organizada os requisitos não funcionais que são essenciais para o sucesso do sistema.</p>
+
 
 |  **URPS+**| **Num**  | **Descrição** |
 | :---------: | :-----------: | :---------: |

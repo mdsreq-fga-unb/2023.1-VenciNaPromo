@@ -275,6 +275,17 @@ Durante esta unidade, tivemos a oportunidade de aprender algumas lições import
 <p align="justify"> &emsp;&emsp;
 Houveram desafios quanto à organização da equipe no que diz respeito à divisão de tarefas entre os membros e também ao gerenciamento de tempo. Por vezes, algumas pessoas acabaram ficando sobrecarregadas com as tarefas. Quanto ao gerenciamento do tempo, o grupo teve dificuldade em realizar as tarefas com antecedência, conforme havíamos planejado inicialmente, assim como houve dificuldade em marcar reuniões, tendo sido necessário realizá-las em horários inadequados.</p>
 
+### Unidade 2
+
+<p align="justify"> &emsp;&emsp;
+Para o grupo, no geral, essa unidade foi muito importante para aprender a respeito da prática de todas as fases do processo de Engenharia de Requisitos. Foi muito importante ter contato com a discussão a respeito dos aspectos humanos e sociais da Engenharia de Requisitos, aprendendo a equilibrar os desejos e necessidades dos stakeholders com as condições do projeto. Aprendemos muito a respeito da elicitação de requisitos, que é uma fase crucial no processo de desenvolvimento de software, pois envolve compreender profundamente as necessidades e expectativas dos stakeholders para garantir que o sistema atenda aos seus objetivos.</p>
+
+<p align="justify"> &emsp;&emsp;
+Em relação à organizaçao interna do grupo, alguns problemas relatados na Unidade 1 voltaram a ocorrer. Precisamos melhorar nossa comunicação, transmitir de forma eficiente o trabalho de cada pessoa e melhorar a proatividade e divisão de tarefas entre a equipe. Aprendemos que é importante também estabelecer uma constância de reuniões a cada sprint, cumprindo os rituais do Scrum mais adequadamente. Para isso, o primeiro passo vai ser a organização pessoal e do grupo com horários e reuniões.</p>
+
+<p align="justify"> &emsp;&emsp;
+Outro ponto de melhora para a próxima unidade é utilizarmos com mais frequência o auxílio fornecido para a monitora, que está sempre disponível, porém temos subutilizado a sua experiência disponibilidade em ajudar. Ainda sobre a monitoria, devemos como grupo e individualmente melhorar a frequência de feedbacks, assim podendo receber orientações que auxiliem a lidarmos com os problemas do grupo.</p>
+
 ## 5. Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.
@@ -295,3 +306,4 @@ Houveram desafios quanto à organização da equipe no que diz respeito à divis
 | 26/04/2023 |  1.1   |                        Criação da aba entregas, adição dos tópicos 3 e 4                        | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
 | 29/04/2023 |  1.2   | Adição do método de Sommerville, processo de software e processo de ER, correções nos objetivos |                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
 | 29/04/2023 |  1.3   | Adição da metodologia ScrumXP|                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
+| 25/05/2023 |  1.4   | Adição das lições aprendidas na Unidade 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |

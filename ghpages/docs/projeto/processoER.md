@@ -138,7 +138,7 @@ Os aspectos verificados nesta fase podem ser vistos na Figura 6.</p>
 Na fase subsequente, de Organização e Atualização dos Requisitos, trabalhamos as User Stories em um nível de detalhamento maior e utilizamos uma técnica proposta por George Marsicano (2023), que consiste em criar uma tabela para avaliar cada User Story com base em três critérios: Valor de negócios, Viabilidade (considerando fatores como tempo e capacidade produtiva) e Complexidade técnica.</p>
 
 <p align="justify"> &emsp;&emsp;
-Essa abordagem nos permitiu atribuir um valor para cada atributo e distribuir pontuações entre as histórias de usuário, facilitando assim a priorização dos requisitos. Os temas e épicos definidos após a [Backlog de Produto](https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo/projeto/backlog). A pontuação para cada uma de acordo com os critérios de priorização pode ser vista na Tabela 1.</p>
+Essa abordagem nos permitiu atribuir um valor para cada atributo e distribuir pontuações entre as histórias de usuário, facilitando assim a priorização dos requisitos. Os temas, épicos e user stories definidos após a verificação podem ser vistos no <a href="https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo/projeto/backlog">Backlog do Produto</a>. A pontuação para cada uma de acordo com os critérios de priorização pode ser vista na Tabela 1.</p>
 
 <br><div align="center" style="text-align: center">
 <img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/ER/pontuacoes.png">

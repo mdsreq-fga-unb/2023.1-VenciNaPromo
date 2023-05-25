@@ -43,6 +43,14 @@ nav:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"
           - Material do Seminário XP: "entregas/seminario-1.md"
       - Unidade 2: "entregas/unidade-2.md"
+  - Sprints:
+      - Sprint 1: "sprints/sprint1.md"
+      - Sprint 2: "sprints/sprint2.md"
+      - Sprint 3: "sprints/sprint3.md"
+      - Sprint 4: "sprints/sprint4.md"
+      - Sprint 5: "sprints/sprint5.md"
+      - Sprint 6: "sprints/sprint6.md"
+      - Sprint 7: "sprints/sprint7.md"
 
 repo_url: https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo
 repo_name: mdsreq-fga-unb.github.io/2023.1-VenciNaPromo

@@ -33,6 +33,7 @@ nav:
   - Início: "index.md"
   - Documentação:
       - Visão do Produto e Projeto: "projeto/visao.md"
+      - Processo de Engenharia de Requisitos: "projeto/processoER.md"
       - Backlog do Produto: "projeto/backlog.md"
       - Definição dos MVP's: "projeto/mvp.md"
       - URPS+: "projeto/nao-fun.md"

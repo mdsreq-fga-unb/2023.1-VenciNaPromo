@@ -4,7 +4,7 @@
 
 A Figura 1 apresenta a visão geral da arquitetura do projeto, representando todos os serviços e suas relações.
 
-![Arquitetura](../../assets/images/documentacao/diagrama_arquitetura.png)
+![Arquitetura](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/diagrama_arquitetura.png)
 
 <center>
 <figcaption>
@@ -20,7 +20,7 @@ Para o frontend, optaremos por utilizar uma arquitetura do tipo Single Page Appl
 - Backend:
 No backend, adotaremos a arquitetura em camadas padrão MVC (Model, View, Controller). Essa arquitetura é amplamente utilizada no mercado e foi escolhida devido à familiaridade da maioria da equipe com ela.
 
-![MVC](../../assets/images/documentacao/MVC_arquitetura.png)
+![MVC](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/MVC_arquitetura.png)
 
 ## Tecnologias
 
@@ -49,22 +49,22 @@ A interface será organizada majoritariamente em uma aplicação de 2 páginas s
 
 - **Tela de Autenticação:** 
 
-![Login](../../assets/images/documentacao/prototipo/login.png)
+![Login](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/prototipo/login.png)
 
 - **Tela da lista de produtos (visao do comprador):** 
 
-![Comprador](../../assets/images/documentacao/prototipo/descricao.png)
+![Comprador](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/prototipo/descricao.png)
 
 - **Tela da lista de produtos (visao do vendedor):** 
 
-![Vendedor](../../assets/images/documentacao/prototipo/vendedorlista.png)
+![Vendedor](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/prototipo/vendedorlista.png)
 
 - **Extras, caixas de aviso, cupons e butoes** 
 
-![Vendedor](../../assets/images/documentacao/prototipo/misc.png)
+![Vendedor](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/prototipo/misc.png)
 
 
-## Histórico de revisão
+## Histórico de versão
 |   Data   | Versão | Descrição            | Autor   |
 | :------: | :----: | -------------------- | ------- |
 | 08/05/23 |  1.0   | Criação do documento | Todos   |

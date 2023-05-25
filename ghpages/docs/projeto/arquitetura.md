@@ -20,6 +20,8 @@ Para o frontend, optaremos por utilizar uma arquitetura do tipo Single Page Appl
 - Backend:
 No backend, adotaremos a arquitetura em camadas padrão MVC (Model, View, Controller). Essa arquitetura é amplamente utilizada no mercado e foi escolhida devido à familiaridade da maioria da equipe com ela.
 
+![MVC](../../assets/images/documentacao/MVC_arquitetura.png)
+
 ## Tecnologias
 
 ### React

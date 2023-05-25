@@ -159,7 +159,7 @@ Ao final deste processo, conseguimos definir os MVPs (Minimum Viable Products) 1
 <p>Figura 8: Gráfico de priorização e MVPs. Fonte: GrupoGPT, 2023.</p>
 </div><br>
 
-## 5. Referências
+## 4. Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.
 
@@ -171,7 +171,7 @@ Ao final deste processo, conseguimos definir os MVPs (Minimum Viable Products) 1
 
 > Visão do Produto e Projeto. Wiki Requisitos - GetPet. Disponível em: <https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto>. Acesso em: 19 de abril de 2023.
 
-## 6. Histórico de Versão
+## 5. Histórico de Versão
 
 | Data       | Versão | Descrição                                        | Autor(es)                                                                                           |
 | :--------: | :----: | :----------------------------------------------: | :-------------------------------------------------------------------------------------------------: |

@@ -59,14 +59,35 @@ Essa estrutura ajuda a descrever os critérios de aceite de forma clara e concis
 | E4 |  US17    | Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, incluindo nome, descrição, preço, disponibilidade, validade, foto, quantidade de unidades disponíveis, quantidade de cupons gerados e etiqueta de disponível ou não, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing |1. Dado que o usuário-vendedor deseja obter informações detalhadas sobre um produto específico que está na lista de produtos, quando ele seleciona o produto, então ele deve ser capaz de visualizar os detalhes do produto, incluindo nome, descrição, preço, disponibilidade, validade, foto, quantidade de unidades disponíveis, quantidade de cupons gerados e etiqueta de disponibilidade.<br>2. Dado que o usuário-vendedor está revisando os detalhes de um produto específico, quando ele verifica as informações, como quantidade de unidades disponíveis, quantidade de cupons gerados e a etiqueta de disponibilidade, então ele pode tomar decisões informadas sobre o estoque, promoções e estratégias de marketing relacionadas ao produto.|
 
 
+## Definção de Preparado
+- A US está associada a um épico
+- A US possui descrição detalhada 
+- A US possui critérios de aceitação
+- A US pode ser feita em uma sprint
+- Outras US das quais a US depende já foram desenvolvidas 
+- A US e os critérios de aceitação foram validados pelo P.O. e pela monitora 
+- A US é tecnicamente viável
+- A US é testável
+
+## Definição de Pronto
+- Entrega um incremento do produto
+- Os critérios de aceitação são satisfeitos
+- Foi feita a documentação do uso da funcionalidade
+- Passou pelos testes unitários
+- Passou pelos testes de integração -
+- Passou pelos testes de aceitação
+- O código da funcionalidade foi revisado por outro(s) membro(s) da equipe
+- O P.O. e a monitora revisaram e aprovaram a funcionalidade implementada
+- A funcionalidade está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos.
+
+
 
 
 ## Histórico de versões
 
-
 |  **Data**  |**Versão** |              **Descrição**                     |   **Editores**   |
-| :--------: | :-------: | :--------------------------------------------: | :--------------: |
-| 29/04/2023 |   `1.0`   | Elencação dos requistos                        | Sabrina e Cainã  |
-| 23/05/2023 |   `1.1`   | Adiconando histórias de usuário                | Sabrina  |
-| 23/05/2023 |   `1.2`   | Critérios de aceitação - BDD                   | Gabrielly e Lucas |
-| 31/05/2023 |   `2.0`   | Corrigindo técnica de critério de aceitação    | Sabrina e Charles |
+| :--------: | :-------: | :-------------------------------------------------------: | :---------------: |
+| 29/04/2023 |   `1.0`   | Elencação dos requistos                                   | Sabrina e Cainã   |
+| 23/05/2023 |   `1.1`   | Adiconando histórias de usuário                           | Sabrina           |
+| 23/05/2023 |   `1.2`   | Critérios de aceitação - BDD                              | Gabrielly e Lucas |
+| 31/05/2023 |   `2.0`   | Corrigindo técnica de critério de aceitação, DoR e DoD    | Sabrina e Charles |

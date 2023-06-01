@@ -32,7 +32,7 @@
 - **Pontos a melhorar:** 
 
 - **Plano de ação:**
-        - 
+ 
 
 ## Frequência
 **Cainã:** 100%

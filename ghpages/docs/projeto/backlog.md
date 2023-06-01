@@ -63,7 +63,7 @@ A partir da conferẽncia dos critérios de aceitação, é possível aferir se 
 ## Definição de Preparado
 
 <p align="justify"> &emsp;&emsp;
-O conceito de "preparado" refere-se a um conjunto de características que define quando um requisito está preparado para **entrar** em uma sprint. Ele surge de um acordo entre o time de desenvolvimento e o Product Owner (P.O.), e as respostas para as perguntas devem ser positivas para o requisito ser considerado "preparado" para ser trabalhado.</p>
+O conceito de "preparado" refere-se a um conjunto de características que define quando um requisito está preparado para <b>entrar</b> em uma sprint. Ele surge de um acordo entre o time de desenvolvimento e o Product Owner (P.O.), e as respostas para as perguntas devem ser positivas para o requisito ser considerado "preparado" para ser trabalhado.</p>
 
 <p align="justify"> &emsp;&emsp;
 A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a definição de preparado de um requisito:</p>
@@ -79,7 +79,7 @@ A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a 
 ## Definição de Pronto
 
 <p align="justify"> &emsp;&emsp;
-O conceito de "pronto" surge a partir de um acordo que demonstra a qualidade do requisito produzido, que comprova a satisfação de todos com o trabalho realizado. Um requisito só deve ser liberado ou mesmo apresentado na sprint review caso atenda ao conceito estabelecido de “pronto”. É o conjunto de características que define quando um registro está preparado para **sair** de uma sprint.</p>
+O conceito de "pronto" surge a partir de um acordo que demonstra a qualidade do requisito produzido, que comprova a satisfação de todos com o trabalho realizado. Um requisito só deve ser liberado ou mesmo apresentado na sprint review caso atenda ao conceito estabelecido de “pronto”. É o conjunto de características que define quando um registro está preparado para <b>sair</b> de uma sprint.</p>
 
 <p align="justify"> &emsp;&emsp;
 A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a definição de pronto de um requisito:</p>

@@ -1,3 +1,13 @@
+<p align="justify">
+Os critérios de aceite apresentados seguem o padrão "Given-When-Then", onde:</p>
+
+- Given (Dado): Descreve a condição inicial ou o contexto em que o teste será realizado, como "Dado que o usuário-comprador criou sua conta com sucesso".
+- When (Quando): Indica a ação que será executada, como "Quando tentar fazer login usando o endereço de e-mail e a senha fornecidos durante o processo de criação".
+- Then (Então): Especifica o resultado esperado ou o comportamento esperado do sistema, como "Então deve ser capaz de acessar sua conta com sucesso e ter permissão para realizar as ações disponíveis para usuários autenticados".
+
+<p align="justify">
+Essa estrutura ajuda a descrever os critérios de aceite de forma clara e concisa, estabelecendo uma relação direta entre a condição inicial, a ação realizada e o resultado esperado. </p>
+
 
 ## User Story
 

@@ -58,29 +58,39 @@ A partir da conferẽncia dos critérios de aceitação, é possível aferir se 
 | E4 |  US17    | Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing | 1. Deve ser possível visualizar nome do produto, descrição, preço, validade e foto <br>2. Deve ser possível visualizar a quantidade de unidades disponíveis, quantidade de cupons gerados até o momento, a disponibilidade do produto e a etiqueta de disponível ou não |
 
 
-## Definção de Preparado
-- A US está associada a um épico
-- A US possui descrição detalhada 
-- A US possui critérios de aceitação
-- A US pode ser feita em uma sprint
-- Outras US das quais a US depende já foram desenvolvidas 
-- A US e os critérios de aceitação foram validados pelo P.O. e pela monitora 
-- A US é tecnicamente viável
-- A US é testável
+## Definição de Preparado
+
+<p align="justify"> &emsp;&emsp;
+O conceito de "preparado" refere-se a um conjunto de características que define quando um registro está preparado para entrar em uma sprint. Ele surge de um acordo entre o time de desenvolvimento e o Product Owner (P.O.), e as respostas para as perguntas devem ser positivas para o requisito ser considerado "preparado" para ser trabalhado.</p>
+
+<p align="justify"> &emsp;&emsp;
+A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a definição de preparado de um requisito:</p>
+
+- O requisito possui a informação necessária para ser trabalhado?
+- O requisito está representado dentro de tema e épico?
+- O requisito possui história(s) de usuário(s) que o representam e foram validadas pelo P.O. e pela monitora?
+- O requisito possui critérios de aceitação validados pelo P.O. e pela monitora?
+- Caso existam, as dependências dos requisitos foram identificadas? 
+- O requisito é tecnicamente viável?
+- O requisito é testável?
 
 ## Definição de Pronto
-- Entrega um incremento do produto
-- Os critérios de aceitação são satisfeitos
-- Foi feita a documentação do uso da funcionalidade
-- Passou pelos testes unitários
-- Passou pelos testes de integração
-- Passou pelos testes de aceitação
-- O código da funcionalidade foi revisado por outro(s) membro(s) da equipe
-- O P.O. e a monitora revisaram e aprovaram a funcionalidade implementada
-- A funcionalidade está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos.
 
+<p align="justify"> &emsp;&emsp;
+O conceito de "pronto" surge a aprtir de um acordo que demonstra a qualidade do requisito produzido, que comprova a satisfação de todos com o trabalho realizado. Um requisito só deve ser liberado ou mesmo apresentado na sprint review caso atenda ao conceito estabelecido de “pronto”. É o conjunto de características que define quando um registro está preparado para sair de uma sprint.</p>
 
+<p align="justify"> &emsp;&emsp;
+A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a definição de pronto de um requisito:</p>
 
+- O requisito entrega um incremento do produto?
+- Os critérios de aceitação relacionados ao requisito são satisfeitos?
+- Foi feita a documentação do requisito?
+- O requisito passou pelos testes unitários?
+- O requisito passou pelos testes de integração?
+- O requisito passou pelos testes de aceitação?
+- O código das funcionalidades relacionadas aos requisitos foi revisado por outro(s) membro(s) da equipe?
+- O P.O. e a monitora revisaram e aprovaram o requisito implementado?
+- O requisito está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos?
 
 ## Histórico de versões
 

@@ -63,18 +63,18 @@ A partir da conferẽncia dos critérios de aceitação, é possível aferir se 
 ## Definição de Preparado
 
 <p align="justify"> &emsp;&emsp;
-O conceito de "preparado" refere-se a um conjunto de características que define quando um requisito está preparado para <b>entrar</b> em uma sprint. Ele surge de um acordo entre o time de desenvolvimento e o Product Owner (P.O.), e as respostas para as perguntas devem ser positivas para o requisito ser considerado "preparado" para ser trabalhado.</p>
+O conceito de "preparado" refere-se a um conjunto de características que define quando um requisito está preparado para <b>entrar</b> em uma sprint. Ele surge de um acordo entre o time de desenvolvimento e o Product Owner (P.O.), e um requisito deve atender às características definidas para ser considerado "preparado" para ser trabalhado.</p>
 
 <p align="justify"> &emsp;&emsp;
 A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a definição de preparado de um requisito:</p>
 
-- O requisito possui a informação necessária para ser trabalhado?
-- O requisito está representado dentro de tema e épico?
-- O requisito possui história(s) de usuário(s) que o representam e foram validadas pelo P.O. e pela monitora?
-- O requisito possui critérios de aceitação validados pelo P.O. e pela monitora?
-- Caso existam, as dependências dos requisitos foram identificadas? 
-- O requisito é tecnicamente viável?
-- O requisito é testável?
+- O requisito possui a informação necessária para ser trabalhado;
+- O requisito está representado dentro de tema e épico;
+- O requisito possui história(s) de usuário(s) que o representam e foram validadas pelo P.O. e pela monitora;
+- O requisito possui critérios de aceitação validados pelo P.O. e pela monitora;
+- O requisito é tecnicamente viável;
+- O requisito é testável;
+- Caso existam, as dependências dos requisitos foram identificadas;
 
 ## Definição de Pronto
 
@@ -84,15 +84,15 @@ O conceito de "pronto" surge a partir de um acordo que demonstra a qualidade do 
 <p align="justify"> &emsp;&emsp;
 A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a definição de pronto de um requisito:</p>
 
-- O requisito entrega um incremento do produto?
-- Os critérios de aceitação relacionados ao requisito são satisfeitos?
-- Foi feita a documentação do requisito?
-- O requisito passou pelos testes unitários?
-- O requisito passou pelos testes de integração?
-- O requisito passou pelos testes de aceitação?
-- O código das funcionalidades relacionadas aos requisitos foi revisado por outro(s) membro(s) da equipe?
-- O P.O. e a monitora revisaram e aprovaram o requisito implementado?
-- O requisito está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos?
+- O requisito entrega um incremento do produto;
+- Os critérios de aceitação relacionados ao requisito são satisfeitos;
+- Foi feita a documentação do requisito;
+- O requisito passou pelos testes unitários;
+- O requisito passou pelos testes de integração;
+- O requisito passou pelos testes de aceitação;
+- O código das funcionalidades relacionadas aos requisitos foi revisado por outro(s) membro(s) da equipe;
+- O P.O. e a monitora revisaram e aprovaram o requisito implementado;
+- O requisito está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos;
 
 ## Histórico de versões
 

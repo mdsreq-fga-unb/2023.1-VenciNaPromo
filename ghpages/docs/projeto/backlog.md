@@ -74,7 +74,7 @@ A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a 
 - O requisito possui critérios de aceitação validados pelo P.O. e pela monitora;
 - O requisito é tecnicamente viável;
 - O requisito é testável;
-- Caso existam, as dependências dos requisitos foram identificadas;
+- Caso existam, as dependências dos requisitos foram identificadas.
 
 ## Definição de Pronto
 
@@ -92,7 +92,7 @@ A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a 
 - O requisito passou pelos testes de aceitação;
 - O código das funcionalidades relacionadas aos requisitos foi revisado por outro(s) membro(s) da equipe;
 - O P.O. e a monitora revisaram e aprovaram o requisito implementado;
-- O requisito está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos;
+- O requisito está em conformidade com os padrões de design, usabilidade e desempenho estabelecidos.
 
 ## Histórico de versões
 

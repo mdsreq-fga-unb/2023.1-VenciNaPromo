@@ -8,9 +8,9 @@ const Sidebar = () => {
         {/* Conteúdo da sidebar */}
       </div>
       <div className="sidebar-footer">
-        <button className="sidebar-button">Comprar</button>
+        <button className="sidebar-button">Compras</button>
         <button className="sidebar-button">Cupons</button>
-        <button className="sidebar-button">Info</button>
+        <button className="info-button">Info</button>
       </div>
     </div>
   );

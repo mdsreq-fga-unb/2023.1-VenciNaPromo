@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: -200px;
+  margin-right: 180px;
+
 }
 
 .form-container {
@@ -13,16 +16,35 @@
 .register-form-container {
   flex: 1;
   padding: 20px;
+  width: 300px;
+  margin-top: -70px;
 }
 
 .form-divider {
-  width: 1px;
+  width: 3px;
   background-color: #ccc;
   margin: 0 20px;
+  height: 300px;
 }
 h1 {
   color: #845C5C;
+  margin-top: 50px;
+  margin-right: 200px;
+  margin-bottom: -30px;
+  font-size: 50px;
 }
 h2{
-  color: rgba(132, 92, 92, 0.66);;
+  color: rgba(132, 92, 92, 0.66);
+  margin-right: 200px;
+  font-size: 30px;
+}
+h3{
+  font-size: 30px;
+
+}
+.form-field {
+  border: none;
+  border-bottom: 2px solid #845C5C;
+  background-color: transparent;
+  outline: none;
 }

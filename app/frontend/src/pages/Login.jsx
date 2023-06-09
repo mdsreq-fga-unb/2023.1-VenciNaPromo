@@ -47,47 +47,12 @@ function Login() {
     <div className="container">
       <Sidebar />
       <Header />
-      <h1>Bem Vindo ao Nosso Aplicativo</h1>
-      <h2>Evite o desperdício e crie sua conta</h2>
+      <h1>Bem Vindo ao Nosso Aplicativo!</h1>
+      <h2>Evite o Desperdício e Crie sua Conta.</h2>
       <div className="login-container">
         <div className="form-container">
-          <div className="login-form-container">
-            <h1>Login</h1>
-            <Formik
-              initialValues={{}}
-              onSubmit={handleLogin}
-              validationSchema={validationsLogin}
-            >
-              <Form className="login-form">
-                <div className="login-form-group">
-                  <Field name="email" className="form-field" placeholder="Email" />
-                  <ErrorMessage
-                    component="span"
-                    name="email"
-                    className="form-error"
-                  />
-                </div>
-
-                <div className="form-group">
-                  <Field name="password" className="form-field" placeholder="Senha" />
-                  <ErrorMessage
-                    component="span"
-                    name="password"
-                    className="form-error"
-                  />
-                </div>
-
-                <button className="button" type="submit">
-                  Login
-                </button>
-              </Form>
-            </Formik>
-          </div>
-
-          <div className="form-divider"></div>
-
           <div className="register-form-container">
-            <h1>Cadastro</h1>
+            <h3>Crie Sua Conta</h3>
             <Formik
               initialValues={{}}
               onSubmit={handleRegister}
@@ -131,6 +96,41 @@ function Login() {
               </Form>
             </Formik>
           </div>
+          <div className="form-divider"></div>
+
+          <div className="login-form-container">
+            <h3>Já é Cadastrado?</h3>
+            <Formik
+              initialValues={{}}
+              onSubmit={handleLogin}
+              validationSchema={validationsLogin}
+            >
+              <Form className="login-form">
+                <div className="login-form-group">
+                  <Field name="email" className="form-field" placeholder="Email" />
+                  <ErrorMessage
+                    component="span"
+                    name="email"
+                    className="form-error"
+                  />
+                </div>
+
+                <div className="form-group">
+                  <Field name="password" className="form-field" placeholder="Senha" />
+                  <ErrorMessage
+                    component="span"
+                    name="password"
+                    className="form-error"
+                  />
+                </div>
+
+                <button className="button" type="submit">
+                  Login
+                </button>
+              </Form>
+            </Formik>
+          </div>
+          
         </div>
       </div>
     </div>

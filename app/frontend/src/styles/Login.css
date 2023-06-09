@@ -1,0 +1,28 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+}
+
+.login-form-container,
+.register-form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 20px;
+}
+h1 {
+  color: #845C5C;
+}
+h2{
+  color: rgba(132, 92, 92, 0.66);;
+}

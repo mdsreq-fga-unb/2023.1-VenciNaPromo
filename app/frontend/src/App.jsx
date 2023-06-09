@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import { useState, useEffect, useRef } from "react";
-import ShoppingList from './components/pages/ShoppingList';
-import Login from './components/pages/Login';
+import ShoppingList from './pages/ShoppingList';
+import Login from './pages/Login';
 
 function App() {
   const [count, setCount] = useState(0);

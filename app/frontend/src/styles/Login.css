@@ -1,0 +1,103 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -130px;
+  margin-bottom: -150px;
+}
+.form-container {
+  display: flex;
+  width: calc(100% - 550px);
+  margin-right: 150px;
+}
+
+.login-form-container,
+.register-form-container {
+  flex: 1;
+  padding: 20px;
+  width: 300px;
+  margin-top: -70px;
+}
+
+.form-divider {
+  width: 3px;
+  background-color: #ccc;
+  margin: 0 20px;
+  height: 430px;
+}
+h1 {
+  color: #845C5C;
+  margin-top: 30px;
+  margin-right: 200px;
+  margin-bottom: -25px; 
+  font-size: 30px;
+}
+h2{
+  color: rgba(132, 92, 92, 0.66);
+  margin-right: 200px;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+h3{
+  font-size: 25px;
+}
+.form-field {
+  border: none;
+  border-bottom: 3px solid #845C5C;
+  background-color: transparent;
+  outline: none;
+  width: 400px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-family: 'Baloo';
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 20px;
+}
+.form-field::placeholder {
+  font-family: "Baloo", sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.60);
+} 
+.button-login {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(36, 0, 255, 0.60);
+  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  width: 160px;
+  margin-top: 44px;
+}
+.button-register {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(36, 0, 255, 0.60);  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  width: 160px;
+}
+.button-visit {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(36, 0, 255, 0.60);  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  width: 400px;
+  margin-right: 180px;
+}
+.login-form {
+  margin-top: 70px;
+}

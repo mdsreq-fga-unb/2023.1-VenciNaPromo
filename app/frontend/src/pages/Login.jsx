@@ -1,7 +1,8 @@
 import React from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
-import { login, register } from "../../services/auth";
+import { login, register } from "../services/auth";
+import Sidebar from '../components/Sidebar';
 
 
 function Login() {
@@ -45,6 +46,7 @@ function Login() {
   
     return (
       <div className="container">
+        <Sidebar />
         <h1>Login</h1>
         <Formik
           initialValues={{}}

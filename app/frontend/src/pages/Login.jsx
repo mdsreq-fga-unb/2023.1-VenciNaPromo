@@ -3,6 +3,7 @@ import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
 import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
 
 
 function Login() {
@@ -46,7 +47,8 @@ function Login() {
   
     return (
       <div className="container">
-        <Sidebar />
+        <Sidebar/>
+        <Header/>
         <h1>Login</h1>
         <Formik
           initialValues={{}}

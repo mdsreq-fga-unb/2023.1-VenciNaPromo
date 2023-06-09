@@ -1,11 +1,10 @@
 import React from 'react';
-import '../styles/Sidebar.css'; // Arquivo de estilos para personalização da sidebar
+import '../styles/Sidebar.css';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-content">
-        {/* Conteúdo da sidebar */}
       </div>
       <div className="sidebar-footer">
         <button className="sidebar-button">Compras</button>

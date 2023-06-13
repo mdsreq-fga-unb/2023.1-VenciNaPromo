@@ -59,6 +59,17 @@ function Login() {
               validationSchema={validationsRegister}
             >
               <Form className="register-form">
+                <div className="form-group">
+                  <Field
+                    as="select"
+                    name="selectField"
+                    className="form-field"
+                  >
+                    <option value="">Cliente ou Vendedor?</option>
+                    <option value="opcao1">Cliente</option>
+                    <option value="opcao2">Vendedor</option>
+                  </Field>
+                </div>
                 <div className="register-form-group">
                   <Field name="email" className="form-field" placeholder="Email" />
                   <ErrorMessage
@@ -90,7 +101,7 @@ function Login() {
                   />
                 </div>
 
-                <button className="button" type="submit">
+                <button className="button-register" type="submit">
                   Cadastrar
                 </button>
               </Form>
@@ -106,6 +117,18 @@ function Login() {
               validationSchema={validationsLogin}
             >
               <Form className="login-form">
+                <div className="form-group">
+                  <Field
+                    as="select"
+                    name="selectField"
+                    className="form-field"
+                  >
+                    <option value="">Cliente ou Vendedor?</option>
+                    <option value="opcao1">Cliente</option>
+                    <option value="opcao2">Vendedor</option>
+                  </Field>
+                </div>
+                
                 <div className="login-form-group">
                   <Field name="email" className="form-field" placeholder="Email" />
                   <ErrorMessage
@@ -124,15 +147,17 @@ function Login() {
                   />
                 </div>
 
-                <button className="button" type="submit">
+                <button className="button-login" type="submit">
                   Login
                 </button>
               </Form>
             </Formik>
           </div>
-          
         </div>
       </div>
+        <button className="button-visit" type="submit">
+          Continuar como visitante
+        </button>
     </div>
   );
 }

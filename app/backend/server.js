@@ -1,11 +1,16 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
 var cors = require('cors');
 var bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+require('dotenv').config();
+
+const auth  = require('./src/routes/auth.js');
+const product_list = require('./src/routes/product_list.js');
+const user_profile = require('./src/routes/user_profile.js');
 
 const app = express();
 
+// Middlewares
 app.use(cors());
 app.use(bodyParser.json());
 app.options('*', cors());
@@ -16,59 +21,21 @@ app.use(function (req, res, next) {
   next();
 });
 
-const users = []; 
-
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
-
-app.post('/api/register', (req, res) => {
-  const { username, email, password } = req.body;
-
-  if (!isValidEmail(email)) {
-    return res.status(400).json({ message: 'Invalid email' });
+// MongoDB connection
+const dbConfig = {
+  url: 'mongodb://vencinapromo:pIUApr9IgXyU5kuJ@ac-hbr3vyy-shard-00-00.qdta2rn.mongodb.net:27017,ac-hbr3vyy-shard-00-01.qdta2rn.mongodb.net:27017,ac-hbr3vyy-shard-00-02.qdta2rn.mongodb.net:27017/?ssl=true&replicaSet=atlas-7ygtub-shard-0&authSource=admin&retryWrites=true&w=majority',
+  options: {
+      useNewUrlParser: true
   }
-  const existingUser = users.find(user => user.email === email);
-  if (existingUser) {
-    return res.status(400).json({ message: 'Email already exists' });
-  }
-  const hashedPassword = bcrypt.hashSync(password, 10);
-  const newUser = { username, email, password: hashedPassword };
-  users.push(newUser);
+};
+mongoose.connect(dbConfig.url, dbConfig.options)
+  .then(() => console.log('MongoDB connected...'))
+  .catch(err => console.log(err));
 
-  res.status(201).json({ message: 'User registered successfully' });
-});
+// Routes
+app.use('/auth', auth);
+app.use('/product_list', product_list);
+app.use('/user_profile', user_profile);
 
-app.post('/api/login', (req, res) => {
-  const { email, password } = req.body;
-
-  const user = users.find(user => user.email === email);
-  if (!user) {
-    return res.status(401).json({ message: 'Invalid email or password' });
-  }
-
-  const passwordMatch = bcrypt.compareSync(password, user.password);
-  if (!passwordMatch) {
-    return res.status(401).json({ message: 'Invalid email or password' });
-  }
-
-  const tokenkey = 'hjZ8N0z#6$B3!xVqJ@5cF';
-  const token = jwt.sign({ email: user.email }, tokenkey);
-
-  res.json({ token });
-});
-
-function isValidEmail(email) {
-  const emailRegex = /^[a-z0-9]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
-
-app.get('/api/shoppinglist', (req, res) => {
-  // TODO: get shopping list
-});
-
-app.post('/api/userProfile', (req, res) => {
-  // TODO: get user profile
-});
 
 app.listen(8080, () => console.log('Listening on port 8080'));

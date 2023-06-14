@@ -9,7 +9,7 @@
 
 ## Sprint Planning
 
-**Objetivo da Sprint 6:** US03 e US04
+**Objetivo da Sprint 7:** US03 e US04
 
 ### Tasks:
 

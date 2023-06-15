@@ -8,12 +8,11 @@ const UserSchema = new schema({
         required: true,
         auto: true,
     },
-    // user flag: 
-    // 0 -> comprador
-    // 1 -> vendendor
-    user_flag: {
+    user_flag:  {
         type: Number,
         required: true,
+        select: true,
+        enum: [0, 1],
     },
     // user name
     name: {

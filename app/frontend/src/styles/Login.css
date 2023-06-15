@@ -5,13 +5,15 @@
   height: 100vh;
   margin-top: -115px;
   margin-bottom: -150px;
+  width: 100%;
 }
 .form-container {
   display: flex;
+  /* display: contents; */
   width: calc(100% - 550px);
   margin-right: 150px;
+  /* height: 500px; */
 }
-
 .login-form-container,
 .register-form-container {
   flex: 1;
@@ -29,14 +31,14 @@
 h1 {
   color: #845C5C;
   margin-right: 200px;
-  margin-bottom: -30px; 
+  margin-bottom: -25px; 
   font-size: 25px;
 }
 h2{
   color: rgba(132, 92, 92, 0.66);
   margin-right: 200px;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 h3{
   font-size: 25px;
@@ -47,7 +49,7 @@ h3{
   background-color: transparent;
   outline: none;
   width: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   padding-top: 5px;
   padding-bottom: 10px;
   font-family: 'Baloo';
@@ -60,9 +62,6 @@ h3{
   color: rgba(0, 0, 0, 0.60);
 } 
 .button-login {
-  /* margin-bottom: 15px;  */
-  /* position: f; */
-  
   padding: 5px;
   border: none;
   border-radius: 5px;
@@ -76,11 +75,11 @@ h3{
   height: 40px;
   margin-top: 50px;
   position: sticky;
-  /* margin-bottom: 150px; */
+  margin-top: 130px;
 }
 .button-register {
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-top: 50px;
   padding: 5px;
   border: none;
   border-radius: 5px;
@@ -104,7 +103,7 @@ h3{
   width: 400px;
   height: 40px;
   margin-right: 180px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .login-form {
   margin-top: 70px;
@@ -112,18 +111,15 @@ h3{
   position: relative;
 }
 .form-error {
-  /* width: 100%; */
-  /* margin-top: -20px; */
-  /* margin-bottom: -20px; */
-  /* padding: 0px; */
-  margin-left: 20px;
+  width: 100%;
+  margin-left: 25px;
+  top: -5;
+  font-size: 12px;
   
 }
 .form-error-password {
   width: 100%;
-  /* margin-top: -20px; */
-  margin-bottom: 30px;
-  /* padding: 0px; */
+  font-size: 12px;
   margin-left: 25px;
-  margin-top: -35px;
+  margin-top: -45px;
 }

@@ -1,30 +1,19 @@
-import axios from 'axios';
-// use axios to make http requests
+  import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/'; //backend url
-
-export const getUserData = async () => {
-  try {
-    //  TODO: get user data from backend
-  } catch (error) {
-    // TODO: handle error
-  }
-};
-
-// Function to log in a user
-export const login = async (email, password) => {
-  try {
-    // TODO: send login request to backend
-  } catch (error) {
-    // TODO: handle error
-  }
-};
-
-// Function to register a user
-export const register = async (email, password) => {
+  export const register = async (userData) => {
     try {
-        // TODO: send register request to backend
+      const response = await axios.post('http://localhost:8080/auth/register', userData);
+      return response.data;
     } catch (error) {
-        // TODO: handle error
+      throw new Error('Erro no cadastro'); 
     }
-};
+  };
+
+  export const login = async (userData) => {
+    try { 
+      const response = await axios.post('http://localhost:8080/auth/login', userData);
+      return response.data; 
+    } catch (error) {
+      throw new Error('Erro no login'); 
+    }
+  };

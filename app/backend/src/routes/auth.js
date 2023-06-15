@@ -21,7 +21,7 @@ router.post('/register', (req, res) => {
         if (user) {
             return res.status(400).json({ message: 'Email already exists' });
         }
-        if(flag != 0 && flag != 1){
+        if(flag != 0 || flag != 1){
             return res.status(400).json({ message: 'Invalid flag' });
         }
         const hashedPassword = bcrypt.hashSync(password, 10);

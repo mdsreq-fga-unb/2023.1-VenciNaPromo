@@ -8,13 +8,35 @@ import '../styles/Login.css';
 
 function Login() {
   const handleLogin = async (values) => {
-    const response = await login();
-    // TODO: handle response
+    try {
+      const { email, password } = values;
+      const userData = {
+        email,
+        password,
+      };
+      const response = await login(userData);
+    } catch (error) {
+      console.error(error);
+    }
   };
+  
 
   const handleRegister = async (values) => {
-    const response = await register();
-    // TODO: handle response
+    try {
+      const { username, flag, email, password, confirmation } = values;
+      const userData = {
+        username,
+        flag: parseInt(flag),
+        email,
+        password,
+        confirmation,
+      };
+      console.log(userData);
+
+      const response = await register(userData);
+    } catch (error) {
+      console.error(error); 
+    }
   };
 
   const validationsLogin = yup.object().shape({
@@ -41,6 +63,8 @@ function Login() {
       .string()
       .oneOf([yup.ref("password"), null], "As senhas são diferentes")
       .required("A confirmação da senha é obrigatória"),
+    user_flag: yup
+      .number()
   });
 
   return (
@@ -54,7 +78,7 @@ function Login() {
           <div className="register-form-container">
             <h3>Crie Sua Conta</h3>
             <Formik
-              initialValues={{}}
+              initialValues={{email: "", password: "", user_flag: "" }}
               onSubmit={handleRegister}
               validationSchema={validationsRegister}
             >
@@ -62,13 +86,22 @@ function Login() {
                 <div className="form-group">
                   <Field
                     as="select"
-                    name="selectField"
+                    name="user_flag"
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>
-                    <option value="opcao1">Cliente</option>
-                    <option value="opcao2">Vendedor</option>
+                    <option value={1}>Cliente</option>
+                    <option value={0}>Vendedor</option>
                   </Field>
+                </div>
+                
+                <div className="form-group">
+                  <Field name="name" className="form-field" placeholder="Nome" />
+                  <ErrorMessage
+                    component="span"
+                    name="name"
+                    className="form-error"
+                  />
                 </div>
                 <div className="register-form-group">
                   <Field name="email" className="form-field" placeholder="Email" />
@@ -80,7 +113,7 @@ function Login() {
                 </div>
 
                 <div className="form-group">
-                  <Field name="password" className="form-field" placeholder="Senha" />
+                  <Field name="password" type="password" className="form-field" placeholder="Senha" />
                   <ErrorMessage
                     component="span"
                     name="password"
@@ -91,6 +124,7 @@ function Login() {
                 <div className="form-group">
                   <Field
                     name="confirmation"
+                    type="password"
                     className="form-field"
                     placeholder="Confirmação de Senha"
                   />
@@ -120,7 +154,7 @@ function Login() {
                 <div className="form-group">
                   <Field
                     as="select"
-                    name="selectField"
+                    name="user_flag"
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>
@@ -139,7 +173,7 @@ function Login() {
                 </div>
 
                 <div className="form-group">
-                  <Field name="password" className="form-field" placeholder="Senha" />
+                  <Field name="password" type="password" className="form-field" placeholder="Senha" />
                   <ErrorMessage
                     component="span"
                     name="password"

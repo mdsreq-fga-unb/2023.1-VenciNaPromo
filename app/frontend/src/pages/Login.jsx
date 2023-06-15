@@ -23,9 +23,9 @@ function Login() {
 
   const handleRegister = async (values) => {
     try {
-      const { username, flag, email, password, confirmation } = values;
+      const { name, flag, email, password, confirmation } = values;
       const userData = {
-        username,
+        name,
         flag: parseInt(flag),
         email,
         password,
@@ -55,6 +55,9 @@ function Login() {
       .string()
       .email("Email inválido")
       .required("O email é obrigatório"),
+    name: yup
+      .string()
+      .required("O nome é obrigatório"),
     password: yup
       .string()
       .min(8, "A senha deve ter pelo menos 8 caracteres")
@@ -63,7 +66,7 @@ function Login() {
       .string()
       .oneOf([yup.ref("password"), null], "As senhas são diferentes")
       .required("A confirmação da senha é obrigatória"),
-    user_flag: yup
+    flag: yup
       .number()
   });
 
@@ -86,7 +89,7 @@ function Login() {
                 <div className="form-group">
                   <Field
                     as="select"
-                    name="user_flag"
+                    name="flag"
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>

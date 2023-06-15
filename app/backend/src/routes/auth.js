@@ -9,20 +9,55 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
+
+function isValidEmail(email) {
+    const emailRegex = /^[a-z0-9]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidEmail(email) {
+    const emailRegex = /^[a-z0-9]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidName(name) {
+    const nameRegex = /^[\p{L}\s]+$/u;
+    return nameRegex.test(name);
+}
+
+function isValidPassword(password) {
+    if (password.length < 8) {return false;}
+    return true;
+}
+
+function isValidFlag(flag){
+    if (flag !== 0 && flag != 1){
+        return false
+    }
+    return true
+}
+
 router.post('/register', (req, res) => {
     const { username, email, password, flag } = req.body;
-  
-    if (!isValidEmail(email)) {
-      return res.status(400).json({ message: 'Invalid email' });
+
+    // validates the inputs
+    if(!isValidName(username)){
+        return res.status(400).json({ message: 'Invalid username' });
+    }
+    else if(!isValidEmail(email)){
+        return res.status(400).json({ message: 'Invalid email' });
+    }
+    else if(!isValidPassword(password)){
+        return res.status(400).json({ message: 'Invalid password' });
+    }
+    else if(!isValidFlag(flag)){
+        return res.status(400).json({ message: 'Invalid flag' });
     }
     
     // find if email already exists, if not, create new user
     User.findOne({ email }).then(user => {
         if (user) {
             return res.status(400).json({ message: 'Email already exists' });
-        }
-        if(flag != 0 || flag != 1){
-            return res.status(400).json({ message: 'Invalid flag' });
         }
         const hashedPassword = bcrypt.hashSync(password, 10);
         const newUser = new User({
@@ -34,7 +69,7 @@ router.post('/register', (req, res) => {
         newUser.save().then(() => {
             return res.status(201).json({ message: 'User created' });
         }).catch(err => {
-            return res.status(400).json({ message: 'Invalid data' });
+            return res.status(400).json({ message: 'Error while trying to create new user' });
         });
     });
 });

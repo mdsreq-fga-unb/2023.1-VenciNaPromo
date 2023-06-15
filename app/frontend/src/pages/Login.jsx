@@ -23,13 +23,12 @@ function Login() {
 
   const handleRegister = async (values) => {
     try {
-      const { name, flag, email, password, confirmation } = values;
+      const { username, flag, email, password, confirmation } = values;
       const userData = {
-        name,
+        username,
         flag: parseInt(flag),
         email,
         password,
-        confirmation,
       };
       console.log(userData);
 
@@ -55,7 +54,7 @@ function Login() {
       .string()
       .email("Email inválido")
       .required("O email é obrigatório"),
-    name: yup
+    username: yup
       .string()
       .required("O nome é obrigatório"),
     password: yup
@@ -81,7 +80,7 @@ function Login() {
           <div className="register-form-container">
             <h3>Crie Sua Conta</h3>
             <Formik
-              initialValues={{email: "", password: "", user_flag: "" }}
+              initialValues={{username: "", email: "", password: "", flag: "" }}
               onSubmit={handleRegister}
               validationSchema={validationsRegister}
             >
@@ -99,10 +98,10 @@ function Login() {
                 </div>
                 
                 <div className="form-group">
-                  <Field name="name" className="form-field" placeholder="Nome" />
+                  <Field name="username" className="form-field" placeholder="Nome" />
                   <ErrorMessage
                     component="span"
-                    name="name"
+                    name="username"
                     className="form-error"
                   />
                 </div>
@@ -157,7 +156,7 @@ function Login() {
                 <div className="form-group">
                   <Field
                     as="select"
-                    name="user_flag"
+                    name="flag"
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>

@@ -84,7 +84,7 @@ function Login() {
                   <ErrorMessage
                     component="span"
                     name="password"
-                    className="form-error"
+                    className="form-error-password"
                   />
                 </div>
 
@@ -97,7 +97,7 @@ function Login() {
                   <ErrorMessage
                     component="span"
                     name="confirmation"
-                    className="form-error"
+                    className="form-error-password"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ function Login() {
                   <ErrorMessage
                     component="span"
                     name="password"
-                    className="form-error"
+                    className="form-error-password"
                   />
                 </div>
 

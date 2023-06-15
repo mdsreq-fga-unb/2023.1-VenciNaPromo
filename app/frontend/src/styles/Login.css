@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: -130px;
+  margin-top: -115px;
   margin-bottom: -150px;
 }
 .form-container {
@@ -15,9 +15,9 @@
 .login-form-container,
 .register-form-container {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   width: 300px;
-  margin-top: -70px;
+  margin-top: -60px;
 }
 
 .form-divider {
@@ -28,16 +28,15 @@
 }
 h1 {
   color: #845C5C;
-  margin-top: 30px;
   margin-right: 200px;
-  margin-bottom: -25px; 
-  font-size: 30px;
+  margin-bottom: -30px; 
+  font-size: 25px;
 }
 h2{
   color: rgba(132, 92, 92, 0.66);
   margin-right: 200px;
-  font-size: 25px;
-  margin-bottom: 25px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 h3{
   font-size: 25px;
@@ -49,8 +48,8 @@ h3{
   outline: none;
   width: 400px;
   margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   font-family: 'Baloo';
   color: rgba(0, 0, 0, 0.60);
   font-size: 20px;
@@ -61,8 +60,10 @@ h3{
   color: rgba(0, 0, 0, 0.60);
 } 
 .button-login {
-  margin-bottom: 10px;
-  padding: 10px;
+  /* margin-bottom: 15px;  */
+  /* position: f; */
+  
+  padding: 5px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
@@ -71,12 +72,16 @@ h3{
   font-family: 'Baloo';
   color: white;
   border-radius: 8px;
-  width: 160px;
-  margin-top: 44px;
+  width: 150px;
+  height: 40px;
+  margin-top: 50px;
+  position: sticky;
+  /* margin-bottom: 150px; */
 }
 .button-register {
   margin-bottom: 10px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 5px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
@@ -84,10 +89,11 @@ h3{
   font-family: 'Baloo';
   color: white;
   border-radius: 8px;
-  width: 160px;
+  width: 150px;
+  height: 40px;
 }
 .button-visit {
-  padding: 10px;
+  padding: 5px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
@@ -96,8 +102,28 @@ h3{
   color: white;
   border-radius: 8px;
   width: 400px;
+  height: 40px;
   margin-right: 180px;
+  margin-top: 20px;
 }
 .login-form {
   margin-top: 70px;
+  width: 100%;
+  position: relative;
+}
+.form-error {
+  /* width: 100%; */
+  /* margin-top: -20px; */
+  /* margin-bottom: -20px; */
+  /* padding: 0px; */
+  margin-left: 20px;
+  
+}
+.form-error-password {
+  width: 100%;
+  /* margin-top: -20px; */
+  margin-bottom: 30px;
+  /* padding: 0px; */
+  margin-left: 25px;
+  margin-top: -35px;
 }

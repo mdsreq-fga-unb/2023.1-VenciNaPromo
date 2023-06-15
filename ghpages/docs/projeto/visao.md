@@ -53,7 +53,7 @@ Na Tabela 2, apresentamos quais papéis e pessoas responsáveis pelos mesmos com
 | Scrum Master          | Garantir que o time se oriente pelos valores e práticas do Scrum                                            | Sabrina     | Cainã, Charles, Gabrielly e Lucas |
 | Product Owner         | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas                          | Lucas       | Lucas e Sabrina                   |
 | Desenvolvedor         | Codificar o produto e realizar testes                                                                       | Gabrielly   | Cainã, Charles, Lucas e Sabrina   |
-| Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Charles     | Charles e Lucas                   |
+| Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Charles     | Charles e Sabrina                   |
 | Cliente               | Fornecer as informações necessárias para construção do backlog e validar as entregas                        | Daniel      | Daniel                            |
 
 <div align="center" style="text-align: center">
@@ -75,14 +75,10 @@ Abaixo, na Tabela 3, apresentamos como está planejado o desenvolvimento do proj
 | Sprint 5  | Validação do Backlog do Produto e Definição do MVP             |   09/05/2023   | 15/05/2023  |
 | Sprint 6  | Protótipo de alta fidelidade                                   |   16/05/2023   | 22/05/2023  |
 | Sprint 7  | US03 e US04                                                    |   23/05/2023   | 29/05/2023  |
-| Sprint 8  | Desenvolvimento/Implementação                                  |   30/05/2023   | 05/06/2023  |
-| Sprint 9  | Desenvolvimento/Implementação                                  |   06/06/2023   | 12/06/2023  |
-| Sprint 10 | Desenvolvimento/Implementação                                  |   13/06/2023   | 19/06/2023  |
-| Sprint 11 | Validação do MVP 1                                             |   20/06/2023   | 26/06/2023  |
-| Sprint 12 | Desenvolvimento/Implementação                                  |   27/06/2023   | 03/07/2023  |
-| Sprint 13 | Desenvolvimento/Implementação                                  |   04/07/2023   | 10/07/2023  |
-| Sprint 14 | Desenvolvimento/Implementação                                  |   11/07/2023   | 17/07/2023  |
-| Sprint 15 | Validação do MVP 2                                             |   18/07/2023   | 27/07/2023  |
+| Sprint 8  | US01, US02, US03 e US04                                        |   30/05/2023   | 13/06/2023  |
+| Sprint 9  | US06, US13, US15, US16, US05, US08 e Validação do MVP 1        |   14/06/2023   | 27/06/2023  |
+| Sprint 10 | US09, US10, US11, US12                                         |   28/06/2023   | 11/07/2023  |
+| Sprint 14 | US07, US14, US17 e Validação do MVP 2                          |   12/07/2023   | 27/07/2023  |
 
 <div align="center" style="text-align: center">
 <p>Tabela 3: Planejamento das fases do projeto. Fonte: Grupo GPT, 2023.</p>
@@ -307,3 +303,4 @@ Outro ponto de melhora para a próxima unidade é utilizarmos com mais frequênc
 | 29/04/2023 |  1.2   | Adição do método de Sommerville, processo de software e processo de ER, correções nos objetivos |                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
 | 29/04/2023 |  1.3   | Adição da metodologia ScrumXP|                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
 | 25/05/2023 |  1.4   | Adição das lições aprendidas na Unidade 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
+| 15/06/2023 | 1.5 | Atualização do cronograma das sprints com as US | [Sabrina Berno](https://github.com/sabrinaberno) |

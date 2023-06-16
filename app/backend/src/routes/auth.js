@@ -73,25 +73,29 @@ router.post('/register', (req, res) => {
         });
     });
 });
-  
-router.post('/login', (req, res) => {
-    const { email, password } = req.body;
-  
-    // find user by email
-    const logging_user = User.find(user => user.email === email);
-    if (!logging_user) {
-        return res.status(401).json({ message: 'Invalid email or password' });
-    }
-  
-    const passwordMatch = bcrypt.compareSync(password, logging_user.password);
-    if (!passwordMatch) {
-      return res.status(401).json({ message: 'Invalid email or password' });
-    }
-  
-    const tokenkey = 'hjZ8N0z#6$B3!xVqJ@5cF';
-    const token = jwt.sign({ email: logging_user.email }, tokenkey);
-  
-    res.json({ token });
+router.post('/login', async (req, res) => {
+	const { email, password } = req.body;
+
+	try {
+		const logging_user = await User.findOne({ email });
+
+		if (!logging_user) {
+				return res.status(401).json({ message: 'Invalid email or password' });
+		}
+
+		const passwordMatch = bcrypt.compareSync(password, logging_user.password);
+
+		if (!passwordMatch) {
+				return res.status(401).json({ message: 'Invalid email or password' });
+		}
+
+		const tokenkey = 'hjZ8N0z#6$B3!xVqJ@5cF';
+		const token = jwt.sign({ email: logging_user.email }, tokenkey);
+
+		res.json({ token });
+	} catch (error) {
+		return res.status(500).json({ message: 'Internal server errors' });
+	}
 });
 
 module.exports = router;

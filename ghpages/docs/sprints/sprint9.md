@@ -9,12 +9,13 @@
 
 ## Sprint Planning
 
-#### Objetivo da Sprint 6
+#### Objetivo da Sprint 9
 - **Débitos Técnicos:** US01, US02, US03 e US04
 - **Implementação:** US06, US13, US15, US16
 
 
 ### Tasks e responsáveis :
+Com o objetivo de promover uma maior clareza e responsabilidade em nossas atividades durante a sprint, a equipe optou por documentar de forma explícita quem será o responsável por cada tarefa. Reconhecemos que essa medida ajudará a evitar mal-entendidos, garantindo que cada membro saiba exatamente quais são suas responsabilidades e atribuições ao longo do ciclo de desenvolvimento. 
 
 |             **Task**                 |    **Resposáveis**    | 
 |--------------------------------------|-----------------------|
@@ -58,6 +59,8 @@
 |  **Reunião**   |    **Data**    |**Cainã**| **Charles** | **Gabrielly** | **Lucas** | **Sabrina** |
 |----------------|----------------| ------- |-------------|---------------|-----------|-------------|
 |Sprint Planning |  13/06/2023    |    ✔    |     ✔      |      ✔        |     ✔     |     ✔      |
+|Daily           |  14/06/2023    |    ✔    |     ✔      |      ✔        |     ✔     |     ✔      |
+|Daily           |  15/06/2023    |    ✔    |     **x**      |      ✔        |     ✔     |     ✔      |
 
 |**Integrante**|**Frequência**|
 |--------------|--------------|

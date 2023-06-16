@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
@@ -6,7 +6,10 @@ import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import '../styles/Login.css';
 
-function Login() {
+function Login({ setIsVisitor }) {
+  const handleVisitorLogin = () => {
+    setIsVisitor(true);
+  };
   const handleLogin = async (values, { resetForm }) => {
     try {
       const { email, password } = values;
@@ -14,7 +17,7 @@ function Login() {
         email,
         password,
       };
-      const response = await login(userData);
+      await login(userData);
       resetForm();
     } catch (error) {
       console.error(error);
@@ -192,9 +195,9 @@ function Login() {
           </div>
         </div>
       </div>
-        <button className="button-visit" type="submit">
-          Continuar como visitante
-        </button>
+      <button className="button-visit" type="submit" onClick={() => setIsVisitor(true)}>
+        Continuar como visitante
+      </button>
     </div>
   );
 }

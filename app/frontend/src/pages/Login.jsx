@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import '../styles/Login.css';
 
 function Login() {
-  const handleLogin = async (values) => {
+  const handleLogin = async (values, { resetForm }) => {
     try {
       const { email, password } = values;
       const userData = {
@@ -15,13 +15,14 @@ function Login() {
         password,
       };
       const response = await login(userData);
+      resetForm();
     } catch (error) {
       console.error(error);
     }
   };
   
 
-  const handleRegister = async (values) => {
+  const handleRegister = async (values, { resetForm }) => {
     try {
       const { username, flag, email, password, confirmation } = values;
       const userData = {
@@ -31,8 +32,8 @@ function Login() {
         password,
       };
       console.log(userData);
-
       const response = await register(userData);
+      resetForm();
     } catch (error) {
       console.error(error); 
     }
@@ -80,7 +81,7 @@ function Login() {
           <div className="register-form-container">
             <h3>Crie Sua Conta</h3>
             <Formik
-              initialValues={{username: "", email: "", password: "", flag: "" }}
+              initialValues={{username: "", email: "", password: "", flag: "", confirmation: "" }}
               onSubmit={handleRegister}
               validationSchema={validationsRegister}
             >
@@ -148,7 +149,7 @@ function Login() {
           <div className="login-form-container">
             <h3>Já é Cadastrado?</h3>
             <Formik
-              initialValues={{}}
+              initialValues={{email: "", password: ""}}
               onSubmit={handleLogin}
               validationSchema={validationsLogin}
             >

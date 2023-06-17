@@ -44,6 +44,8 @@ function App() {
       <div className="content">
         {isLoggedIn ? (
           <ShoppingList />
+        ) : isVisitor ? (
+          <ShoppingList />
         ) : (
           <Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />
         )}

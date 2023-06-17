@@ -28,37 +28,24 @@ function App() {
   }
 
   useEffect(() => {
-    const storedToken = localStorage.getItem("access_token");
+    const storedToken = localStorage.getItem("token");
     // if there is a token stored, set it as the access token and set the user as logged in
     if (storedToken) {
       setAccessToken(storedToken);
       setIsLoggedIn(true);
       //getUserData()
     }
+    console.log(accessToken);
+    console.log(isLoggedIn);
   }, [accessToken]);
 
   return (
     <div className="App">
-      <div className="background">
-        <span
-          className="blob"
-          style={{
-            position: "absolute",
-            top: position.y,
-            left: position.x,
-          }}
-        />
-        <div className="blur" />
-      </div>
       <div className="content">
         {isLoggedIn ? (
           <ShoppingList />
         ) : (
-          isVisitor ? (
-            <ShoppingList />
-          ) : (
-            <Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />
-          )
+          <Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />
         )}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Sidebar.css';
+import { logout } from "../services/auth";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -18,6 +19,7 @@ const Sidebar = () => {
           </button>
         ) : (
           <>
+            <button className="logoff-button" onClick={logout}>deslogar</button>
             <button className="sidebar-button">Compras</button>
             <button className="sidebar-button">Cupons</button>
             <button className="info-button">Info</button>

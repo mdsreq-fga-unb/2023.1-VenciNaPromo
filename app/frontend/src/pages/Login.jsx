@@ -7,9 +7,6 @@ import Header from '../components/Header';
 import '../styles/Login.css';
 
 function Login({ setIsVisitor }) {
-  const handleVisitorLogin = () => {
-    setIsVisitor(true);
-  };
   const handleLogin = async (values, { resetForm }) => {
     try {
       const { email, password } = values;
@@ -17,7 +14,10 @@ function Login({ setIsVisitor }) {
         email,
         password,
       };
-      await login(userData);
+      await login(userData).then((response) => {
+        localStorage.setItem("token", response.token);
+        window.location.reload();
+      });
       resetForm();
     } catch (error) {
       console.error(error);

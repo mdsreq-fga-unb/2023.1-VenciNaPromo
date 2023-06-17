@@ -13,7 +13,7 @@ function App() {
   const [isVisitor, setIsVisitor] = useState(false);
 
   async function getUserData(){
-    await fetch("http://localhost:8000/getUserData",{
+    await fetch("http://localhost:8080/getUserData",{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

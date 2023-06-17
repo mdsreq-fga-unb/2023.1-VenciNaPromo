@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 
 // MongoDB connection
 const dbConfig = {
-  url: 'mongodb://vencinapromo:pIUApr9IgXyU5kuJ@ac-hbr3vyy-shard-00-00.qdta2rn.mongodb.net:27017,ac-hbr3vyy-shard-00-01.qdta2rn.mongodb.net:27017,ac-hbr3vyy-shard-00-02.qdta2rn.mongodb.net:27017/?ssl=true&replicaSet=atlas-7ygtub-shard-0&authSource=admin&retryWrites=true&w=majority',
+  url: process.env.MONGODB_URL,
   options: {
       useNewUrlParser: true
   }
@@ -38,4 +38,4 @@ app.use('/product_list', product_list);
 app.use('/user_profile', user_profile);
 
 
-app.listen(8080, () => console.log('Listening on port 8080'));
+app.listen(process.env.PORT, () => console.log('Listening on port ' + process.env.PORT));

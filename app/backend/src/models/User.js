@@ -29,7 +29,6 @@ const UserSchema = new schema({
     password: {
         type: String,
         required: true,
-        select: false
     }
 }, { timestamps: true });
 

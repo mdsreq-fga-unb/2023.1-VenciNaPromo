@@ -60,12 +60,14 @@ Com o objetivo de promover uma maior clareza e responsabilidade em nossas ativid
 |----------------|----------------| ------- |-------------|---------------|-----------|-------------|
 |Sprint Planning |  13/06/2023    |    ✔    |     ✔      |      ✔        |     ✔     |     ✔      |
 |Daily           |  14/06/2023    |    ✔    |     ✔      |      ✔        |     ✔     |     ✔      |
-|Daily           |  15/06/2023    |    ✔    |     **x**      |      ✔        |     ✔     |     ✔      |
+|Daily           |  15/06/2023    |    ✔    |     ✔      |      ✔        |     ✔     |     ✔      |
+|Daily           |  16/06/2023    |    ✔    |     ✔      |      ✔        |   **x**    |     ✔      |
+
 
 |**Integrante**|**Frequência**|
 |--------------|--------------|
-| Cainã        |  100%        |
-| Charles      |  100%        |
-| Gabrielly    |  100%        |
-| Lucas        |  100%        |
-| Sabrina      |  100%        |
+| Cainã        |          |
+| Charles      |          |
+| Gabrielly    |          |
+| Lucas        |          |
+| Sabrina      |          |

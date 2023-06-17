@@ -38,6 +38,7 @@ nav:
       - Definição dos MVP's: "projeto/mvp.md"
       - URPS+: "projeto/nao-fun.md"
       - Arquitetura: "projeto/arquitetura.md"
+      - Backlog SAFe: "projeto/SAFe.md"
   - Entregas:
       - Unidade 1:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"

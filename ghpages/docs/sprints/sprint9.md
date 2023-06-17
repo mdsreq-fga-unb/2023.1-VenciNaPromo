@@ -28,10 +28,11 @@ Com o objetivo de promover uma maior clareza e responsabilidade em nossas ativid
 
 |             **Task**                 |    **Resposáveis**    | 
 |--------------------------------------|-----------------------|
-| Documentação: Visão de Produto e Projeto - Unidade 2| Charles |
+| Documentação: Visão de Produto e Projeto - Unidade 2| Charles, Sabrina |
 | Documentação: Cronograma das Sprints e MVP          | Sabrina |
-| Documentação: SAFe, PBB e BDD                       | Sabrina, Cainã |
-| Vídeo: Apresentação - Feedback do Cliente           | Sabrina |
+| Documentação: PBB e BDD                             | Sabrina, Cainã |
+| Documentação: SAFe                                  | Charles, Sabrina |
+| Vídeo: Apresentação - Feedback do Cliente           | Sabrina, Lucas|
 | Vídeo: Apresentação - Grupo                         | Lucas | 
 | US06                                 | Charles, Gabrielly |
 | US13                                 | Charles, Gabrielly |
@@ -48,6 +49,7 @@ Com o objetivo de promover uma maior clareza e responsabilidade em nossas ativid
 
 
 ## Sprint Retro
+A equipe de desenvolvimento tomou a decisão de trocar a tecnologia do banco de dados (MySQL para MongoDB), buscando uma abordagem mais prática e com maior conhecimento técnico. Com o objetivo de otimizar a eficiência e a produtividade, eles estão migrando para uma nova tecnologia que oferece recursos avançados e uma curva de aprendizado mais acessível. 
 
 - **Pontos a melhorar:** 
 

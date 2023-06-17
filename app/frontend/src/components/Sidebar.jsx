@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Sidebar.css';
 
 const Sidebar = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
-    <div className="sidebar">
-      <div className="sidebar-content">
-      </div>
+    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+      <div className="sidebar-content" />
       <div className="sidebar-footer">
-        <button className="sidebar-button">Compras</button>
-        <button className="sidebar-button">Cupons</button>
-        <button className="info-button">Info</button>
+        {isCollapsed ? (
+          <button className="menu-icon" onClick={toggleCollapse}>
+            <i className="fas fa-bars" />
+          </button>
+        ) : (
+          <>
+            <button className="sidebar-button">Compras</button>
+            <button className="sidebar-button">Cupons</button>
+            <button className="info-button">Info</button>
+            {/* <button className="collapse-button" onClick={toggleCollapse}>
+              Colapsar
+            </button> */}
+          </>
+        )}
       </div>
     </div>
   );

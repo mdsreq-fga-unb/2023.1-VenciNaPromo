@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
@@ -6,15 +6,40 @@ import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import '../styles/Login.css';
 
-function Login() {
-  const handleLogin = async (values) => {
-    const response = await login();
-    // TODO: handle response
+function Login({ setIsVisitor }) {
+  const handleVisitorLogin = () => {
+    setIsVisitor(true);
   };
+  const handleLogin = async (values, { resetForm }) => {
+    try {
+      const { email, password } = values;
+      const userData = {
+        email,
+        password,
+      };
+      await login(userData);
+      resetForm();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
 
-  const handleRegister = async (values) => {
-    const response = await register();
-    // TODO: handle response
+  const handleRegister = async (values, { resetForm }) => {
+    try {
+      const { username, flag, email, password, confirmation } = values;
+      const userData = {
+        username,
+        flag: parseInt(flag),
+        email,
+        password,
+      };
+      console.log(userData);
+      const response = await register(userData);
+      resetForm();
+    } catch (error) {
+      console.error(error); 
+    }
   };
 
   const validationsLogin = yup.object().shape({
@@ -33,6 +58,9 @@ function Login() {
       .string()
       .email("Email inválido")
       .required("O email é obrigatório"),
+    username: yup
+      .string()
+      .required("O nome é obrigatório"),
     password: yup
       .string()
       .min(8, "A senha deve ter pelo menos 8 caracteres")
@@ -41,6 +69,8 @@ function Login() {
       .string()
       .oneOf([yup.ref("password"), null], "As senhas são diferentes")
       .required("A confirmação da senha é obrigatória"),
+    flag: yup
+      .number()
   });
 
   return (
@@ -54,7 +84,7 @@ function Login() {
           <div className="register-form-container">
             <h3>Crie Sua Conta</h3>
             <Formik
-              initialValues={{}}
+              initialValues={{username: "", email: "", password: "", flag: "", confirmation: "" }}
               onSubmit={handleRegister}
               validationSchema={validationsRegister}
             >
@@ -62,13 +92,22 @@ function Login() {
                 <div className="form-group">
                   <Field
                     as="select"
-                    name="selectField"
+                    name="flag"
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>
-                    <option value="opcao1">Cliente</option>
-                    <option value="opcao2">Vendedor</option>
+                    <option value={1}>Cliente</option>
+                    <option value={0}>Vendedor</option>
                   </Field>
+                </div>
+                
+                <div className="form-group">
+                  <Field name="username" className="form-field" placeholder="Nome" />
+                  <ErrorMessage
+                    component="span"
+                    name="username"
+                    className="form-error"
+                  />
                 </div>
                 <div className="register-form-group">
                   <Field name="email" className="form-field" placeholder="Email" />
@@ -80,24 +119,25 @@ function Login() {
                 </div>
 
                 <div className="form-group">
-                  <Field name="password" className="form-field" placeholder="Senha" />
+                  <Field name="password" type="password" className="form-field" placeholder="Senha" />
                   <ErrorMessage
                     component="span"
                     name="password"
-                    className="form-error"
+                    className="form-error-password"
                   />
                 </div>
 
                 <div className="form-group">
                   <Field
                     name="confirmation"
+                    type="password"
                     className="form-field"
                     placeholder="Confirmação de Senha"
                   />
                   <ErrorMessage
                     component="span"
                     name="confirmation"
-                    className="form-error"
+                    className="form-error-password"
                   />
                 </div>
 
@@ -112,7 +152,7 @@ function Login() {
           <div className="login-form-container">
             <h3>Já é Cadastrado?</h3>
             <Formik
-              initialValues={{}}
+              initialValues={{email: "", password: ""}}
               onSubmit={handleLogin}
               validationSchema={validationsLogin}
             >
@@ -120,7 +160,7 @@ function Login() {
                 <div className="form-group">
                   <Field
                     as="select"
-                    name="selectField"
+                    name="flag"
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>
@@ -139,11 +179,11 @@ function Login() {
                 </div>
 
                 <div className="form-group">
-                  <Field name="password" className="form-field" placeholder="Senha" />
+                  <Field name="password" type="password" className="form-field" placeholder="Senha" />
                   <ErrorMessage
                     component="span"
                     name="password"
-                    className="form-error"
+                    className="form-error-password"
                   />
                 </div>
 
@@ -155,9 +195,9 @@ function Login() {
           </div>
         </div>
       </div>
-        <button className="button-visit" type="submit">
-          Continuar como visitante
-        </button>
+      <button className="button-visit" type="submit" onClick={() => setIsVisitor(true)}>
+        Continuar como visitante
+      </button>
     </div>
   );
 }

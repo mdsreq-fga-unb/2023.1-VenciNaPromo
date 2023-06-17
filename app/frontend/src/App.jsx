@@ -10,10 +10,10 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [accessToken, setAccessToken] = useState(null);
   const [UserData, setUserData] = useState(null);
+  const [isVisitor, setIsVisitor] = useState(false);
 
-  // get user data from backend, unused for now
   async function getUserData(){
-    await fetch("http://localhost:8000/getUserData",{
+    await fetch("http://localhost:8080/getUserData",{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -52,9 +52,13 @@ function App() {
       </div>
       <div className="content">
         {isLoggedIn ? (
-          <ShoppingList /> //logged
+          <ShoppingList />
         ) : (
-          <Login /> //not logged
+          isVisitor ? (
+            <ShoppingList />
+          ) : (
+            <Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />
+          )
         )}
       </div>
     </div>

@@ -17,7 +17,7 @@ const ProductInList = () => {
             <h3>Feijãozinho</h3>
             <p>Feijãozinho gostosinho</p>
             <p>Preço: R$ 149,99</p>
-            <button className="product-detail-button" onClick={togglePopup}>
+            <button className="product-in-list-button" onClick={togglePopup}>
                 <span className="plus-icon"></span>
             </button>
 
@@ -25,7 +25,7 @@ const ProductInList = () => {
                 <div className="popup">
                 <div className="popup-content">
                     <ProductDetail />                    
-                    <button className="product-detail-button" onClick={togglePopup}></button>
+                    <button className="product-in-list-button" onClick={togglePopup}></button>
                 </div>
                 </div>
             )}

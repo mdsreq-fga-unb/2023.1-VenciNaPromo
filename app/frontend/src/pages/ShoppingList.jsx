@@ -6,8 +6,24 @@ import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import ProductInList from '../components/ProductInList';
 import '../styles/ShoppingList.css';
+import { productList } from '../services/products';
+import { useEffect } from 'react';
 
 function ShoppingList() {
+
+  async function getShoppingList() {
+    try {
+      const response = await productList();
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+  } 
+
+  useEffect(() => {
+    getShoppingList();
+  }, []);
+
   return (
     <div className="container">
       <Sidebar />

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/Product');
-const checkTokenAndFindUser = require('../utils/checkTokenAndFindUser');
+const checkTokenAndFindUser = require('../utils/tokenquery');
 
 router.get('/get_list', (req, res) => {
     //checa tipo de usuario (flag)

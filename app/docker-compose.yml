@@ -9,6 +9,10 @@ services:
     volumes:
       - ./backend:/usr/src/app-backend
       - /usr/src/app-backend/node_modules
+    depends_on:
+      - db
+    links:
+      - db  
     ports:
       - '8080:8080'
     expose:
@@ -28,3 +32,11 @@ services:
       - 3000
     depends_on:
       - vencinapromo-backend
+
+  db:
+    image: 'mongo'
+    container_name: vencinapromo-db
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data/db:/data/db

@@ -1,0 +1,9 @@
+.shoppin-list-container {
+    display: grid;
+    background-color: #fff;
+    width: calc(95% - 290px);
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}

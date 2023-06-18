@@ -37,7 +37,8 @@ nav:
       - Backlog do Produto: "projeto/backlog.md"
       - Definição dos MVP's: "projeto/mvp.md"
       - URPS+: "projeto/nao-fun.md"
-      - Arquitetura: "projeto/arquitetura.md"
+      - Protótipo do MVP 1: "projeto/prototipoMVP1.md"
+      - Backlog SAFe: "projeto/SAFe.md"
   - Entregas:
       - Unidade 1:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"
@@ -52,6 +53,7 @@ nav:
       - Sprint 6: "sprints/sprint6.md"
       - Sprint 7: "sprints/sprint7.md"
       - Sprint 8: "sprints/sprint8.md"
+      - Sprint 9: "sprints/sprint9.md"
 
 repo_url: https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo
 repo_name: mdsreq-fga-unb.github.io/2023.1-VenciNaPromo

@@ -36,10 +36,29 @@ O objetivo principal do Venci na Promo pode ser descrito como: </p>
 <p align="justify"> &emsp;&emsp;
 Resumidamente, pretende-se atingir este objetivo através da disponibilização de um sistema que faça a ponte entre estabelecimentos comerciais e seus clientes, divulgando promoções sobre esses produtos, fornecendo meios de compra e/ou distribuição de cupons de desconto e facilitando a organização da logística destas transações.</p>
 
-### 1.3. Tecnologias a serem utilizadas
+### 1.3. Tecnologias utilizadas
 
-<p align="justify"> &emsp;&emsp;
-Para o front-end e o back-end, utilizaremos JavaScript e os frameworks React e Node.Js, respectivamente. Já o banco de dados será feito em SQL, devido ao maior conhecimento da equipe. Os testes serão feitos em Jest. Além disso, estamos usando o WhatsApp para comunicação, Discord para reuniões, o Git para controle de versionamento e o GitHub Pages para a exposição da documentação do projeto. Ademais, utilizaremos o Zenhub para organização dos requisitos e o Figma para prototipação das interfaces.</p>
+### React
+
+React é uma biblioteca JavaScript de código-aberto para construção de interfaces de usuário.
+
+### Node.js
+
+Node.js é um ambiente de tempo de execução JavaScript de código aberto e multiplataforma.
+
+### MongoDB
+
+MongoDB é um sistema gerenciador de banco de dados relacional. A princípio, a equipe utilizava o MySQL, porém tomou-se a decisão de migrar do MySQL para o MongoDB, uma mudança estratégica que visa aprimorar o desempenho, a escalabilidade e a flexibilidade de nosso projeto.
+
+### Docker
+
+Docker é uma plataforma de código aberto para criação e administração de ambientes isolados.
+
+O Docker Compose é uma ferramenta para definir e executar aplicativos Docker de vários contêineres.
+
+### Jest
+
+O Jest é um framework de teste de JavaScript de código aberto, amplamente utilizado e conhecido por sua simplicidade e eficiência na execução de testes em projetos JavaScript.
 
 ## 2. Visão Geral do Projeto
 
@@ -53,7 +72,7 @@ Na Tabela 2, apresentamos quais papéis e pessoas responsáveis pelos mesmos com
 | Scrum Master          | Garantir que o time se oriente pelos valores e práticas do Scrum                                            | Sabrina     | Cainã, Charles, Gabrielly e Lucas |
 | Product Owner         | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas                          | Lucas       | Lucas e Sabrina                   |
 | Desenvolvedor         | Codificar o produto e realizar testes                                                                       | Gabrielly   | Cainã, Charles, Lucas e Sabrina   |
-| Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Charles     | Charles e Lucas                   |
+| Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Charles     | Charles e Sabrina                   |
 | Cliente               | Fornecer as informações necessárias para construção do backlog e validar as entregas                        | Daniel      | Daniel                            |
 
 <div align="center" style="text-align: center">
@@ -75,14 +94,10 @@ Abaixo, na Tabela 3, apresentamos como está planejado o desenvolvimento do proj
 | Sprint 5  | Validação do Backlog do Produto e Definição do MVP             |   09/05/2023   | 15/05/2023  |
 | Sprint 6  | Protótipo de alta fidelidade                                   |   16/05/2023   | 22/05/2023  |
 | Sprint 7  | US03 e US04                                                    |   23/05/2023   | 29/05/2023  |
-| Sprint 8  | Desenvolvimento/Implementação                                  |   30/05/2023   | 05/06/2023  |
-| Sprint 9  | Desenvolvimento/Implementação                                  |   06/06/2023   | 12/06/2023  |
-| Sprint 10 | Desenvolvimento/Implementação                                  |   13/06/2023   | 19/06/2023  |
-| Sprint 11 | Validação do MVP 1                                             |   20/06/2023   | 26/06/2023  |
-| Sprint 12 | Desenvolvimento/Implementação                                  |   27/06/2023   | 03/07/2023  |
-| Sprint 13 | Desenvolvimento/Implementação                                  |   04/07/2023   | 10/07/2023  |
-| Sprint 14 | Desenvolvimento/Implementação                                  |   11/07/2023   | 17/07/2023  |
-| Sprint 15 | Validação do MVP 2                                             |   18/07/2023   | 27/07/2023  |
+| Sprint 8  | US01, US02, US03 e US04                                        |   30/05/2023   | 13/06/2023  |
+| Sprint 9  | US06, US13, US15, US16, US05, US08 e Validação do MVP 1        |   14/06/2023   | 27/06/2023  |
+| Sprint 10 | US09, US10, US11, US12                                         |   28/06/2023   | 11/07/2023  |
+| Sprint 14 | US07, US14, US17 e Validação do MVP 2                          |   12/07/2023   | 27/07/2023  |
 
 <div align="center" style="text-align: center">
 <p>Tabela 3: Planejamento das fases do projeto. Fonte: Grupo GPT, 2023.</p>
@@ -192,7 +207,6 @@ Para garantir a entrega de um produto de alta qualidade, é fundamental adotar u
 ### 3.2. Processo de Software
 
 <p align="justify"> &emsp;&emsp;
-
 Foi definida a utilização do ScrumXP que é uma metodologia ágil que combina duas abordagens: Scrum e Extreme Programming (XP). O objetivo dessa metodologia é melhorar a qualidade do produto e aumentar a produtividade da equipe. O fator decisivo para a escolha desse método foi seu foco na colaboração entre a equipe e o cliente que é envolvido no processo de desenvolvimento desde o início e fornece feedback regular para a equipe. Isso ajuda a garantir que o produto final atenda às necessidades do cliente e evita retrabalho desnecessário.</p>
 <p align="justify"> &emsp;&emsp;
 Essa metodologia é baseada em práticas do scrum como o desenvolvimento em ciclos curtos denominados sprints, além de cerimônias como a daily scrum, a sprint planning, sprint review e sprint retrospective. Além disso, incorpora várias práticas do XP, incluindo a programação em pares, desenvolvimento orientado a testes e integração contínua.</p>
@@ -248,22 +262,93 @@ A partir destas observações e também da definição da abordagem e ciclo de v
 <p align="justify"> &emsp;&emsp;
 Para alcançar os objetivos do projeto utilizaremos Javascript que é uma linguagem de programação usada tanto no frontend quanto no backend, para auxiliar sua utilização utilizaresmos os frameworks ReactJS e NodeJS, respectivamente. Utilizaremos também o NestJS que é um framework modular que ajuda a desenvolver aplicativos NodeJS. Usaremos o Jest como ferramenta de testes do JavaScript para identificar e corrigir bugs, o Docker para empacotar aplicativos em contêineres isolados e, por fim, o MySQL para gerenciamento de banco de dados.</p>
 
-#### Ferramentas de Organização
+#### WhatsApp e Discord
 
-- Github: repositório, versionamento e documentação
-- ZenHub: gerenciamneto das sprints
-- Figma: prototipação;
-- Discord e Whatsapp: comunicação entre a equipe;
+<p align="justify"> &emsp;&emsp;
+Estas duas ferramentas foram utilizadas para a comunicação do grupo e apoio na realização dos rituais das metodologias de desenvolvimento adotadas. Dailys e comunicação em gerais feitas no WhatsApp, e reuniões de planning, review e retro feitas pelo Discord.</p>
+
+#### Git e GitHub
+
+<p align="justify"> &emsp;&emsp;
+As ferramentas foram utilizadas para versionamento de código e repostório do projeto. Foi utilizado também o recurso do GitHub pages para exposição da documentação do projeto e entregas da disciplina.</p>
+
+#### Git Projects
+
+<p align="justify"> &emsp;&emsp;
+O Git Projects é uma ferramenta de gerenciamento de projetos embutida no GitHub, que permite aos usuários organizar, acompanhar e gerenciar o progresso de suas tarefas e projetos.</p>
+
+#### Figma
+
+<p align="justify"> &emsp;&emsp;
+Ferramenta de design de interface do usuário baseada na web que permite a colaboração em tempo real, prototipagem interativa e criação de designs de alta fidelidade para aplicativos e sites. Foi utilizada para a confecção dos protótipos do projeto.</p>
+
+
 
 ### 3.5. Rituais
+Rerefe-se a todos os processos que acontecerão dentro da Sprint
 
-- Sprint: ciclos se uma semana, conforme descrito no tópico 2.2.
-- Sprint planning: Será feito o planejamento da sprint antes do início da mesma.
-- Daily: Ocorrerá diariamente para os membros do grupo para informarem seus feitos, planejamentos e impedimentos.
-- Sprint review: Ocorrerá a cada final de sprint para os integrantes mostrarem e revisarem o que foi trabalhado durante a sprint finalizada.
-- Sprint retrospective: Ocorrerá junto com o Sprint Review ao final de cada sprint para serem levantados os aspectos de melhorias da equipe, afim de melhorar a sua qualidade de desenvolvimento.
 
-## 4. Lições Aprendidas
+| **Atividades** | **Método** | **Ferramenta** | **Entrega** |
+| :------------: | :--------: | :------------: | :---------: |
+| Sprint Planning | Reunião em grupo | Discord e Git Projects | Issues referentes aos requisitos da sprint |
+| Daily | Reunião assíncrona | Discord e WhatsApp | Relatório sobre frência na reunião, atividades da equipe e impedimentos |
+| Sprint Review | Apresentação | Discord, GitHub, Git Projects, GitPages | Validação do Produto |
+| Sprint Retrospective | Reunião e brainstorm | Discord, EasyRetro e GitPages | Levantamento dos pontos fortes e aspectos de melhorias da equipe, afim de melhorar a sua qualidade de desenvolvimento |
+
+### 3.6. Arquitetura
+
+### Visão Geral da Arquitetura
+
+A Figura 1 apresenta a visão geral da arquitetura do projeto, representando todos os serviços e suas relações.
+
+![Arquitetura](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/diagrama_arquitetura.png)
+
+<center>
+<figcaption>
+Figura 1 - Diagrama de Visão Geral da Arquitetura
+</figcaption>
+</center>
+
+### Serviços
+
+- Frontend:
+Para o frontend, optaremos por utilizar uma arquitetura do tipo Single Page Application (SPA), seguindo o padrão Component-Based Architecture, com base na estrutura de desenvolvimento web React. Essa escolha foi feita devido à ampla utilização no mercado e aos benefícios que essa arquitetura oferece, como uma experiência de usuário aprimorada em termos de fluidez e responsividade, facilidade de reutilização de código, modularidade e facilidade de manutenção.
+
+- Backend:
+No backend, adotaremos a arquitetura em camadas padrão MVC (Model, View, Controller). Essa arquitetura é amplamente utilizada no mercado e foi escolhida devido à familiaridade da maioria da equipe com ela.
+
+![MVC](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/MVC_arquitetura.png)
+
+
+## 4. Atividades
+
+### 4.1. Requisitos e Planejamento
+
+| Atividade                 | Métodos                           | Ferramentas   | Entrega                                                                                           |
+| ------------------------- | --------------------------------- | ------------- | ------------------------------------------------------------------------------------------------- |
+| Elicitação e Descoberta   | Brainstorming                     | Google Meet, Google Docs e Discord | Conversas entre a equipe e o cliente buscando extrair informações para a definição dos requisitos.    |
+| Análise e Consenso        | Brainstorming e Análise de Viabilidade                    | Google Meet       | Conversas entre a equipe e o cliente buscando ter um consenso dos requisitos.                     |
+| Declaração                | Temas, Épicos e Histórias de usuários | Google Docs, GitHub Pages e Mural | Comunicação clara e com linguagem natural de uma forma a deixar claro os requisitos estabelecidos. |
+| Organização e Atualização | Product Backlog e Matriz de Priorização         | Mural e GitHub Pages | Organização, visualização e acompanhar o estado de cada requisito na estrutura do SAFe.                                     |
+| Representação             | Prototipar interface                         |  Paint e Figma         | Apresentação visual de baixa e alta fidelidade dos requisitos simulando a sua aplicação final.    |
+| Verificação e Validação   | Checklists, Revisão e Inspeção dos requisitos | Google Docs e Mural   | Lista de requisitos alinhada com os objetivos do produto                        |
+
+### 4.2. Prototipação
+
+| Atividade            | Método                        | Ferramenta    | Entrega                                          |
+| -------------------- | ----------------------------- | ------------- | ------------------------------------------------ |
+| Interface de usuário | Prototipagem de Baixa fidelidade | Paint         | Protótipo para entendimento inicial da aplicação |
+| Interface de usuário | Prototipagem de Alta fidelidade  | Figma         | Protótipo das interfaces do aplicativo           |
+
+### 4.3. Implentação
+
+| Atividade                          | Método               | Ferramentas | Entrega                                                              |
+| ---------------------------------- | -------------------- | ---------- | -------------------------------------------------------------------- |
+| Codificação do produto       | Pair Programming |   VSCode e GitHub         | Desenvolvimento das entregas do MVP1 e MVP2                           |
+| Validação do produto com o cliente | Reunião              | Discord    | Validar se as entregas realizadas pela equipe atendem aos requisitos |
+| Testes | Teste de aceitação, teste de integração, teste unitário | VsCode e GitHub     | Identificação e correção de erros no desenvolvimento da aplicação |
+
+## 5. Lições Aprendidas
 
 ### Unidade 1
 
@@ -286,7 +371,7 @@ Em relação à organizaçao interna do grupo, alguns problemas relatados na Uni
 <p align="justify"> &emsp;&emsp;
 Outro ponto de melhora para a próxima unidade é utilizarmos com mais frequência o auxílio fornecido para a monitora, que está sempre disponível, porém temos subutilizado a sua experiência disponibilidade em ajudar. Ainda sobre a monitoria, devemos como grupo e individualmente melhorar a frequência de feedbacks, assim podendo receber orientações que auxiliem a lidarmos com os problemas do grupo.</p>
 
-## 5. Referências
+## 6. Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.
 
@@ -298,7 +383,9 @@ Outro ponto de melhora para a próxima unidade é utilizarmos com mais frequênc
 
 > Visão do Produto e Projeto. Wiki Requisitos - GetPet. Disponível em: <https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto>. Acesso em: 19 de abril de 2023.
 
-## 6. Histórico de Versão
+> Visão do Produto e Projeto. Wiki Requisitos - MedicaCerto. Disponível em: <https://mdsreq-fga-unb.github.io/2023.1-Remediario/entregas/unidade1/VisaoProdutoProjeto>. Acesso em: 17 de junho de 2023.
+
+## 7. Histórico de Versão
 
 |    Data    | Versão |                                            Descrição                                            |                                                                                                                            Autor(es)                                                                                                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -306,4 +393,7 @@ Outro ponto de melhora para a próxima unidade é utilizarmos com mais frequênc
 | 26/04/2023 |  1.1   |                        Criação da aba entregas, adição dos tópicos 3 e 4                        | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
 | 29/04/2023 |  1.2   | Adição do método de Sommerville, processo de software e processo de ER, correções nos objetivos |                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
 | 29/04/2023 |  1.3   | Adição da metodologia ScrumXP|                                                                       [Charles Serafim](https://github.com/charles-serafim) e [Gabrielly Assunção](https://github.com/GabriellyAssuncao)                                                                        |
-| 25/05/2023 |  1.4   | Adição das lições aprendidas na Unidade 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
+| 15/05/2023 | 1.4 | Adição da arquitetura do projeto | [Cainã Freitas](https://github.com/freitasc) |
+| 25/05/2023 |  1.5   | Adição das lições aprendidas na Unidade 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
+| 15/06/2023 | 1.6 | Atualização do cronograma das sprints com as US | [Sabrina Berno](https://github.com/sabrinaberno) |
+| 17/06/2023 | 1.7 | Atualização das tecnologias e ferramentas, arquitetura e atividades | [Charles Serafim](https://github.com/charles-serafim) e [Sabrina Berno](https://github.com/sabrinaberno) |

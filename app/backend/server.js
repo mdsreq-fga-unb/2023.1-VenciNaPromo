@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const auth  = require('./src/routes/auth.js');
 const product_list = require('./src/routes/product_list.js');
-const user_profile = require('./src/routes/user_profile.js');
+const user = require('./src/routes/user.js');
 
 const app = express();
 
@@ -35,7 +35,7 @@ mongoose.connect(dbConfig.url, dbConfig.options)
 // Routes
 app.use('/auth', auth);
 app.use('/product_list', product_list);
-app.use('/user_profile', user_profile);
+app.use('/user', user);
 
 
 app.listen(process.env.PORT, () => console.log('Listening on port ' + process.env.PORT));

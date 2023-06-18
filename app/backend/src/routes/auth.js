@@ -91,9 +91,9 @@ router.post('/login', async (req, res) => {
 		}
 
 		const tokenkey = process.env.TOKEN_KEY;
-		const token = jwt.sign({ email: logging_user.email }, tokenkey);
+		const token = jwt.sign({ id: logging_user._id }, tokenkey);
 
-		res.json({ token });
+		return res.status(200).json({ message: 'ok', token: token });
 	} catch (error) {
         console.log(error)
 		return res.status(500).json({ message: 'Internal server errors' });

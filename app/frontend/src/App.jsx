@@ -13,12 +13,12 @@ function App() {
   const [isVisitor, setIsVisitor] = useState(false);
 
   async function getUserData(){
-    await fetch("http://localhost:8080/getUserData",{
+    await fetch("http://localhost:8080/user/profile",{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': 'Bearer ' + localStorage.getItem('access_token'),
+            'Authorization': 'Bearer ' + localStorage.getItem('token'),
         },
     })
     .then(response => {return response.json()})
@@ -33,10 +33,8 @@ function App() {
     if (storedToken) {
       setAccessToken(storedToken);
       setIsLoggedIn(true);
-      //getUserData()
+      getUserData()
     }
-    console.log(accessToken);
-    console.log(isLoggedIn);
   }, [accessToken]);
 
   return (

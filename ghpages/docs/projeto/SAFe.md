@@ -9,15 +9,17 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 - **Features:** representa a funcionalidade da solução que fornece valor comercial, atende a uma necessidade das partes interessadas. Ela inclui uma hipótese de benefício e critérios de aceitação;
 - **Histórias:** descrições curtas de uma pequena parte da funcionalidade desejada, escritas da perspectiva do usuário. Elas são o principal artefato usado para definir o comportamentodosistema no Agile.
 
+## SAFe Backlog VenciNaPromo
 
 
-
-###***Tema estratégico:*** 
+###***Tema Estratégico:*** 
 <p align="justify"> &emsp;&emsp;
-MELHORAR A COMPRA E VENDA DE PRODUTOS PRÓXIMOS AO VENCIMENTO  
+
+<u>MELHORAR A COMPRA E VENDA DE PRODUTOS PRÓXIMOS AO VENCIMENTO</u>
+
 </p>
 
-## Épicos
+### Épicos
 
 |  **Tema**  | **Épico** | **Descrição** |
 | :---------: | :-----------: | :---------:|
@@ -27,7 +29,7 @@ MELHORAR A COMPRA E VENDA DE PRODUTOS PRÓXIMOS AO VENCIMENTO
 | T2 |  E4    | Gerenciamento do produto
 
 
-## Capacidade
+### Capacidade
 
 |  **Épico**  | **Capacidade** | **Descrição** |
 | :---------: | :-----------: | :---------:|
@@ -40,12 +42,58 @@ MELHORAR A COMPRA E VENDA DE PRODUTOS PRÓXIMOS AO VENCIMENTO
 | E4 |  C7    | Gerenciamento de produtos pelo vendedor
 
 
+### Funcionalidade
+
+|  **Capacidade**  | **Funcionalidade** | **Descrição** |
+| :---------: | :-----------: | :---------:|
+| C1 |  F1    | Cadastro de usuário-comprador 
+| C1 |  F2    | Login de usuário-comprador
+| C2 |  F3    | Cadastro de usuário-vendedor
+| C2 |  F4    | Login de usuário-vendedor
+| C3 |  F5    | Adição de itens ao carrinho de compras
+| C3 |  F6    | Visualização e edição do carrinho de compras
+| C4 |  F7    | Finalização da compra
+| C5 |  F8    | Visualização do histórico de compras
+| C6 |  F9    | Listagem de produtos
+| C6 |  F10    | Pesquisa de produtos
+| C6 |  F11    | Detalhes do produto
+| C7 |  F12    | Cadastro de produtos pelo vendedor
+| C7 |  F13    | Remoção de produtos pelo vendedor
+| C7 |  F14    | Visualização e gerenciamento de produtos pelo vendedor
+
+
+### User Story
+
+|  **Funcionalidade**  | **US** | **Descrição** | **Critérios de Aceitação** |
+| :---------: | :-----------: | :---------:| :------------: |
+| F1 |   US01   | Eu, como usuário-comprador, desejo criar minha conta com as minhas informações pessoais para poder usufruir de descontos exclusivos em produtos perto do vencimento | 1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números |
+| F2 |  US02    | Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras | 1. O login deve ser feito com o e-mail e a senha cadastrados |
+| F3 |  US03    | Eu, como usuário-vendedor, desejo criar minha conta, adicionando minhas informações pessoais, para poder aumentar minhas vendas e diminuir o desperdício dos meus produtos perto do vencimento | 1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números |
+| F4 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas vendas | 1. O login deve ser feito com o e-mail e a senha cadastrados |
+| F5 |  US05    | Eu, como usuário-comprador, quero ter a capacidade de salvar itens em meu carrinho, para que eu possa voltar a eles mais tarde sem perder minha seleção | 1. Uma lista de itens salvos deve ser visualizada com os itens agrupados em colunas <br>2. Uma lista de itens salvos anteriormente deve ser visualizada <br>3. A visualização do item deve conter o nome, a quantidade que se está comprando, preço e desconto <br>4. Os itens salvos devem ser listados dos mais antigos para os mais novos |
+| F6 |  US06    | Eu, como usuário-comprador, desejo visualizar a lista de itens que eu adicionei no meu carrinho de compras para que eu possa revisar meu pedido antes de finalizar a compra | 1. A lista de itens deve conter o nome, quantidade, preço e desconto <br> 2. O carrinho de compras deve mostrar o valor total da compra <br>3. O carrinho de compras deve mostrar o valor total do desconto <br>4. Cada produto deve conter uma quantidade mínima | 
+| F7 |  US07    | Eu, como usuário-comprador, quero modificar a quantidade de itens do meu carrinho de compras, para que eu possa ajustar o pedido às minhas necessidades | 1. O usuário-comprador pode modificar a quantidade de itens <br>2. O usuário-comprador não pode ultrapassar o número máximo de itens para cada produto <br>3. O item deve ter no mínimo uma quantidade para permanecer no carrinho de compras <br>4. O valor total do carrinho deve ser atualizado instantaneamente após as edições |
+| F8 |  US08    | Eu, como usuário-comprador, desejo finalizar a compra no meu carrinho, para que eu possa ir à loja física retirar meus produtos | 1. Deve ser gerado um comprovante de confirmação da compra <br>2. O comprovante de compra deve apresentar cupom dos produtos, local e horário de retirada <br>3. O carrinho de compras deve ter pelo menos um item para finalizar a compra |
+| F9 |  US09    | Eu, como usuário-comprador, desejo visualizar um resumo de cada um dos produtos comprados após finalizar a compra com sucesso, para que eu possa ter todas as informações necessárias para consultas futuras | 1. Os produtos comprados devem ser agrupados em colunas <br>2. A lista de compras finalizadas deve conter o histórico de compras do usuário <br>3. O resumo da compra deve conter as descrições dos produtos, data, valor, desconto da compra e vendedor |
+| F10 |  US10    | Eu, como usuário-comprador, desejo navegar pelos produtos disponíveis na lista de produtos cadastrados dentro do mercado on-line, para que eu possa acompanhar facilmente os produtos que estou interessado em comprar | <br>1. Os produtos devem ser agrupados em colunas <br>2. Cada produto deve conter o nome, uma foto, o preço e a data de validade <br>3. Deve ser possível acessar os detalhes de produtos individuais <br>4. Produtos fora de estoque não devem ser exibidos |
+| F11 |  US11    | Eu, como usuário-comprador, desejo pesquisar produtos específicos, que estão presentes na lista de produtos cadastrados no mercado on-line, para que eu possa encontrar e selecionar rapidamente os itens que estou procurando | 1. Deve haver uma barra de pesquisa onde se possa digitar palavras para buscar um produto específico desejado <br>2. Através da busca, deve-se exibir uma lista de todos os produtos cujo título ou descrição contenham a palavra ou conjunto de palavras pesquisados <br>3. Deve ser possível acessar os detalhes de produtos individuais através do clique em um produto específico <br>4. Caso nenhum produto contenha em seu título ou descrição a palavra ou conjunto de palavras pesquisados, deve ser gerado um aviso informando que não foram encontrados produtos correspondentes aos parâmetros buscados |
+| F12 |  US12    | Eu, como usuário-comprador, desejo adicionar os produtos, que estão na lista de produtos cadastrados no mercado on-line, no meu carrinho de compras, para que eu possa montar uma lista de produtos que eu desejo comprar com desconto | 1. Deve ser possível adicionar um produto ao carrinho de compras através da lista geral de produtos <br>2. Deve ser possível aumentar e diminuir a quantidade do produto a ser adicionado ao carrinho de compras |
+| F13 |  US13    | Eu, como usuário-comprador, desejo visualizar os detalhes de um produto, incluindo título, descrição, vendedor do produto, local de retirada do produto, preço e disponibilidade, para que eu possa tomar uma decisão informada antes de adicionar o produto ao meu carrinho de compras | 1. Os detalhes do produto devem conter título, descrição, vendedor do produto, local de retirada do produto, preço e disponibilidade <br>2. Deve ser possível adicionar o produto ao carrinho de compras através dos detalhes do produto |
+| F14 |  US14    | Eu, como usuário-vendedor, desejo cadastrar meus produtos no mercado on-line, adicionando título, descrição, preço, disponibilidade, local de retirada e uma foto, para que eu possa disponibilizá-los aos compradores | 1. O cadastro de produtos deve conter título, descrição, preço, disponibilidade, local de retirada e uma foto <br>2. O título deve ser único <br>3. O preço deve ser maior do que zero <br>4. A disponibilidade deve ser verdadeira ou falsa |
+| F15 |  US15    | Eu, como usuário-vendedor, desejo remover produtos cadastrados por mim no mercado on-line, para que eu possa manter apenas os produtos que desejo disponibilizar | 1. Deve ser possível remover produtos cadastrados pelo vendedor <br>2. A remoção de um produto não deve afetar os outros produtos cadastrados pelo vendedor |
+| F16 |  US16    | Eu, como usuário-vendedor, desejo visualizar e gerenciar meus produtos cadastrados no mercado on-line, para que eu possa ter controle sobre quais produtos estão disponíveis para venda | 1. Os produtos cadastrados pelo vendedor devem ser listados <br>2. O vendedor deve poder editar os detalhes dos produtos cadastrados <br>3. O vendedor deve poder visualizar o status de disponibilidade dos produtos cadastrados |
+| F17 |  US17    | Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing | 1. Deve ser possível visualizar nome do produto, descrição, preço, validade e foto <br>2. Deve ser possível visualizar a quantidade de unidades disponíveis, quantidade de cupons gerados até o momento, a disponibilidade do produto e a etiqueta de disponível ou não  |
+
+
+
+
 ## Histórico de Versões
 
 |  **Data**  |**Versão** |    **Descrição**     |   **Editores**   |
 | :--------: | :-------: | :------------------: | :--------------: |
 | 16/06/2023 |   `1.0`   |  Criação do Framework      | Sabrina  |
 | 17/06/2023 |   `1.1`   |  Adição dos épicos e capacidades     | Gabrielly  |
+| 18/06/2023 |   `1.2`   |  Adição das features e user stories     | Gabrielly  |
 
 
 

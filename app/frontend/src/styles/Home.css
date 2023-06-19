@@ -1,0 +1,58 @@
+
+/* Home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    height: 100vh;
+}
+
+/* big orange retangle with image on center */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1084px;
+    height: 483px;
+    background: #F5B396;
+    border-radius: 20px;
+}
+
+.app-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  background-color: rgba(36, 0, 255, 0.60);
+  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+}
+
+.home-text {
+    font-family: 'Baloo';
+    font-size: 35px;
+    color: black;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+}

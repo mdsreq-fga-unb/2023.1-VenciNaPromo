@@ -1,41 +1,9 @@
 const router = require("express").Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const User = require('../models/User');
-
-function isValidEmail(email) {
-    const emailRegex = /^[a-z0-9]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-
-function isValidEmail(email) {
-    const emailRegex = /^[a-z0-9]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function isValidEmail(email) {
-    const emailRegex = /^[a-z0-9]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function isValidName(name) {
-    const nameRegex = /^[\p{L}\s]+$/u;
-    return nameRegex.test(name);
-}
-
-function isValidPassword(password) {
-    if (password.length < 8) {return false;}
-    return true;
-}
-
-function isValidFlag(flag){
-    if (flag !== 0 && flag != 1){
-        return false
-    }
-    return true
-}
+const { isValidName, isValidEmail, isValidPassword, isValidFlag } = require('../utils/validators');
 
 router.post('/register', (req, res) => {
     const { username, email, password, flag } = req.body;
@@ -91,9 +59,9 @@ router.post('/login', async (req, res) => {
 		}
 
 		const tokenkey = process.env.TOKEN_KEY;
-		const token = jwt.sign({ email: logging_user.email }, tokenkey);
+		const token = jwt.sign({ id: logging_user._id }, tokenkey);
 
-		res.json({ token });
+		return res.status(200).json({ message: 'ok', token: token });
 	} catch (error) {
         console.log(error)
 		return res.status(500).json({ message: 'Internal server errors' });

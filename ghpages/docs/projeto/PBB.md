@@ -42,3 +42,10 @@ As funcionalidades de produto referem-se às características, recursos ou açõ
 <p align="justify"> &emsp;&emsp;
 O PBI é uma unidade de trabalho ou uma descrição de uma funcionalidade específica que é adicionada ao Product Backlog de um projeto ou produto. Ele é uma descrição mais detalhada de uma funcionalidade específica que um produto deve ter. O PBI descreve o que o usuário deseja alcançar e por que essa funcionalidade é importante para o sucesso do produto. Dos PBI, escrevemos hisórias de usuários.
 
+![PBI 1](../../assets/images/PBB/pbi1.png)
+![PBI 2](../../assets/images/PBB/pbi2.png)
+![PBI 3](../../assets/images/PBB/pbi3.png)
+![PBI 4](../../assets/images/PBB/pbi4.png)
+![PBI 5](../../assets/images/PBB/pbi5.png)
+
+###

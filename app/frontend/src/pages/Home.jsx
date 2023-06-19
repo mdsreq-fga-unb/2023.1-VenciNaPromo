@@ -25,7 +25,7 @@ function Home() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sodales justo.</p>
           </div>
           <div className="home-info">
-            <button className="app-button" onClick={logout}>Ir para a aplicação</button>
+            <button className="app-button" href="/">Ir para a aplicação</button>
           </div>
         </div>
       </div>

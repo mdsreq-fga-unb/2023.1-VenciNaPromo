@@ -47,7 +47,7 @@ const Sidebar = (props) => {
             </div>
           </div>
         ) : (
-          <button className="login-button" onClick={logout}>Entrar</button>
+          <button className="login-button" href="/">Entrar</button>
         )}
       </div>
       <div className="sidebar-content" />
@@ -58,7 +58,7 @@ const Sidebar = (props) => {
         <button className={`${isLogged ? 'sidebar' : 'collapse'}-button`} onClick={isLogged ? doNothing : doNothing}>
           Cupons
         </button>
-        <button className="sidebar-button" onClick={doNothing}>
+        <button className="sidebar-button" href="/home">
           Info
         </button>
       </div>

@@ -23,6 +23,10 @@ const botao = (token) => {
 
 const Sidebar = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const isLogged = props.token && props.token !== 'null';
+
+  // empty call, just for demonstration
+  const doNothing = () => {};
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -32,15 +36,31 @@ const Sidebar = (props) => {
 
   return (
     <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+      <div className="sidebar-header">
+        {isLogged ? (
+          <div className="sidebar-user">
+            <div className="sidebar-user-img">
+              <img src={props.avatar} alt="avatar" />
+            </div>
+            <div className="sidebar-user-name">
+              {props.username}
+            </div>
+          </div>
+        ) : (
+          <button className="login-button" onClick={logout}>Entrar</button>
+        )}
+      </div>
       <div className="sidebar-content" />
       <div className="sidebar-footer">
-        {isCollapsed ? (
-          <button className="menu-icon" onClick={toggleCollapse}>
-            <i className="fas fa-bars" />
-          </button>
-        ) : (
-          botao(props.token) 
-        )}
+        <button className={`${isLogged ? 'sidebar' : 'collapse'}-button`} onClick={isLogged ? doNothing : doNothing}>
+          Compras
+        </button>
+        <button className={`${isLogged ? 'sidebar' : 'collapse'}-button`} onClick={isLogged ? doNothing : doNothing}>
+          Cupons
+        </button>
+        <button className="sidebar-button" onClick={doNothing}>
+          Info
+        </button>
       </div>
     </div>
   );

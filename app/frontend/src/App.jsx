@@ -50,7 +50,7 @@ function App() {
         <Router>
           <Routes>
             {isLoggedIn || isVisitor ? (
-              <Route path="/" element={<ShoppingList />} />
+              <Route path="/" element={<ShoppingList props={{ UserData }} />} />
             ) : (
               <Route
                 path="/"

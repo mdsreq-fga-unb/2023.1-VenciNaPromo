@@ -33,7 +33,6 @@ function Login({ setIsVisitor }) {
         email,
         password,
       };
-      console.log(userData);
       const response = await register(userData);
       resetForm();
     } catch (error) {

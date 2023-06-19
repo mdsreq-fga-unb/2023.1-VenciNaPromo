@@ -65,7 +65,7 @@
 }
 
 .login-button {
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
@@ -74,8 +74,6 @@
   font-family: 'Baloo';
   color: white;
   border-radius: 8px;
-  width: 150px;
-  height: 40px;
   position: sticky;
 }
 

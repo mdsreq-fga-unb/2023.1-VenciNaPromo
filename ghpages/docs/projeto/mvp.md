@@ -64,6 +64,7 @@ Ao enfrentar um cenário de pontuações iguais para diferentes User Stories, a 
 |           | US17      | 
 # MVP1:
 ### T1: Gerenciamento de usuários
+
 **E1: Gerenciamento de usuário-comprador**
 <p align="justify"> &emsp;&emsp;
 - US01: Eu, como usuário-comprador, desejo criar minha conta com as minhas informações pessoais para poder usufruir de descontos exclusivos em produtos perto do vencimento
@@ -91,6 +92,7 @@ Ao enfrentar um cenário de pontuações iguais para diferentes User Stories, a 
 
 # MVP2
 ### T2: Gerenciamento do comércio
+
 **E3: Gerenciamento do compra**
 <p align="justify"> &emsp;&emsp;
 - US05: Eu, como usuário-comprador, quero ter a capacidade de salvar itens em meu carrinho para mais tarde, para que eu possa voltar a eles mais tarde sem perder minha seleção

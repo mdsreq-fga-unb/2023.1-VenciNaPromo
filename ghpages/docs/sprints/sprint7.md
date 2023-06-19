@@ -30,13 +30,14 @@
 
 ## Sprint Retro
 
-- **Pontos a melhorar:** 
-        - Sem dias e horários definidos, gerando uma desorganização e acumulo de atividades perto da entrega
-        - Má distribuição das atividades
-        - Má comunicação com o George
-- **Plano de ação:**
-        - Definir dias e horários com a monitora
-        - Dar feedbacks semanais para a monitora
-        - Tirar dúvidas e pedir validação antes das entregas para a monitora
+**Pontos a melhorar:** 
+- Sem dias e horários definidos, gerando uma desorganização e acumulo de atividades perto da entrega
+- Má distribuição das atividades
+- Má comunicação com o George
+
+**Plano de ação:**
+- Definir dias e horários com a monitora
+- Dar feedbacks semanais para a monitora
+- Tirar dúvidas e pedir validação antes das entregas para a monitora
 
 

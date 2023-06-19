@@ -75,8 +75,6 @@ function Login({ setIsVisitor }) {
 
   return (
     <div className="container">
-      <Sidebar />
-      <Header />
       <h1>Bem Vindo ao Nosso Aplicativo!</h1>
       <h2>Evite o Desperdício e Crie sua Conta.</h2>
       <div className="login-container">

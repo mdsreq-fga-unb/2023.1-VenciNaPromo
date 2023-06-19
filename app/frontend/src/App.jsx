@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './styles/App.css';
 import { useState, useEffect, useRef } from "react";
 import ShoppingList from './pages/ShoppingList';
+import Home from './pages/Home';
 import Login from './pages/Login';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,13 +42,17 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        {isLoggedIn ? (
-          <ShoppingList />
-        ) : isVisitor ? (
-          <ShoppingList />
-        ) : (
-          <Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />
-        )}
+        <Router>
+          <Routes>
+            {isLoggedIn || isVisitor ? (
+              <Route path="/" element={<ShoppingList />} />
+            ) : (
+              <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />} />
+            )}
+
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );

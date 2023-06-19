@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Sidebar.css';
-import { Component } from "../services/auth";
+import { logout } from "../services/auth";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const { isLoggedIn, login, logout } = Component();
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -19,20 +18,15 @@ const Sidebar = () => {
             <i className="fas fa-bars" />
           </button>
         ) : (
-          <div>
-          { isLoggedIn ? (
-            <>
-            <button className="sidebar-button" onClick={logout}>Encerrar Sessão</button>
+          <>
+            <button className="logoff-button" onClick={logout}>deslogar</button>
             <button className="sidebar-button">Compras</button>
             <button className="sidebar-button">Cupons</button>
+            <button className="info-button">Info</button>
             {/* <button className="collapse-button" onClick={toggleCollapse}>
               Colapsar
             </button> */}
-            </>
-          ) : (
-            <button className="sidebar-button" onClick={login}>Iniciar Sessão</button>
-          )}
-        </div>    
+          </>
         )}
       </div>
     </div>

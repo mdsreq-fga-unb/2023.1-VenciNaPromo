@@ -5,6 +5,8 @@ import ShoppingList from './pages/ShoppingList';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +27,7 @@ function App() {
     })
     .then(response => {return response.json()})
     .then(data => {
-        console.log(data);
+      setUserData(data)
     });
   }
 
@@ -42,6 +44,9 @@ function App() {
   return (
     <div className="App">
       <div className="content">
+        <Sidebar props={{ UserData }} />
+        <Header />
+
         <Router>
           <Routes>
             {isLoggedIn || isVisitor ? (

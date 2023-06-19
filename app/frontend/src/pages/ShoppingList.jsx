@@ -32,8 +32,6 @@ function ShoppingList() {
 
   return (
     <div className="container">
-      <Sidebar />
-      <Header />
       <div className="search-bar">
       </div>
       <div className="shoppin-list-container">

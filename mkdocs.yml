@@ -37,12 +37,16 @@ nav:
       - Backlog do Produto: "projeto/backlog.md"
       - Definição dos MVP's: "projeto/mvp.md"
       - URPS+: "projeto/nao-fun.md"
-      - Arquitetura: "projeto/arquitetura.md"
+      - Protótipo do MVP 1: "projeto/prototipoMVP1.md"
+      - Backlog SAFe: "projeto/SAFe.md"
   - Entregas:
       - Unidade 1:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"
           - Material do Seminário XP: "entregas/seminario-1.md"
       - Unidade 2: "entregas/unidade-2.md"
+      - Unidade 3: 
+          - Apresentação para o Cliente: "entregas/apresentacao-cliente-3.md"
+          - Apresentação Equipe: "entregas/apresentacao-3"
   - Sprints:
       - Sprint 1: "sprints/sprint1.md"
       - Sprint 2: "sprints/sprint2.md"

@@ -1,0 +1,125 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -115px;
+  margin-bottom: -150px;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  /* display: contents; */
+  width: calc(100% - 550px);
+  margin-right: 150px;
+  /* height: 500px; */
+}
+.login-form-container,
+.register-form-container {
+  flex: 1;
+  padding: 15px;
+  width: 300px;
+  margin-top: -60px;
+}
+
+.form-divider {
+  width: 3px;
+  background-color: #ccc;
+  margin: 0 20px;
+  height: 430px;
+}
+h1 {
+  color: #845C5C;
+  margin-right: 200px;
+  margin-bottom: -25px; 
+  font-size: 25px;
+}
+h2{
+  color: rgba(132, 92, 92, 0.66);
+  margin-right: 200px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+h3{
+  font-size: 25px;
+}
+.form-field {
+  border: none;
+  border-bottom: 3px solid #845C5C;
+  background-color: transparent;
+  outline: none;
+  width: 400px;
+  margin-bottom: 12px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: 'Baloo';
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 20px;
+}
+.form-field::placeholder {
+  font-family: "Baloo", sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.60);
+} 
+.button-login {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(36, 0, 255, 0.60);
+  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  margin-top: 50px;
+  position: sticky;
+  margin-top: 130px;
+}
+.button-register {
+  margin-bottom: 40px;
+  margin-top: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(36, 0, 255, 0.60);  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+}
+.button-visit {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(36, 0, 255, 0.60);  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  width: 400px;
+  height: 40px;
+  margin-right: 180px;
+  margin-top: 10px;
+}
+.login-form {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+}
+.form-error {
+  width: 100%;
+  margin-left: 25px;
+  top: -5;
+  font-size: 12px;
+  
+}
+.form-error-password {
+  width: 100%;
+  font-size: 12px;
+  margin-left: 25px;
+  margin-top: -45px;
+}

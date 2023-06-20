@@ -84,7 +84,7 @@ Ao enfrentar um cenário de pontuações iguais para diferentes User Stories, a 
 <p align="justify"> &emsp;&emsp;
 - US10: Eu, como usuário-comprador, desejo navegar pelos produtos disponíveis na lista de produtos cadastrados dentro do mercado on-line, para que eu possa acompanhar facilmente os produtos que estou interessado em comprar
 <p align="justify"> &emsp;&emsp;
-- US13: Eu, como usuário-comprador, desejo visualizar os detalhes de um produto, incluindo título, descrição, vendedor do produto, local de retirada do produto, preço e disponibilidade, para que eu possa tomar uma decisão informada sobre a compra
+- US13: Eu, como usuário-comprador, desejo visualizar os detalhes de um produto, incluindo título, descrição, preço e disponibilidade, para que eu possa tomar uma decisão informada sobre a compra
 <p align="justify"> &emsp;&emsp;
 - US15: Eu, como usuário-vendedor, quero poder retirar um produto do mercado online, caso ele não esteja mais disponível ou caso eu decida descontinuá-lo, para que os clientes não possam comprá-lo
 <p align="justify"> &emsp;&emsp;
@@ -115,7 +115,18 @@ Ao enfrentar um cenário de pontuações iguais para diferentes User Stories, a 
 <p align="justify"> &emsp;&emsp;
 - US17: Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing
 
-
+## Mudança do MVP
+| **MVP 1** | **MVP 2** |
+| :-------: | :-------: |
+|   US03    |   US01    | 
+|   US04    |   US02    | 
+|   US06    |   US05    | 
+|   US08    |   US07    | 
+| US10      | US09      | 
+| US13      | US11      | 
+| US15      | US12      | 
+| US16      | US14      | 
+|           | US17      | 
 
 ## Histórico de versões
 

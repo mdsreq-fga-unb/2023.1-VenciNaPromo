@@ -52,7 +52,15 @@ function App() {
             {isLoggedIn || isVisitor ? (
               <Route path="/" element={<ShoppingList />} />
             ) : (
-              <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} setIsVisitor={setIsVisitor} />} />
+              <Route
+                path="/"
+                element={
+                  <Login
+                    setIsLoggedIn={setIsLoggedIn}
+                    setIsVisitor={setIsVisitor}
+                  />
+                }
+              />
             )}
 
             <Route path="/home" element={<Home />} />

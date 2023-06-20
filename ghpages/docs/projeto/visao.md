@@ -70,7 +70,7 @@ Na Tabela 2, apresentamos quais papéis e pessoas responsáveis pelos mesmos com
 | Perfil                | Atribuições                                                                                                 | Responsável | Participantes                     |
 | :-------------------- | :---------------------------------------------------------------------------------------------------------- | :---------- | :-------------------------------- |
 | Scrum Master          | Garantir que o time se oriente pelos valores e práticas do Scrum                                            | Sabrina     | Cainã, Charles, Gabrielly e Lucas |
-| Product Owner         | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas                          | Lucas       | Lucas e Sabrina                   |
+| Product Owner         | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas                          | Sabrina       | Sabrina                   |
 | Desenvolvedor         | Codificar o produto e realizar testes                                                                       | Gabrielly   | Cainã, Charles, Lucas e Sabrina   |
 | Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Charles     | Charles e Sabrina                   |
 | Cliente               | Fornecer as informações necessárias para construção do backlog e validar as entregas                        | Daniel      | Daniel                            |
@@ -114,7 +114,7 @@ O WhatsApp e o Discord serão as principais formas de comunicação utilizadas p
 | Acompanhamento das atividades | Equipe do Projeto             | Diariamente        | Relato por parte dos membros da equipe no discord sobre o andamento individual das partes do projeto |
 | Encontros com o cliente       | Equipe do Projeto e cliente   | Quinzenal          | Validação do Produto                                                                                 |
 | Retrospectiva                 | Equipe do Projeto             | Semanalmente       | Identificação de oportunidades de melhoria                                                           |
-| Comunicar situação do projeto | Equipe do Projeto e professor | Pontos de Controle | Apresentação dos resultados gerados                                                                  |
+| Comunicar situação do projeto | Equipe do Projeto, monitora e professor | Pontos de Controle | Apresentação dos resultados gerados                                                                  |
 
 <div align="center" style="text-align: center">
 <p>Tabela 4: Matriz de Comunicação. Fonte: Grupo GPT, 2023.</p>

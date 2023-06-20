@@ -19,7 +19,6 @@ function Home() {
         <div className="home-content">
           <div className="home-text">
             <p>Texto resumo falando sobre o projeto e explicando o problema e a causa.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sodales justo.</p>
           </div>
           <div className="home-info">
             <button className="app-button" onClick={() => window.location.href='/'}>Ir para a aplicação</button>

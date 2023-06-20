@@ -39,6 +39,8 @@ nav:
       - URPS+: "projeto/nao-fun.md"
       - Protótipo do MVP 1: "projeto/prototipoMVP1.md"
       - Backlog SAFe: "projeto/SAFe.md"
+      - BDD: "projeto/PBB.md"
+      - PBB: "projeto/BDD.md"
   - Entregas:
       - Unidade 1:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"

@@ -49,4 +49,6 @@ O PBI é uma unidade de trabalho ou uma descrição de uma funcionalidade espec�
 ![PBI 4](../../assets/images/PBB/pbi4.png)
 ![PBI 5](../../assets/images/PBB/pbi5.png)
 
-###
+|  **Data**  |**Versão** |              **Descrição**                     |   **Editores**   |
+| :--------: | :-------: | :-------------------------------------------------------: | :---------------: |
+| 20/06/2023 |   `1.0`   | Criado                                  | Lucas, Charles e Sabrina   |

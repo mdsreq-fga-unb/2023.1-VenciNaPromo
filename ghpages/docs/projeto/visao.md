@@ -371,6 +371,24 @@ Em relação à organizaçao interna do grupo, alguns problemas relatados na Uni
 <p align="justify"> &emsp;&emsp;
 Outro ponto de melhora para a próxima unidade é utilizarmos com mais frequência o auxílio fornecido para a monitora, que está sempre disponível, porém temos subutilizado a sua experiência disponibilidade em ajudar. Ainda sobre a monitoria, devemos como grupo e individualmente melhorar a frequência de feedbacks, assim podendo receber orientações que auxiliem a lidarmos com os problemas do grupo.</p>
 
+### Unidade 3
+
+<p align="justify"> &emsp;&emsp;
+Durante a unidade 3, tivemos a oportunidade de aprender ainda mais. Aprendemos sobre a importância do planejamento antecipado, compreendendo como ele contribui para o sucesso do projeto. Sobre como o conteúdo abordado nos ajudou a aprofundar nosso conhecimento sobre a elicitação de requisitos e aprimorar nossa compreensão das necessidades dos stakeholders. A organização interna do grupo também melhorou significativamente, com reuniões mais frequentes e uma distribuição mais equilibrada de tarefas.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+A monitora desempenhou um papel crucial nessa unidade. Buscamos sua ajuda com mais frequência e ela sempre nos recebeu de forma acolhedora e disposta a oferecer suporte. Aproveitamos ao máximo sua experiência e orientação para lidar com desafios específicos e melhorar nosso desempenho e nossa entregas. Percebemos a importância de buscar feedbacks regulares, tanto da monitora quanto entre os membros do grupo. Essa prática nos permitiu corrigir erros, aperfeiçoar nossas habilidades e garantir um progresso constante ao longo da unidade.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+Apesar dos esforços para melhorar nossa organização e planejamento, enfrentamos desafios decorrentes do curto prazo de entrega durante esta unidade. Mesmo com uma maior proatividade e uma distribuição mais equilibrada de tarefas, ainda nos deparamos com diversas dificuldades ao trabalharmos em conjunto.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+Como resultado dessas lições, nos sentimos mais preparados para enfrentar os desafios futuros. Aprendemos a importância do planejamento, da comunicação eficiente, da colaboração em equipe e do aproveitamento adequado dos recursos disponíveis, incluindo a valiosa assistência da monitora.
+</p>
+
 ## 6. Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.

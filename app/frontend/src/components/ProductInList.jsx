@@ -1,14 +1,32 @@
 import React, { useState } from 'react';
 import ProductDetail from '../components/ProductDetail';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTimes } from "@fortawesome/free-solid-svg-icons";
-
+import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
 import { productList } from '../services/products';
 
 const ProductInList = (product) => {
+  const handleRemoveProduct = (event) => {
+    const productId = product.id;
+    event.stopPropagation(); 
+    axios.post(
+        "http://localhost:8080/product_list/remove_product",
+        { product_id: productId },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      )
+      .then((response) => {
+        console.log(response.data.message); 
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
     const [showPopup, setShowPopup] = useState(false);
     // const user_data = props.props.userData;
 
@@ -20,18 +38,11 @@ const ProductInList = (product) => {
 
     return (
       <div className="product-in-list" onClick={togglePopup}>
-        {/* {(user_data.user_flag == 1) ? (
-            <button
-                className="remove-product-button"
-                onClick={() => console.log("Remover produto")}
-            >
-            </button>
-
-        ) : ()} */}
-        <button
-          className="remove-product-button"
-          onClick={() => console.log("Remover produto")}
-        ></button>
+        {(user_data.user_flag == 1) ? (
+        ) : ()}
+        <div className="remove-product-container" onClick={handleRemoveProduct}>
+          <button className="remove-product-button">X</button>
+        </div>
 
         <div className="product-in-list__image">
           <img src={product.product.product_image} alt="Imagem do Produto 1" />

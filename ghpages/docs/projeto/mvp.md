@@ -120,7 +120,7 @@ Ao enfrentar um cenário de pontuações iguais para diferentes User Stories, a 
 | :-------: | :-------: |
 |   US03    |   US01    | 
 |   US04    |   US02    | 
-|   US06    |   US05    | 
+|   US06    |   US05    |
 |   US08    |   US07    | 
 | US10      | US09      | 
 | US13      | US11      | 

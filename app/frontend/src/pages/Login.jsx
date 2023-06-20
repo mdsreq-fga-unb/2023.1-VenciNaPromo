@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
-import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import '../styles/Login.css';
 

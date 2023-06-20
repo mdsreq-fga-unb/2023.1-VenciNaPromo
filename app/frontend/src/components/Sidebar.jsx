@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Sidebar.css';
 import { logout } from "../services/auth";
 
+
 const Sidebar = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const user_data = props.props.UserData;
@@ -11,6 +12,7 @@ const Sidebar = (props) => {
 
 
   return (
+    
     <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-header">
         {user_data ? (
@@ -30,26 +32,26 @@ const Sidebar = (props) => {
             <div className="sidebar-user-name">
               {"Tipo de usuario: "}{user_data.user.user_flag}
             </div>
+            <div className="sidebar-footer">
             <button className="sidebar-button" onClick={() => logout()}>
               Sair
             </button>
+           {/* <button className={`${user_data ? 'sidebar' : 'collapse'}-button`} onClick={user_data ? () => window.location.href='/' : doNothing}>
+          Compras
+            </button>
+            <button className={`${user_data ? 'sidebar' : 'collapse'}-button`} onClick={user_data ? () => window.location.href='/' : doNothing}>
+            Cupons
+            </button> */}
+            </div>
+            
           </div>
         ) : (
-          <button className="login-button" onClick={() => window.location.href='/'}>Entrar</button>
+          <div className="sidebar-footer">
+            <button className="sidebar-button" onClick={() => window.location.href='/'}>Entrar</button>
+          </div>
         )}
       </div>
       <div className="sidebar-content" />
-      <div className="sidebar-footer">
-        <button className={`${user_data ? 'sidebar' : 'collapse'}-button`} onClick={user_data ? () => window.location.href='/' : doNothing}>
-          Compras
-        </button>
-        <button className={`${user_data ? 'sidebar' : 'collapse'}-button`} onClick={user_data ? () => window.location.href='/' : doNothing}>
-          Cupons
-        </button>
-        <button className="sidebar-button" onClick={() => window.location.href='/home'}>
-          Info
-        </button>
-      </div>
     </div>
   );
 };

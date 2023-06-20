@@ -11,7 +11,7 @@ import { productList, getProductListData } from '../services/products';
 import { useEffect, useState } from 'react';
 import ProductInList from '../components/ProductInList';
 
-function ShoppingList() {
+function ShoppingList(props) {
   let listabruto;
 
   const [listaDeProdutos, setlistaDeProdutos] = useState(null);
@@ -36,7 +36,7 @@ function ShoppingList() {
       </div>
       <div className="shoppin-list-container">
         {listaDeProdutos && listaDeProdutos.map((product) => (
-          <ProductInList product={product} />
+          <ProductInList product={product} props={props} />
         ))}
       </div>
     </div>

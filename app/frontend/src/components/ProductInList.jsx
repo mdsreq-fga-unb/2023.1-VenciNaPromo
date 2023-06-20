@@ -40,7 +40,7 @@ const ProductInList = (props) => {
             <h3>{props.product.product_name}</h3>
           </div>
           <div className="product-in-list__info__price">
-            <h3>{props.product.product_price}</h3>
+            <h4>R$ {props.product.product_price}</h4>
           </div>
         </div>
         {showPopup && (

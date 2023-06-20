@@ -39,6 +39,10 @@ color: #282c34;
 margin: 0;
 font-size: 18px;
 }
+.product-in-list h4 {
+color: #282c34;
+margin: 0;
+}
 
 .product-in-list p {
 color: #845C5C;

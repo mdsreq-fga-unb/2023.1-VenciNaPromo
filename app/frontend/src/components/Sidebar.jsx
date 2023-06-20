@@ -7,7 +7,6 @@ const Sidebar = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const user_data = props.props.UserData;
 
-  // empty call, just for demonstration
   const doNothing = () => {};
 
 

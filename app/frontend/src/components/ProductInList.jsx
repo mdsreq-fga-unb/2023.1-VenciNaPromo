@@ -25,9 +25,9 @@ const ProductInList = (props) => {
 
     return (
       <div className="product-in-list" onClick={togglePopup}>
-        {user_data && user_data.user_flag === 1 ? (
+        {user_data && user_data.user_flag === 0 ? (
           <button className="product-in-list-button" onClick={() => handleRemoveProduct()}>
-            -
+            X
           </button>
         ) : (
           <></>

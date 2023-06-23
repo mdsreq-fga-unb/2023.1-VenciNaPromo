@@ -1,0 +1,14 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3002,
+    "username": "test",
+    "password": "test",
+    "database": "test",
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "cli": [
+        "./src/database/migrations"   
+    ]
+}

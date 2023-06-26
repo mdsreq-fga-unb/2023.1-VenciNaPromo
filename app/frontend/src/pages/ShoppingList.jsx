@@ -13,7 +13,7 @@ import ProductInList from '../components/ProductInList';
 
 function ShoppingList(props) {
   let listabruto;
-
+  let validadeProduto;
   const [listaDeProdutos, setlistaDeProdutos] = useState(null);
 
   async function getShoppingList() {
@@ -35,9 +35,21 @@ function ShoppingList(props) {
       <div className="search-bar">
       </div>
       <div className="shoppin-list-container">
-        {listaDeProdutos && listaDeProdutos.map((product) => (
-          <ProductInList product={product} props={props} />
-        ))}
+        {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
+          listaDeProdutos && listaDeProdutos.map((product) => (
+            <ProductInList product={product} props={props} />
+          ))  
+        ) : (
+          listaDeProdutos && listaDeProdutos
+          .filter((product) => product.product_quantity > 0)
+          .map((product) => {
+            validadeProduto = new Date(product.validade.toString());
+            if (validadeProduto < new Date()) {
+              return null;
+            }
+            return <ProductInList product={product} props={props} />;
+          })
+        )}
       </div>
     </div>
   );

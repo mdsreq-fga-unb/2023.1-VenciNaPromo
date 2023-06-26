@@ -1,5 +1,5 @@
 .product-detail-container {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
@@ -9,24 +9,29 @@
 }
 
 .product-detail {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 30px;
     background-color: #F5B396;
     border-radius: 12px;
-    width: 300px;
-    height: 375px;
+    width: 50%;
+    height: 60%;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .product-detail img {
     background-color: #ffffff;
-    width: 100%;
-    height: 55%;
+    width: 40%;
+    height: 45%;
     margin-bottom: 10px;
     border-radius: 8px;
+    object-fit: contain;
+}
+
+.black-and-white-card {
+    filter: grayscale(100%);
 }
 
 .product-detail-title {
@@ -35,14 +40,14 @@
     font-size: 18px;
 }
 
-.product-detail-text-box {
+.product-detail-description {
     width: 100%;
-    height: 20%;
+    height: 30%;
     overflow-y: scroll;
     text-align: left;
     color: #845C5C;
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .product-detail-store {
@@ -53,24 +58,21 @@
 }
 
 .product-detail-quantity {
+    position: absolute;
+    bottom: 2%;
     text-align: left;
     color: #845C5C;
     margin: 0;
     font-size: 12px;
 }
 
-.product-detail-description {
-    text-align: left;
-    color: #845C5C;
-    margin: 0;
-    font-size: 14px;
-}
+
 
 .product-detail-price {
     text-align: right;
-    position: fixed;
+    position: absolute;
     right: 18px;
-    bottom: 10px;
+    bottom: 2%;
     color: #000;
     margin: 0;
     font-size: 32px;
@@ -88,6 +90,25 @@
     width: auto;
 }
 
+.popup-close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid #845C5C;
+    background-color: #4C2FFF;
+    font-family: 'Baloo';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
 .popup {
     position: fixed;
     top: 0;
@@ -97,17 +118,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .popup-content {
     background-color: #fff;
     padding: 20px;
     max-width: 400px;
-}
-
-.close-button {
-    background-color: transparent;
-    border: none;
-    color: #000;
-    cursor: pointer;
 }

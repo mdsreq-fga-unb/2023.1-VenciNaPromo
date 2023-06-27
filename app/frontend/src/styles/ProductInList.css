@@ -1,6 +1,6 @@
 .product-in-list {
     cursor: default;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     background-color: #F5B396;
     border-radius: 12px;
     width: 200px;
@@ -82,7 +82,47 @@
     font-size: 14px;
 }
 
-/* Estilos da confirmação de remoção de produto
+.unavailable-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.available-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.expired-label {
+    filter: grayscale();
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilos da confirmação de remoção de produto */
 
 .removing-confirmation-modal {
     position: fixed;
@@ -95,32 +135,32 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
-  }
-  
-  .removing-confirmation-modal-content {
+}
+
+.removing-confirmation-modal-content {
     background-color: #F5B396;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     max-width: 400px;
     text-align: center;
-  }
-  
-  .removing-confirmation-modal h2 {
+}
+
+.removing-confirmation-modal h2 {
     color: #845C5C;
-    /* color: #282c34;
+    /* /* color: #282c34; */
     font-size: 18px;
     margin: 10px auto;
     text-align: center;
-  }
-  
-  .removing-confirmation-modal-buttons {
+}
+
+.removing-confirmation-modal-buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .removing-confirmation-modal-button {
+}
+
+.removing-confirmation-modal-button {
     margin: 0 10px;
     padding: 10px 20px;
     background-color: white;
@@ -131,9 +171,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
-  .removing-confirmation-modal-button:hover {
+.removing-confirmation-modal-button:hover {
     background-color: rgba(36, 0, 255, 0.60);
     color: black;
-  } */
+}

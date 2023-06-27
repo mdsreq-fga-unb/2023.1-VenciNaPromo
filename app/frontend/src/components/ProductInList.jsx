@@ -43,7 +43,7 @@ const ProductInList = (props) => {
       )}
 
       <div className={`product-in-list__image ${validadeProduto < currentDate ? 'black-and-white-total' : ''}`}>
-        {props.product.product_quantity <= 0 && (
+        {props.product.product_quantity <= 0 && validadeProduto > currentDate && (
           <div className="unavailable-label">Indisponível</div>
         )}
         {props.product.product_quantity > 0 && validadeProduto > currentDate && (
@@ -76,7 +76,7 @@ const ProductInList = (props) => {
           <div className="popup-content">
             <div className="product-detail-container">
               <div className="product-detail">
-                {props.product.product_quantity <= 0 && (
+                {props.product.product_quantity <= 0 && validadeProduto > currentDate && (
                   <div className="unavailable-label">Indisponível</div>
                 )}
                 {props.product.product_quantity > 0 && validadeProduto > currentDate && (

@@ -60,7 +60,7 @@ router.post('/remove_product', (req, res) => {
               // vendedor: remove produto
               Product.findByIdAndDelete(product_id)
                 .then(product => {
-                  return res.status(200).json({ message: 'item removido', product: product });
+                  return res.status(200).json({ message: 'Item removido', product: product });
                 })
                 .catch(err => {
                   return res.status(500).json({ message: 'Internal server error' });
@@ -72,6 +72,31 @@ router.post('/remove_product', (req, res) => {
           });
       }
     );
+});
+
+router.post('/add_product', (req, res) => {
+  const token = req.headers['authorization'].split(' ')[1];
+  const { product_id } = req.body;
+  checkToken(token, res, async (decoded) => {
+      User.findById(decoded.id)
+        .then(user => {
+          // checa tipo de usuario (flag)
+          if (user.user_flag == 1) {
+            // vendedor: remove produto
+            Product.create(req.body)
+              .then(product => {
+                return res.status(200).json({ message: 'Item adicionado', product: product });
+              })
+              .catch(err => {
+                return res.status(500).json({ message: 'Internal server error' });
+              });
+          }
+        })
+        .catch(err => {
+          return res.status(500).json({ message: 'Internal server error' });
+        });
+    }
+  );
 });
 
 module.exports = router;

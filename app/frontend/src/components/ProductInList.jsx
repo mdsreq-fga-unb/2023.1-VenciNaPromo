@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import ProductDetail from '../components/ProductDetail';
-import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
-import { productList } from '../services/products';
 import { removeProduct } from '../services/products';
 
 const ProductInList = (props) => {

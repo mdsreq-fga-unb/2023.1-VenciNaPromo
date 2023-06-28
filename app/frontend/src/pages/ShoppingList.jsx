@@ -1,9 +1,6 @@
 // TODO - Create a Shopping List page
 
 import React from 'react';
-import * as yup from "yup";
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
 import '../styles/ShoppingList.css';
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';

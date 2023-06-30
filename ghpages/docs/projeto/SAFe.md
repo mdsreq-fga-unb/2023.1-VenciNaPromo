@@ -23,23 +23,22 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 
 |  **Tema**  | **Épico** | **Descrição** |
 | :---------: | :-----------: | :---------:|
-| T1 |  E1    | Gerenciamento de usuário-comprador 
-| T1 |  E2    | Gerenciamento de usuário-vendedor
-| T2 |  E3    | Gerenciamento do compra
-| T2 |  E4    | Gerenciamento do produto
+| T1 |  E1    | Gerenciamento de usuário
+| T2 |  E2    | Gerenciamento do compra
+| T2 |  E3    | Gerenciamento do produto
 
 
 ### Capacidade
 
 |  **Épico**  | **Capacidade** | **Descrição** |
 | :---------: | :-----------: | :---------:|
-| E1 |  C1    | Cadastro e autenticação de usuário-comprador
-| E2 |  C2    | Cadastro e autenticação de usuário-vendedor
-| E3 |  C3    | carrinho de compras
-| E3 |  C4    | Finalização da compra
-| E3 |  C5    | Histórico de compras
-| E4 |  C6    | Listagem e pesquisa de produtos
-| E4 |  C7    | Gerenciamento de produtos pelo vendedor
+| E1 |  C1    | Gerenciamento de usuário-comprador
+| E1 |  C2    | Gerenciamento de usuário-vendedor
+| E2 |  C3    | Carrinho de compras
+| E2 |  C4    | Finalização da compra
+| E2 |  C5    | Histórico de compras
+| E3 |  C6    | Listagem e pesquisa de produtos
+| E3 |  C7    | Gerenciamento de produtos pelo vendedor
 
 
 ### Funcionalidade
@@ -52,7 +51,7 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 | C2 |  F4    | Login de usuário-vendedor
 | C3 |  F5    | Adição de itens ao carrinho de compras
 | C3 |  F6    | Visualização e edição do carrinho de compras
-| C4 |  F7    | Finalização da compra
+| C4 |  F7    | Pós vendas
 | C5 |  F8    | Visualização do histórico de compras
 | C6 |  F9    | Listagem de produtos
 | C6 |  F10    | Pesquisa de produtos

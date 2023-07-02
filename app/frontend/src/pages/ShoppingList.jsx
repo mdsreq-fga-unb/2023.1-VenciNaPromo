@@ -37,35 +37,44 @@ function ShoppingList(props) {
 
   const filteredProducts = listaDeProdutos
     ? listaDeProdutos.filter((product) =>
-        product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
-      )
+      product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
+    )
     : [];
 
   return (
     <div className="container">
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Pesquisar produtos..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
+      <div className="upper-bar">
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Pesquisar produtos..."
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+        </div>
+        {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
+          <div className="add-product-button">Adicionar produto novo</div>
+        ) : (
+          <></>
+        )}
+        
       </div>
+
       <div className="shoppin-list-container">
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
           filteredProducts.map((product) => (
             <ProductInList product={product} props={props} />
-          ))  
+          ))
         ) : (
           filteredProducts
-          .filter((product) => product.product_quantity > 0)
-          .map((product) => {
-            validadeProduto = new Date(product.validade.toString());
-            if (validadeProduto < new Date()) {
-              return null;
-            }
-            return <ProductInList product={product} props={props} />;
-          })
+            .filter((product) => product.product_quantity > 0)
+            .map((product) => {
+              validadeProduto = new Date(product.validade.toString());
+              if (validadeProduto < new Date()) {
+                return null;
+              }
+              return <ProductInList product={product} props={props} />;
+            })
         )}
       </div>
     </div>

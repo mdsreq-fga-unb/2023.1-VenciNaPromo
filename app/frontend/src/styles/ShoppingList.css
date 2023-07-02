@@ -158,20 +158,42 @@
     cursor: pointer;
 }
 
-.search-bar {
+.upper-bar {
+    display: flex;
+    width: calc(95% - 290px);
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 30px;
 }
 
 .search-bar input {
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    /* border-radius: 4px; */
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .search-bar input:focus {
     outline: none;
     border-color: #8e44ad;
     box-shadow: 0 0 5px #8e44ad;
+}
+
+.add-product-button {
+    background-color: rgba(36, 0, 255, 0.60);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px;
+    width: auto;
+    margin-left: 40px;
 }

@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-**Período:** 20/06/2023 - 27/06/2023 <br>
+**Período:** 28/06/2023 - 04/07/2023 <br>
 
 
 ## Sprint Planning

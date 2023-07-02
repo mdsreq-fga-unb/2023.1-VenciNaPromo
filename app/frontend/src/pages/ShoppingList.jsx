@@ -15,6 +15,7 @@ function ShoppingList(props) {
   let listabruto;
   let validadeProduto;
   const [listaDeProdutos, setlistaDeProdutos] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
 
   async function getShoppingList() {
     try {
@@ -30,17 +31,33 @@ function ShoppingList(props) {
     getShoppingList();
   }, []);
 
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredProducts = listaDeProdutos
+    ? listaDeProdutos.filter((product) =>
+        product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    : [];
+
   return (
     <div className="container">
       <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Pesquisar produtos..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
       </div>
       <div className="shoppin-list-container">
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
-          listaDeProdutos && listaDeProdutos.map((product) => (
+          filteredProducts.map((product) => (
             <ProductInList product={product} props={props} />
           ))  
         ) : (
-          listaDeProdutos && listaDeProdutos
+          filteredProducts
           .filter((product) => product.product_quantity > 0)
           .map((product) => {
             validadeProduto = new Date(product.validade.toString());

@@ -4,6 +4,8 @@ import React from 'react';
 import '../styles/ShoppingList.css';
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
+import { ErrorMessage, Formik, Form, Field } from "formik";
+
 import { productList, getProductListData } from '../services/products';
 import { useEffect, useState } from 'react';
 import ProductInList from '../components/ProductInList';
@@ -37,12 +39,12 @@ function ShoppingList(props) {
 
   return (
     <div className="container">
-      <div>
+      <div className="new-product-container">
         <button className="new-product-button" onClick={handleAddProduct}>Adicionar Produto</button>
       </div>
       <div className="search-bar">
       </div>
-      <div className="shoppin-list-container">
+      <div className="shopping-list-container">
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
           listaDeProdutos && listaDeProdutos.map((product) => (
             <ProductInList product={product} props={props} />
@@ -66,7 +68,45 @@ function ShoppingList(props) {
               className="modal-close-button"
               onClick={closeModal}
             >X</button>
-            {/* <div className="product-detail-button">Adicionar</div> */}
+            <div className="new-product-form">
+              <h3 className='h3-modal'>Adicionar Produto</h3>
+              <Formik
+                initialValues={{ username: "", email: "", password: "", flag: "", confirmation: "" }}
+              >
+                <Form className="register-form">
+                  <div className="form-group">
+                    <Field name="product_name" className="form-field" placeholder="Nome"/>
+                  </div>
+                  <div className="form-group">
+                    <Field name="product_price" type="number" className="form-field" placeholder="Preço" min={0} max={0} />
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Validade:</label>
+                    <Field name="validade" type="date" className="form-field" placeholder="Validade"/>
+                  </div>
+                  <div className="form-group">
+                    <Field
+                      as="select"
+                      name="status"
+                      className="form-field"
+                    >
+                      <option value="">Disponibilidade</option>
+                      <option value={0}>Disponível</option>
+                      <option value={1}>Não Disponível</option>
+                    </Field>
+                  </div>
+                  <div className="form-group">
+                    <Field name="product_quantity" type="number" className="form-field" placeholder="Quantidade" min={0} max={0} />
+                  </div>
+                  <div className="register-form-group">
+                    <Field name="product_description" className="form-field" placeholder="Descrição" />
+                  </div>
+                  <button className="button-add" type="submit">
+                    Adicionar
+                  </button>
+                </Form>
+              </Formik>
+            </div>
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-.shoppin-list-container {
+.shopping-list-container {
     display: grid;
     background-color: #fff;
     width: calc(95% - 290px);
@@ -157,6 +157,13 @@
     color: #000;
     cursor: pointer;
 }
+.new-product-container {
+	width: calc(95% - 290px);
+	display: flex;
+	justify-content: right;
+	margin-bottom: 10px;
+}
+
 .new-product-button {
 	padding: 10px;
 	border: none;
@@ -167,7 +174,8 @@
 	font-family: 'Baloo';
 	color: white;
 	border-radius: 8px;
-	position: sticky;
+	width: 100%;
+	max-width: 210px;
 }
 .modal-close-button {
 	cursor: pointer;
@@ -210,4 +218,58 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
+}
+.new-product-form {
+	flex: 1;
+	padding: 25px;
+	width: 300px;
+	margin-top: -60px;
+}
+.form-field {
+	border: none;
+	border-bottom: 3px solid #845C5C;
+	background-color: transparent;
+	outline: none;
+	width: 400px;
+	margin-bottom: 12px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-family: 'Baloo';
+	color: rgba(0, 0, 0, 0.60);
+	font-size: 20px;
+}
+
+.form-field::placeholder {
+	font-family: "Baloo", sans-serif;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.60);
+}
+.h3-modal {
+	text-align: center;
+	align-items: center;
+	display: flex;
+	margin-left: 90px;
+}
+.button-add {
+	margin-top: 40px;
+	margin-left: 90px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	background-color: rgba(36, 0, 255, 0.60);
+	cursor: pointer;
+	font-family: 'Baloo';
+	color: white;
+	border-radius: 8px;
+	width: 150px;
+	height: 40px;
+}
+.form-label {
+	border: none;
+	outline: none;
+	width: 400px;
+	margin-right: 210px;
+	font-family: 'Baloo';
+	color: rgba(0, 0, 0, 0.60);
+	font-size: 20px;
 }

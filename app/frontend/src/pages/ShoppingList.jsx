@@ -99,7 +99,7 @@ function ShoppingList(props) {
                 }}
                 onSubmit={(values) => addProductToList(values)} 
               >
-                <Form className="register-form">
+                <Form>
                   <div className="form-group">
                     <Field name="product_name" className="form-field" placeholder="Nome"/>
                   </div>

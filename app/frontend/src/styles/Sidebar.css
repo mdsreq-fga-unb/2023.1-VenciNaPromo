@@ -24,11 +24,6 @@
 .sidebar.collapsed .sidebar-footer {
   display: none;
 }
-
-.sidebar-content {
-  /* Estilos do conteúdo da barra lateral */
-}
-
 .sidebar-footer {
   display: flex;
   flex-direction: column;

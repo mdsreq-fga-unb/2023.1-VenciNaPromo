@@ -5,10 +5,10 @@ import '../styles/ShoppingList.css';
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import { ErrorMessage, Formik, Form, Field } from "formik";
-
 import { productList, getProductListData } from '../services/products';
 import { useEffect, useState } from 'react';
 import ProductInList from '../components/ProductInList';
+import { addProduct } from '../services/products';
 
 function ShoppingList(props) {
   let listabruto;
@@ -30,11 +30,29 @@ function ShoppingList(props) {
     getShoppingList();
   }, []);
   const handleAddProduct = () => {
-    setShowModal(true); // Mostra a modal quando o botão "Adicionar Produto" é clicado
+    setShowModal(true);
   };
 
   const closeModal = () => {
-    setShowModal(false); // Fecha a modal quando o botão "OK" é clicado
+    setShowModal(false);
+  };
+  const addProductToList = async (values) => {
+    try {
+      const newProduct = {
+        product_name: values.product_name,
+        product_price: values.product_price,
+        validade: values.validade,
+        status: values.status,
+        product_quantity: values.product_quantity,
+        product_description: values.product_description
+      };
+
+      await addProduct(newProduct);
+      getShoppingList(); 
+      closeModal(); 
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -71,14 +89,22 @@ function ShoppingList(props) {
             <div className="new-product-form">
               <h3 className='h3-modal'>Adicionar Produto</h3>
               <Formik
-                initialValues={{ username: "", email: "", password: "", flag: "", confirmation: "" }}
+                initialValues={{
+                  product_name: "",
+                  product_price: "",
+                  validade: "",
+                  status: "",
+                  product_quantity: "",
+                  product_description: ""
+                }}
+                onSubmit={(values) => addProductToList(values)} 
               >
                 <Form className="register-form">
                   <div className="form-group">
                     <Field name="product_name" className="form-field" placeholder="Nome"/>
                   </div>
                   <div className="form-group">
-                    <Field name="product_price" type="number" className="form-field" placeholder="Preço" min={0} max={0} />
+                    <Field name="product_price" type="number" className="form-field" placeholder="Preço" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Validade:</label>
@@ -96,7 +122,7 @@ function ShoppingList(props) {
                     </Field>
                   </div>
                   <div className="form-group">
-                    <Field name="product_quantity" type="number" className="form-field" placeholder="Quantidade" min={0} max={0} />
+                    <Field name="product_quantity" type="number" className="form-field" placeholder="Quantidade"/>
                   </div>
                   <div className="register-form-group">
                     <Field name="product_description" className="form-field" placeholder="Descrição" />

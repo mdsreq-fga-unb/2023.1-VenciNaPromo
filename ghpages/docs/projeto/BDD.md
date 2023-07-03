@@ -1,12 +1,56 @@
-<p align="justify">
-Os critérios de aceite apresentados seguem o padrão "Given-When-Then", onde:</p>
+## BDD
 
-- Given (Dado): Descreve a condição inicial ou o contexto em que o teste será realizado, como "Dado que o usuário-comprador criou sua conta com sucesso".
-- When (Quando): Indica a ação que será executada, como "Quando tentar fazer login usando o endereço de e-mail e a senha fornecidos durante o processo de criação".
-- Then (Então): Especifica o resultado esperado ou o comportamento esperado do sistema, como "Então deve ser capaz de acessar sua conta com sucesso e ter permissão para realizar as ações disponíveis para usuários autenticados".
+<a href="https://app.mural.co/invitation/mural/charlesserafimmorais8192/1685913080687?sender=uf6ab60b0f576c6cf0a879828&key=4a0d91ee-5e02-4443-aba7-96d2aaefca59">Link do PBB Canvas</a>
 
-<p align="justify">
-Essa estrutura ajuda a descrever os critérios de aceite de forma clara e concisa, estabelecendo uma relação direta entre a condição inicial, a ação realizada e o resultado esperado. </p>
+=======
+# Behavior Driven Development
+
+<a href="https://app.mural.co/invitation/mural/charlesserafimmorais8192/1685913080687?sender=uf6ab60b0f576c6cf0a879828&key=4a0d91ee-5e02-4443-aba7-96d2aaefca59">Link do PBB Canvas</a>
+
+<p align="justify"> &emsp;&emsp;
+Depois de ter nossos PBI's definidos no Canvas PBB, nós vamos para a criação dos BDD's.</p>
+
+## Cenário 1(US 02): Detalhes do Produto
+
+- Dado que o produto "Cuscuz Maratá 500g" foi cadastrado e teve os detalhes preenchidos.
+- Quando o produto for selecionado na lista de produtos.
+- Então, um card com imagem, descrição, preço, quantidade disponível e local de retirar deve ser exibido.
+
+## Cenário 2(US07): Relatórios dos descontos
+
+- Dado que o produto "Cuscuz Maratá 500g" e o produto "Feijão Kicaldo 1kg" foram vendidos em uma compra com desconto.
+- Quando o pedido for finalizado e entregue.
+- Então, será disponibilizado na minha página de pedidos o desconto aplicado em cada um dos produtos e um histórico das vendas realizadas com cada um dos produtos e os descontos aplicados.
+
+## Cenário 3(US09): Visualização de Produto
+
+- Dado que o vendedor clique no botão de permitir visualização dos produtos que ele cadastrou.
+- Quando um cliente entrar na lista de produtos.
+- Então, os clientes poderão visualizar o produto e seus detalhes e adicioná-lo ao carrinho.
+
+## Cenário 4(US12): Buscar produtos
+
+- Dado que eu queira buscar um produto especifico, ao ver a lista de produtos.
+- Quando eu realizar a pesquisa na barra de busca.
+- Então, serão exibidos os produtos correspondentes aos parâmetros de busca.
+
+## Cenário 5(US17): Emissão de Cupom
+
+- Dado que o produto "Banana Nanica" foi selecionado, depois de visualizar seus detalhes,
+- Quando for confimada a compra.
+- Então, um card com o cupom e local de retirar deve ser exibido.
+
+![BDD 1](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD1.png)
+![BDD 2](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD2.png)
+![BDD 3](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD3.png)
+![BDD 4](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD4.png)
+![BDD 5](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD5.png)
+
+![BDD 1](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD11.png)
+![BDD 2](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD22.png)
+![BDD 3](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD33.png)
+![BDD 4](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD44.png)
+![BDD 5](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD55.png)
 
 
 ## User Story
@@ -30,3 +74,11 @@ Essa estrutura ajuda a descrever os critérios de aceite de forma clara e concis
 | E4 |  US15    | Eu, como usuário-vendedor, quero poder retirar um produto do mercado online, caso ele não esteja mais disponível ou caso eu decida descontinuá-lo, para que os clientes não possam comprá-lo |Dado que o usuário-vendedor deseja retirar um produto do mercado online, quando ele seleciona a opção de remover o produto da lista,então o produto deve ser removido com sucesso da lista de produtos, impedindo que os clientes possam comprá-lo.|
 | E4 |  US16    | Eu, como usuário-vendedor, quero visualizar tanto os produtos disponíveis quanto os produtos fora de estoque dentro da lista de produtos com o nome, preço, data de validade e a etiqueta de disponível ou não, para que eu possa administrar meus produtos  |1. Dado que o usuário-vendedor está gerenciando seus produtos no mercado online, quando ele visualiza a lista de produtos, então ele deve poder ver tanto os produtos disponíveis quanto os produtos fora de estoque.<br>2. Dado que o usuário-vendedor está visualizando a lista de produtos, quando ele verifica cada item, incluindo nome, preço, data de validade e a etiqueta de disponibilidade, então ele pode identificar facilmente quais produtos estão disponíveis e quais estão fora de estoque.|
 | E4 |  US17    | Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, incluindo nome, descrição, preço, disponibilidade, validade, foto, quantidade de unidades disponíveis, quantidade de cupons gerados e etiqueta de disponível ou não, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing |1. Dado que o usuário-vendedor deseja obter informações detalhadas sobre um produto específico que está na lista de produtos, quando ele seleciona o produto, então ele deve ser capaz de visualizar os detalhes do produto, incluindo nome, descrição, preço, disponibilidade, validade, foto, quantidade de unidades disponíveis, quantidade de cupons gerados e etiqueta de disponibilidade.<br>2. Dado que o usuário-vendedor está revisando os detalhes de um produto específico, quando ele verifica as informações, como quantidade de unidades disponíveis, quantidade de cupons gerados e a etiqueta de disponibilidade, então ele pode tomar decisões informadas sobre o estoque, promoções e estratégias de marketing relacionadas ao produto.|
+
+
+## Histórico de versões
+
+|  **Data**  |**Versão** |              **Descrição**                     |   **Editores**   |
+| :--------: | :-------: | :-------------------------------------------------------: | :---------------: |
+| 20/06/2023 |   `1.0`   | Criado                                  | Lucas e Charles   |
+| 27/06/2023 |   `2.0`   | Atualizado          | Lucas e Charles   |

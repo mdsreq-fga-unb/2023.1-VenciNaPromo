@@ -87,8 +87,6 @@ A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a 
 - O requisito entrega um incremento do produto;
 - Os critérios de aceitação relacionados ao requisito são satisfeitos;
 - Foi feita a documentação do requisito;
-- O requisito passou pelos testes unitários;
-- O requisito passou pelos testes de integração;
 - O requisito passou pelos testes de aceitação;
 - O código das funcionalidades relacionadas aos requisitos foi revisado por outro(s) membro(s) da equipe;
 - O P.O. e a monitora revisaram e aprovaram o requisito implementado;
@@ -103,3 +101,4 @@ A seguir, apresentamos os pontos elencados pela equipe do projeto para compor a 
 | 23/05/2023 |   `1.2`   | Critérios de aceitação - BDD                              | Gabrielly e Lucas |
 | 31/05/2023 |   `2.0`   | Corrigindo técnica de critério de aceitação, DoR e DoD    | Sabrina e Charles |
 | 21/06/2023 |   `2.1`   | Corrigindo critérios de aceitação                         | Gabrielly         |
+| 03/07/2023 |   `2.2`   | Corrigindo DOR e DOD                         | Lucas         

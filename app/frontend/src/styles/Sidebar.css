@@ -1,154 +1,68 @@
 .sidebar {
   position: fixed;
-  top: 0;
   right: 0;
-  height: 100%;
-  width: 250px;
+  bottom: 0;
+  height: 100vh;
+  width: 225px;
   background-color: #F5B396;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: width 0.3s ease-in-out;
-}
-
-.sidebar.collapsed {
-  width: 60px;
-}
-
-.sidebar.collapsed .menu-icon {
-  margin-top: auto;
-}
-
-.sidebar.collapsed .sidebar-content,
-.sidebar.collapsed .sidebar-footer {
-  display: none;
-}
-
-.sidebar-content {
-  /* Estilos do conteúdo da barra lateral */
 }
 
 .sidebar-footer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-}
-
-.menu-icon {
+  justify-content: flex-end;
   margin-top: auto;
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  color: #F5B396;
+  margin-bottom: 10px;
+
 }
 
-.menu-icon i {
-  display: block;
+.sidebar-footer-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .sidebar-button {
   margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 10px;
+  flex-grow: 1;
   background-color: white;
-  border: none;
   border-radius: 5px;
   font-size: 18px;
-  color: #F5B396;
   cursor: pointer;
   font-family: 'Baloo';
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   color: black;
-  border-radius: 8px;
 }
 
-.login-button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  background-color: rgba(36, 0, 255, 0.60);
+.menu-icon {
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
   cursor: pointer;
-  font-family: 'Baloo';
-  color: white;
-  border-radius: 8px;
-  position: sticky;
+  z-index: 1;
 }
 
-.collapse-button {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: grey;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  color: #F5B396;
-  cursor: pointer;
-  font-family: 'Baloo';
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  color: #F5B396;
-  border-radius: 8px;
+.sidebar.sidebar-open {
+  width: 0;
+} 
+
+.menu-icon-open {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+
 }
 
-.info-button {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  color: #F5B396;
-  cursor: pointer;
-  font-family: 'Baloo';
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  color: black;
-  border-radius: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .sidebar {
-    width: 100%;
-  }
-
-  .sidebar.collapsed {
-    width: 60px;
-  }
-
-  .sidebar.collapsed .collapse-button {
-    margin-top: 0;
-  }
-
-  .sidebar.collapsed .menu-icon i {
-    transform: rotate(90deg);
-  }
-
-  .sidebar.collapsed .sidebar-button,
-  .sidebar.collapsed .info-button,
-  .sidebar.collapsed .collapse-button {
-    display: none;
-  }
-
-  .sidebar.collapsed .sidebar-content,
-  .sidebar.collapsed .sidebar-footer {
-    display: none;
-  }
-  .sidebar.collapsed .sidebar-footer {
-    display: none;
-  }
-  
-
-  .sidebar.collapsed .sidebar-footer {
-    margin-bottom: 20px;
-  }
-
-  .sidebar.collapsed .sidebar-content,
-  .sidebar.collapsed .sidebar-footer {
-    display: none;
-  }
-
-  .sidebar.collapsed .menu-icon {
-    margin-top: auto;
-  }
+.sidebar-user-name {
+  font-size: 30px;
 }

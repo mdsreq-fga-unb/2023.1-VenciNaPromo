@@ -160,7 +160,7 @@
 
 .upper-bar {
     display: flex;
-    width: calc(95% - 290px);
+    width: calc(100% - 320px);
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;

@@ -7,27 +7,31 @@
   font-family: 'Baloo', sans-serif;
   width: calc(100% - 250px);
 }
+
 .header-left {
   color: #845c5c;
   font-size: 40px;
   text-align: left;
-  width: 500px;
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   margin-left: 80px;
   margin-top: 15px;
 }
+
 .header-right ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   list-style: none;
-  width: 1100px;
+  width: calc(70% - 250px);
   font-size: 25px;
-  margin-top: -45px
+  margin-top: 15px;
 }
+
 .header-right li:not(:last-child) {
   margin-right: 30px;
 }
+
 .header-right li {
   margin-left: 10px;
 }
@@ -36,6 +40,7 @@
   color: #000000;
   text-decoration: none;
 }
+
 .header-right a:hover {
   color: #845c5c;
 }

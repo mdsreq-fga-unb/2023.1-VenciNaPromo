@@ -58,16 +58,24 @@ function ShoppingList(props) {
 
   return (
     <div className="container">
-      <div className="new-product-container">
-        <button className="new-product-button" onClick={handleAddProduct}>Adicionar Produto</button>
+      <div className="upper-bar">
+        <div className="search-bar"></div>
+        {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
+          <div className="new-product-container">
+            <button className="new-product-button" onClick={handleAddProduct}>Adicionar Produto</button>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
-      <div className="search-bar">
-      </div>
+
       <div className="shopping-list-container">
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
-          listaDeProdutos && listaDeProdutos.map((product) => (
-            <ProductInList product={product} props={props} />
-          ))
+          listaDeProdutos && listaDeProdutos
+            .filter((product) => product._vendor_id == props.props.UserData.user._id)
+            .map((product) => (
+              <ProductInList product={product} props={props} />
+            ))
         ) : (
           listaDeProdutos && listaDeProdutos
             .filter((product) => product.product_quantity > 0)

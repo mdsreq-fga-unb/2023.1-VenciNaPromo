@@ -1,15 +1,13 @@
 // TODO - Create a Shopping List page
 
 import React from 'react';
-import * as yup from "yup";
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
 import '../styles/ShoppingList.css';
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import { productList, getProductListData } from '../services/products';
 import { useEffect, useState } from 'react';
 import ProductInList from '../components/ProductInList';
+
 
 function ShoppingList(props) {
   let listabruto;
@@ -53,7 +51,7 @@ function ShoppingList(props) {
           />
         </div>
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
-          <div className="add-product-button">Adicionar produto novo</div>
+          <div className="add-product-button">Adicionar novo produto</div>
         ) : (
           <></>
         )}

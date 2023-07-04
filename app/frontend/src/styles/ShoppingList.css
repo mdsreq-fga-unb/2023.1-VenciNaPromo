@@ -8,6 +8,22 @@
     gap: 40px;
 }
 
+@media (max-width: 768px) {
+    .shopping-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shopping-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 .product-in-list {
     cursor: pointer;
     padding: 20px;

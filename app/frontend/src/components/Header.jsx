@@ -10,8 +10,7 @@ function Header() {
       <div className="header-right">
         <ul>
           <li><a href="/home">Home</a></li>
-          <li><a href="/">Comida</a></li>
-          <li><a href="/">Casa</a></li>
+          <li><a href="/">Produtos</a></li>
         </ul>
       </div>
     </header>

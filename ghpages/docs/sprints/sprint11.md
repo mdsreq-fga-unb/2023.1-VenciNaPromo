@@ -51,29 +51,29 @@
 ##### O que gostamos e queremos continuar fazendo na próxima print?
 |**Integrante**|**Resposta**|
 |--------------|------------|
-| Cainã        | implementar coisas novas!! | 
-| Charles      | continuar mexendo no codigo         |
-| Gabrielly    | Organização na divisão de tarefas     |
-| Lucas        | Continuar num bom fluxo         |
-| Sabrina      | Trabalhando muito       |
+| Cainã        | | 
+| Charles      |       |
+| Gabrielly    |   |
+| Lucas        |       |
+| Sabrina      |        |
 
 ##### O que aprendemos nessa sprint e devemos aplicar na próxima?
 |**Integrante**|**Resposta**|
 |--------------|------------|
-| Cainã        | trabalho em cima da hora acaba tendo lançamentos problematicos |
-| Charles      | Que devemos nos atentar aos critérios de avaliação do professor       |
-| Gabrielly    | organização na divisão de terefas      |
-| Lucas        | a cumprir com nossos requisitos        |
-| Sabrina      | Importante ter daily e entender as necessidades de cada um. Ter uma boa comunicação é ótimo      |
+| Cainã        |  |
+| Charles      |       |
+| Gabrielly    |       |
+| Lucas        |       |
+| Sabrina      |     |
 
 ##### O que erramos e temos que melhorar para a próxima sprint?
 |**Integrante**|**Resposta**|
 |--------------|------------|
-| Cainã        | organizacao e divisao de trabalhos | 
-| Charles      | não foram feitas todas as tasks que colocamos pra sprint      |
-| Gabrielly    | não deixar as coisas para última horaNão deixar trabalho acumulado       |
-| Lucas        | Falta de comprometimento para não deixar tasks de ultima hora          |
-| Sabrina      | Não tivemos daily. Acabei esquecendo de puxar nos dias porque estava com muitas atividades externas      |
+| Cainã        |  | 
+| Charles      |   |
+| Gabrielly    |       |
+| Lucas        |           |
+| Sabrina      |   |
 
 
 ##### **Plano de ação:**
@@ -89,3 +89,10 @@
 |  **Reunião**   |    **Data**    |**Cainã**| **Charles** | **Gabrielly** | **Lucas** | **Sabrina** |
 |----------------|----------------| ------- |-------------|---------------|-----------|-------------|
 |Sprint Planning |  27/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+| Daily          |  28/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+| Daily          |  29/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+| Daily          |  30/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+| Daily          |  03/07/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+| Sprint Retro   |  30/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+| Sprint Review  |  30/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+

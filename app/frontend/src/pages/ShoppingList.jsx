@@ -1,6 +1,7 @@
 // TODO - Create a Shopping List page
 
 import React from 'react';
+import Lupa from '../img/lupa32x32.png';
 import * as yup from "yup";
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
@@ -48,10 +49,11 @@ function ShoppingList(props) {
         <div className="search-bar">
           <input
             type="text"
-            placeholder="Pesquisar produtos..."
+            placeholder="Qual produto você gostaria de pesquisar?"
             value={searchTerm}
             onChange={handleSearch}
           />
+          <img src={Lupa} alt="Ícone"/>
         </div>
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
           <div className="add-product-button">Adicionar produto novo</div>

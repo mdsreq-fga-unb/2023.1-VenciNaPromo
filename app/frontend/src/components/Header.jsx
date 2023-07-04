@@ -1,7 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 import '../styles/Header.css';
 
 function Header() {
+
   return (
     <div className="header">
       <div className="header-left">

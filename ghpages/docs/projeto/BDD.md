@@ -2,6 +2,44 @@
 
 <a href="https://app.mural.co/invitation/mural/charlesserafimmorais8192/1685913080687?sender=uf6ab60b0f576c6cf0a879828&key=4a0d91ee-5e02-4443-aba7-96d2aaefca59">Link do PBB Canvas</a>
 
+=======
+# Behavior Driven Development
+
+<a href="https://app.mural.co/invitation/mural/charlesserafimmorais8192/1685913080687?sender=uf6ab60b0f576c6cf0a879828&key=4a0d91ee-5e02-4443-aba7-96d2aaefca59">Link do PBB Canvas</a>
+
+<p align="justify"> &emsp;&emsp;
+Depois de ter nossos PBI's definidos no Canvas PBB, nós vamos para a criação dos BDD's.</p>
+
+## Cenário 1(US 02): Detalhes do Produto
+
+- Dado que o produto "Cuscuz Maratá 500g" foi cadastrado e teve os detalhes preenchidos.
+- Quando o produto for selecionado na lista de produtos.
+- Então, um card com imagem, descrição, preço, quantidade disponível e local de retirar deve ser exibido.
+
+## Cenário 2(US07): Relatórios dos descontos
+
+- Dado que o produto "Cuscuz Maratá 500g" e o produto "Feijão Kicaldo 1kg" foram vendidos em uma compra com desconto.
+- Quando o pedido for finalizado e entregue.
+- Então, será disponibilizado na minha página de pedidos o desconto aplicado em cada um dos produtos e um histórico das vendas realizadas com cada um dos produtos e os descontos aplicados.
+
+## Cenário 3(US09): Visualização de Produto
+
+- Dado que o vendedor clique no botão de permitir visualização dos produtos que ele cadastrou.
+- Quando um cliente entrar na lista de produtos.
+- Então, os clientes poderão visualizar o produto e seus detalhes e adicioná-lo ao carrinho.
+
+## Cenário 4(US12): Buscar produtos
+
+- Dado que eu queira buscar um produto especifico, ao ver a lista de produtos.
+- Quando eu realizar a pesquisa na barra de busca.
+- Então, serão exibidos os produtos correspondentes aos parâmetros de busca.
+
+## Cenário 5(US17): Emissão de Cupom
+
+- Dado que o produto "Banana Nanica" foi selecionado, depois de visualizar seus detalhes,
+- Quando for confimada a compra.
+- Então, um card com o cupom e local de retirar deve ser exibido.
+
 ![BDD 1](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD1.png)
 ![BDD 2](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD2.png)
 ![BDD 3](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/BDD/BDD3.png)
@@ -37,8 +75,10 @@
 | E4 |  US16    | Eu, como usuário-vendedor, quero visualizar tanto os produtos disponíveis quanto os produtos fora de estoque dentro da lista de produtos com o nome, preço, data de validade e a etiqueta de disponível ou não, para que eu possa administrar meus produtos  |1. Dado que o usuário-vendedor está gerenciando seus produtos no mercado online, quando ele visualiza a lista de produtos, então ele deve poder ver tanto os produtos disponíveis quanto os produtos fora de estoque.<br>2. Dado que o usuário-vendedor está visualizando a lista de produtos, quando ele verifica cada item, incluindo nome, preço, data de validade e a etiqueta de disponibilidade, então ele pode identificar facilmente quais produtos estão disponíveis e quais estão fora de estoque.|
 | E4 |  US17    | Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, incluindo nome, descrição, preço, disponibilidade, validade, foto, quantidade de unidades disponíveis, quantidade de cupons gerados e etiqueta de disponível ou não, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing |1. Dado que o usuário-vendedor deseja obter informações detalhadas sobre um produto específico que está na lista de produtos, quando ele seleciona o produto, então ele deve ser capaz de visualizar os detalhes do produto, incluindo nome, descrição, preço, disponibilidade, validade, foto, quantidade de unidades disponíveis, quantidade de cupons gerados e etiqueta de disponibilidade.<br>2. Dado que o usuário-vendedor está revisando os detalhes de um produto específico, quando ele verifica as informações, como quantidade de unidades disponíveis, quantidade de cupons gerados e a etiqueta de disponibilidade, então ele pode tomar decisões informadas sobre o estoque, promoções e estratégias de marketing relacionadas ao produto.|
 
+
 ## Histórico de versões
 
 |  **Data**  |**Versão** |              **Descrição**                     |   **Editores**   |
 | :--------: | :-------: | :-------------------------------------------------------: | :---------------: |
 | 20/06/2023 |   `1.0`   | Criado                                  | Lucas e Charles   |
+| 27/06/2023 |   `2.0`   | Atualizado          | Lucas e Charles   |

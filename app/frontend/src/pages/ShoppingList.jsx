@@ -47,7 +47,7 @@ function ShoppingList(props) {
         <div className="search-bar">
           <input
             type="text"
-            placeholder="Qual produto você gostaria de pesquisar?"
+            placeholder="Pesquise um produto"
             value={searchTerm}
             onChange={handleSearch}
           />

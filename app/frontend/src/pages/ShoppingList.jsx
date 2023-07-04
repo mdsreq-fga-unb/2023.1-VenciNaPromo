@@ -37,7 +37,8 @@ function ShoppingList(props) {
 
   const filteredProducts = listaDeProdutos
     ? listaDeProdutos.filter((product) =>
-      product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
+      product.product_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.product_description.toLowerCase().includes(searchTerm.toLowerCase())
     )
     : [];
 
@@ -57,25 +58,31 @@ function ShoppingList(props) {
         ) : (
           <></>
         )}
-        
+
       </div>
 
       <div className="shoppin-list-container">
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
-          filteredProducts.map((product) => (
-            <ProductInList product={product} props={props} />
-          ))
+          filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <ProductInList product={product} props={props} />
+            ))) : (
+            <div className="no-products-found">Nenhum produto encontrado.</div>
+          )
         ) : (
-          filteredProducts
-            .filter((product) => product.product_quantity > 0)
-            .map((product) => {
-              validadeProduto = new Date(product.validade.toString());
-              if (validadeProduto < new Date()) {
-                return null;
-              }
-              return <ProductInList product={product} props={props} />;
-            })
-        )}
+          filteredProducts.length > 0 ? (
+            filteredProducts
+              .filter((product) => product.product_quantity > 0)
+              .map((product) => {
+                validadeProduto = new Date(product.validade.toString());
+                if (validadeProduto < new Date()) {
+                  return null;
+                }
+                return <ProductInList product={product} props={props} />;
+              })
+          ) : (
+            <div className="no-products-found">Nenhum produto encontrado.</div>
+          ))}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
 
 ## Sprint Planning
 
-#### Objetivo da Sprint 10
+#### Objetivo da Sprint 11
 - **Débitos Técnicos:** 
     - Documentação: Atualização dos DoD e DoR
     - Documentação: Atualização do SAFe
@@ -20,30 +20,29 @@
 
 |             **Task**                 |    **Resposáveis**    | 
 |--------------------------------------|-----------------------|
-| Documentação: Atualização dos DoD e DoR | Lucas |
-| Documentação: Atualização do SAFe | Cainã |
-| US11 | Sabrina e Charles |
-| US14 | Gabrielly e Charles |
-| Revisão da qualidade do software | Cainã |
-| Cobertura de teste | Caina | 
-| Responsividade | Caina e Sabrina | 
-| Protótipo | Lucas | 
-
+| Documentação: Atualização dos DoD e DoR | Lucas                 |
+| Documentação: Atualização do SAFe       | Cainã                 |
+| US11                                    | Sabrina e Charles     | 
+| US14                                    | Gabrielly e Charles   | 
+| Revisão da qualidade do software        | Cainã                 |
+| Cobertura de teste                      | Caina                 | 
+| Responsividade                          | Sabrina               |  
+| Protótipo                               | Lucas                 | 
 
 ## Sprint Review
 
 **Entregas:**
 
-|             **Task**                 |    **Resposáveis**    |     **Status**   |
-|--------------------------------------|-----------------------| ---------------- |
-| Documentação: Atualização dos DoD e DoR | Lucas |
-| Documentação: Atualização do SAFe | Cainã |
-| US11 | Sabrina e Charles |
-| US14 | Gabrielly e Charles |
-| Revisão da qualidade do software | Cainã |
-| Cobertura de teste | Caina | 
-| Responsividade | Caina e Sabrina | 
-| Protótipo | Lucas | 
+|                **Task**                 |    **Resposáveis**    |     **Status**   |
+|-----------------------------------------|-----------------------| ---------------- |
+| Documentação: Atualização dos DoD e DoR | Lucas                 |
+| Documentação: Atualização do SAFe       | Cainã                 |
+| US11                                    | Sabrina e Charles     | Feito            |
+| US14                                    | Gabrielly e Charles   | Feito            |
+| Revisão da qualidade do software        | Cainã                 |
+| Cobertura de teste                      | Caina                 | 
+| Responsividade                          | Sabrina               |  
+| Protótipo                               | Lucas                 | 
 
 
 ## Sprint Retro
@@ -77,12 +76,7 @@
 
 
 ##### **Plano de ação:**
-- Todos os dias vão ter pessoas responsáveis por puxar as dailys e verificar o andamento 
-    - Segunda: Cainã
-    - Terça: Terça
-    - Quarta: Sabrina 
-    - Quinta: Charles 
-    - Sexta: Lucas
+
 
 ## Frequência
 
@@ -96,3 +90,10 @@
 | Sprint Retro   |  30/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
 | Sprint Review  |  30/06/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
 
+|**Integrante**|**Frequência**|
+|--------------|--------------|
+| Cainã        |    100%      |
+| Charles      |    100%      |
+| Gabrielly    |    100%      |
+| Lucas        |    100%      |
+| Sabrina      |    100%      |

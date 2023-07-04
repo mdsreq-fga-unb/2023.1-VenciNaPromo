@@ -34,7 +34,8 @@ export const removeProduct = async (product_id) => {
   })
   .then(response => {return response.json()})
 }
-export const addProduct = async (newProduct) => {
+
+export const addProduct = async (newProduct) => {  
   try {
     const response = await fetch("http://localhost:8080/product_list/add_product", {
       method: 'POST',

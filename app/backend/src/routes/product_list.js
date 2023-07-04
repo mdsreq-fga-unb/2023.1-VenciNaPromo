@@ -79,18 +79,19 @@ router.post('/add_product', (req, res) => {
 
   checkToken(token, res, async (decoded) => {
     try {
-      const { product_name, product_price, validade, status, product_quantity, product_description } = req.body;
+      const { product_name, product_description, product_price, product_category, product_image, validade, status, product_quantity,  } = req.body;
 
       const newProduct = new Product({
         _vendor_id: decoded.id,
         product_name,
+        product_description,
         product_price,
+        product_category,
+        product_image,
         validade,
         status,
-        product_quantity,
-        product_description,
+        product_quantity
       });
-      console.log('New product:', newProduct);
       const savedProduct = await newProduct.save();
 
       res.status(200).json({ message: 'Product added successfully', product: savedProduct });

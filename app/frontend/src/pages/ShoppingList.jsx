@@ -40,16 +40,17 @@ function ShoppingList(props) {
     try {
       const newProduct = {
         product_name: values.product_name,
+        product_description: values.product_description,
         product_price: values.product_price,
+        product_category: values.product_category,
+        product_image: values.product_image,
         validade: values.validade,
         status: values.status,
-        product_quantity: values.product_quantity,
-        product_description: values.product_description
+        product_quantity: values.product_quantity
       };
-
       await addProduct(newProduct);
-      getShoppingList(); 
-      closeModal(); 
+      getShoppingList();
+      closeModal();
     } catch (error) {
       console.error(error);
     }
@@ -91,24 +92,26 @@ function ShoppingList(props) {
               <Formik
                 initialValues={{
                   product_name: "",
+                  product_description: "",
                   product_price: "",
+                  product_category: "",
+                  product_image: "",
                   validade: "",
                   status: "",
                   product_quantity: "",
-                  product_description: ""
                 }}
-                onSubmit={(values) => addProductToList(values)} 
+                onSubmit={(values) => addProductToList(values)}
               >
                 <Form>
                   <div className="form-group">
-                    <Field name="product_name" className="form-field" placeholder="Nome"/>
+                    <Field name="product_name" className="form-field" placeholder="Nome" />
                   </div>
                   <div className="form-group">
                     <Field name="product_price" type="number" className="form-field" placeholder="Preço" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Validade:</label>
-                    <Field name="validade" type="date" className="form-field" placeholder="Validade"/>
+                    <Field name="validade" type="date" className="form-field" placeholder="Validade" />
                   </div>
                   <div className="form-group">
                     <Field
@@ -117,15 +120,21 @@ function ShoppingList(props) {
                       className="form-field"
                     >
                       <option value="">Disponibilidade</option>
-                      <option value={0}>Disponível</option>
-                      <option value={1}>Não Disponível</option>
+                      <option value={1}>Disponível</option>
+                      <option value={0}>Não Disponível</option>
                     </Field>
                   </div>
                   <div className="form-group">
-                    <Field name="product_quantity" type="number" className="form-field" placeholder="Quantidade"/>
+                    <Field name="product_quantity" type="number" className="form-field" placeholder="Quantidade" />
                   </div>
                   <div className="register-form-group">
                     <Field name="product_description" className="form-field" placeholder="Descrição" />
+                  </div>
+                  <div className="form-group">
+                    <Field name="product_category" className="form-field" placeholder="Categoria" />
+                  </div>
+                  <div className="form-group">
+                    <Field name="product_image" className="form-field" placeholder="URL da imagem" />
                   </div>
                   <button className="button-add" type="submit">
                     Adicionar

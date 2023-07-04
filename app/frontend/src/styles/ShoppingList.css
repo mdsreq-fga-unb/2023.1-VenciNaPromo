@@ -207,7 +207,7 @@
 	height: 70%;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 	border: 10px solid #F5B396;
-	overflow: hidden;
+	overflow: scroll;
 }
 .modal {
 	position: fixed;

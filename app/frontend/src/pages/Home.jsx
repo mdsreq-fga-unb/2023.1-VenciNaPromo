@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
-import * as yup from "yup";
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
+import React from 'react';
 import '../styles/Home.css';
-
+import desperdicio from '../img/desperdicio.jpg';
 
 function Home() {
-
 
   return (
     <div className="container">
       <div className="home-container">
         <div className='image-container'>
-          <img src="assets\images\desperdicio.jpg" alt="logo" />
+          <img src={desperdicio} alt="desperdício de alimentos" />
         </div>
         <div className="home-content">
           <div className="home-text">

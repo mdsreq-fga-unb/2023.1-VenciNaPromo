@@ -11,8 +11,14 @@
 
 #### Objetivo da Sprint 12
 - **Débitos Técnicos:** 
+    - Documentação: Atualização do SAFe
+    - Qualidade de software
+    - Cobertura de teste
+    - Responsividade
+    - Protótipo
 
 - **Implementações:**
+    - US05
     - US06
     - US07
     - US09
@@ -24,13 +30,17 @@
 
 |                **Task**                 |    **Resposáveis**    | 
 |-----------------------------------------|-----------------------|
-| Documentação: User Story Mapping        | |
-| US06                                    |  
-| US07                                    | 
-| US09                                    |  
-| US10                                    | 
-| US11                                    |  
-| US012                                   | 
+| Documentação: User Story Mapping        | Lucas e Gabrielly     |
+| Documentação: Atualização do SAFe       | Sabrina               |
+| Documentação: Atualização dos Critérios de Aceitação | Lucas    |
+| Resposividade                           | Lucas                 |
+| Revisão da qualidade do software        | Sabrina               |
+| Protótipo                               | Lucas e Charles       |
+| US05                                    | Cainã e Charles       |
+| US06                                    | Cainã e Charles       |
+| US07                                    | Cainã e Sabrina       |
+| US08                                    | Gabrielly e Sabrina   |
+| US012                                   | Cainã e Gabrielly     |
 
 
 ## Sprint Review
@@ -39,6 +49,17 @@
 
 |             **Task**                 |    **Resposáveis**    |     **Status**   |
 |--------------------------------------|-----------------------| ---------------- |
+| Documentação: User Story Mapping        | Lucas e Gabrielly     |
+| Documentação: Atualização do SAFe       | Sabrina               |
+| Documentação: Atualização dos Critérios de Aceitação | Lucas    |
+| Resposividade                           | Lucas                 |
+| Revisão da qualidade do software        | Sabrina               |
+| Protótipo                               | Lucas e Charles       |
+| US05                                    | Cainã e Charles       |
+| US06                                    | Cainã e Charles       |
+| US07                                    | Cainã e Sabrina       |
+| US08                                    | Gabrielly e Sabrina   |
+| US012                                   | Cainã e Gabrielly     |
 
 
 
@@ -79,6 +100,6 @@
 
 |  **Reunião**   |    **Data**    |**Cainã**| **Charles** | **Gabrielly** | **Lucas** | **Sabrina** |
 |----------------|----------------| ------- |-------------|---------------|-----------|-------------|
-|Sprint Planning |  04/07/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
+|Sprint Planning |  04/07/2023    |   ✔     |     ✔      |      ✔       |     ✔     |     ✔       |
 
 

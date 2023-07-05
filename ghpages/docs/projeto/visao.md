@@ -94,10 +94,13 @@ Abaixo, na Tabela 3, apresentamos como está planejado o desenvolvimento do proj
 | Sprint 5  | Validação do Backlog do Produto e Definição do MVP             |   09/05/2023   | 15/05/2023  |
 | Sprint 6  | Protótipo de alta fidelidade                                   |   16/05/2023   | 22/05/2023  |
 | Sprint 7  | US03 e US04                                                    |   23/05/2023   | 29/05/2023  |
-| Sprint 8  | US01, US02, US03 e US04                                        |   30/05/2023   | 13/06/2023  |
+| Sprint 8  | US01, US02                                                     |   30/05/2023   | 13/06/2023  |
 | Sprint 9  | US06, US13, US15, US16, US05, US08 e Validação do MVP 1        |   14/06/2023   | 27/06/2023  |
-| Sprint 10 | US09, US10, US11, US12                                         |   28/06/2023   | 11/07/2023  |
-| Sprint 14 | US07, US14, US17 e Validação do MVP 2                          |   12/07/2023   | 27/07/2023  |
+| Sprint 10 | US09, US10                                                     |   20/06/2023   | 27/06/2023  |
+| Sprint 11 | US11, US14                                                     |   28/06/2023   | 03/07/2023  |
+| Sprint 12 | US06, US07, 
+US09, US10, US11, US12                                         |   04/07/2023   | 10/07/2023  |
+| Sprint 13 | Validação do MVP 2                                             |   11/07/2023   | 17/07/2023  |
 
 <div align="center" style="text-align: center">
 <p>Tabela 3: Planejamento das fases do projeto. Fonte: Grupo GPT, 2023.</p>

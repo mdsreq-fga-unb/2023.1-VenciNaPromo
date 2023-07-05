@@ -92,8 +92,8 @@ function Login({ setIsVisitor }) {
                     className="form-field"
                   >
                     <option value="">Cliente ou Vendedor?</option>
-                    <option value={1}>Cliente</option>
-                    <option value={0}>Vendedor</option>
+                    <option value={0}>Cliente</option>
+                    <option value={1}>Vendedor</option>
                   </Field>
                 </div>
                 

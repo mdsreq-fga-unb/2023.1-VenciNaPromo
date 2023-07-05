@@ -28,6 +28,7 @@ Após uma cuidadosa avaliação e considerando as necessidades e desafios recent
 
 ## Sprint Retro
 Nessa sprint, decidimos aprimorar nossas retrospectivas, buscando detalhar cada experiência vivenciada por cada membro. Acreditamos que entender melhor as perspectivas individuais nos ajudará a identificar oportunidades de melhoria e fortalecer nosso trabalho em equipe.
+
 ##### O que gostamos e queremos continuar fazendo na próxima print?
 |**Integrante**|**Resposta**|
 |--------------|------------|
@@ -36,6 +37,7 @@ Nessa sprint, decidimos aprimorar nossas retrospectivas, buscando detalhar cada 
 | Gabrielly    | dia e horario definidos para as reuniões      |
 | Lucas        | Andamos bastante, acho que agora vai fluir melhor         |
 | Sabrina      | Foi uma sprint que não foi muita organizada. Não sei se devemos continuar fazendo algo para a próxima. Tivemos uma boa harmonia       |
+
 ##### O que aprendemos nessa sprint e devemos aplicar na próxima?
 |**Integrante**|**Resposta**|
 |--------------|------------|
@@ -44,6 +46,7 @@ Nessa sprint, decidimos aprimorar nossas retrospectivas, buscando detalhar cada 
 | Gabrielly    | organizar melhor o tempo   |
 | Lucas        | Que devemos se reunir mais vezes, foi muito produtivo          |
 | Sabrina      | Precisamos nos organizar mais tanto na vida pessoal quanto no grupo. Precisamos reunir mais       |
+
 ##### O que erramos e temos que melhorar para a próxima sprint?
 |**Integrante**|**Resposta**|
 |--------------|------------|

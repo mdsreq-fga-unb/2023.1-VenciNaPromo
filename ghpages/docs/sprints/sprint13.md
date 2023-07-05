@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-**Período:** 04/07/2023 - 10/07/2023 <br>
+**Período:** 11/07/2023 - 17/07/2023 <br>
 
 
 ## Sprint Planning
@@ -13,24 +13,15 @@
 - **Débitos Técnicos:** 
 
 - **Implementações:**
-    - US06
-    - US07
-    - US09
-    - US10
-    - US11
-    - US12 
+
 
 ### Tasks e responsáveis :
 
 |                **Task**                 |    **Resposáveis**    | 
 |-----------------------------------------|-----------------------|
-| Documentação: User Story Mapping        | |
-| US06                                    |  
-| US07                                    | 
-| US09                                    |  
-| US10                                    | 
-| US11                                    |  
-| US012                                   | 
+| Vídeo do feedback do cliente            | 
+| Vídeo das entregas da unidade           |  
+ 
 
 
 ## Sprint Review

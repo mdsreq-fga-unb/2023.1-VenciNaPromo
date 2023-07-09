@@ -32,7 +32,7 @@ router.get('/get_list', (req, res) => {
                 });
             } else if (user.user_flag == 1) {
               // vendedor: lista dos proprios produtos, disponiveis ou não (status)
-              Product.find({ _vendor_id: decoded._id })
+              Product.find({ _vendor_id: decoded.id })
                 .then(products => {
                   return res.status(200).json({ message: 'ok vendedor', products: products });
                 })

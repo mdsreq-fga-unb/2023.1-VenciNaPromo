@@ -14,15 +14,11 @@
   text-align: left;
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
-  margin-left: 20px;
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  padding: 20px;  
-  margin-right: 20px;
 }
 
 .header-right ul {

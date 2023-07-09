@@ -3,6 +3,7 @@ import '../styles/Sidebar.css';
 import { logout } from "../services/auth";
 import Carrinho from '../img/carrinho-de-compras.png';
 import Menu from '../img/menu.png';
+import { getCart, removeProductFromCart } from '../services/cart';
 
 
 const Sidebar = (props) => {
@@ -15,12 +16,15 @@ const Sidebar = (props) => {
     setMenuOpen(!menuOpen);
   };
 
+  const cart = getCart();
+  
+
   const doNothing = () => {};
 
   return (
     <div className={`sidebar ${sidebarOpen ? "sidebar-open" : ""}`}>
       {user_data ? (
-      <div>
+      <div className="sidebar-container">
         <div className="sidebar-header">
           <img src={Menu} alt="menu" className={`menu-icon ${menuOpen ? "menu-icon-open" : ""}`} onClick={toggleSidebar} />
           <div className="sidebar-user">
@@ -36,6 +40,52 @@ const Sidebar = (props) => {
             <div className="sidebar-user-name">
               {"Tipo de usuario: "}{user_data.user.user_flag}
             </div> */}
+          </div>
+        </div>
+        <div className="sidebar-body">
+          <div className="sidebar-cart">
+            <div className="sidebar-cart-container">
+              {cart.length > 0 ? (
+                <>
+                  <div className="sidebar-cart-products">
+                    {cart.map((product) => (
+                      <div className="sidebar-cart-product" key={product._id}>
+                        <div className="sidebar-cart-product-name">
+                          {product.product_name}
+                        </div>
+                        <div className="sidebar-cart-product-price">
+                          Preço: ${product.product_price}
+                        </div>
+                        <div className="sidebar-cart-product-remove-from-cart">
+                          <button className="sidebar-cart-product-remove-from-cart-button" onClick={() => removeProductFromCart(product)}>
+                            Remover
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="sidebar-cart-total">
+                    <div className="sidebar-cart-total-text">
+                      Total:
+                    </div>
+                    <div className="sidebar-cart-total-price">
+                      {cart.reduce((total, product) => total + product.product_price, 0)}
+                    </div>
+                  </div>
+                  <div className="sidebar-cart-checkout">
+                    <button className="sidebar-cart-checkout-button" onClick={() => window.location.href='/checkout'}>
+                      Finalizar compra
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <div className="sidebar-cart-empty">
+                  <div className="sidebar-cart-empty-text">
+                    Carrinho vazio
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="sidebar-footer">

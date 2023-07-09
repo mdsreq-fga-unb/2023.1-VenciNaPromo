@@ -153,18 +153,6 @@ function Login({ setIsVisitor }) {
               validationSchema={validationsLogin}
             >
               <Form className="login-form">
-                <div className="form-group">
-                  <Field
-                    as="select"
-                    name="flag"
-                    className="form-field"
-                  >
-                    <option value="">Cliente ou Vendedor?</option>
-                    <option value="opcao1">Cliente</option>
-                    <option value="opcao2">Vendedor</option>
-                  </Field>
-                </div>
-                
                 <div className="login-form-group">
                   <Field name="email" className="form-field" placeholder="Email" />
                   <ErrorMessage

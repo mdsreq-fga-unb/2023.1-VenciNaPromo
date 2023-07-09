@@ -86,6 +86,19 @@
   color: black;
 }
 
+.sidebar-cart-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  height: 35vh;
+  overflow: auto;
+}
+
 .sidebar-cart-checkout-button {
   margin-bottom: 10px;
   margin-right: 10px;

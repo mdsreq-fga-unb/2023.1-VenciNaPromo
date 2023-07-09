@@ -9,7 +9,7 @@ import { getCart, removeProductFromCart } from '../services/cart';
 const Sidebar = (props) => {
   const user_data = props.props.UserData;
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);  
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -44,8 +44,9 @@ const Sidebar = (props) => {
         </div>
         <div className="sidebar-body">
           <div className="sidebar-cart">
-            <div className="sidebar-cart-container">
-              {cart.length > 0 ? (
+            {user_data.user.user_flag === 0 && (
+              <div className="sidebar-cart-container">
+              {cart && cart.length > 0 ? (
                 <>
                   <div className="sidebar-cart-products">
                     {cart.map((product) => (
@@ -86,6 +87,7 @@ const Sidebar = (props) => {
                 </div>
               )}
             </div>
+            )}
           </div>
         </div>
         <div className="sidebar-footer">
@@ -103,7 +105,7 @@ const Sidebar = (props) => {
             </div>
           </div>
         )}
-      </div>
+    </div>  
   );
 };
 

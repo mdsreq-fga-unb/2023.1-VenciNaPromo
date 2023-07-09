@@ -20,5 +20,6 @@
 
   export const logout = async () => {
     localStorage.removeItem('token');
+    localStorage.removeItem('cart');
     window.location.reload();
   }

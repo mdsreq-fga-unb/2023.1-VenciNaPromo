@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
 import { removeProduct } from '../services/products';
+import { removeProductFromCart, saveProductInCart, getCart, clearCart } from '../services/cart';
 
 const ProductInList = (props) => {
   const handleRemoveProduct = (event) => {
@@ -10,6 +12,16 @@ const ProductInList = (props) => {
     removeProduct(productId);
     window.location.reload();
   };
+
+  const handleAddProductToCart = (event) => {
+    saveProductInCart(props.product);
+  };
+
+  const handleRemoveProductFromCart = (event) => {
+    removeProductFromCart(props.product);
+  };
+
+  const cart = getCart();
 
   const [showPopup, setShowPopup] = useState(false);
   const user_data = props.props.props.UserData.user;
@@ -24,6 +36,10 @@ const ProductInList = (props) => {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
+
+  useState(() => {
+    console.log(cart);
+  }, []);
 
   let validadeProduto = new Date(props.product.validade.toString());
 
@@ -95,6 +111,15 @@ const ProductInList = (props) => {
                 <div className="product-detail-description">
                   {props.product.product_description}
                 </div>
+                {user_data && user_data.user_flag === 0 && (
+                  <>
+                    {props.product && cart && cart.find(product => product._id == props.product._id) ? (
+                      <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover</button>
+                    ) : (
+                      <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
+                    )}
+                  </>
+                )}
                 <div className="product-detail-quantity">
                   Quantidade disponível: {props.product.product_quantity}
                 </div>

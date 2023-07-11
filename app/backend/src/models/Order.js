@@ -14,17 +14,22 @@ const OrderSchema = new schema({
         required: true,
         ref: 'User',
     },
-    // cart id
-    _cart_id:{
+    // products
+    products: [{
         type: schema.Types.ObjectId,
         required: true,
-        ref: 'Cart',
-    },
+        ref: 'Product',
+    }],
     // order status
     status: {
         type: Boolean,
         required: true,
-    }
+    },
+    // order code
+    code: {
+        type: String,
+        required: true,
+    },
 }, { timestamps: true });
 
 module.exports = Order = mongoose.model('Order', OrderSchema);

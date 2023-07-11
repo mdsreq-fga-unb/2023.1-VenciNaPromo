@@ -13,53 +13,42 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 
 
 ###***Tema Estratégico:*** 
-<p align="justify"> &emsp;&emsp;
 
-<u>MELHORAR A COMPRA E VENDA DE PRODUTOS PRÓXIMOS AO VENCIMENTO</u>
+<u>Gerenciamento de compra e venda de produtos perto do vencimento</u>
 
-</p>
 
 ### Épicos
 
 |  **Tema**  | **Épico** | **Descrição** |
-| :---------: | :-----------: | :---------:|
-| T1 |  E1    | Gerenciamento de usuário
-| T2 |  E2    | Gerenciamento do compra
-| T2 |  E3    | Gerenciamento do produto
+| :--------: | :-------: | :-----------: |
+| T1 |  E1    | Gestão do usuário
+| T2 |  E2    | Gestão da venda
 
 
 ### Capacidade
 
 |  **Épico**  | **Capacidade** | **Descrição** |
-| :---------: | :-----------: | :---------:|
-| E1 |  C1    | Gerenciamento de usuário-comprador
-| E1 |  C2    | Gerenciamento de usuário-vendedor
-| E2 |  C3    | Carrinho de compras
-| E2 |  C4    | Finalização da compra
-| E2 |  C5    | Histórico de compras
-| E3 |  C6    | Listagem e pesquisa de produtos
-| E3 |  C7    | Gerenciamento de produtos pelo vendedor
-
+| :---------: | :------------: | :------------:|
+| E1 |  C1    | Gerenciar conta do usuário-comprador
+| E1 |  C2    | Gerenciar da conta do usuário-vendedor
+| E1 |  C3    | Histórico de compra
+| E2 |  C4    | Realizar da compra
+| E2 |  C5    | Gerenciar produto
 
 ### Funcionalidade
 
 |  **Capacidade**  | **Funcionalidade** | **Descrição** |
 | :---------: | :-----------: | :---------:|
 | C1 |  F1    | Cadastro de usuário-comprador 
-| C1 |  F2    | Login de usuário-comprador
+| C1 |  F2    | Autorização de usuário-comprador
 | C2 |  F3    | Cadastro de usuário-vendedor
-| C2 |  F4    | Login de usuário-vendedor
-| C3 |  F5    | Adição de itens ao carrinho de compras
-| C3 |  F6    | Visualização e edição do carrinho de compras
-| C4 |  F7    | Pós vendas
-| C5 |  F8    | Visualização do histórico de compras
-| C6 |  F9    | Listagem de produtos
-| C6 |  F10    | Pesquisa de produtos
-| C6 |  F11    | Detalhes do produto
-| C7 |  F12    | Cadastro de produtos pelo vendedor
-| C7 |  F13    | Remoção de produtos pelo vendedor
-| C7 |  F14    | Visualização e gerenciamento de produtos pelo vendedor
-
+| C2 |  F4    | Autorização de usuário-vendedor
+| C3 |  F5    | Visualização de produtos comprados 
+| C3 |  F6    | 
+| C4 |  F7    | Caminho de compra
+| C4 |  F9    | Finalizar a compra
+| C5 |  F10   | Gerir produto
+| C5 |  F11   | Visualização do produto
 
 ### User Story
 

@@ -1,4 +1,4 @@
-<h1 align="center"><b>Sprint 11</b></h1>
+<h1 align="center"><b>Sprint 12</b></h1>
 
 <br>
 
@@ -47,8 +47,8 @@
 
 **Entregas:**
 
-|             **Task**                 |    **Resposáveis**    |     **Status**   |
-|--------------------------------------|-----------------------| ---------------- |
+|                **Task**                 |    **Resposáveis**    |     **Status**   |
+|-----------------------------------------|-----------------------| ---------------- |
 | Documentação: User Story Mapping        | Lucas e Gabrielly     |
 | Documentação: Atualização do SAFe       | Sabrina               |
 | Documentação: Atualização dos Critérios de Aceitação | Lucas    |

@@ -230,3 +230,24 @@
     color: #845C5C;
     font-size: 24px;
 }
+
+.new-product-container {
+	width: 20%;
+	display: flex;
+	justify-content: right;
+	margin-bottom: 10px;
+}
+
+.new-product-button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	background-color: rgba(36, 0, 255, 0.60);
+	cursor: pointer;
+	font-family: 'Baloo';
+	color: white;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 210px;
+}

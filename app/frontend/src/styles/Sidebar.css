@@ -8,6 +8,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar.collapsed .menu-icon {
+  margin-top: auto;
+}
+
+.sidebar.collapsed .sidebar-content,
+.sidebar.collapsed .sidebar-footer {
+  display: none;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .sidebar-footer {
@@ -40,6 +61,92 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   color: black;
 }
+
+/* scrollable sidebar */
+.sidebar-cart-container {
+  right: 0;
+  bottom: 0;
+  height: auto;
+  background-color: #F5B396;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.sidebar-cart-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  flex-grow: 1;
+} 
+
+.sidebar-cart-product {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Baloo';
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.sidebar-cart-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  height: 35vh;
+  overflow: auto;
+}
+
+.sidebar-cart-checkout-button {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  background-color: gold;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Baloo';
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.sidebar-cart-product-remove-from-cart-button {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  background-color: red;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Baloo';
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.sidebar-cart-button:hover {
+  background-color: #845C5C;
+}
+
 
 .menu-icon {
   top: 10px;

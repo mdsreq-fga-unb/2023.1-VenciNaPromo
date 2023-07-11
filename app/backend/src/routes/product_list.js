@@ -32,7 +32,7 @@ router.get('/get_list', (req, res) => {
                 });
             } else if (user.user_flag == 1) {
               // vendedor: lista dos proprios produtos, disponiveis ou não (status)
-              Product.find({ user_id: decoded._id })
+              Product.find({ _vendor_id: decoded.id })
                 .then(products => {
                   return res.status(200).json({ message: 'ok vendedor', products: products });
                 })
@@ -57,14 +57,16 @@ router.post('/remove_product', (req, res) => {
           .then(user => {
             // checa tipo de usuario (flag)
             if (user.user_flag == 1) {
-              // vendedor: remove produto
-              Product.findByIdAndDelete(product_id)
+              // vendedor: remove produto pertencente aquele ve
+              Product.findOneAndDelete({ _id: product_id, _vendor_id: decoded._id })
                 .then(product => {
-                  return res.status(200).json({ message: 'item removido', product: product });
-                })
+                  return res.status(200).json({ message: 'ok vendedor', product: product });
+                }
+                )
                 .catch(err => {
                   return res.status(500).json({ message: 'Internal server error' });
-                });
+                }
+                );
             }
           })
           .catch(err => {

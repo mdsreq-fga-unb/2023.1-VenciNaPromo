@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
+import Checkout from './pages/Checkout';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -64,6 +65,7 @@ function App() {
             )}
 
             <Route path="/home" element={<Home />} />
+            <Route path="/checkout" element={<Checkout props={{ UserData }}/>} />
           </Routes>
         </Router>
       </div>

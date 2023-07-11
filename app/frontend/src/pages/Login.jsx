@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
-import Header from '../components/Header';
 import '../styles/Login.css';
 
 function Login({ setIsVisitor }) {
@@ -32,8 +31,9 @@ function Login({ setIsVisitor }) {
         flag: parseInt(flag),
         email,
         password,
+        confirmation
       };
-      const response = await register(userData);
+      await register(userData);
       resetForm();
     } catch (error) {
       console.error(error); 
@@ -153,18 +153,6 @@ function Login({ setIsVisitor }) {
               validationSchema={validationsLogin}
             >
               <Form className="login-form">
-                <div className="form-group">
-                  <Field
-                    as="select"
-                    name="flag"
-                    className="form-field"
-                  >
-                    <option value="">Cliente ou Vendedor?</option>
-                    <option value="opcao1">Cliente</option>
-                    <option value="opcao2">Vendedor</option>
-                  </Field>
-                </div>
-                
                 <div className="login-form-group">
                   <Field name="email" className="form-field" placeholder="Email" />
                   <ErrorMessage

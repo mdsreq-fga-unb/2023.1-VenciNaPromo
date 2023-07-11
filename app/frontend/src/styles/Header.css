@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #f5f5f5;
   padding: 10px;
@@ -26,7 +26,6 @@
   justify-content: space-around;
   list-style: none;
   font-size: 25px;
-  margin-right: 20%;
 }
 
 .header-right li:not(:last-child) {

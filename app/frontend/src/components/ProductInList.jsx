@@ -36,7 +36,16 @@ const ProductInList = (props) => {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
+  const handlePopupClick = (event) => {
+    event.stopPropagation();
+  };
+  const handlePopupContainerClick = (event) => {
+    event.stopPropagation();
+  };
   useState(() => {
     console.log(cart);
   }, []);
@@ -84,10 +93,13 @@ const ProductInList = (props) => {
       </div>
 
       {showPopup && (
-        <div className="popup">
-          <div className="popup-content">
+        <div className="popup" onClick={handlePopupContainerClick}>
+          <div className="popup-content" onClick={handlePopupClick}>            
             <div className="product-detail-container">
               <div className="product-detail">
+                <button className="popup-close-button" onClick={handleClosePopup}>
+                  X
+                </button>
                 {props.product.product_quantity <= 0 && validadeProduto > currentDate && (
                   <div className="unavailable-label">Indisponível</div>
                 )}
@@ -129,10 +141,7 @@ const ProductInList = (props) => {
                 <div className="product-detail-price">
                   R$ {props.product.product_price}
                 </div>
-                <button
-                  className="popup-close-button"
-                  onClick={togglePopup}
-                >X</button>
+                
                 {/* <div className="product-detail-button">Adicionar</div> */}
               </div>
             </div>

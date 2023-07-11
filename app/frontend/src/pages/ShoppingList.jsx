@@ -1,6 +1,7 @@
 // TODO - Create a Shopping List page
 
 import React from 'react';
+import Lupa from '../img/lupa32x32.png';
 import '../styles/ShoppingList.css';
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
@@ -10,11 +11,13 @@ import { useEffect, useState } from 'react';
 import ProductInList from '../components/ProductInList';
 import { addProduct } from '../services/products';
 
+
 function ShoppingList(props) {
   let listabruto;
   let validadeProduto;
   const [listaDeProdutos, setlistaDeProdutos] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
 
   async function getShoppingList() {
     try {
@@ -55,6 +58,17 @@ function ShoppingList(props) {
       console.error(error);
     }
   };
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredProducts = listaDeProdutos
+    ? listaDeProdutos.filter((product) =>
+      product.product_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.product_description.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    : [];
 
   return (
     <div className="container">

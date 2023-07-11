@@ -28,8 +28,6 @@ const ProductInList = (props) => {
   let validadeProduto = new Date(props.product.validade.toString());
 
   return (
-
-     
     <div className="product-in-list" key={props.product._id} onClick={togglePopup}>
 
       {user_data && user_data.user_flag === 1 ? (

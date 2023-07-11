@@ -16,11 +16,11 @@ theme:
   # logo: "icon-640.png"
   # favicon: "favicon-640.png"
   palette:
-    - scheme: default
+    - scheme: default 
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: indigo
+      primary: deep orange
       accent: indigo
     - scheme: slate
       toggle:
@@ -41,6 +41,7 @@ nav:
       - Backlog SAFe: "projeto/SAFe.md"
       - BDD: "projeto/BDD.md"
       - PBB: "projeto/PBB.md"
+      - USM: "projeto/USM.md"
   - Entregas:
       - Unidade 1:
           - Visão Geral do Produto: "entregas/produto-entrega-1.md"

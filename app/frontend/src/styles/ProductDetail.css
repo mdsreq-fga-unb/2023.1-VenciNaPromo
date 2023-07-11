@@ -66,8 +66,6 @@
     font-size: 12px;
 }
 
-
-
 .product-detail-price {
     text-align: right;
     position: absolute;
@@ -78,16 +76,23 @@
     font-size: 32px;
 }
 
-.product-detail-button {
-    position: fixed;
-    left: 18px;
-    bottom: 18px;
-    background-color: rgba(36, 0, 255, 0.60);
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 3px 20px;
-    width: auto;
+.popup-close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid #845C5C;
+    background-color: #4C2FFF;
+    font-family: 'Baloo';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .popup-close-button {

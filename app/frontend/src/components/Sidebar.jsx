@@ -4,16 +4,30 @@ import { logout } from "../services/auth";
 import Carrinho from '../img/carrinho-de-compras.png';
 import Menu from '../img/menu.png';
 import { getCart, removeProductFromCart } from '../services/cart';
+import { clearCart, checkout, getCheckoutTotal } from '../services/cart';
 
 
 const Sidebar = (props) => {
   const user_data = props.props.UserData;
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);  
+  const [menuOpen, setMenuOpen] = useState(false);
+  let checkoutTotal;
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
     setMenuOpen(!menuOpen);
+  };
+
+  const handleCheckout = async () => {
+    await checkout()
+    checkoutTotal = getCheckoutTotal();
+    if (checkoutTotal) {
+      alert(`Compra realizada com sucesso! seu código: ${checkoutTotal.code}`);
+      clearCart();
+      window.location.reload();
+    } else {
+      alert("Erro ao realizar compra!");
+    }
   };
 
   const cart = getCart();
@@ -74,7 +88,7 @@ const Sidebar = (props) => {
                     </div>
                   </div>
                   <div className="sidebar-cart-checkout">
-                    <button className="sidebar-cart-checkout-button" onClick={() => window.location.href='/checkout'}>
+                    <button className="sidebar-cart-checkout-button" onClick={() => handleCheckout()}>
                       Finalizar compra
                     </button>
                   </div>

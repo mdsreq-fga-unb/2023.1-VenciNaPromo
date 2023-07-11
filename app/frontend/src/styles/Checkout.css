@@ -1,0 +1,76 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    height: 100vh;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background: #F5B396;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.app-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  background-color: rgba(36, 0, 255, 0.60);
+  cursor: pointer;
+  font-family: 'Baloo';
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.home-text {
+    font-family: 'Baloo';
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .home-container {
+      margin-top: 20px;
+    }
+  
+    .image-container {
+      max-width: 90%;
+    }
+  
+    .app-button {
+      font-size: 20px;
+    }
+  
+    .home-text {
+        font-size: 20px;
+      }
+}

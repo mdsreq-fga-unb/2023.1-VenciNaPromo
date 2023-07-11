@@ -12,7 +12,7 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 ## SAFe Backlog VenciNaPromo
 
 
-###***Tema Estratégico:*** 
+### ***Tema Estratégico:*** 
 
 <u>Gerenciamento de compra e venda de produtos perto do vencimento</u>
 
@@ -29,35 +29,35 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 
 |  **Épico**  | **Capacidade** | **Descrição** |
 | :---------: | :------------: | :------------:|
-| E1 |  C1    | Gerenciar conta do usuário-comprador
-| E1 |  C2    | Gerenciar da conta do usuário-vendedor
-| E1 |  C3    | Histórico de compra
-| E2 |  C4    | Realizar da compra
-| E2 |  C5    | Gerenciar produto
+| E1 |  C1    | Administar conta
+| E1 |  C2    | Gerenciar compra
+| E2 |  C3    | Realizar compra
+| E2 |  C4    | Gerenciar produto
 
 ### Funcionalidade
 
 |  **Capacidade**  | **Funcionalidade** | **Descrição** |
 | :---------: | :-----------: | :---------:|
-| C1 |  F1    | Cadastro de usuário-comprador 
-| C1 |  F2    | Autorização de usuário-comprador
-| C2 |  F3    | Cadastro de usuário-vendedor
-| C2 |  F4    | Autorização de usuário-vendedor
-| C3 |  F5    | Visualização de produtos comprados 
-| C3 |  F6    | 
-| C4 |  F7    | Caminho de compra
-| C4 |  F9    | Finalizar a compra
-| C5 |  F10   | Gerir produto
-| C5 |  F11   | Visualização do produto
+| C1 |  F1    | Gerenciamento de usuário-comprador 
+| C1 |  F2    | Gerenciamento de usuário-vendedor
+| C2 |  F3    | Administração da compra 
+| C2 |  F4    | Administração da venda
+| C3 |  F5    | Caminho de compra
+| C3 |  F6    | Finalizar a compra
+| C4 |  F7    | Gerir produto
+| C4 |  F8    | Visualização do produto
 
 ### User Story
 
 |  **Funcionalidade**  | **US** | **Descrição** | **Critérios de Aceitação** |
 | :---------: | :-----------: | :---------:| :------------: |
 | F1 |   US01   | Eu, como usuário-comprador, desejo criar minha conta com as minhas informações pessoais para poder usufruir de descontos exclusivos em produtos perto do vencimento | 1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais. <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números |
-| F2 |  US02    | Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras | 1. O login deve ser feito com o e-mail e a senha cadastrados |
-| F3 |  US03    | Eu, como usuário-vendedor, desejo criar minha conta, adicionando minhas informações pessoais, para poder aumentar minhas vendas e diminuir o desperdício dos meus produtos perto do vencimento | 1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais. <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números |
-| F4 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas vendas | 1. O login deve ser feito com o e-mail e a senha cadastrados |
+| F1 |  US02    | Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras | 1. O login deve ser feito com o e-mail e a senha cadastrados |
+| F2 |  US03    | Eu, como usuário-vendedor, desejo criar minha conta, adicionando minhas informações pessoais, para poder aumentar minhas vendas e diminuir o desperdício dos meus produtos perto do vencimento | 1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais. <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números |
+| F2 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas vendas | 1. O login deve ser feito com o e-mail e a senha cadastrados |
+| F3 |  US09    | Eu, como usuário-comprador, desejo visualizar um resumo de cada um dos produtos comprados após finalizar a compra com sucesso, para que eu possa ter todas as informações necessárias para consultas futuras | 1. Os produtos comprados devem ser agrupados em colunas. <br>2. A lista de compras finalizadas deve conter o histórico de compras do usuário <br>3. O resumo da compra deve conter as descrições dos produtos, data, valor, desconto da compra e vendedor |
+| F4  |       |     histórico de vendas    |
+| F5 |  US12    | Eu, como usuário-comprador, desejo adicionar os produtos, que estão na lista de produtos cadastrados no mercado on-line, no meu carrinho de compras, para que eu possa montar uma lista de produtos que eu desejo comprar com desconto | 1. Deve ser possível adicionar um produto ao carrinho de compras através da lista geral de produtos <br>2. Deve ser possível aumentar e diminuir a quantidade do produto a ser adicionado ao carrinho de compras |
 | F5 |  US05    | Eu, como usuário-comprador, quero ter a capacidade de salvar itens em meu carrinho, para que eu possa voltar a eles mais tarde sem perder minha seleção | 1. Uma lista de itens salvos deve ser visualizada com os itens agrupados em colunas <br>2. Uma lista de itens salvos anteriormente deve ser visualizada <br>3. A visualização do item deve conter o nome, a quantidade que se está comprando, preço e desconto <br>4. Os itens salvos devem ser listados dos mais antigos para os mais novos |
 | F6 |  US06    | Eu, como usuário-comprador, desejo visualizar a lista de itens que eu adicionei no meu carrinho de compras para que eu possa revisar meu pedido antes de finalizar a compra | 1. A lista de itens deve deve conter o nome, quantidade, preço e desconto <br> 2. O carrinho de compras deve mostrar o valor total da compra <br>3. O carrinho de compras deve mostrar o valor total do desconto <br>4. Cada produto deve conter uma quantidade mínima | 
 | F6 |  US07    | Eu, como usuário-comprador, quero modificar a quantidade de itens do meu carrinho de compras, para que eu possa ajustar o pedido às minhas necessidades | 1. O usário-comprador pode modificar a quantidade de itens <br>2. O usuário-comprador não pode ultrapassar o número máximo de itens para cada produto <br>3. O item deve ter no mínimo uma quantidade para permanecer no carrinho de compras <br>4. O valor total do carrinho deve ser atualizado instantaneamente após as edições |
@@ -81,6 +81,7 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 | 17/06/2023 |   `1.1`   |  Adição dos épicos e capacidades     | Gabrielly  |
 | 18/06/2023 |   `1.2`   |  Adição das features e user stories     | Gabrielly  |
 | 18/06/2023 |   `1.3`   |  Correções     | Gabrielly  |
-
+| 11/07/2023 |   `2.0`   |  Atualização com base nos feedbacks das entregas | Sabrina
+ 
 
 

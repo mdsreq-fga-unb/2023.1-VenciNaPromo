@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import ProductDetail from '../components/ProductDetail';
-import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
-import { productList } from '../services/products';
 import { removeProduct } from '../services/products';
 
 const ProductInList = (props) => {
@@ -31,7 +28,6 @@ const ProductInList = (props) => {
   let validadeProduto = new Date(props.product.validade.toString());
 
   return (
-
     <div className="product-in-list" key={props.product._id} onClick={togglePopup}>
 
       {user_data && user_data.user_flag === 1 ? (

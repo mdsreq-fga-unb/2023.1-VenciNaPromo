@@ -1,17 +1,17 @@
-<h1 align="center"><b>Sprint 13</b></h1>
+<h1 align="center"><b>Sprint 14</b></h1>
 
 <br>
 
 ## Visão Geral
 
-**Período:** 11/07/2023 - 17/07/2023 <br>
+**Período:** 18/07/2023 - 24/07/2023 <br>
 
 
 ## Sprint Planning
 
-#### Objetivo da Sprint 13
+#### Objetivo da Sprint 12
 - **Débitos Técnicos:** 
-    - 
+
 - **Implementações:**
 
 
@@ -19,9 +19,9 @@
 
 |                **Task**                 |    **Resposáveis**    | 
 |-----------------------------------------|-----------------------|
+| Vídeo do feedback do cliente            | 
 | Vídeo das entregas da unidade           |  
-| US09
- 
+
 
 
 ## Sprint Review

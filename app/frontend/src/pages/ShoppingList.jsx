@@ -73,7 +73,15 @@ function ShoppingList(props) {
   return (
     <div className="container">
       <div className="upper-bar">
-        <div className="search-bar"></div>
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Pesquise um produto"
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+          <img src={Lupa} alt="Ícone"/>
+        </div>
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
           <div className="new-product-container">
             <button className="new-product-button" onClick={handleAddProduct}>Adicionar Produto</button>
@@ -83,24 +91,28 @@ function ShoppingList(props) {
         )}
       </div>
 
-      <div className="shopping-list-container">
+      <div className="shoppin-list-container">
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
-          listaDeProdutos && listaDeProdutos
-            .filter((product) => product._vendor_id == props.props.UserData.user._id)
-            .map((product) => (
+          filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
               <ProductInList product={product} props={props} />
-            ))
+            ))) : (
+            <div className="no-products-found">Nenhum produto encontrado.</div>
+          )
         ) : (
-          listaDeProdutos && listaDeProdutos
-            .filter((product) => product.product_quantity > 0)
-            .map((product) => {
-              validadeProduto = new Date(product.validade.toString());
-              if (validadeProduto < new Date()) {
-                return null;
-              }
-              return <ProductInList product={product} props={props} />;
-            })
-        )}
+          filteredProducts.length > 0 ? (
+            filteredProducts
+              .filter((product) => product.product_quantity > 0)
+              .map((product) => {
+                validadeProduto = new Date(product.validade.toString());
+                if (validadeProduto < new Date()) {
+                  return null;
+                }
+                return <ProductInList product={product} props={props} />;
+              })
+          ) : (
+            <div className="no-products-found">Nenhum produto encontrado.</div>
+          ))}
       </div>
       {showModal && (
         <div className="modal">

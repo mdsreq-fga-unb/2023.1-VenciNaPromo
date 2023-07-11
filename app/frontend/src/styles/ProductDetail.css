@@ -143,6 +143,25 @@
     z-index: 1;
 }
 
+.popup-close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid #845C5C;
+    background-color: #4C2FFF;
+    font-family: 'Baloo';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
 .popup {
     position: fixed;
     top: 0;

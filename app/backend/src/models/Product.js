@@ -32,6 +32,7 @@ const ProductSchema = new schema({
     // product image
     product_image: {
         type: String,
+        required: true,
     },
     // product category
     product_category: {

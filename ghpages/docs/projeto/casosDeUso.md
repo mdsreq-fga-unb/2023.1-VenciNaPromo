@@ -53,12 +53,13 @@ UC-10 x UC-13 | Extends
 
 Data | Versão | Descrição | Autor
 ---- | ------ | --------- | -----
-12/07/2023 | 1.0 | Identificação de autores, casos de usos e dependências e especificação UC-01| Sabrina 
+12/07/2023 | 1.0 | Identificação de autores, casos de usos e dependências e especificação UC-02| Sabrina 
+12/07/2023 | 1.1 | Especificação do caso de usp 01 - cadastro de usuário| Gabrielly 
 
 
-### Caso de Uso:  UC-01 x Realizar Login
+### Caso de Uso:  UC-02 x Realizar Login
 ##### Por: Sabrina Caldas Berno
-Descrição: Esse caso de uso (UC-01) é de Realizar Login
+Descrição: Esse caso de uso (UC-02) é de Realizar Login
 
 * Atores: Vendedor-Comprador
 * Pré-Condições: O ator deve acessar o site.
@@ -156,12 +157,45 @@ URPS+ | ID | Descrição
 2. O caso de uso é encerrado.
 ### Caso de Uso:  UC-01 x Cadastrar Usuário
 ##### Por: Gabrielly Assunção Rodrigues
-Descrição: 
+Descrição: Esse caso de uso (UC-01) é de Realizar Cadastro
 
 * Atores: Comprador e Vendedor
 * Pré-Condições: 
 * Pós-Condições: O login foi cadastrado no sistema com os dados validos que o ator informou.
 * Requisitos Funcionais: 
 
+Épico | US | Descrição 
+----- | ------- -- |
+E1 |  US01    | Eu, como usuário-comprador, desejo criar minha conta com as minhas informações pessoais para poder usufruir de descontos exclusivos em produtos perto do vencimento
+E2 |  US03    | Eu, como usuário-vendedor, desejo criar minha conta, adicionando minhas informações pessoais, para poder aumentar minhas vendas e diminuir o desperdício dos meus produtos perto do vencimento
+
+* Requisitos Não-Funcionais:
 
 
+|    URPS+     |  ID  |                      Descrição                      |
+|--------------|------|----------------------------------------------------|
+| Implementação | RN1  | A interface do sistema deve ser desenvolvida com o framework ReactJS de JavaScript |
+| Implementação | RN2  | O servidor do sistema deve ser desenvolvido com o framework NodeJS de JavaScript |
+| Implementação | RN3  | O servidor do sistema deve ser testado com o framework Jest de JavaScript |
+| Implementação | RN4  | O Banco de Dados do sistema deve ser em NodeJS |
+| Implementação | RN6  | O sistema deve assegurar os dados do usuário com autenticação JWT e AuthGuard |
+| Interface    | RN7  | O sistema deve ser uma plataforma web |
+
+#### Fluxo Básico: Cadastro realizado
+1. O caso de uso se inicia quando o ator acessa a tela de cadastro.
+2. O sistema solicita as informações para o cadastro.
+3. O ator informa seu nome, seu email, tipo de usuário, sua senha e a confirmação da senha.
+4. O sistema salva as informações fornecidas.
+5. O caso de uso se encerra.
+
+#### Fluxo de Exceção A: Ausência de Informações
+ - No passo 3, se o ator não preencher algum dos campos solicitados:
+1. O sistema não salva as informações cadastradas.
+2. O sistema informa que há alguma informação ausênte.
+3. O fluxo retorna para o passo 2 do fluxo base.
+
+#### Fluxo de Exceção B: Informações incorretas
+ - No passo 3, caso as credenciais estejam incorretas.
+1. O sistema não valida as credenciais do usuário.
+2. O sistema informa que o nome não pode conter números ou que a senha deve ter no mínimo 8 caracteres.
+3. O fluxo retorna para o passo 2 do fluxo base.

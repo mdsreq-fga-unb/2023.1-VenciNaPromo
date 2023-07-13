@@ -46,6 +46,7 @@ UC-10 x UC-13 | Extends
 
 ![UML completo]()
 
+
 ## Especificação dos Casos de Uso
 
 ### Histórico de Revisão
@@ -65,7 +66,7 @@ Descrição: Esse caso de uso (UC-01) é de Realizar Login
 * Requisitos Funcionais: 
 
 Épico | US | Descrição 
------ | ------- | -- |
+----- | ------- -- |
 E1 |  US02    | Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras 
 E2 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas venda
 * Requisitos Não-Funcionais:
@@ -109,10 +110,10 @@ Descrição: Esse caso de uso (UC-04) é de Cadastrar produto
 * Pós-Condições: O produto foi cadastrado no sistema com os dados validos que o ator informou.
 * Requisitos Funcionais: 
 
-Épico | US | Descrição 
------ | ------- | -- |
-E4 |  US14    | Eu, como usuário-vendedor, quero poder adicionar novos produtos ao mercado on-line, para que potenciais clientes possam vê-los e comprá-los
-E4 |  US16    | Eu, como usuário-vendedor, quero visualizar todos os produtos dentro da lista de produtos, para que eu possa administrar meus produtos
+Épico | US      | Descrição 
+----- | --       |
+E4    |  US14   | Eu, como usuário-vendedor, quero poder adicionar novos produtos ao mercado on-line, para que potenciais clientes possam vê-los e comprá-los
+E4    |  US16   | Eu, como usuário-vendedor, quero visualizar todos os produtos dentro da lista de produtos, para que eu possa administrar meus produtos
 
 * Requisitos Não-Funcionais:
 
@@ -153,4 +154,14 @@ URPS+ | ID | Descrição
 
 1. O ator seleciona a opção de cancelar o cadastro.
 2. O caso de uso é encerrado.
+### Caso de Uso:  UC-01 x Cadastrar Usuário
+##### Por: Gabrielly Assunção Rodrigues
+Descrição: 
+
+* Atores: Comprador e Vendedor
+* Pré-Condições: 
+* Pós-Condições: O login foi cadastrado no sistema com os dados validos que o ator informou.
+* Requisitos Funcionais: 
+
+
 

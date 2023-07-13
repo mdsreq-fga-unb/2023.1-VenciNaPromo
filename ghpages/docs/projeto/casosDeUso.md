@@ -115,6 +115,7 @@ E4 |  US14    | Eu, como usuário-vendedor, quero poder adicionar novos produtos
 E4 |  US16    | Eu, como usuário-vendedor, quero visualizar todos os produtos dentro da lista de produtos, para que eu possa administrar meus produtos
 
 * Requisitos Não-Funcionais:
+
 URPS+ | ID | Descrição 
 ----- | -- | ---------
 | Implementação |   RN1   | A interface do sistema deve ser desenvolvido com o framework ReactJS de JavaScript |

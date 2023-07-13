@@ -6,7 +6,7 @@ Ator | Nome | Descrição
 ---- | ---- | ---------
 01 | Vendedor | Usuário habilitado a cadastrar e gerenciar produtos pelo sistema
 02 | Comprador | Usuário habilitado comprar produtos pelo sistema
-02 | Vendedor-Comprador | Usuário que compartilha ações dos atores vendedor e comprador
+03 | Vendedor-Comprador | Usuário que compartilha ações dos atores vendedor e comprador
 
 ## Identificação dos Casos de Uso
 
@@ -314,16 +314,16 @@ E4 |  US13    | Eu, como usuário-comprador, desejo visualizar os detalhes de um
 4. O ator seleciona um produto para consultar seus detalhes.
 6. O caso de uso se encerra.
 
-#### Fluxo de Exceção A: Nenhum produto cadastrado
- - No passo 1, se não houverem produtos cadastrados no site:
-1. O sistema não exibe nenhum produto.
-2. O sistema exibe a mensagem "Nenhum produto disponível no momento".
-3. O fluxo retorna para o passo 2 do fluxo base.
-
-#### Fluxo de Exceção B: Produto(s) não encontrado(s)
+#### Fluxo de Exceção A: Produto(s) não encontrado(s)
  - No passo 3, se não houverem produtos que contenham a(s) palavra(s) em seu título ou descrição:
 1. O sistema não exibe nenhum produto.
 2. O sistema exibe a mensagem "Nenhum produto encontrado".
+3. O fluxo retorna para o passo 2 do fluxo base.
+
+#### Fluxo de Exceção B: Nenhum produto cadastrado
+ - No passo 1, se não houverem produtos cadastrados no site:
+1. O sistema não exibe nenhum produto.
+2. O sistema exibe a mensagem "Nenhum produto disponível no momento".
 3. O caso de uso se encerra.
 
 

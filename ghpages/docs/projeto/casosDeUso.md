@@ -324,7 +324,7 @@ E4 |  US13    | Eu, como usuário-comprador, desejo visualizar os detalhes de um
  - No passo 1, se não houverem produtos cadastrados no site:
 1. O sistema não exibe nenhum produto.
 2. O sistema exibe a mensagem "Nenhum produto disponível no momento".
-3. O caso de uso se encerra.
+3. O fluxo retorna para o passo 1 do fluxo base.
 
 
 ### Histórico de Revisão

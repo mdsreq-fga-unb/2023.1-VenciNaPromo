@@ -76,7 +76,7 @@ Representam os diferentes usos que o usuário pode fazer. Geralmente são defini
 
 ### Relacionamentos
 
-São utilizados para representar as interações entre os atores e os casos de uso. Os relacionamentos podem ser definidos de duas formas, sendo elas:
+São utilizados para representar, através de setas legendadas, as interações entre os atores e os casos de uso. Os relacionamentos podem ser definidos de duas formas, sendo elas:
 
 **Inclusão**: Relação em que um caso de uso quando precisa ter sua funcionalidade executada através de outro caso de uso.
 

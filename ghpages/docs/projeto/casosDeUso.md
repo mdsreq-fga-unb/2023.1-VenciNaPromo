@@ -115,7 +115,7 @@ Descrição: Esse caso de uso (UC-04) é de Cadastrar produto
 * Requisitos Funcionais: 
 
 Épico | US      | Descrição 
------ | --       |
+----- | --       | --
 E4    |  US14   | Eu, como usuário-vendedor, quero poder adicionar novos produtos ao mercado on-line, para que potenciais clientes possam vê-los e comprá-los
 E4    |  US16   | Eu, como usuário-vendedor, quero visualizar todos os produtos dentro da lista de produtos, para que eu possa administrar meus produtos
 
@@ -167,8 +167,8 @@ Descrição: Esse caso de uso (UC-01) é de Realizar Cadastro
 * Pós-Condições: O login foi cadastrado no sistema com os dados validos que o ator informou.
 * Requisitos Funcionais: 
 
-Épico | US | Descrição 
------ | ------- -- |
+Épico | US | Descrição |
+----- | --------- | ----|
 E1 |  US01    | Eu, como usuário-comprador, desejo criar minha conta com as minhas informações pessoais para poder usufruir de descontos exclusivos em produtos perto do vencimento
 E2 |  US03    | Eu, como usuário-vendedor, desejo criar minha conta, adicionando minhas informações pessoais, para poder aumentar minhas vendas e diminuir o desperdício dos meus produtos perto do vencimento
 

@@ -273,12 +273,12 @@ E4    |  US16   | Eu, como usuário-vendedor, quero visualizar todos os produtos
 2. O sistema exibe uma mensagem de erro informando que o cadastro do produto falhou.
 3. O ator tem a opção de tentar novamente ou cancelar o cadastro.
 4. Se o ator optar por tentar novamente, o fluxo retorna para o passo 2 do fluxo base.
-5. Se o ator optar por cancelar o cadastro, o caso de uso é encerrado.
+5. Se o ator optar por cancelar o cadastro, o fluxo retorna para o passo 6 do fluxo base.
 
 #### Fluxo de Exceção C: Cancelar o cadastro do produto
  - No passo 2, caso o ator decida cancelar o cadastro do produto:
 1. O ator seleciona a opção de cancelar o cadastro.
-2. O caso de uso é encerrado.
+2. O fluxo retorna para o passo 6 do fluxo base.
 
 ### Caso de Uso:  UC-08 x Pesquisar produto
 ##### Por: Charles Serafim Morais

@@ -10,19 +10,26 @@
 ## Sprint Planning
 
 #### Objetivo da Sprint 13
-- **Débitos Técnicos:** 
-    - 
+- **Débitos Técnicos:**
+    - US 07
+    - US 08
+    - Responsividade
 - **Implementações:**
+    -US 09
+    
 
 
 ### Tasks e responsáveis :
 
 |                **Task**                 |    **Resposáveis**    | 
 |-----------------------------------------|-----------------------|
-| Vídeo das entregas da unidade           |  
-| US09
- 
-
+| Diagrama de Casos de Uso | Todos os integrantes |
+| Especificação de Casos de Uso | Todos os integrantes |
+| Responsividade| Sabrina |
+| Alertas de Confirmação | Lucas e Sabrina |
+| US07 | Charles e Gaby |
+| US08 | Cainã  |
+| US09 | Cainã  |
 
 ## Sprint Review
 

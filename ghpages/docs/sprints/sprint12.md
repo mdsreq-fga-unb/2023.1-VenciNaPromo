@@ -55,9 +55,9 @@
 | Resposividade                           | Lucas                 | Não Feito
 | Revisão da qualidade do software        | Sabrina               | Feito
 | Protótipo                               | Lucas e Charles       | Feito
-| US05                                    | Cainã e Charles       | Não Feito
+| US05                                    | Cainã e Charles       | Feito
 | US06                                    | Cainã e Charles       | Feito
-| US07                                    | Cainã e Sabrina       | Feito
+| US07                                    | Cainã e Sabrina       | Não Feito
 | US08                                    | Gabrielly e Sabrina   | Não Feito
 | US012                                   | Cainã e Gabrielly     | Feito
 

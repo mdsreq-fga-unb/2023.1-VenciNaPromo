@@ -104,6 +104,47 @@ E2 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta ut
 2. O sistema informa que o email ou a senha está incorreta
 3.  O fluxo retorna para o passo 2 do fluxo base
 
+### Caso de Uso: UC-03 x Visualizar Usuário
+##### Por: Lucas Heler Lopes
+Descrição: Esse caso de uso (UC-03) é de visualizar o usuário.
+
+* Atores: Vendedor-Comprador
+* Pré-Condições: O ator deve estar autenticado no sistema.
+* Pós-Condições: O ator visualizar informações sobre o próprio perfil de usuário.
+
+* Requisitos Funcionais: 
+
+Épico | US | Descrição | 
+----- | -- | --------- |
+E1 |  US2    | Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras
+E2 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas vendas
+
+* Requisitos Não-Funcionais:
+
+URPS+ | ID | Descrição 
+----- | -- | ---------
+| Implementação |   RN1   | A interface do sistema deve ser desenvolvido com o framework ReactJS de JavaScript |
+| Implementação |   RN2   | O servidor do sistema deve ser desenvolvido com o framework NodeJS de JavaScript |
+| Implementação |   RN3   | O servidor do sistema deve ser testado com o framework Jest de JavaScript |
+| Implementação |   RN4   | O Banco de Dados do sistema deve ser em NodeJS |
+| Implementação |   RN6   | O sistema deve assegurar os dados do usuário com autenticação JWT e AuthGuard |
+| Interface |   RN7   | O sistema deve ser uma plataforma web |
+
+#### Fluxo Básico: Visualizar Perfil de Usuário
+1.  O caso de uso se inicia quando o ator autenticado abre o aplicativo.
+2.  O ator navega para a seção "Perfil".
+3.  O sistema exibe as informações pessoais do ator, como nome, foto de perfil e localização.
+4.  O ator pode visualizar as informações disponíveis no perfil.
+5.  O ator pode fechar a visualização do perfil e retornar à tela anterior.
+6.  O caso de uso é encerrado.
+
+#### Fluxo de Exceção: Falha de Conexão com o Servidor
+- No passo 3, caso o sistema encontre uma conexão instável ou falha na recuperação das informações do Perfil de Usuário.
+1. O sistema encontra uma conexão instável ou falha na recuperação das informações do servidor.
+2.  O sistema exibe uma mensagem de erro na tela informando ao ator que não foi possível recuperar as informações do perfil devido a uma falha na conexão.
+3.  O sistema oferece a opção de tentar novamente ou verificar a conexão de internet.
+4.  O ator seleciona a opção de tentar novamente.
+5.  O fluxo retorna para o passo 3 do fluxo base.
 
 ### Caso de Uso:  UC-04 x Cadastrar produto
 ##### Por: Cainã Valença de Freitas

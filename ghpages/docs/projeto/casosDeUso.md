@@ -55,6 +55,7 @@ Data | Versão | Descrição | Autor
 ---- | ------ | --------- | -----
 12/07/2023 | 1.0 | Identificação de autores, casos de usos e dependências e especificação UC-02| Sabrina 
 12/07/2023 | 1.1 | Especificação do caso de usp 01 - cadastro de usuário| Gabrielly 
+13/07/2023 | 1.2 | Alteração no diagrama e ajuste de tabelas quebradas| Gabrielly 
 
 
 ### Caso de Uso:  UC-02 x Realizar Login
@@ -70,16 +71,18 @@ Descrição: Esse caso de uso (UC-02) é de Realizar Login
 ----- | ------- -- |
 E1 |  US02    | Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras 
 E2 |  US04    | Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas venda
-* Requisitos Não-Funcionais:
 
-URPS+ | ID | Descrição 
------ | -- | ---------
-| Implementação |   RN1   | A interface do sistema deve ser desenvolvido com o framework ReactJS de JavaScript |
-| Implementação |   RN2   | O servidor do sistema deve ser desenvolvido com o framework NodeJS de JavaScript |
-| Implementação |   RN3   | O servidor do sistema deve ser testado com o framework Jest de JavaScript |
-| Implementação |   RN4   | O Banco de Dados do sistema deve ser em NodeJS |
-| Implementação |   RN6   | O sistema deve assegurar os dados do usuário com autenticação JWT e AuthGuard |
-| Interface |   RN7   | O sistema deve ser uma plataforma web |
+* Requisitos Não-Funcionais:
+  
+
+|    URPS+     |  ID  |                      Descrição                      |
+|--------------|------|----------------------------------------------------|
+| Implementação | RN1  | A interface do sistema deve ser desenvolvida com o framework ReactJS de JavaScript |
+| Implementação | RN2  | O servidor do sistema deve ser desenvolvido com o framework NodeJS de JavaScript |
+| Implementação | RN3  | O servidor do sistema deve ser testado com o framework Jest de JavaScript |
+| Implementação | RN4  | O Banco de Dados do sistema deve ser em NodeJS |
+| Implementação | RN6  | O sistema deve assegurar os dados do usuário com autenticação JWT e AuthGuard |
+| Interface    | RN7  | O sistema deve ser uma plataforma web |
 
 #### Fluxo Básico: Login autenticado
 1. O caso de uso se inicia quando o ator acessa a tela de login.
@@ -118,14 +121,14 @@ E4    |  US16   | Eu, como usuário-vendedor, quero visualizar todos os produtos
 
 * Requisitos Não-Funcionais:
 
-URPS+ | ID | Descrição 
------ | -- | ---------
-| Implementação |   RN1   | A interface do sistema deve ser desenvolvido com o framework ReactJS de JavaScript |
-| Implementação |   RN2   | O servidor do sistema deve ser desenvolvido com o framework NodeJS de JavaScript |
-| Implementação |   RN3   | O servidor do sistema deve ser testado com o framework Jest de JavaScript |
-| Implementação |   RN4   | O Banco de Dados do sistema deve ser em NodeJS |
-| Implementação |   RN6   | O sistema deve assegurar os dados do usuário com autenticação JWT e AuthGuard |
-| Interface |   RN7   | O sistema deve ser uma plataforma web |
+|    URPS+     |  ID  |                      Descrição                      |
+|--------------|------|----------------------------------------------------|
+| Implementação | RN1  | A interface do sistema deve ser desenvolvida com o framework ReactJS de JavaScript |
+| Implementação | RN2  | O servidor do sistema deve ser desenvolvido com o framework NodeJS de JavaScript |
+| Implementação | RN3  | O servidor do sistema deve ser testado com o framework Jest de JavaScript |
+| Implementação | RN4  | O Banco de Dados do sistema deve ser em NodeJS |
+| Implementação | RN6  | O sistema deve assegurar os dados do usuário com autenticação JWT e AuthGuard |
+| Interface    | RN7  | O sistema deve ser uma plataforma web |
 
 #### Fluxo Básico: Produto cadastrado
 1. O caso de uso se inicia quando o ator acessa a tela da lista de produtos.

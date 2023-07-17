@@ -107,8 +107,7 @@ const Sidebar = (props) => {
         <div className="sidebar-footer">
           <div className="sidebar-footer-container">
             <button className="sidebar-button" onClick={() => logout()}><span> Sair </span> </button>
-            <button className="sidebar-button" onClick={user_data ? () => window.location.href='/' : doNothing}> Compras </button>
-            <button className="sidebar-button" onClick={user_data ? () => window.location.href='/' : doNothing}> Cupons </button>
+            <button className="sidebar-button" onClick={user_data ? () => window.location.href='/checkout' : doNothing}> Histórico </button>
           </div>
         </div>
       </div>

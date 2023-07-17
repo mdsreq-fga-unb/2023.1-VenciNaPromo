@@ -4,8 +4,10 @@ let productListData;
 
 export const getProductListData = () => productListData;
 
+const BASE_URL = process.env.REACT_APP_API_URL;
+
 export const productList = async () => {
-  await fetch("http://localhost:8080/product_list/get_list",{
+  await fetch(BASE_URL + "/product_list/get_list",{
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -21,7 +23,7 @@ export const productList = async () => {
 }
 
 export const removeProduct = async (product_id) => {
-  await fetch("http://localhost:8080/product_list/remove_product",{
+  await fetch(BASE_URL + "/product_list/remove_product",{
     method: 'post',
     headers: {
         'Content-Type': 'application/json',
@@ -37,7 +39,7 @@ export const removeProduct = async (product_id) => {
 
 export const addProduct = async (newProduct) => {  
   try {
-    const response = await fetch("http://localhost:8080/product_list/add_product", {
+    const response = await fetch(BASE_URL + "/product_list/add_product", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -16,9 +16,12 @@ function App() {
   const [accessToken, setAccessToken] = useState(null);
   const [UserData, setUserData] = useState(null);
   const [isVisitor, setIsVisitor] = useState(false);
+  
+  const BASE_URL = process.env.REACT_APP_API_URL;
+
 
   async function getUserData(){
-    await fetch("http://localhost:8080/user/profile",{
+    await fetch(BASE_URL + "/user/profile",{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

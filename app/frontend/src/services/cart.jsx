@@ -53,12 +53,14 @@ let checkoutData = null;
 
 export const getCheckoutTotal = () => checkoutData;
 
+const BASE_URL = process.env.REACT_APP_API_URL;
+
 export const checkout = async () => {
     //sends cart to backend and returns a coupon
     let cart = JSON.parse(localStorage.getItem('cart'));
     if (cart) {
         const token = localStorage.getItem('token');
-        await fetch("http://localhost:8080/order/finish_order/",{
+        await fetch(BASE_URL+"/order/finish_order/",{
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
@@ -87,7 +89,7 @@ export const getOrders = async () => {
     //returns user orders
     const token = localStorage.getItem('token');
     if (token) {
-        await fetch("http://localhost:8080/order/get_orders/",{
+        await fetch(BASE_URL + "/order/get_orders/",{
             method: 'get',
             headers: {
                 'Content-Type': 'application/json',

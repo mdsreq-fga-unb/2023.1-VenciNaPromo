@@ -5,28 +5,24 @@
 Ator | Nome | Descrição
 ---- | ---- | ---------
 01 | Vendedor | Usuário habilitado a cadastrar e gerenciar produtos pelo sistema
-02 | Comprador | Usuário habilitado comprar produtos pelo sistema
-03 | Vendedor-Comprador | Usuário que compartilha ações dos atores vendedor e comprador
+02 | Cliente | Usuário habilitado comprar produtos pelo sistema
+03 | Usuário | Usuário que compartilha ações dos atores vendedor e cliente
 
 ## Identificação dos Casos de Uso
 
-  UC  | Nome do UC | Agente
------ | ---------- | ------
-UC-01 | Cadastrar usuário | Vendedor-Comprador
-UC-02 | Realizar login | Vendedor-Comprador
-UC-03 | Visualizar usuário | Vendedor-Comprador
-UC-04 | Cadastrar produto | Vendedor
-UC-05 | Visualizar produto | Vendedor-Comprador
-UC-06 | Deletar produto | Vendedor
-UC-07 | Editar visibilidade do produto | Vendedor
-UC-08 | Pesquisar produto | Vendedor-Comprador
-UC-09 | Adicionar produto no carrinho de compras | Comprador
-UC-10 | Visualizar carrinho de compras | Comprador
-UC-11 | Modificar quantidade de itens no carrinho de compras | Comprador
-UC-12 | Excluir itens no carrinho de compras | Comprador
-UC-13 | Finalizar compra | Comprador
-UC-14 | Visualizar históricos | Vendedor-Comprador
-UC-15 | Visualizar cupom | Comprador 
+  UC  | Nome do UC | 
+----- | ---------- | 
+UC-01 | Cadastrar usuário | 
+UC-02 | Realizar login | 
+UC-03 | Visualizar usuário | 
+UC-04 | Cadastrar produto | 
+UC-05 | Visualizar produto | 
+UC-06 | Deletar produto | 
+UC-07 | Editar visibilidade do produto | 
+UC-08 | Pesquisar produto |
+UC-09 | Adicionar produto no carrinho de compras | 
+UC-10 | Visualizar carrinho de compras | 
+UC-14 | Visualizar históricos | 
 
 ## Identificação das dependências
 
@@ -35,12 +31,7 @@ UC-15 | Visualizar cupom | Comprador
 UC-05 x UC-06 | Extends 
 UC-05 x UC-07 | Extends
 UC-05 x UC-08 | Extends
-UC-13 x UC-15 | Include
 UC-10 x UC-09 | Extends 
-UC-10 x UC-11 | Extends 
-UC-10 x UC-12 | Extends 
-UC-10 x UC-13 | Extends 
-
 
 ## Elementos do Diagrama
 

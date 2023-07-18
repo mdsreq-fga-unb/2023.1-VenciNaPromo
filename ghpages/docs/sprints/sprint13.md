@@ -26,7 +26,7 @@
 | Diagrama de Casos de Uso | Todos os integrantes |
 | Especificação de Casos de Uso | Todos os integrantes |
 | Responsividade| Sabrina |
-| Alertas de Confirmação | Lucas e Sabrina |
+| Alertas de Confirmação | Lucas |
 | US07 | Charles e Gaby |
 | US08 | Cainã  |
 | US09 | Cainã  |

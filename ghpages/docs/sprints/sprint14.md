@@ -21,6 +21,8 @@
 |-----------------------------------------|-----------------------|
 | Vídeo do feedback do cliente            | 
 | Vídeo das entregas da unidade           |  
+| Atualização dos Casos de Uso            | Sabrina
+| Lições Aprendidas                       | 
 
 
 

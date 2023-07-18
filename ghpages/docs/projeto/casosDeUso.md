@@ -80,8 +80,7 @@ São utilizados para representar, através de setas legendadas, as interações 
 
 ## Diagrama de Casos de Uso
 
-<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/112ce9b2-f8ac-44c4-aec7-e918c5b4e798" id="daYbnWY9B7yn"></iframe></div>
-
+![Casos de Uso](https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo/blob/documentacao/ghpages/assets/images/UC/image-1.png)
 
 ## Especificação dos Casos de Uso
 

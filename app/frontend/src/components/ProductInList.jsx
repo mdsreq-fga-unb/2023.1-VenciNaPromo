@@ -46,9 +46,6 @@ const ProductInList = (props) => {
   const handlePopupContainerClick = (event) => {
     event.stopPropagation();
   };
-  useState(() => {
-    console.log(cart);
-  }, []);
 
   let validadeProduto = new Date(props.product.validade.toString());
 

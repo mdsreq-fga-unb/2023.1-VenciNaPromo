@@ -4,33 +4,45 @@ import '../styles/OrderInList.css';
 const OrderInList = (props) => {
     const [showPopup, setShowPopup] = useState(false);
     
-    const togglePopup = () => {
-        setShowPopup(!showPopup);
-    };
-
     useState(() => {
         console.log(props.order);
     }, []);
+
     
+    // makes list of orders with list of products of each order
     return (
-        <div className="order-in-list" key={props.order._id} onClick={togglePopup}>
-        <div className="order-in-list__image">
-            <img src={props.order.product_image} alt="product" />
-        </div>
-        <div className="order-in-list__info">
-            <div className="order-in-list__info__name">
-            <h1>{props.order.product_name}</h1>
+        <div className="order-container">
+            <div className="order-header">
+                <div className="order-header-title">
+                    <h1>Pedido #{props.order._id}</h1>
+                </div>
+                <div className="order-header-date">
+                    <h1>{(new Date(props.order.createdAt)).toDateString()}</h1>
+                </div>
+                <div className="order-header-price">
+                    <h1>R$ {props.order.products.reduce((total, product) => {return total + product.product_price;}, 0)}</h1>
+                </div>
             </div>
-            <div className="order-in-list__info__price">
-            <h2>R$ {props.order.product_price}</h2>
+
+            <div className="order-body">
+                <div className="order-body-products">
+                    {props.order.products.map((product) => {
+                        return (
+                            <div className="order-product">
+                                <div className="order-product-image">
+                                    <img src={product.product_image} alt="product" />
+                                </div>
+                                <div className="order-product-name">
+                                    <h1>{product.product_name}</h1>
+                                </div>
+                                <div className="order-product-price">
+                                    <h1>R$ {product.product_price}</h1>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
-        </div>
-        <div className="order-in-list__quantity">
-            <h2>{props.order.product_quantity}</h2>
-        </div>
-        <div className="order-in-list__total">
-            <h2>R$ {props.order.product_price * props.order.product_quantity}</h2>
-        </div>
         </div>
     );
 };

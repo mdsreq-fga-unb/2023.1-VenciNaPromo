@@ -13,7 +13,6 @@ const Checkout = (props) => {
         const listabruto = getOrdersData();
         if (listabruto) {
             setlistaDePedidos(listabruto);
-            console.log(listabruto);
         }
         else {
             alert("Erro ao carregar lista de pedidos!");
@@ -28,7 +27,7 @@ const Checkout = (props) => {
         <div className="checkout-container">
             <div className="checkout-header">
                 <div className="checkout-header-title">
-                    <h1>Produtos comprados</h1>
+                    <h1>Pedidos Feitos</h1>
                 </div>
             </div>
 

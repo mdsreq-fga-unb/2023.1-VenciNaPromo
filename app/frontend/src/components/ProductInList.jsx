@@ -58,13 +58,8 @@ const ProductInList = (props) => {
     event.stopPropagation();
   };
 
-  useState(() => {
-    console.log(cart);
-  }, []);
 
   let validadeProduto = new Date(props.product.validade.toString());
-
-  // console.log(props.product.product_quantity)
 
   return (
     <div className="product-in-list" key={props.product._id} onClick={togglePopup}>
@@ -146,13 +141,6 @@ const ProductInList = (props) => {
                     ) : (
                       <div className="add-product-conteiner">
                         <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
-                        <QuantityButton
-                          product={props.product}
-                          quantity={quantity}
-                          setQuantity={setQuantity}
-                          minQuantity={1}
-                          maxQuantity={props.product.product_quantity}
-                        />
                       </div>
                     )}
                   </>

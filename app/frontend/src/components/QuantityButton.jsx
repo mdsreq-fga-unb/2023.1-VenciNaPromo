@@ -1,29 +1,21 @@
 import React, { useState } from 'react';
 import '../styles/QuantityButton.css';
-import { updateProductQuantityInCart } from '../services/cart';
+import {removeProductFromCart, saveProductInCart, removeOneProductFromCart} from '../services/cart';
 
-const QuantityButton = ({ product, quantity, setQuantity, minQuantity, maxQuantity }) => {
+const QuantityButton = ({ product, quantity, minQuantity, maxQuantity }) => {
     const decreaseQuantity = () => {
-        if (quantity > minQuantity) {
-            const updatedQuantity = quantity - 1;
-            setQuantity(updatedQuantity);
-            updateProductQuantityInCart(product._id, updatedQuantity); // Atualize a quantidade do produto no carrinho
-        }
+        removeOneProductFromCart(product);
     };
 
     const increaseQuantity = () => {
-        if (quantity < maxQuantity) {
-            const updatedQuantity = quantity + 1;
-            setQuantity(updatedQuantity);
-            updateProductQuantityInCart(product._id, updatedQuantity); // Atualize a quantidade do produto no carrinho
-        }
+        saveProductInCart(product);
     };
 
     return (
         <div className="quantity-button">
-            <button className="minus" onClick={decreaseQuantity}>-</button>
+            <button className="minus" onClick={() => decreaseQuantity()}>-</button>
             <span className="number">{quantity}</span>
-            <button className="plus" onClick={increaseQuantity}>+</button>
+            <button className="plus" onClick={() => increaseQuantity()}>+</button>
         </div>
     );
 };

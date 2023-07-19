@@ -12,36 +12,34 @@ const OrderInList = (props) => {
     // makes list of orders with list of products of each order
     return (
         <div className="order-container">
+
             <div className="order-header">
                 <div className="order-header-title">
-                    <h1>Pedido #{props.order._id}</h1>
-                </div>
-                <div className="order-header-date">
-                    <h1>{(new Date(props.order.createdAt)).toDateString()}</h1>
-                </div>
-                <div className="order-header-price">
-                    <h1>R$ {props.order.products.reduce((total, product) => {return total + product.product_price;}, 0)}</h1>
+                    <h1>Pedido #{props.order._id} comprado no dia {(new Date(props.order.createdAt)).toDateString()}</h1>
                 </div>
             </div>
 
+            {/* products in order */}
             <div className="order-body">
-                <div className="order-body-products">
-                    {props.order.products.map((product) => {
-                        return (
-                            <div className="order-product">
-                                <div className="order-product-image">
-                                    <img src={product.product_image} alt="product" />
-                                </div>
-                                <div className="order-product-name">
-                                    <h1>{product.product_name}</h1>
-                                </div>
-                                <div className="order-product-price">
-                                    <h1>R$ {product.product_price}</h1>
-                                </div>
+                {props.order.products.map((product) => {
+                    return (
+                        <div className="order-product">
+                            <div className="order-product-description">
+                                <img src={product.product_image} alt={product.name} />
+                                <h2>{product.product_name}</h2>
+                                <h3>{product.product_description}</h3>
+                                <h3>Validade: {(new Date(product.validade)).toDateString()}</h3>
                             </div>
-                        );
-                    })}
-                </div>
+
+                            <div className="order-product-final">
+                                <h2>Quantidade: {(props.order.products.filter((p) => p._id === product._id)).length}</h2>
+                                <h2>Preço: R$ {product.product_price}</h2>
+                                <h2>Vendedor: {product._vendor_id.name}</h2>
+                                <h2>Código: {props.order.code}</h2>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );

@@ -2,8 +2,8 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  height: 100vh;
-  width: 225px;
+  height: 100%;
+  width: 22%;
   background-color: #F5B396;
   display: flex;
   flex-direction: column;

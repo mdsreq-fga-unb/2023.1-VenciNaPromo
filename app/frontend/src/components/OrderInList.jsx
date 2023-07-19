@@ -8,7 +8,7 @@ const OrderInList = (props) => {
         console.log(props.order);
     }, []);
 
-    //remove duplicate products
+    //remove duplicate products and then reverse the list
     const product_list = props.order.products.filter((product, index, self) =>
         index === self.findIndex((p) => (
             p._id === product._id
@@ -22,7 +22,7 @@ const OrderInList = (props) => {
 
             <div className="order-header">
                 <div className="order-header-title">
-                    <h3>Pedido #{props.order._id} comprado no dia {(new Date(props.order.createdAt)).toDateString()}</h3>
+                    <h3>Pedido #{props.order._id} comprado no dia {(new Date(props.order.createdAt)).toLocaleDateString('pt-BR')}</h3>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const OrderInList = (props) => {
                                     <h3>{product.product_name}</h3>
                                     {/*description with max char filter*/}
                                     <h3>{product.product_description.length > 50 ? product.product_description.substring(0, 50) + "..." : product.product_description}</h3>
-                                    <h3>Validade: {(new Date(product.validade)).toDateString()}</h3>
+                                    <h3>Validade: {(new Date(product.validade)).toLocaleDateString('pt-BR')}</h3>
                                 </div>
                             </div>
 

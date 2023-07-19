@@ -12,7 +12,7 @@ const Checkout = (props) => {
         await getOrders();
         const listabruto = getOrdersData();
         if (listabruto) {
-            setlistaDePedidos(listabruto);
+            setlistaDePedidos(listabruto.reverse());
         }
         else {
             alert("Erro ao carregar lista de pedidos!");

@@ -93,9 +93,9 @@ const ProductInList = (props) => {
         </div>
         <div className="product-in-list__info__validade">
           {validadeProduto < currentDate ? (
-            <p>Vencido em: {validadeProduto.toLocaleDateString()}</p>
+            <p>Vencido em: {validadeProduto.toLocaleDateString('pt-BR')}</p>
           ) : (
-            <p>Validade: {validadeProduto.toLocaleDateString()}</p>
+            <p>Validade: {validadeProduto.toLocaleDateString('pt-BR')}</p>
           )}
         </div>
       </div>
@@ -146,7 +146,7 @@ const ProductInList = (props) => {
                 )}
                 <div className="product-detail-quantity">
                   <p>Quantidade disponível: {props.product.product_quantity}</p>
-                  <p>Validade: {validadeProduto.toLocaleDateString()}</p>
+                  <p>Validade: {validadeProduto.toLocaleDateString('pt-BR')}</p>
                 </div>
                 <div className="product-detail-price">
                   R$ {props.product.product_price}

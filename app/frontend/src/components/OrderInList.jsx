@@ -8,6 +8,13 @@ const OrderInList = (props) => {
         console.log(props.order);
     }, []);
 
+    //remove duplicate products
+    const product_list = props.order.products.filter((product, index, self) =>
+        index === self.findIndex((p) => (
+            p._id === product._id
+        ))
+    );
+
     
     // makes list of orders with list of products of each order
     return (
@@ -21,7 +28,7 @@ const OrderInList = (props) => {
 
             {/* products in order */}
             <div className="order-body">
-                {props.order.products.map((product) => {
+                {product_list.map((product) => {
                     return (
                         <div className="order-product">
                             <div className="order-product-description">

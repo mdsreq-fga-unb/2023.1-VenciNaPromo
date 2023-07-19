@@ -20,11 +20,12 @@ const Sidebar = (props) => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleCheckout = async () => {
-    await checkout()
+  const handleCheckout = async (cart) => {
+    await checkout(cart)
     checkoutTotal = getCheckoutTotal();
     if (checkoutTotal) {
-      alert(`Compra realizada com sucesso! seu código: ${checkoutTotal.code}`);
+      console.log(checkoutTotal);
+      alert(`Compra realizada ! seu código: ${checkoutTotal.order.code}`);
       clearCart();
       window.location.reload();
     } else {
@@ -34,6 +35,13 @@ const Sidebar = (props) => {
 
   const cart = getCart();
 
+  //remove duplicates to show to user
+  const cleanCart = cart ? cart.filter((product, index, self) =>
+    index === self.findIndex((p) => (
+      p._id === product._id
+    ))
+  ) : [];
+  
 
   const [quantity, setQuantity] = useState(1);
 
@@ -71,7 +79,7 @@ const Sidebar = (props) => {
                   {cart && cart.length > 0 ? (
                     <>
                       <div className="sidebar-cart-products">
-                        {cart.map((product) => (
+                        {cleanCart.map((product) => (
                           <div className="sidebar-cart-product" key={product._id}>
                             <div className="sidebar-cart-product-name">
                               {product.product_name}
@@ -85,8 +93,8 @@ const Sidebar = (props) => {
                               </button>
                               <QuantityButton
                                 product={product}
-                                quantity={product.quantity}
-                                setQuantity={setQuantity}
+                                //compare quantity of duplicates, it is the quantity of the product in the cart
+                                quantity={cart.filter((p) => p._id === product._id).length}
                                 minQuantity={1}
                                 maxQuantity={product.product_quantity}
                               />
@@ -99,11 +107,11 @@ const Sidebar = (props) => {
                           Total:
                         </div>
                         <div className="sidebar-cart-total-price">
-                          R$ {cart.reduce((total, product) => total + product.product_price * product.quantity, 0).toFixed(2)}
+                          R$ {cart.reduce((total, product) => total + product.product_price, 0).toFixed(2)}
                         </div>
                       </div>
                       <div className="sidebar-cart-checkout">
-                        <button className="sidebar-cart-checkout-button" onClick={() => handleCheckout()}>
+                        <button className="sidebar-cart-checkout-button" onClick={() => handleCheckout(cart)}>
                           Finalizar compra
                         </button>
                       </div>

@@ -1,11 +1,12 @@
 .shoppin-list-container {
     display: grid;
     background-color: #fff;
-    width: calc(95% - 290px);
+    width: 92%;
     margin-left: 30px;
     margin-right: 30px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
+    justify-items: center;
 }
 
 @media (max-width: 768px) {
@@ -177,6 +178,7 @@
 }
 
 .search-bar {
+    display: flex;
     flex: 1;
     padding: 30px;
     position: relative;
@@ -189,7 +191,6 @@
     text-align: center;
     border: 1px solid #fff;
     border-radius: 20px;
-    padding: 15px;
     padding: 15px 15px  15px 40px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }

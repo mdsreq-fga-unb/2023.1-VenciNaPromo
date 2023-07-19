@@ -9,9 +9,6 @@ export const saveProductInCart = (props) => {
     cart.push(props);
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    // console.log(props.quantity);
-    // console.log(cart);
-
     window.location.reload();
 };
 
@@ -21,6 +18,30 @@ export const removeProductFromCart = (props) => {
     if (cart === null) {
         cart = [];
     }
+    //remove it from cart
+    cart = cart.filter((product) => {
+        return product._id !== props._id;
+    }
+    );
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.reload();
+}
+
+export const removeOneProductFromCart = (props) => {
+    //reads localstorage, removes product from cart, and saves it back to localstorage
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    if (cart === null) {
+        cart = [];
+    }
+    //if has more than one product, only remove one
+    if (cart.filter((product) => product._id === props._id).length > 1) {
+        cart.splice(cart.findIndex((product) => product._id === props._id), 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.reload();
+        return;
+    }
+    //if has only one product, remove it from cart
     cart = cart.filter((product) => {
         return product._id !== props._id;
     }
@@ -76,13 +97,12 @@ export const getCheckoutTotal = () => checkoutData;
 
 const BASE_URL = process.env.REACT_APP_API_URL;
 
-export const checkout = async () => {
+export const checkout = async (cart) => {
     //sends cart to backend and returns a coupon
-    let cart = JSON.parse(localStorage.getItem('cart'));
+    // let cart = JSON.parse(localStorage.getItem('cart'));
     if (cart) {
-        const token = localStorage.getItem('token');
         await fetch(BASE_URL + "/order/finish_order/", {
-            method: 'post',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
@@ -92,11 +112,12 @@ export const checkout = async () => {
                 products: cart
             })
         })
-            .then(response => { return response.json() })
-            .then(data => {
-                checkoutData = data.order;
-                return checkoutData;
-            });
+        .then(response => { return response.json() })
+        .then(data => {
+            checkoutData = data;
+            return checkoutData;
+        }
+        );
     }
     return null;
 }

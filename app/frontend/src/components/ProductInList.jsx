@@ -164,7 +164,7 @@ const ProductInList = (props) => {
           <div className="removing-confirmation-modal-content">
             <h2>Remover o produto do seu mercado?</h2>
             <div className="removing-confirmation-modal-buttons">
-              <button className="removing-confirmation-modal-button" onClick={toggleRemovingConfirmation}>Cancelar</button>
+              <button className="removing-confirmation-modal-button" onClick={() => toggleRemovingConfirmation()}>Cancelar</button>
               <button className="removing-confirmation-modal-button" onClick={() => handleRemoveProduct()}>Remover</button>
             </div>
           </div>

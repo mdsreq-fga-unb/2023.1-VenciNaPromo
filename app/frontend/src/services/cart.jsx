@@ -70,7 +70,6 @@ export const updateProductQuantityInCart = (productId, quantity) => {
 export const clearCart = () => {
     //removes cart from localstorage
     localStorage.removeItem('cart');
-    window.location.reload();
 }
 
 export const getCart = () => {

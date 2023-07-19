@@ -58,7 +58,7 @@ router.post('/remove_product', (req, res) => {
             // checa tipo de usuario (flag)
             if (user.user_flag == 1) {
               // vendedor: remove produto pertencente aquele ve
-              Product.findOneAndDelete({ _id: product_id, _vendor_id: decoded._id })
+              Product.findOneAndDelete({ _id: product_id, _vendor_id: decoded.id })
                 .then(product => {
                   return res.status(200).json({ message: 'ok vendedor', product: product });
                 }

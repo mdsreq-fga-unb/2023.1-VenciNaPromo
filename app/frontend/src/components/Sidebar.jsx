@@ -27,7 +27,7 @@ const Sidebar = (props) => {
       console.log(checkoutTotal);
       alert(`Compra realizada ! seu código: ${checkoutTotal.order.code}`);
       clearCart();
-      window.location.reload();
+      window.location.href= '/checkout';
     } else {
       alert("Erro ao realizar compra!");
     }

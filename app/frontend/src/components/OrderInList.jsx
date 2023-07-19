@@ -15,7 +15,7 @@ const OrderInList = (props) => {
 
             <div className="order-header">
                 <div className="order-header-title">
-                    <h1>Pedido #{props.order._id} comprado no dia {(new Date(props.order.createdAt)).toDateString()}</h1>
+                    <h3>Pedido #{props.order._id} comprado no dia {(new Date(props.order.createdAt)).toDateString()}</h3>
                 </div>
             </div>
 
@@ -26,16 +26,19 @@ const OrderInList = (props) => {
                         <div className="order-product">
                             <div className="order-product-description">
                                 <img src={product.product_image} alt={product.name} />
-                                <h2>{product.product_name}</h2>
-                                <h3>{product.product_description}</h3>
-                                <h3>Validade: {(new Date(product.validade)).toDateString()}</h3>
+                                <div className="order-product-description-info">
+                                    <h3>{product.product_name}</h3>
+                                    {/*description with max char filter*/}
+                                    <h3>{product.product_description.length > 50 ? product.product_description.substring(0, 50) + "..." : product.product_description}</h3>
+                                    <h3>Validade: {(new Date(product.validade)).toDateString()}</h3>
+                                </div>
                             </div>
 
                             <div className="order-product-final">
-                                <h2>Quantidade: {(props.order.products.filter((p) => p._id === product._id)).length}</h2>
-                                <h2>Preço: R$ {product.product_price}</h2>
-                                <h2>Vendedor: {product._vendor_id.name}</h2>
-                                <h2>Código: {props.order.code}</h2>
+                                <h3>Quantidade: {(props.order.products.filter((p) => p._id === product._id)).length}</h3>
+                                <h3>Preço: R$ {product.product_price}</h3>
+                                <h3>Vendedor: {product._vendor_id.name}</h3>
+                                <h3>Código: {props.order.code}</h3>
                             </div>
                         </div>
                     );

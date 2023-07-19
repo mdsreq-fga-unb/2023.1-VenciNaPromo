@@ -1,13 +1,103 @@
-.product-in-list {
+.order-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/*order header above products boxes*/
+.order-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*order body, with a lot of product boxes inside*/
+.order-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/*horizontal product box*/
+.order-product {
     cursor: default;
-    padding: 20px 20px 40px 20px;
+    width: 70%;
+    display: flex;
     background-color: #F5B396;
     border-radius: 20px;
-    width: 200px;
-    height: 270px;
+    margin-bottom: 20px;
+    height: 200px;
+    justify-content: center;
+    flex-direction: column;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     position: relative;
 }
+
+/*white horizontal box inside the last one, img on the left and info on the right, full center of the box */
+.order-product-description {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.order-header-title h3 {
+    color: #282c34;
+    margin: 0;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    overflow: hidden;
+}
+
+.order-product-description img {
+    width: 100%;
+    height: 55%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.order-product-description-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.order-body h3 {
+    color: #282c34;
+    margin: 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    overflow: hidden;
+}
+
+/*in the end of the box, another box with final details */
+.order-product-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+}
+
+
 
 .product-in-list-remove-button {
     cursor: pointer;

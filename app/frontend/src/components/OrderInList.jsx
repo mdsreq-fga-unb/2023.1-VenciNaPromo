@@ -4,30 +4,53 @@ import '../styles/OrderInList.css';
 const OrderInList = (props) => {
     const [showPopup, setShowPopup] = useState(false);
     
-    const togglePopup = () => {
-        setShowPopup(!showPopup);
-    };
+    useState(() => {
+        console.log(props.order);
+    }, []);
+
+    //remove duplicate products
+    const product_list = props.order.products.filter((product, index, self) =>
+        index === self.findIndex((p) => (
+            p._id === product._id
+        ))
+    );
 
     
+    // makes list of orders with list of products of each order
     return (
-        <div className="order-in-list" key={props.order._id} onClick={togglePopup}>
-        <div className="order-in-list__image">
-            <img src={props.order.product_image} alt="product" />
-        </div>
-        <div className="order-in-list__info">
-            <div className="order-in-list__info__name">
-            <h1>{props.order.product_name}</h1>
+        <div className="order-container">
+
+            <div className="order-header">
+                <div className="order-header-title">
+                    <h3>Pedido #{props.order._id} comprado no dia {(new Date(props.order.createdAt)).toDateString()}</h3>
+                </div>
             </div>
-            <div className="order-in-list__info__price">
-            <h2>R$ {props.order.product_price}</h2>
+
+            {/* products in order */}
+            <div className="order-body">
+                {product_list.map((product) => {
+                    return (
+                        <div className="order-product">
+                            <div className="order-product-description">
+                                <img src={product.product_image} alt={product.name} />
+                                <div className="order-product-description-info">
+                                    <h3>{product.product_name}</h3>
+                                    {/*description with max char filter*/}
+                                    <h3>{product.product_description.length > 50 ? product.product_description.substring(0, 50) + "..." : product.product_description}</h3>
+                                    <h3>Validade: {(new Date(product.validade)).toDateString()}</h3>
+                                </div>
+                            </div>
+
+                            <div className="order-product-final">
+                                <h3>Quantidade: {(props.order.products.filter((p) => p._id === product._id)).length}</h3>
+                                <h3>Preço: R$ {product.product_price}</h3>
+                                <h3>Vendedor: {product._vendor_id.name}</h3>
+                                <h3>Código: {props.order.code}</h3>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
-        </div>
-        <div className="order-in-list__quantity">
-            <h2>{props.order.product_quantity}</h2>
-        </div>
-        <div className="order-in-list__total">
-            <h2>R$ {props.order.product_price * props.order.product_quantity}</h2>
-        </div>
         </div>
     );
 };

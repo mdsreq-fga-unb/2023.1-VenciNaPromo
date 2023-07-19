@@ -58,7 +58,6 @@ const ProductInList = (props) => {
     event.stopPropagation();
   };
 
-
   let validadeProduto = new Date(props.product.validade.toString());
 
   return (

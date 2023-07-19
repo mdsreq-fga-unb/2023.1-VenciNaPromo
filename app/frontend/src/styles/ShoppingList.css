@@ -116,6 +116,8 @@
 }
 
 .product-detail-quantity {
+    position: absolute;
+    bottom: 2%;
     text-align: left;
     color: #845C5C;
     margin: 0;
@@ -127,16 +129,6 @@
     color: #845C5C;
     margin: 0;
     font-size: 14px;
-}
-
-.product-detail-price {
-    text-align: right;
-    position: fixed;
-    right: 18px;
-    bottom: 10px;
-    color: #000;
-    margin: 0;
-    font-size: 32px;
 }
 
 .product-detail-button {
@@ -198,7 +190,7 @@
     border: 1px solid #fff;
     border-radius: 20px;
     padding: 15px;
-    padding: 15px 15px 15px 40px;
+    padding: 15px 15px  15px 40px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }
 

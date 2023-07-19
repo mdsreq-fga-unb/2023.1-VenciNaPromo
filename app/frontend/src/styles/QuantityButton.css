@@ -1,0 +1,48 @@
+.quantity-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 12px;
+    cursor: auto;
+    position:relative;
+    width: 66%;
+    max-width: 75px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para o símbolo de subtração */
+  .quantity-button .minus {
+    color: #333;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: #e2e0e0;
+    border: none;
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o número */
+  .quantity-button .number {
+    margin: 0 2px;
+  }
+  
+  /* Estilo para o símbolo de adição */
+  .quantity-button .plus {
+    color: #333;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: #e2e0e0;
+    border: none;
+    border-radius: 2px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  

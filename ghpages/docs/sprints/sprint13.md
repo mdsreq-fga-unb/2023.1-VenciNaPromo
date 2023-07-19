@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-**Período:** 11/07/2023 - 17/07/2023 <br>
+**Período:** 11/07/2023 - 20/07/2023 <br>
 
 
 ## Sprint Planning
@@ -13,11 +13,9 @@
 - **Débitos Técnicos:**
     - US 07
     - US 08
-    - Responsividade
+
 - **Implementações:**
     -US 09
-    
-
 
 ### Tasks e responsáveis :
 
@@ -25,11 +23,15 @@
 |-----------------------------------------|-----------------------|
 | Diagrama de Casos de Uso | Todos os integrantes |
 | Especificação de Casos de Uso | Todos os integrantes |
-| Responsividade| Sabrina |
+| Responsividade | Sabrina |
 | Alertas de Confirmação | Lucas |
 | US07 | Charles e Gaby |
 | US08 | Cainã  |
 | US09 | Cainã  |
+| Vídeo do feedback do cliente            | 
+| Vídeo das entregas da unidade           |  
+| Atualização dos Casos de Uso            | Sabrina
+| Lições Aprendidas                       | Lucas 
 
 ## Sprint Review
 

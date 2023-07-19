@@ -140,17 +140,12 @@ const ProductInList = (props) => {
                 {user_data && user_data.user_flag === 0 && (
                   <>
                     {props.product && cart && cart.find(product => product._id == props.product._id) ? (
-                      <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover</button>
+                      <div className="add-product-conteiner">
+                        <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover</button>
+                      </div>
                     ) : (
-                      <>
-                        {/* <input
-                          type="number"
-                          className="product-quantity-input"
-                          value={quantity}
-                          onChange={handleQuantityChange}
-                          min={1} // Define o valor mínimo para 1 ou o valor que desejar
-                          max={props.product.product_quantity}
-                        /> */}
+                      <div className="add-product-conteiner">
+                        <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
                         <QuantityButton
                           product={props.product}
                           quantity={quantity}
@@ -158,15 +153,12 @@ const ProductInList = (props) => {
                           minQuantity={1}
                           maxQuantity={props.product.product_quantity}
                         />
-                        <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
-                      </>
+                      </div>
                     )}
                   </>
                 )}
                 <div className="product-detail-quantity">
-                  Quantidade disponível: {props.product.product_quantity}
-                </div>
-                <div className="product-in-list__info__validade">
+                  <p>Quantidade disponível: {props.product.product_quantity}</p>
                   <p>Validade: {validadeProduto.toLocaleDateString()}</p>
                 </div>
                 <div className="product-detail-price">

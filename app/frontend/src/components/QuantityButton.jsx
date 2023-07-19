@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/QuantityButton.css';
 import { updateProductQuantityInCart } from '../services/cart';
 
 const QuantityButton = ({ product, quantity, setQuantity, minQuantity, maxQuantity }) => {
@@ -19,10 +20,10 @@ const QuantityButton = ({ product, quantity, setQuantity, minQuantity, maxQuanti
     };
 
     return (
-        <div>
-            <button onClick={decreaseQuantity}>-</button>
-            <span>{quantity}</span>
-            <button onClick={increaseQuantity}>+</button>
+        <div className="quantity-button">
+            <button className="minus" onClick={decreaseQuantity}>-</button>
+            <span className="number">Qtd: {quantity}</span>
+            <button className="plus" onClick={increaseQuantity}>+</button>
         </div>
     );
 };

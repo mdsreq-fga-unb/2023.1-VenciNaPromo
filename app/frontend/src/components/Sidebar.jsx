@@ -85,9 +85,6 @@ const Sidebar = (props) => {
                           minQuantity={1}
                           maxQuantity={product.product_quantity}
                         />
-                        <div className="sidebar-cart-product-price">
-                          Qtd: {product.quantity}
-                        </div>
                         <div className="sidebar-cart-product-remove-from-cart">
                           <button className="sidebar-cart-product-remove-from-cart-button" onClick={() => removeProductFromCart(product)}>
                             Remover

@@ -1,3 +1,9 @@
+.product-in-list-validade {
+    color: #845C5C;
+    margin: 0;
+    font-size: 24px;
+}
+
 .product-in-list {
     cursor: default;
     padding: 20px 20px 40px 20px;

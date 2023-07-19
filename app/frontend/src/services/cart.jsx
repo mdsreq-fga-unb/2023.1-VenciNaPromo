@@ -8,6 +8,10 @@ export const saveProductInCart = (props) => {
     }
     cart.push(props);
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    // console.log(props.quantity);
+    // console.log(cart);
+
     window.location.reload();
 };
 
@@ -24,6 +28,23 @@ export const removeProductFromCart = (props) => {
     localStorage.setItem('cart', JSON.stringify(cart));
     window.location.reload();
 }
+
+export const updateProductQuantityInCart = (productId, quantity) => {
+    let cart = getCart();
+    if (cart) {
+        const updatedCart = cart.map((product) => {
+            if (product._id === productId) {
+                return {
+                    ...product,
+                    quantity: quantity
+                };
+            }
+            return product;
+        });
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+    }
+};
+
 
 export const clearCart = () => {
     //removes cart from localstorage
@@ -60,7 +81,7 @@ export const checkout = async () => {
     let cart = JSON.parse(localStorage.getItem('cart'));
     if (cart) {
         const token = localStorage.getItem('token');
-        await fetch(BASE_URL+"/order/finish_order/",{
+        await fetch(BASE_URL + "/order/finish_order/", {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
@@ -71,11 +92,11 @@ export const checkout = async () => {
                 products: cart
             })
         })
-        .then(response => {return response.json()})
-        .then(data => {
-            checkoutData = data.order;
-            return checkoutData;
-        });
+            .then(response => { return response.json() })
+            .then(data => {
+                checkoutData = data.order;
+                return checkoutData;
+            });
     }
     return null;
 }
@@ -89,7 +110,7 @@ export const getOrders = async () => {
     //returns user orders
     const token = localStorage.getItem('token');
     if (token) {
-        await fetch(BASE_URL + "/order/get_orders/",{
+        await fetch(BASE_URL + "/order/get_orders/", {
             method: 'get',
             headers: {
                 'Content-Type': 'application/json',
@@ -97,11 +118,11 @@ export const getOrders = async () => {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         })
-        .then(response => {return response.json()})
-        .then(data => {
-            ordersData = data.orders;
-            return ordersData;
-        });
+            .then(response => { return response.json() })
+            .then(data => {
+                ordersData = data.orders;
+                return ordersData;
+            });
     }
     return null;
 }

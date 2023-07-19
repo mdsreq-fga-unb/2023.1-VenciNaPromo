@@ -3,6 +3,7 @@ import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
+import QuantityButton from './QuantityButton';
 import { removeProduct } from '../services/products';
 import { removeProductFromCart, saveProductInCart, getCart, clearCart } from '../services/cart';
 
@@ -14,11 +15,21 @@ const ProductInList = (props) => {
   };
 
   const handleAddProductToCart = (event) => {
-    saveProductInCart(props.product);
+    const productToAdd = {
+      ...props.product,
+      quantity: quantity
+    };
+    saveProductInCart(productToAdd);
   };
 
   const handleRemoveProductFromCart = (event) => {
     removeProductFromCart(props.product);
+  };
+
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantityChange = (event) => {
+    setQuantity(parseInt(event.target.value));
   };
 
   const cart = getCart();
@@ -48,6 +59,8 @@ const ProductInList = (props) => {
   };
 
   let validadeProduto = new Date(props.product.validade.toString());
+
+  // console.log(props.product.product_quantity)
 
   return (
     <div className="product-in-list" key={props.product._id} onClick={togglePopup}>
@@ -91,7 +104,7 @@ const ProductInList = (props) => {
 
       {showPopup && (
         <div className="popup" onClick={handlePopupContainerClick}>
-          <div className="popup-content" onClick={handlePopupClick}>            
+          <div className="popup-content" onClick={handlePopupClick}>
             <div className="product-detail-container">
               <div className="product-detail">
                 <button className="popup-close-button" onClick={handleClosePopup}>
@@ -123,22 +136,31 @@ const ProductInList = (props) => {
                 {user_data && user_data.user_flag === 0 && (
                   <>
                     {props.product && cart && cart.find(product => product._id == props.product._id) ? (
-                      <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover</button>
+                      <div className="add-product-conteiner">
+                        <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover do carrinho</button>
+                      </div>
                     ) : (
-                      <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
+                      <div className="add-product-conteiner">
+                        <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
+                        <QuantityButton
+                          product={props.product}
+                          quantity={quantity}
+                          setQuantity={setQuantity}
+                          minQuantity={1}
+                          maxQuantity={props.product.product_quantity}
+                        />
+                      </div>
                     )}
                   </>
                 )}
                 <div className="product-detail-quantity">
-                  Quantidade disponível: {props.product.product_quantity}
-                </div>
-                <div className="product-in-list__info__validade">
+                  <p>Quantidade disponível: {props.product.product_quantity}</p>
                   <p>Validade: {validadeProduto.toLocaleDateString()}</p>
                 </div>
                 <div className="product-detail-price">
                   R$ {props.product.product_price}
                 </div>
-                
+
                 {/* <div className="product-detail-button">Adicionar</div> */}
               </div>
             </div>

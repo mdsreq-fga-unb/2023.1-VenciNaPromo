@@ -28,27 +28,29 @@
     margin: 0 auto;
 }
 
+.home-info {
+  margin-top: -35px;
+}
+
 .app-button {
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 30px;
   background-color: rgba(36, 0, 255, 0.60);
   cursor: pointer;
   font-family: 'Baloo';
   color: white;
-  border-radius: 8px;
-  margin-top: 20px;
 }
 
-.home-text {
+.home-text p {
     font-family: 'Baloo';
     font-size: 25px;
     color: black;
     text-align: center;
     margin-top: 20px;
-    padding: 20px;
-    margin: 20px;
+    margin: 10px;
+    text-align: justify;
 }
 
 .image-container img {

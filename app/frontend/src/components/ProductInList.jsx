@@ -141,7 +141,7 @@ const ProductInList = (props) => {
                   <>
                     {props.product && cart && cart.find(product => product._id == props.product._id) ? (
                       <div className="add-product-conteiner">
-                        <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover</button>
+                        <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover do carrinho</button>
                       </div>
                     ) : (
                       <div className="add-product-conteiner">

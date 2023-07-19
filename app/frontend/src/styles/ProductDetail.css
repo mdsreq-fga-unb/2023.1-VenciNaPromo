@@ -113,7 +113,6 @@
     color: white;
     cursor: pointer;
     display: flex;
-    flex-grow: 1;
     font-family: 'Baloo';
     font-size: 18px;
     justify-content: flex-start;
@@ -122,7 +121,6 @@
     position: relative;
     text-align: left;
     top: 85%;
-    width: auto;
     z-index: 1;
 }
 

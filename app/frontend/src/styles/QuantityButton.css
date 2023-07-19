@@ -10,6 +10,8 @@
     padding: 8px 12px;
     cursor: auto;
     position:relative;
+    width: 66%;
+    max-width: 75px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
   
@@ -28,7 +30,7 @@
   
   /* Estilo para o número */
   .quantity-button .number {
-    margin: 0 8px;
+    margin: 0 2px;
   }
   
   /* Estilo para o símbolo de adição */

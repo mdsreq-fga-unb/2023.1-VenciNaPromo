@@ -22,7 +22,7 @@ const QuantityButton = ({ product, quantity, setQuantity, minQuantity, maxQuanti
     return (
         <div className="quantity-button">
             <button className="minus" onClick={decreaseQuantity}>-</button>
-            <span className="number">Qtd: {quantity}</span>
+            <span className="number">{quantity}</span>
             <button className="plus" onClick={increaseQuantity}>+</button>
         </div>
     );

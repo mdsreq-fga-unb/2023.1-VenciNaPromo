@@ -25,7 +25,7 @@ export const removeProductFromCart = (props) => {
         return product._id !== props._id;
     }
     );
-    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart)) ;
     window.location.reload();
 }
 

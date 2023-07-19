@@ -20,8 +20,8 @@ const Sidebar = (props) => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleCheckout = async () => {
-    await checkout()
+  const handleCheckout = async (cart) => {
+    await checkout(cart)
     checkoutTotal = getCheckoutTotal();
     if (checkoutTotal) {
       alert(`Compra realizada com sucesso! seu código: ${checkoutTotal.code}`);
@@ -103,7 +103,7 @@ const Sidebar = (props) => {
                         </div>
                       </div>
                       <div className="sidebar-cart-checkout">
-                        <button className="sidebar-cart-checkout-button" onClick={() => handleCheckout()}>
+                        <button className="sidebar-cart-checkout-button" onClick={() => handleCheckout(cart)}>
                           Finalizar compra
                         </button>
                       </div>

@@ -9,9 +9,6 @@ export const saveProductInCart = (props) => {
     cart.push(props);
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    // console.log(props.quantity);
-    console.log(cart);
-
     window.location.reload();
 };
 
@@ -104,9 +101,8 @@ export const checkout = async (cart) => {
     //sends cart to backend and returns a coupon
     // let cart = JSON.parse(localStorage.getItem('cart'));
     if (cart) {
-        const token = localStorage.getItem('token');
         await fetch(BASE_URL + "/order/finish_order/", {
-            method: 'post',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
@@ -116,42 +112,16 @@ export const checkout = async (cart) => {
                 products: cart
             })
         })
-            .then(response => { return response.json() })
-            .then(data => {
-                checkoutData = data.order;
-                return checkoutData;
-            });
+        .then(response => { return response.json() })
+        .then(data => {
+            checkoutData = data;
+            return checkoutData;
+        }
+        );
     }
     return null;
 }
 
-
-export const updateProductQuantity = async (productId, newQuantity) => {
-    try {
-        console.log(productId);
-        console.log(newQuantity);
-
-        const response = await fetch(BASE_URL + `/product_list/update_product/${productId}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'Authorization': 'Bearer ' + localStorage.getItem('token'),
-            },
-            body: JSON.stringify({ product_quantity: newQuantity })
-        });
-
-        if (!response.ok) {
-            throw new Error('Error updating product quantity');
-        }
-
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error(error);
-        throw new Error('Error updating product quantity');
-    }
-};
 
 let ordersData = null;
 

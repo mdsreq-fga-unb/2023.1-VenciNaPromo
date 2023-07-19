@@ -24,7 +24,8 @@ const Sidebar = (props) => {
     await checkout(cart)
     checkoutTotal = getCheckoutTotal();
     if (checkoutTotal) {
-      alert(`Compra realizada com sucesso! seu código: ${checkoutTotal.code}`);
+      console.log(checkoutTotal);
+      alert(`Compra realizada ! seu código: ${checkoutTotal.order.code}`);
       clearCart();
       window.location.reload();
     } else {
@@ -35,11 +36,12 @@ const Sidebar = (props) => {
   const cart = getCart();
 
   //remove duplicates to show to user
-  const cleanCart = cart.filter((product, index, self) => {
-    return index === self.findIndex((p) => (
+  const cleanCart = cart ? cart.filter((product, index, self) =>
+    index === self.findIndex((p) => (
       p._id === product._id
     ))
-  })
+  ) : [];
+  
 
   const [quantity, setQuantity] = useState(1);
 

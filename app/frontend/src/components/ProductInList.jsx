@@ -58,13 +58,8 @@ const ProductInList = (props) => {
     event.stopPropagation();
   };
 
-  useState(() => {
-    console.log(cart);
-  }, []);
 
   let validadeProduto = new Date(props.product.validade.toString());
-
-  // console.log(props.product.product_quantity)
 
   return (
     <div className="product-in-list" key={props.product._id} onClick={togglePopup}>

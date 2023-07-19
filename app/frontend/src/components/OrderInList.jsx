@@ -8,9 +8,6 @@ const OrderInList = (props) => {
         setShowPopup(!showPopup);
     };
 
-    useState(() => {
-        console.log(props.order);
-    }, []);
     
     return (
         <div className="order-in-list" key={props.order._id} onClick={togglePopup}>

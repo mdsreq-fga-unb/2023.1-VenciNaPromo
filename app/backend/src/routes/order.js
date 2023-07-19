@@ -31,7 +31,7 @@ router.post('/finish_order', (req, res) => {
             products.forEach(product => {
                 Product.findById(product._id).then(product => {
                     //check product list for quantity of duplicated products
-                    const product_quantity = length(products.filter(p => p._id == product._id));
+                    const product_quantity = products.filter(p => p._id == product._id).length;
                     product.product_quantity -= product_quantity;
                     product.save()
                 }).catch(err => {

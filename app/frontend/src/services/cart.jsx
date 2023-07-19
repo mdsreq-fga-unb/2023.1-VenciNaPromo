@@ -21,6 +21,30 @@ export const removeProductFromCart = (props) => {
     if (cart === null) {
         cart = [];
     }
+    //remove it from cart
+    cart = cart.filter((product) => {
+        return product._id !== props._id;
+    }
+    );
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.reload();
+}
+
+export const removeOneProductFromCart = (props) => {
+    //reads localstorage, removes product from cart, and saves it back to localstorage
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    if (cart === null) {
+        cart = [];
+    }
+    //if has more than one product, only remove one
+    if (cart.filter((product) => product._id === props._id).length > 1) {
+        cart.splice(cart.findIndex((product) => product._id === props._id), 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.reload();
+        return;
+    }
+    //if has only one product, remove it from cart
     cart = cart.filter((product) => {
         return product._id !== props._id;
     }
@@ -95,13 +119,6 @@ export const checkout = async (cart) => {
             .then(response => { return response.json() })
             .then(data => {
                 checkoutData = data.order;
-
-                // console.log(cart);
-
-                cart.forEach(product => {
-                    updateProductQuantity(product._id, product.product_quantity - product.quantity);
-                });
-
                 return checkoutData;
             });
     }

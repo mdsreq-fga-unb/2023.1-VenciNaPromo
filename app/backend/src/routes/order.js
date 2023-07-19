@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const User = require('../models/User');
 const Order = require('../models/Order');
+const Product = require('../models/Product');
 
 const makecode = require('../utils/makecode');
 const checkToken = require('../utils/tokenquery');
@@ -25,6 +26,19 @@ router.post('/finish_order', (req, res) => {
                 status: true,
                 code: makecode(8),
             });
+
+            //remove quantity of products from product_quantity in product collection
+            products.forEach(product => {
+                Product.findById(product._id).then(product => {
+                    //check product list for quantity of duplicated products
+                    const product_quantity = length(products.filter(p => p._id == product._id));
+                    product.product_quantity -= product_quantity;
+                    product.save()
+                }).catch(err => {
+                    return res.status(500).json({ message: 'Internal server errors' });
+                });
+            });
+
 
             //save order
             order.save().then(order => {

@@ -146,13 +146,6 @@ const ProductInList = (props) => {
                     ) : (
                       <div className="add-product-conteiner">
                         <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
-                        <QuantityButton
-                          product={props.product}
-                          quantity={quantity}
-                          setQuantity={setQuantity}
-                          minQuantity={1}
-                          maxQuantity={props.product.product_quantity}
-                        />
                       </div>
                     )}
                   </>

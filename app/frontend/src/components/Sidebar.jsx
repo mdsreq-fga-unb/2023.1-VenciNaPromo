@@ -34,6 +34,12 @@ const Sidebar = (props) => {
 
   const cart = getCart();
 
+  //remove duplicates to show to user
+  const cleanCart = cart.filter((product, index, self) => {
+    return index === self.findIndex((p) => (
+      p._id === product._id
+    ))
+  })
 
   const [quantity, setQuantity] = useState(1);
 
@@ -71,7 +77,7 @@ const Sidebar = (props) => {
                   {cart && cart.length > 0 ? (
                     <>
                       <div className="sidebar-cart-products">
-                        {cart.map((product) => (
+                        {cleanCart.map((product) => (
                           <div className="sidebar-cart-product" key={product._id}>
                             <div className="sidebar-cart-product-name">
                               {product.product_name}
@@ -85,8 +91,8 @@ const Sidebar = (props) => {
                               </button>
                               <QuantityButton
                                 product={product}
-                                quantity={product.quantity}
-                                setQuantity={setQuantity}
+                                //compare quantity of duplicates, it is the quantity of the product in the cart
+                                quantity={cart.filter((p) => p._id === product._id).length}
                                 minQuantity={1}
                                 maxQuantity={product.product_quantity}
                               />
@@ -99,7 +105,7 @@ const Sidebar = (props) => {
                           Total:
                         </div>
                         <div className="sidebar-cart-total-price">
-                          R$ {cart.reduce((total, product) => total + product.product_price * product.quantity, 0).toFixed(2)}
+                          R$ {cart.reduce((total, product) => total + product.product_price, 0).toFixed(2)}
                         </div>
                       </div>
                       <div className="sidebar-cart-checkout">

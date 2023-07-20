@@ -12,8 +12,7 @@ const Checkout = (props) => {
         await getOrders();
         const listabruto = getOrdersData();
         if (listabruto) {
-            setlistaDePedidos(listabruto);
-            console.log(listabruto);
+            setlistaDePedidos(listabruto.reverse());
         }
         else {
             alert("Erro ao carregar lista de pedidos!");
@@ -28,24 +27,23 @@ const Checkout = (props) => {
         <div className="checkout-container">
             <div className="checkout-header">
                 <div className="checkout-header-title">
-                    <h1>Produtos comprados</h1>
+                    <h1>Produtos Comprados</h1>
                 </div>
             </div>
 
             <div className="checkout-body">
                 {/* if user flag 0, then show his cart orders */}
-                {props.props.UserData && props.props.UserData.user.user_flag === 0 && listaDePedidos ? (
+                {props.props.UserData && listaDePedidos ? (
                     listaDePedidos.map((order) => {
                         return (
                             <OrderInList order={order} />
                         );
                     })
                 ) : (
-                    listaDePedidos.map((order) => {
-                        return (
-                            <OrderInList order={order} />
-                        );
-                    })
+                    //loading
+                    <div className="checkout-loading">
+                        <h1>Carregando...</h1>
+                    </div>
                 )}
             </div>
         </div>

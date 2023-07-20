@@ -3,6 +3,7 @@ import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
+import QuantityButton from './QuantityButton';
 import { removeProduct } from '../services/products';
 import { removeProductFromCart, saveProductInCart, getCart, clearCart } from '../services/cart';
 
@@ -14,11 +15,21 @@ const ProductInList = (props) => {
   };
 
   const handleAddProductToCart = (event) => {
-    saveProductInCart(props.product);
+    const productToAdd = {
+      ...props.product,
+      quantity: quantity
+    };
+    saveProductInCart(productToAdd);
   };
 
   const handleRemoveProductFromCart = (event) => {
     removeProductFromCart(props.product);
+  };
+
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantityChange = (event) => {
+    setQuantity(parseInt(event.target.value));
   };
 
   const cart = getCart();
@@ -36,10 +47,16 @@ const ProductInList = (props) => {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
-  useState(() => {
-    console.log(cart);
-  }, []);
+  const handlePopupClick = (event) => {
+    event.stopPropagation();
+  };
+  const handlePopupContainerClick = (event) => {
+    event.stopPropagation();
+  };
 
   let validadeProduto = new Date(props.product.validade.toString());
 
@@ -76,18 +93,21 @@ const ProductInList = (props) => {
         </div>
         <div className="product-in-list__info__validade">
           {validadeProduto < currentDate ? (
-            <p>Vencido em: {validadeProduto.toLocaleDateString()}</p>
+            <p>Vencido em: {validadeProduto.toLocaleDateString('pt-BR')}</p>
           ) : (
-            <p>Validade: {validadeProduto.toLocaleDateString()}</p>
+            <p>Validade: {validadeProduto.toLocaleDateString('pt-BR')}</p>
           )}
         </div>
       </div>
 
       {showPopup && (
-        <div className="popup">
-          <div className="popup-content">
+        <div className="popup" onClick={handlePopupContainerClick}>
+          <div className="popup-content" onClick={handlePopupClick}>
             <div className="product-detail-container">
               <div className="product-detail">
+                <button className="popup-close-button" onClick={handleClosePopup}>
+                  X
+                </button>
                 {props.product.product_quantity <= 0 && validadeProduto > currentDate && (
                   <div className="unavailable-label">Indisponível</div>
                 )}
@@ -114,25 +134,24 @@ const ProductInList = (props) => {
                 {user_data && user_data.user_flag === 0 && (
                   <>
                     {props.product && cart && cart.find(product => product._id == props.product._id) ? (
-                      <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover</button>
+                      <div className="add-product-conteiner">
+                        <button className="product-detail-remove-from-cart-button" onClick={handleRemoveProductFromCart}>Remover do carrinho</button>
+                      </div>
                     ) : (
-                      <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
+                      <div className="add-product-conteiner">
+                        <button className="product-detail-add-to-cart-button" onClick={handleAddProductToCart}>Adicionar</button>
+                      </div>
                     )}
                   </>
                 )}
                 <div className="product-detail-quantity">
-                  Quantidade disponível: {props.product.product_quantity}
-                </div>
-                <div className="product-in-list__info__validade">
-                  <p>Validade: {validadeProduto.toLocaleDateString()}</p>
+                  <p>Quantidade disponível: {props.product.product_quantity}</p>
+                  <p>Validade: {validadeProduto.toLocaleDateString('pt-BR')}</p>
                 </div>
                 <div className="product-detail-price">
                   R$ {props.product.product_price}
                 </div>
-                <button
-                  className="popup-close-button"
-                  onClick={togglePopup}
-                >X</button>
+
                 {/* <div className="product-detail-button">Adicionar</div> */}
               </div>
             </div>
@@ -145,7 +164,7 @@ const ProductInList = (props) => {
           <div className="removing-confirmation-modal-content">
             <h2>Remover o produto do seu mercado?</h2>
             <div className="removing-confirmation-modal-buttons">
-              <button className="removing-confirmation-modal-button" onClick={toggleRemovingConfirmation}>Cancelar</button>
+              <button className="removing-confirmation-modal-button" onClick={() => toggleRemovingConfirmation()}>Cancelar</button>
               <button className="removing-confirmation-modal-button" onClick={() => handleRemoveProduct()}>Remover</button>
             </div>
           </div>

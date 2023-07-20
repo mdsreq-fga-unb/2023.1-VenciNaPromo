@@ -1,29 +1,37 @@
-<h1 align="center"><b>Sprint 11</b></h1>
+<h1 align="center"><b>Sprint 13</b></h1>
 
 <br>
 
 ## Visão Geral
 
-**Período:** 11/07/2023 - 17/07/2023 <br>
+**Período:** 11/07/2023 - 20/07/2023 <br>
 
 
 ## Sprint Planning
 
-#### Objetivo da Sprint 12
-- **Débitos Técnicos:** 
+#### Objetivo da Sprint 13
+- **Débitos Técnicos:**
+    - US 07
+    - US 08
 
 - **Implementações:**
-
+    -US 09
 
 ### Tasks e responsáveis :
 
 |                **Task**                 |    **Resposáveis**    | 
 |-----------------------------------------|-----------------------|
+| Diagrama de Casos de Uso | Todos os integrantes |
+| Especificação de Casos de Uso | Todos os integrantes |
+| Responsividade | Sabrina |
+| Alertas de Confirmação | Lucas |
+| US07 | Charles e Gaby |
+| US08 | Cainã  |
+| US09 | Cainã  |
 | Vídeo do feedback do cliente            | 
 | Vídeo das entregas da unidade           |  
-| US09
- 
-
+| Atualização dos Casos de Uso            | Sabrina
+| Lições Aprendidas                       | Lucas 
 
 ## Sprint Review
 

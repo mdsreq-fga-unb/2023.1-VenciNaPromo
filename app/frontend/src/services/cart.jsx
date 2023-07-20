@@ -8,6 +8,7 @@ export const saveProductInCart = (props) => {
     }
     cart.push(props);
     localStorage.setItem('cart', JSON.stringify(cart));
+
     window.location.reload();
 };
 
@@ -17,6 +18,30 @@ export const removeProductFromCart = (props) => {
     if (cart === null) {
         cart = [];
     }
+    //remove it from cart
+    cart = cart.filter((product) => {
+        return product._id !== props._id;
+    }
+    );
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.reload();
+}
+
+export const removeOneProductFromCart = (props) => {
+    //reads localstorage, removes product from cart, and saves it back to localstorage
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    if (cart === null) {
+        cart = [];
+    }
+    //if has more than one product, only remove one
+    if (cart.filter((product) => product._id === props._id).length > 1) {
+        cart.splice(cart.findIndex((product) => product._id === props._id), 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.reload();
+        return;
+    }
+    //if has only one product, remove it from cart
     cart = cart.filter((product) => {
         return product._id !== props._id;
     }
@@ -25,10 +50,26 @@ export const removeProductFromCart = (props) => {
     window.location.reload();
 }
 
+export const updateProductQuantityInCart = (productId, quantity) => {
+    let cart = getCart();
+    if (cart) {
+        const updatedCart = cart.map((product) => {
+            if (product._id === productId) {
+                return {
+                    ...product,
+                    quantity: quantity
+                };
+            }
+            return product;
+        });
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+    }
+};
+
+
 export const clearCart = () => {
     //removes cart from localstorage
     localStorage.removeItem('cart');
-    window.location.reload();
 }
 
 export const getCart = () => {
@@ -53,13 +94,14 @@ let checkoutData = null;
 
 export const getCheckoutTotal = () => checkoutData;
 
-export const checkout = async () => {
+const BASE_URL = process.env.REACT_APP_API_URL;
+
+export const checkout = async (cart) => {
     //sends cart to backend and returns a coupon
-    let cart = JSON.parse(localStorage.getItem('cart'));
+    // let cart = JSON.parse(localStorage.getItem('cart'));
     if (cart) {
-        const token = localStorage.getItem('token');
-        await fetch("http://localhost:8080/order/finish_order/",{
-            method: 'post',
+        await fetch(BASE_URL + "/order/finish_order/", {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
@@ -69,11 +111,12 @@ export const checkout = async () => {
                 products: cart
             })
         })
-        .then(response => {return response.json()})
+        .then(response => { return response.json() })
         .then(data => {
-            checkoutData = data.order;
+            checkoutData = data;
             return checkoutData;
-        });
+        }
+        );
     }
     return null;
 }
@@ -87,7 +130,7 @@ export const getOrders = async () => {
     //returns user orders
     const token = localStorage.getItem('token');
     if (token) {
-        await fetch("http://localhost:8080/order/get_orders/",{
+        await fetch(BASE_URL + "/order/get_orders/", {
             method: 'get',
             headers: {
                 'Content-Type': 'application/json',
@@ -95,11 +138,11 @@ export const getOrders = async () => {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         })
-        .then(response => {return response.json()})
-        .then(data => {
-            ordersData = data.orders;
-            return ordersData;
-        });
+            .then(response => { return response.json() })
+            .then(data => {
+                ordersData = data.orders;
+                return ordersData;
+            });
     }
     return null;
 }

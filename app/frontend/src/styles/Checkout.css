@@ -14,6 +14,15 @@
     height: 100vh;
 }
 
+.checkout-header-title h1 {
+    color: #282c34;
+    margin: 0;
+    margin-top: 1%;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    overflow: hidden;
+}
+
 .image-container {
     display: flex;
     flex-direction: column;

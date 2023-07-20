@@ -58,7 +58,7 @@ router.post('/remove_product', (req, res) => {
             // checa tipo de usuario (flag)
             if (user.user_flag == 1) {
               // vendedor: remove produto pertencente aquele ve
-              Product.findOneAndDelete({ _id: product_id, _vendor_id: decoded._id })
+              Product.findOneAndDelete({ _id: product_id, _vendor_id: decoded.id })
                 .then(product => {
                   return res.status(200).json({ message: 'ok vendedor', product: product });
                 }
@@ -67,6 +67,53 @@ router.post('/remove_product', (req, res) => {
                   return res.status(500).json({ message: 'Internal server error' });
                 }
                 );
+            }
+          })
+          .catch(err => {
+            return res.status(500).json({ message: 'Internal server error' });
+          });
+      }
+    );
+});
+
+router.post('/add_product', (req, res) => {
+    const token = req.headers['authorization'].split(' ')[1];
+    const {
+      product_name,
+      product_description,
+      product_price,
+      product_category,
+      product_image,
+      validade,
+      status,
+      product_quantity
+    } = req.body;
+    checkToken(token, res, async (decoded) => {
+        User.findById(decoded.id)
+          .then(user => {
+            // checa tipo de usuario (flag)
+            if (user.user_flag == 1) {
+              // vendedor: adiciona produto pertencente aquele vendedor
+              const product = new Product({
+                _vendor_id: decoded.id,
+                product_name: product_name,
+                product_description: product_description,
+                product_price: product_price,
+                product_category: product_category,
+                product_image: product_image,
+                validade: validade,
+                status: status,
+                product_quantity: product_quantity
+              });
+              product.save()
+                .then(product => {
+                  return res.status(200).json({ message: 'ok vendedor', product: product });
+                }
+                )
+                .catch(err => {
+                  return res.status(500).json({ message: 'Internal server error' });
+                }
+              );
             }
           })
           .catch(err => {

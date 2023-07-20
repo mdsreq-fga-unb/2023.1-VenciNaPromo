@@ -7,6 +7,9 @@ O projeto "VenciNaPromo" está em desenvolvimento pela equipe "GPT" durante a di
 <p align="justify">
 Atualmente, buscamos tornar o mundo um lugar mais sustentável, realizando um site que participe dos Objetivos de Desenvolvimento Sustentável, em especial a ODS 12.1, da Agenda de 2023.</p>
 
+<p align="justify">
+Link do projeto: https://frontendvencinapromo-production.up.railway.app/
+</p> 
 ## 💻 Equipe <a name="team"></a>
 
 <div>

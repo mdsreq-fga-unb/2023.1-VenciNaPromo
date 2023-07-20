@@ -1,11 +1,12 @@
 .shoppin-list-container {
     display: grid;
     background-color: #fff;
-    width: calc(95% - 290px);
+    width: 92%;
     margin-left: 30px;
     margin-right: 30px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
+    justify-items: center;
 }
 
 @media (max-width: 768px) {
@@ -116,6 +117,8 @@
 }
 
 .product-detail-quantity {
+    position: absolute;
+    bottom: 2%;
     text-align: left;
     color: #845C5C;
     margin: 0;
@@ -127,16 +130,6 @@
     color: #845C5C;
     margin: 0;
     font-size: 14px;
-}
-
-.product-detail-price {
-    text-align: right;
-    position: fixed;
-    right: 18px;
-    bottom: 10px;
-    color: #000;
-    margin: 0;
-    font-size: 32px;
 }
 
 .product-detail-button {
@@ -185,6 +178,7 @@
 }
 
 .search-bar {
+    display: flex;
     flex: 1;
     padding: 30px;
     position: relative;
@@ -197,8 +191,7 @@
     text-align: center;
     border: 1px solid #fff;
     border-radius: 20px;
-    padding: 15px;
-    padding: 15px 15px 15px 40px;
+    padding: 15px 15px  15px 40px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -239,15 +232,121 @@
 }
 
 .new-product-button {
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	font-size: 20px;
-	background-color: rgba(36, 0, 255, 0.60);
-	cursor: pointer;
-	font-family: 'Baloo';
-	color: white;
-	border-radius: 8px;
-	width: 100%;
-	max-width: 210px;
+    /* padding: 20px; */
+    border: none;
+    font-size: 20px;
+    background-color: rgba(36, 0, 255, 0.60);
+    cursor: pointer;
+    font-family: 'Baloo';
+    color: white;
+    border-radius: 20px;
+    max-width: 210px;
+    background-color: rgba(36, 0, 255, 0.60);
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    margin-left: 40px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    width: 30%;
+    height: 70%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    border: 10px solid #F5B396;
+    overflow: scroll;
+}   
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.new-product-form {
+    flex: 1;
+    padding: 25px;
+    width: 300px;
+    margin-top: -60px;
+}
+
+.form-field {
+    border: none;
+    border-bottom: 3px solid #845C5C;
+    background-color: transparent;
+    outline: none;
+    width: 400px;
+    margin-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: 'Baloo';
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 20px;
+}
+
+.form-field::placeholder {
+    font-family: "Baloo", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.h3-modal {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-left: 90px;
+}
+
+.button-add {
+    margin-top: 40px;
+    margin-left: 90px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(36, 0, 255, 0.60);
+    cursor: pointer;
+    font-family: 'Baloo';
+    color: white;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+}
+
+.form-label {
+    border: none;
+    outline: none;
+    width: 400px;
+    margin-right: 210px;
+    font-family: 'Baloo';
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 20px;
+}
+.modal-close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #4C2FFF;
+    font-family: 'Baloo';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: none;
 }

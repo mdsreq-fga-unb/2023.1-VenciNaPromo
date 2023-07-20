@@ -35,7 +35,7 @@ const ProductInList = (props) => {
   const cart = getCart();
 
   const [showPopup, setShowPopup] = useState(false);
-  const user_data = props.props.props.UserData.user;
+  const user_data = props.props.props.UserData && typeof props.props.props.UserData === 'object' ? props.props.props.UserData.user : null;
   const currentDate = new Date();
 
   const [showRemovingConfirmation, setShowRemovingConfirmation] = useState(false);

@@ -129,16 +129,14 @@ const Sidebar = (props) => {
           </div>
           <div className="sidebar-footer">
             <div className="sidebar-footer-container">
-              <button className="sidebar-button" onClick={user_data ? () => window.location.href = '/checkout' : doNothing}> Compras </button>
-              <button className="sidebar-button" onClick={() => logout()}><span> Sair </span> </button>
+            <button className="sidebar-button" onClick={user_data ? () => window.location.href='/checkout' : doNothing}> Histórico </button>
+            <button className="sidebar-button" onClick={() => logout()}><span> Sair </span> </button>
             </div>
           </div>
         </div>
       ) : (
         <div className="sidebar-footer">
           <div className="sidebar-footer-container">
-            <button className="sidebar-button" onClick={() => logout()}><span> Sair </span> </button>
-            <button className="sidebar-button" onClick={user_data ? () => window.location.href='/checkout' : doNothing}> Histórico </button>
           </div>
         </div>
       )}

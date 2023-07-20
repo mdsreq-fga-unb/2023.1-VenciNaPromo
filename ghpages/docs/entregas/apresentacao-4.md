@@ -1,5 +1,3 @@
 ## Video de apresentação da Unidade 4
 
-<iframe width="711" height="400" src="https://youtu.be/BzJLkQV5eqU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-https://youtu.be/BzJLkQV5eqU
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BzJLkQV5eqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

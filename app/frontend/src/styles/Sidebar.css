@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   transition: width 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .sidebar.collapsed {

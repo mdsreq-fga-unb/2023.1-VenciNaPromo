@@ -5,6 +5,7 @@ import Lupa from '../img/lupa32x32.png';
 import '../styles/ShoppingList.css';
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
+import '../styles/Confirmations.css';
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { productList, getProductListData } from '../services/products';
 import { useEffect, useState } from 'react';
@@ -39,6 +40,7 @@ function ShoppingList(props) {
   const closeModal = () => {
     setShowModal(false);
   };
+
   const addProductToList = async (values) => {
     try {
       const newProduct = {
@@ -54,6 +56,7 @@ function ShoppingList(props) {
       await addProduct(newProduct);
       getShoppingList();
       closeModal();
+      setShowAddingConfirmation(true);
     } catch (error) {
       console.error(error);
     }
@@ -70,6 +73,8 @@ function ShoppingList(props) {
     )
     : [];
 
+  const [showAddingConfirmation, setShowAddingConfirmation] = useState(false);
+
   return (
     <div className="container">
       <div className="upper-bar">
@@ -80,7 +85,7 @@ function ShoppingList(props) {
             value={searchTerm}
             onChange={handleSearch}
           />
-          <img src={Lupa} alt="Ícone"/>
+          <img src={Lupa} alt="Ícone" />
         </div>
         {props.props.UserData && props.props.UserData.user.user_flag === 1 ? (
           <div className="new-product-container">
@@ -175,6 +180,21 @@ function ShoppingList(props) {
                   </button>
                 </Form>
               </Formik>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showAddingConfirmation && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>Produto adicionado com sucesso!</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+              className="confirmation-modal-button"
+              onClick={() => setShowAddingConfirmation(false)}>
+                Ok
+              </button>
             </div>
           </div>
         </div>

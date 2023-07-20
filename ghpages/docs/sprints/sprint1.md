@@ -8,7 +8,7 @@
 
 ## Sprint Planning
 
-**Objetivo da Sprint X:** Objetivos da sprint de forma resumida.
+**Objetivo da Sprint 1:** Objetivos da sprint de forma resumida.
 
 ### Tasks:
 

@@ -104,3 +104,10 @@
 |Sprint Retro    |  11/07/2023    |    ✔    |     ✔      |      ✔     |     ✔     |     ✔      |
 |Sprint Review   |  11/07/2023    |    ✔    |     ✔      |      ✔     |     ✔     |     ✔      |
 
+|**Integrante**|**Frequência**|
+|--------------|--------------|
+| Cainã        |    100%      |
+| Charles      |    100%      |
+| Gabrielly    |    100%      |
+| Lucas        |    100%      |
+| Sabrina      |    100%      |

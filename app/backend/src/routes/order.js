@@ -66,12 +66,17 @@ router.get('/get_orders', (req, res) => {
                         //gets full product info and seller info, then adds to product object
                         const promises = orders[i].products.map(product => {
                             return Product.findById(product._id).then(async product => {
-                                product._vendor_id = await User.findById(product._vendor_id);
-                                return product;
+                                if (product) {
+                                    product._vendor_id = await User.findById(product._vendor_id);
+                                    return product;
+                                  }
+                                return null;
                             });
                         });
 
-                        orders[i].products = await Promise.all(promises);
+                        orders[i].products = (await Promise.all(promises)).filter(
+                            (product) => product !== null
+                          );
                     }
 
                     return res.status(200).json({ message: 'ok', orders: orders });
@@ -86,13 +91,18 @@ router.get('/get_orders', (req, res) => {
                     for (let i = 0; i < orders.length; i++) {
                         //gets full product info and seller info, then adds to product object
                         const promises = orders[i].products.map(product => {
-                            return Product.findById(product._id).then(async product => {
-                                product._vendor_id = await User.findById(product._vendor_id);
-                                return product;
+                            return Product.findById(product).then(async product => {
+                                if (product) {
+                                    product._vendor_id = await User.findById(product._vendor_id);
+                                    return product;
+                                  }
+                                  return null;
                             });
                         });
 
-                        orders[i].products = await Promise.all(promises);
+                        orders[i].products = (await Promise.all(promises)).filter(
+                            (product) => product !== null
+                          );
                     }
 
                     return res.status(200).json({ message: 'ok', orders: orders });

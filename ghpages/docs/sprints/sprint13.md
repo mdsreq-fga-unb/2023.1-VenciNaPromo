@@ -56,29 +56,29 @@
 ##### O que gostamos e queremos continuar fazendo na próxima print?
 |**Integrante**|**Resposta**|
 |--------------|------------|
-| Cainã        | | 
-| Charles      |       |
-| Gabrielly    |   |
-| Lucas        |       |
-| Sabrina      |        |
+| Cainã        | terminar o produto e entrar de férias| 
+| Charles      | codigo e estudo das tecnicas de requisitos      |
+| Gabrielly    | muitas atividades sendo feitas  |
+| Lucas        | Mandamos muito nessa sprint      |
+| Sabrina      | É melhor cada um trabalhar individualmente na sua task       |
 
 ##### O que aprendemos nessa sprint e devemos aplicar na próxima?
 |**Integrante**|**Resposta**|
 |--------------|------------|
-| Cainã        |  |
-| Charles      |       |
-| Gabrielly    |       |
-| Lucas        |       |
-| Sabrina      |     |
+| Cainã        | que comunicação ruim faz outras pessoas terem q refazer trabalho |
+| Charles      | que fazer um sistema dá trabalho e tem que estudar bastante      |
+| Gabrielly    | muitas atividades sendo feitas      |
+| Lucas        | Devemos parear mais      |
+| Sabrina      | Devemos entender nossos limites e ter responsabilidade. Não adianta pegar tarefas que não irá conseguir fazer    |
 
 ##### O que erramos e temos que melhorar para a próxima sprint?
 |**Integrante**|**Resposta**|
 |--------------|------------|
-| Cainã        |  | 
-| Charles      |   |
-| Gabrielly    |       |
-| Lucas        |           |
-| Sabrina      |   |
+| Cainã        | que só pode pegar uma tarefa se realmente for fazer | 
+| Charles      | comunicação poderia ter sido melhor  |
+| Gabrielly    | achei um pouco corrida essa reta final      |
+| Lucas        | Que mandamos muito          |
+| Sabrina      | Não devemos sobrecarregar uma pessoas e outras não. Deve ter equilibrio mesmo que entregue menos |
 
 
 
@@ -89,12 +89,13 @@
 |Sprint Planning |  04/07/2023    |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
 |Reunião de Feedback com o Cliente |  19/07/2023    |   ✔     |     ✔      |      ✔     |     ✔     |    ✔      |
 |Reunião de apresentação da unidade 4 |  19/07/2023    |   ✔     |     **X**      |     **X**     |     **X**    |    ✔      |
+Retro assíncrona | 20/07/2023 |   ✔     |     ✔      |      ✔     |     ✔     |     ✔      |
 
 |**Integrante**|**Frequência**|
 |--------------|--------------|
 | Cainã        |    100%      |
-| Charles      |    66%       |
-| Gabrielly    |    66%       |
-| Lucas        |    66%       |
+| Charles      |    75%       |
+| Gabrielly    |    75%       |
+| Lucas        |    75%       |
 | Sabrina      |    100%      |
 

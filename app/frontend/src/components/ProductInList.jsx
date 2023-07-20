@@ -3,6 +3,7 @@ import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
+import '../styles/Confirmations.css';
 import QuantityButton from './QuantityButton';
 import { removeProduct } from '../services/products';
 import { removeProductFromCart, saveProductInCart, getCart, clearCart } from '../services/cart';
@@ -160,12 +161,12 @@ const ProductInList = (props) => {
       )}
 
       {showRemovingConfirmation && (
-        <div className="removing-confirmation-modal">
-          <div className="removing-confirmation-modal-content">
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
             <h2>Remover o produto do seu mercado?</h2>
-            <div className="removing-confirmation-modal-buttons">
-              <button className="removing-confirmation-modal-button" onClick={() => toggleRemovingConfirmation()}>Cancelar</button>
-              <button className="removing-confirmation-modal-button" onClick={() => handleRemoveProduct()}>Remover</button>
+            <div className="confirmation-modal-buttons">
+              <button className="confirmation-modal-button" onClick={() => toggleRemovingConfirmation()}>Cancelar</button>
+              <button className="confirmation-modal-button" onClick={() => handleRemoveProduct()}>Remover</button>
             </div>
           </div>
         </div>

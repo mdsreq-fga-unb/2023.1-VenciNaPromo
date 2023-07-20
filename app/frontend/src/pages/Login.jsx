@@ -2,9 +2,13 @@ import React from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
+import { useState } from 'react';
 import '../styles/Login.css';
+import '../styles/Confirmations.css';
 
 function Login({ setIsVisitor }) {
+  const [showRegisterConfirmation, setShowRegisterConfirmation] = useState(false);
+
   const handleLogin = async (values, { resetForm }) => {
     try {
       const { email, password } = values;
@@ -35,6 +39,7 @@ function Login({ setIsVisitor }) {
       };
       await register(userData);
       resetForm();
+      setShowRegisterConfirmation(true);
     } catch (error) {
       console.error(error); 
     }
@@ -182,6 +187,21 @@ function Login({ setIsVisitor }) {
       <button className="button-visit" type="submit" onClick={() => setIsVisitor(true)}>
         Continuar como visitante
       </button>
+
+      {showRegisterConfirmation && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>Cadastro realizado com sucesso!</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+              className="confirmation-modal-button"
+              onClick={() => setShowRegisterConfirmation(false)}>
+                Ok
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

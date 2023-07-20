@@ -2,9 +2,15 @@ import React from 'react';
 import * as yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { login, register } from "../services/auth";
+import { useState } from 'react';
 import '../styles/Login.css';
+import '../styles/Confirmations.css';
 
 function Login({ setIsVisitor }) {
+  const [showRegisterConfirmation, setShowRegisterConfirmation] = useState(false);
+  const [showRegisterError, setShowRegisterError] = useState(false);
+  const [showLoginError, setShowLoginError] = useState(false);
+
   const handleLogin = async (values, { resetForm }) => {
     try {
       const { email, password } = values;
@@ -19,9 +25,10 @@ function Login({ setIsVisitor }) {
       resetForm();
     } catch (error) {
       console.error(error);
+      setShowLoginError(true);
     }
   };
-  
+
 
   const handleRegister = async (values, { resetForm }) => {
     try {
@@ -35,8 +42,10 @@ function Login({ setIsVisitor }) {
       };
       await register(userData);
       resetForm();
+      setShowRegisterConfirmation(true);
     } catch (error) {
-      console.error(error); 
+      console.error(error);
+      setShowRegisterError(true);
     }
   };
 
@@ -58,6 +67,9 @@ function Login({ setIsVisitor }) {
       .required("O email é obrigatório"),
     username: yup
       .string()
+      .test("no-numbers", "O nome não pode conter números", (value) => {
+        return !/\d/.test(value); // Verifica se o valor contém algum dígito numérico (número)
+      })
       .required("O nome é obrigatório"),
     password: yup
       .string()
@@ -69,6 +81,8 @@ function Login({ setIsVisitor }) {
       .required("A confirmação da senha é obrigatória"),
     flag: yup
       .number()
+      .required("Selecione uma opção: (Cliente ou Vendedor)")
+      .oneOf([0, 1], "Selecione uma opção válida (Cliente ou Vendedor)")
   });
 
   return (
@@ -80,7 +94,7 @@ function Login({ setIsVisitor }) {
           <div className="register-form-container">
             <h3>Crie Sua Conta</h3>
             <Formik
-              initialValues={{username: "", email: "", password: "", flag: "", confirmation: "" }}
+              initialValues={{ username: "", email: "", password: "", flag: "", confirmation: "" }}
               onSubmit={handleRegister}
               validationSchema={validationsRegister}
             >
@@ -95,8 +109,13 @@ function Login({ setIsVisitor }) {
                     <option value={0}>Cliente</option>
                     <option value={1}>Vendedor</option>
                   </Field>
+                  <ErrorMessage
+                    name="flag"
+                    component="span"
+                    className="form-error"
+                  />
                 </div>
-                
+
                 <div className="form-group">
                   <Field name="username" className="form-field" placeholder="Nome" />
                   <ErrorMessage
@@ -148,7 +167,7 @@ function Login({ setIsVisitor }) {
           <div className="login-form-container">
             <h3>Já é Cadastrado?</h3>
             <Formik
-              initialValues={{email: "", password: ""}}
+              initialValues={{ email: "", password: "" }}
               onSubmit={handleLogin}
               validationSchema={validationsLogin}
             >
@@ -182,6 +201,51 @@ function Login({ setIsVisitor }) {
       <button className="button-visit" type="submit" onClick={() => setIsVisitor(true)}>
         Continuar como visitante
       </button>
+
+      {showRegisterConfirmation && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>Cadastro realizado com sucesso!</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+                className="confirmation-modal-button"
+                onClick={() => setShowRegisterConfirmation(false)}>
+                Ok
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showLoginError && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>Email ou senha incorretos</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+                className="confirmation-modal-button"
+                onClick={() => setShowLoginError(false)}>
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showRegisterError && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>O email já está cadastrado!</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+                className="confirmation-modal-button"
+                onClick={() => setShowRegisterError(false)}>
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

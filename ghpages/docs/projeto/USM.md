@@ -2,7 +2,8 @@
 
 # USM - Canvas
 
-<iframe width="768" height="432" src="https://miro.com/app/board/uXjVM5Ikc6U=/?share_link_id=552856833556" frameborder="0" scrolling="no" allowfullscreen></iframe>
+![image](https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/usm.png)
+
 link: <a href="https://miro.com/app/board/uXjVM5Ikc6U=/?share_link_id=552856833556">Canvas</a>
 
 # Personas

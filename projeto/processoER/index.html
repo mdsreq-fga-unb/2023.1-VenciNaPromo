@@ -1,0 +1,1442 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Grupo GPT - 2023.1 - Requisitos de Software - FGA - UnB">
+      
+      
+      
+        <link rel="prev" href="../visao/">
+      
+      
+        <link rel="next" href="../backlog/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Processo de Engenharia de Requisitos - Venci na Promo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#processo-de-engenharia-de-requisitos" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Venci na Promo" class="md-header__button md-logo" aria-label="Venci na Promo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Venci na Promo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Processo de Engenharia de Requisitos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Início
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../visao/" class="md-tabs__link md-tabs__link--active">
+        Documentação
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../entregas/produto-entrega-1/" class="md-tabs__link">
+        Entregas
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sprints/sprint1/" class="md-tabs__link">
+        Sprints
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Venci na Promo" class="md-nav__button md-logo" aria-label="Venci na Promo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Venci na Promo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Documentação
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentação
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao/" class="md-nav__link">
+        Visão do Produto e Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Processo de Engenharia de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Processo de Engenharia de Requisitos
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-aspectos-humanos-e-sociais-da-engenharia-de-requisitos" class="md-nav__link">
+    2. Aspectos humanos e sociais da Engenharia de Requisitos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-processo" class="md-nav__link">
+    3. Processo
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-elicitacao-e-descoberta" class="md-nav__link">
+    3.1. Elicitação e Descoberta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-analise-e-consenso" class="md-nav__link">
+    3.2. Análise e consenso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-declaracao" class="md-nav__link">
+    3.3. Declaração
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-verificacao-e-validacao" class="md-nav__link">
+    3.4. Verificação e Validação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-organizacao-e-atualizacao" class="md-nav__link">
+    3.5. Organização e Atualização
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-referencias" class="md-nav__link">
+    4. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-historico-de-versao" class="md-nav__link">
+    5. Histórico de Versão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        Backlog do Produto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp/" class="md-nav__link">
+        Definição dos MVP's
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nao-fun/" class="md-nav__link">
+        URPS+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipoMVP1/" class="md-nav__link">
+        Protótipo do MVP 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SAFe/" class="md-nav__link">
+        Backlog SAFe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PBB/" class="md-nav__link">
+        PBB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BDD/" class="md-nav__link">
+        BDD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USM/" class="md-nav__link">
+        USM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../casosDeUso/" class="md-nav__link">
+        Casos de Uso
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Entregas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Entregas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          Unidade 1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Unidade 1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/produto-entrega-1/" class="md-nav__link">
+        Visão Geral do Produto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/seminario-1/" class="md-nav__link">
+        Material do Seminário XP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/unidade-2/" class="md-nav__link">
+        Unidade 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Unidade 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unidade 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-cliente-3/" class="md-nav__link">
+        Apresentação para o Cliente
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-3" class="md-nav__link">
+        Apresentação Equipe
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          Unidade 4
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unidade 4
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-cliente-4/" class="md-nav__link">
+        Apresentação para o Cliente
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-4/" class="md-nav__link">
+        Apresentação Equipe
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Sprints
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Sprints
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint1/" class="md-nav__link">
+        Sprint 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint2/" class="md-nav__link">
+        Sprint 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint3/" class="md-nav__link">
+        Sprint 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint4/" class="md-nav__link">
+        Sprint 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint5/" class="md-nav__link">
+        Sprint 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint6/" class="md-nav__link">
+        Sprint 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint7/" class="md-nav__link">
+        Sprint 7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint8/" class="md-nav__link">
+        Sprint 8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint9/" class="md-nav__link">
+        Sprint 9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint10/" class="md-nav__link">
+        Sprint 10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint11/" class="md-nav__link">
+        Sprint 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint12/" class="md-nav__link">
+        Sprint 12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint13/" class="md-nav__link">
+        Sprint 13
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-aspectos-humanos-e-sociais-da-engenharia-de-requisitos" class="md-nav__link">
+    2. Aspectos humanos e sociais da Engenharia de Requisitos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-processo" class="md-nav__link">
+    3. Processo
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-elicitacao-e-descoberta" class="md-nav__link">
+    3.1. Elicitação e Descoberta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-analise-e-consenso" class="md-nav__link">
+    3.2. Análise e consenso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-declaracao" class="md-nav__link">
+    3.3. Declaração
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-verificacao-e-validacao" class="md-nav__link">
+    3.4. Verificação e Validação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-organizacao-e-atualizacao" class="md-nav__link">
+    3.5. Organização e Atualização
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-referencias" class="md-nav__link">
+    4. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-historico-de-versao" class="md-nav__link">
+    5. Histórico de Versão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="processo-de-engenharia-de-requisitos">Processo de Engenharia de Requisitos</h1>
+<h3 id="1-introducao">1. Introdução</h3>
+<p align="justify"> &emsp;&emsp;
+De acordo com George Marsicano (2023), na Engenharia de Software, os modelos de processos e ciclos de vida de desenvolvimento de software definem as etapas necessárias para a construção do software, e um ponto em comum entre os modelos é a necessidade de uma etapa dedicada à <i>compreensão dos problemas</i> a serem solucionados e à <i>definição de "o quê"</i> será feito. A esta etapa dá-se o nome de <b>Engenharia de Requisitos (ER)</b>. Ainda segundo o autor, as atividades da Engenharia de Requisitos são as mesmas em processos dirigidos a plano e processos ágeis, entrentanto, a filosofia por detrás destes processos faz com que estas atividades sejam realizadas de forma diferente segundo cada uma das abordagens. Desta forma, a definição da abordagem e do processo de software influenciam diretamente na escolha do processo de engenharia de requisitos a ser utilizado, de modo que alguns processos tem maior harmonia com uma abordagem e não se integram bem nas atividades de outra abordagem.</p>
+
+<p align="justify"> &emsp;&emsp;
+A respeito das atividades da Engenharia de Requisitos, George Marsicano (2023) as divide em grupos de atividades que se correlacionam entre si de forma iterativa. O autor utiliza a representação da figura de um átomo para ilustrar a forma como as atividades podem se relacionar entre si de forma iterativa e <i>equilibrada</i>. A Figura 1 traz a representação do modelo proposto pelo autor.</p>
+
+<p align="justify"> &emsp;&emsp;
+As atividades listadas pelo autor são:</p>
+
+<ul>
+<li><strong>Elicitação e descoberta</strong>: baseia-se nas atividades de elicitação - extrair, obter ou provocar uma resposta, reação ou informação de alguém ou de algo - e descoberta - encontrar algo que antes não era conhecido ou não estava disponível. As fontes da elicitação podem ser diversas, desde stakeholders, até IAs, pesquisas ou sistemas existentes. Deve-se atentar aos requisitos funcionais e não funcionais, assim como descobrir quem são os interessados, seus problemas, necessidades, desejos e expectativas, além de outros fatores que podem representar possibilidades ou restrições ao produto de software.</li>
+<li><strong>Análise e consenso</strong>: envolve a análise - analisar os requisitos em sua forma “bruta” - e o consenso - conciliar as fontes de informação em direção a um entendimento comum sobre o conjunto de requisitos.</li>
+<li><strong>Declaração</strong>: diz respeito à comunicação dos requisitos entre os envolvidos, por meio de linguagem natural, estruturada ou não, de maneira escrita e/ou oral (face a face, áudio, vídeo) em diferentes níveis degranularidade (mais detalhes, menos detalhes, agrupados ou divididos).</li>
+<li><strong>Verificação e Validação</strong>: estas atividades dizem respeito à qualidade dos requisitos. A validação é uma forma de constatar a qualidade externa, confirmando (ou não) se a solução correta está sendo construída. Já a verificação é voltada para a qualidade interna, e busca confirmar (ou não) de que o que a solução ou requisito está sendo feita da maneira correta.</li>
+<li><strong>Organização e Atualização</strong>: este tópico refere-se a manutenção do conjunto de requisitos do produto adequadamente, organizados e atualizados ao longo do tempo. Na organização estabelece-se a maneira como os requisitos do produto serão estruturados (lista, mapa), rastreados, refinados e priorizados com base no framework de requisitos adequado ao produto e/ou projeto, e a atualização é o esforço de manter a organização dos requisitos sempre em seu estado mais atual, diante das possíveis mudanças e consenso entre as fontes de requisitos.</li>
+</ul>
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/visao/marsicano1.png"></p>
+<p>Figura 1: Atividades da Engenharia de Requisitos. Fonte: George Marsicano, 2023.</p>
+<p></div><br></p>
+<p align="justify"> &emsp;&emsp;
+Uma vez descritas as atividades da Engenharia de Requisitos, há que se definir uma abordagem ou processo para realizar as mesmas. O <i>International Requirements Engineering Board</i> (IREB), na publicação <i>Handbook for the CPRE Foundation Level according to the IREB Standard</i>, de Glinz e autores (2022), apresenta um método de definição de processo de Engenharia de Requisitos baseado na análise das diferentes "facetas" do processo. Deve ser feita a análise sobre quais extremos de cada eixo correspondem ao que se sabe e ao esperado do produto a ser desenvolvido, e a partir daí e do que já foi definido do ciclo de vida e do processo de software, define-se um processo a ser seguido para a execução das atividades da ER. Na Figura 2, apresentamos o esquema das facetas do processo.</p>
+<p><br></p>
+<div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/documentacao/visao/facetas.png">
+<p>Figura 2: Facetas do processo de Engenharia de Requisitos. Fonte: Glinz et al, 2022.</p>
+</div>
+<p><br></p>
+<p align="justify"> &emsp;&emsp;
+Analisando as descrições das facetas do processo de ER, chegamos à conclusão de que o processo será <i>iterativo</i>, <i>exploratório</i> e <i>orientado ao mercado</i>. Os seguintes aspectos foram levados em consideração nesta análise:</p>
+
+<ul>
+<li>os requisitos não são completamente conhecidos desde o início;</li>
+<li>podemos fazer ciclos curtos de feedback pela proximidade do time de desenvolvimento com o cliente;</li>
+<li>será necessária a priorização e negociação de requisitos devido à duração do projeto;</li>
+<li>apesar de haver um cliente, ele é uma referência para o desenvolvimento do projeto, cujo objetivo é poder ser utilizado por clientes diversos, com usuários em pontencial não identificáveis individualmente;</li>
+<li>os requisitos serão prioritariamente elicitados pela equipe do projeto, mas com participação do cliente.</li>
+</ul>
+<p align="justify"> &emsp;&emsp;
+A partir destas observações e também da definição da abordagem e ciclo de vida ágil e da utilização do processo de desenvolvimento ScrumXP, conclui-se que o processo de Engenharia de Requisitos a ser utilizado será o <i>Orientado a Produto</i>.</p>
+
+<h3 id="2-aspectos-humanos-e-sociais-da-engenharia-de-requisitos">2. Aspectos humanos e sociais da Engenharia de Requisitos</h3>
+<p align="justify"> &emsp;&emsp;
+A Engenharia de Requisitos é uma disciplina que abrange não apenas os aspectos técnicos do desenvolvimento de software, mas também aspectos humanos e sociais essenciais para o sucesso de um projeto. Na FGA UnB, essa disciplina se destaca como uma das mais humanas do campus, pois envolve a compreensão das necessidades dos usuários e a interação com a sociedade em geral.</p>
+
+<p align="justify"> &emsp;&emsp;
+No contexto da Engenharia de Requisitos, os aspectos humanos são fundamentais para garantir que o software atenda às demandas e expectativas dos usuários finais. Isso requer habilidades de escuta ativa, empatia e capacidade de se colocar no lugar do usuário para compreender suas necessidades e desejos. Além disso, a comunicação clara e eficaz é essencial para transmitir essas informações aos membros da equipe de desenvolvimento, a fim de evitar mal-entendidos e garantir a entrega de um sistema que atenda às expectativas dos usuários.</p>
+
+<p align="justify"> &emsp;&emsp;
+Os aspectos sociais da Engenharia de Requisitos referem-se à interação com a sociedade em geral e a consideração de fatores culturais, éticos e legais. Cada projeto de software está inserido em um contexto social específico, e é importante levar em conta as diferentes normas, valores e regulamentações que regem essa sociedade. Isso inclui a consideração de questões de acessibilidade, inclusão e conformidade com regulamentações governamentais, garantindo que o software seja desenvolvido de forma ética e socialmente responsável.</p>
+
+<p align="justify"> &emsp;&emsp;
+Na FGA, a Engenharia de Requisitos é valorizada como uma matéria que prepara os estudantes para lidar com esses aspectos humanos e sociais. Os alunos são incentivados a desenvolver habilidades de análise e compreensão das necessidades dos usuários, bem como a considerar os impactos sociais e éticos de suas soluções de software. Isso não apenas contribui para a formação de engenheiros de software mais completos, mas também os prepara para lidar com os desafios do mundo real, onde a interação com os usuários e a sociedade são aspectos fundamentais do desenvolvimento de software bem-sucedido.</p>
+
+<h3 id="3-processo">3. Processo</h3>
+<p align="justify"> &emsp;&emsp;
+O processo da Engenharia de Requisitos realizado pelo grupo pode ser acompanhado pelo mural construído e representado neste <a href="https://app.mural.co/t/sabrinaberno4255/m/sabrinaberno4255/1683652864996/77bb39b891b6982f8a84e8eaf27a09a044fa6bf8?sender=u3f4c15177e9228aeb6348510">link</a>.</p>
+
+<p align="justify"> &emsp;&emsp;
+A seguir, apresentamos como se deu cada uma das fases do processo.</p>
+
+<h4 id="31-elicitacao-e-descoberta">3.1. Elicitação e Descoberta</h4>
+<p align="justify"> &emsp;&emsp;
+Primeiramente, começamos com a fase de Elicitação e Descoberta de requisitos, após conferir o vídeo gravado e o documento com os requisitos que havíamos elencado com o cliente do projeto, optamos por adotar a técnica de Brainstorming, a fim de obter uma ampla gama de requisitos funcionais e não funcionais. Essa abordagem colaborativa permitiu uma exploração criativa de ideias, proporcionando a identificação dos principais requisitos necessários para o sistema em desenvolvimento. Por meio do Brainstorming, incentivamos a participação ativa de todos os envolvidos, promovendo a contribuição de diferentes perspectivas e experiências, enriquecendo assim o processo de levantamento de requisitos.</p>
+
+<p align="justify"> &emsp;&emsp;
+Assim, foram definidos os problemas a serem resolvidos, foram propostas soluções e foi construída uma primeira lista de requisitos funcionais e não funcionais. Todos estes produtos podem ser vistos na Figura 3, abaixo.</p>
+
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/a0e33ed089341fe2207fb22beb70bd9bee93eeb3/ghpages/assets/images/ER/ElicitacaoEDescoberta.png"></p>
+<p>Figura 3: Elicitação e Descoberta. Fonte: GrupoGPT, 2023.</p>
+<p></div><br></p>
+<h4 id="32-analise-e-consenso">3.2. Análise e consenso</h4>
+<p align="justify"> &emsp;&emsp;
+Na etapa subsequente, denominada Análise e Consenso, recorremos novamente ao Brainstorming para analisar e revisar os requisitos previamente obtidos. Essa atividade envolveu uma avaliação minuciosa dos requisitos, levando em consideração sua relevância, viabilidade e alinhamento com as expectativas dos stakeholders. Após essa análise criteriosa, avançamos para a fase de negociação, onde todas as partes interessadas envolvidas chegaram a um consenso em relação aos requisitos funcionais e não funcionais identificados.</p>
+
+<p align="justify"> &emsp;&emsp;
+Ainda nesta fase, foi definido um problema específico - dentre os elicitados anteriormente - a ser o foco do trabalho, através da Análise de Problemas. Para a definição e o entendimento do problema, utilizamos o Diagrama de Causa e Efeito (diagrama de Ishikawa), onde listamos as causas do problema proposto. Também construídos a formulação do problema através do framework onde são listados a descrição do problema, os stakeholders afetados, os impactos do problema, alternativas para a solução do problema, e a alternativa de solução proposta pelo grupo.</p>
+
+<p align="justify"> &emsp;&emsp;
+Os produtos derivados desta fase podem ser vistos na Figura 4.</p>
+
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/a0e33ed089341fe2207fb22beb70bd9bee93eeb3/ghpages/assets/images/ER/AnaliseEConsenso.png"></p>
+<p>Figura 4: Análise e Consenso. Fonte: GrupoGPT, 2023.</p>
+<p></div><br></p>
+<h4 id="33-declaracao">3.3. Declaração</h4>
+<p align="justify"> &emsp;&emsp;
+Prosseguindo para a etapa de Declaração de Requisitos, adotamos abordagens como Temas, Épicos e User Stories para estruturar e organizar os requisitos de forma mais detalhada. Os Temas e Épicos forneceram uma visão geral dos principais aspectos do sistema, enquanto as User Stories permitiram uma descrição minuciosa dos requisitos específicos e eventuais separações em requisitos menores, utilizando uma linguagem clara e compreensível. Essa estruturação proporcionou uma melhor compreensão e comunicação dos requisitos durante as etapas subsequentes do projeto.</p>
+
+<p align="justify"> &emsp;&emsp;
+Os Temas, Épicos e User Stories definidos nesta etapa podem ser vistos na Figura 5.</p>
+
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/a0e33ed089341fe2207fb22beb70bd9bee93eeb3/ghpages/assets/images/ER/Declarao.png"></p>
+<p>Figura 5: Declaração dos Requisitos. Fonte: GrupoGPT, 2023.</p>
+<p></div><br></p>
+<h4 id="34-verificacao-e-validacao">3.4. Verificação e Validação</h4>
+<p align="justify"> &emsp;&emsp;
+Após a conclusão da Declaração dos Requisitos, dedicamos atenção às etapas de Verificação e Validação, que tiveram como objetivo garantir a qualidade e a conformidade dos requisitos estabelecidos.</p>
+
+<p align="justify"> &emsp;&emsp;
+Para alcançar tais resultados, contamos com a contribuição do grupo de estudantes que está construindo o projeto <a href="https://mdsreq-fga-unb.github.io/2023.1-SOSOptica/">SOSóptica</a>, que realizaram a verificação dos requisitos do projeto utilizando a abordagem INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable), que permite avaliar os requisitos considerando sua independência, negociabilidade, valor, estimativa de esforço, granularidade e testabilidade.</p>
+
+<p align="justify"> &emsp;&emsp;
+O grupo forneceu comentários a respeito de algumas inconsistências entre os requisitos e sugestões de requisitos novos, além de outras sugestões a respeito dos épicos, temas e da descrição da solução. Os feedbacks do grupo e uma segunda análise minuciosa por parte da nossa equipe a partir dos comentários e sugestões recebidos possibilitou a verificação da clareza, consistência e atendimento aos critérios estabelecidos pelos requisitos.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+Os aspectos verificados nesta fase podem ser vistos na Figura 6.</p>
+
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/a0e33ed089341fe2207fb22beb70bd9bee93eeb3/ghpages/assets/images/ER/VerificacaoEValidacao.png"></p>
+<p>Figura 6: Verificação e Validação. Fonte: GrupoGPT, 2023.</p>
+<p></div><br></p>
+<h4 id="35-organizacao-e-atualizacao">3.5. Organização e Atualização</h4>
+<p align="justify"> &emsp;&emsp;
+Na fase subsequente, de Organização e Atualização dos Requisitos, trabalhamos as User Stories em um nível de detalhamento maior e utilizamos uma técnica proposta por George Marsicano (2023), que consiste em criar uma tabela para avaliar cada User Story com base em três critérios: Valor de negócios, Viabilidade (considerando fatores como tempo e capacidade produtiva) e Complexidade técnica.</p>
+
+<p align="justify"> &emsp;&emsp;
+Essa abordagem nos permitiu atribuir um valor para cada atributo e distribuir pontuações entre as histórias de usuário, facilitando assim a priorização dos requisitos. Os temas, épicos e user stories definidos após a verificação podem ser vistos no <a href="https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo/projeto/backlog">Backlog do Produto</a>. A pontuação para cada uma de acordo com os critérios de priorização pode ser vista na Tabela 1.</p>
+
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/main/ghpages/assets/images/ER/pontuacoes.png"></p>
+<p>Tabela 1: Priorização das User Stories. Fonte: GrupoGPT, 2023.</p>
+<p></div><br></p>
+<p align="justify"> &emsp;&emsp;
+Ao final deste processo, conseguimos definir os MVPs (Minimum Viable Products) 1 e 2, além de criar um gráfico de Priorização das User Stories para orientar as próximas etapas do projeto. Estes detalhes podem ser vistos na Figura 7.
+</p>
+
+<p><br><div align="center" style="text-align: center">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/a0e33ed089341fe2207fb22beb70bd9bee93eeb3/ghpages/assets/images/ER/Priorizacao.png"></p>
+<p>Figura 8: Gráfico de priorização e MVPs. Fonte: GrupoGPT, 2023.</p>
+<p></div><br></p>
+<h2 id="4-referencias">4. Referências</h2>
+<blockquote>
+<p>Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.</p>
+<p>MARSICANO, George. Requisitos de Software: Introdução a Engenharia de Requisitos (ER). Brasília, 2023. Disponível em: <a href="https://aprender3.unb.br/course/view.php?id=18123">https://aprender3.unb.br/course/view.php?id=18123</a>. Acesso em: 29 abr. 2023.</p>
+<p>SOMMERVILLE, Ian. Engenharia de software. 10.ed. São Paulo: Pearson Education do Brasil, 2018.</p>
+<p>Visão do Produto e Projeto. Wiki Requisitos - Dubium. Disponível em: <a href="https://mdsreq-fga-unb.github.io/2022.2-Dubium/visao/">https://mdsreq-fga-unb.github.io/2022.2-Dubium/visao/</a>. Acesso em: 19 de abril de 2023.</p>
+<p>Visão do Produto e Projeto. Wiki Requisitos - GetPet. Disponível em: <a href="https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto">https://mdsreq-fga-unb.github.io/2022.2-GetPet/#/pages/Vis%C3%A3odoProdutoeProjeto</a>. Acesso em: 19 de abril de 2023.</p>
+</blockquote>
+<h2 id="5-historico-de-versao">5. Histórico de Versão</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">24/05/2023</td>
+<td align="center">1.0</td>
+<td align="center">Criação do Documento e introdução</td>
+<td align="center"><a href="https://github.com/charles-serafim">Charles Serafim</a></td>
+</tr>
+<tr>
+<td align="center">24/05/2023</td>
+<td align="center">1.1</td>
+<td align="center">Adição dos aspectos humanos e sociais da ER</td>
+<td align="center"><a href="https://github.com/Akaeboshi">Lucas Heler</a></td>
+</tr>
+<tr>
+<td align="center">24/05/2023</td>
+<td align="center">1.2</td>
+<td align="center">Adição do relato de cada etapa do processo de ER</td>
+<td align="center"><a href="https://github.com/charles-serafim">Charles Serafim</a> e <a href="https://github.com/Akaeboshi">Lucas Heler</a></td>
+</tr>
+<tr>
+<td align="center">=======</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Voltar para o topo
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023.1 <a href="https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo.git"  target="_blank" rel="noopener">Grupo GPT - 2023.1 - Requisitos de Software - FGA - UnB</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

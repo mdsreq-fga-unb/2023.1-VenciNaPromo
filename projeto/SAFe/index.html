@@ -1,0 +1,1508 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Grupo GPT - 2023.1 - Requisitos de Software - FGA - UnB">
+      
+      
+      
+        <link rel="prev" href="../prototipoMVP1/">
+      
+      
+        <link rel="next" href="../PBB/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Backlog SAFe - Venci na Promo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scale-agile-framework-safe" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Venci na Promo" class="md-header__button md-logo" aria-label="Venci na Promo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Venci na Promo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog SAFe
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Início
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../visao/" class="md-tabs__link md-tabs__link--active">
+        Documentação
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../entregas/produto-entrega-1/" class="md-tabs__link">
+        Entregas
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sprints/sprint1/" class="md-tabs__link">
+        Sprints
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Venci na Promo" class="md-nav__button md-logo" aria-label="Venci na Promo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Venci na Promo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mdsreq-fga-unb.github.io/2023.1-VenciNaPromo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Documentação
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentação
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao/" class="md-nav__link">
+        Visão do Produto e Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../processoER/" class="md-nav__link">
+        Processo de Engenharia de Requisitos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        Backlog do Produto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp/" class="md-nav__link">
+        Definição dos MVP's
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nao-fun/" class="md-nav__link">
+        URPS+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipoMVP1/" class="md-nav__link">
+        Protótipo do MVP 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Backlog SAFe
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Backlog SAFe
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#safe-backlog-vencinapromo" class="md-nav__link">
+    SAFe Backlog VenciNaPromo
+  </a>
+  
+    <nav class="md-nav" aria-label="SAFe Backlog VenciNaPromo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tema-estrategico" class="md-nav__link">
+    Tema Estratégico:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epicos" class="md-nav__link">
+    Épicos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacidade" class="md-nav__link">
+    Capacidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade" class="md-nav__link">
+    Funcionalidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-story" class="md-nav__link">
+    User Story
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de Versões
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PBB/" class="md-nav__link">
+        PBB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BDD/" class="md-nav__link">
+        BDD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USM/" class="md-nav__link">
+        USM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../casosDeUso/" class="md-nav__link">
+        Casos de Uso
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Entregas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Entregas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          Unidade 1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Unidade 1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/produto-entrega-1/" class="md-nav__link">
+        Visão Geral do Produto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/seminario-1/" class="md-nav__link">
+        Material do Seminário XP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/unidade-2/" class="md-nav__link">
+        Unidade 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Unidade 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unidade 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-cliente-3/" class="md-nav__link">
+        Apresentação para o Cliente
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-3" class="md-nav__link">
+        Apresentação Equipe
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          Unidade 4
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unidade 4
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-cliente-4/" class="md-nav__link">
+        Apresentação para o Cliente
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/apresentacao-4/" class="md-nav__link">
+        Apresentação Equipe
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Sprints
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Sprints
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint1/" class="md-nav__link">
+        Sprint 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint2/" class="md-nav__link">
+        Sprint 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint3/" class="md-nav__link">
+        Sprint 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint4/" class="md-nav__link">
+        Sprint 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint5/" class="md-nav__link">
+        Sprint 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint6/" class="md-nav__link">
+        Sprint 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint7/" class="md-nav__link">
+        Sprint 7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint8/" class="md-nav__link">
+        Sprint 8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint9/" class="md-nav__link">
+        Sprint 9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint10/" class="md-nav__link">
+        Sprint 10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint11/" class="md-nav__link">
+        Sprint 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint12/" class="md-nav__link">
+        Sprint 12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint13/" class="md-nav__link">
+        Sprint 13
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#safe-backlog-vencinapromo" class="md-nav__link">
+    SAFe Backlog VenciNaPromo
+  </a>
+  
+    <nav class="md-nav" aria-label="SAFe Backlog VenciNaPromo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tema-estrategico" class="md-nav__link">
+    Tema Estratégico:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epicos" class="md-nav__link">
+    Épicos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacidade" class="md-nav__link">
+    Capacidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade" class="md-nav__link">
+    Funcionalidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-story" class="md-nav__link">
+    User Story
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de Versões
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="scale-agile-framework-safe">Scale Agile Framework - SAFe</h1>
+<p align="justify"> &emsp;&emsp;
+O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências integradas comprovadas para alcançar agilidade empresarial usando Lean, Agile e DevOps. Ele é construído em torno da "Seven Core Competencies of Business Agility", que são fundamentais para alcançar e sustentar uma vantagem competitiva em uma era digital cada vez mais presente. O Modelo de requisitos utilizado pelo SAFe fornece uma estrutura de requisitos escalável que demonstra uma maneira de expressar comportamentos do sistema:</p>
+
+<ul>
+<li><strong>Épicos:</strong> uma iniciativa de desenvolvimento de solução significativa;</li>
+<li><strong>Capacidades:</strong> representa uma grande funcionalidade de solução. Ela deve ser decomposta em funcionalidades a serem implementadas;</li>
+<li><strong>Features:</strong> representa a funcionalidade da solução que fornece valor comercial, atende a uma necessidade das partes interessadas. Ela inclui uma hipótese de benefício e critérios de aceitação;</li>
+<li><strong>Histórias:</strong> descrições curtas de uma pequena parte da funcionalidade desejada, escritas da perspectiva do usuário. Elas são o principal artefato usado para definir o comportamentodosistema no Agile.</li>
+</ul>
+<h2 id="safe-backlog-vencinapromo">SAFe Backlog VenciNaPromo</h2>
+<h3 id="tema-estrategico"><strong><em>Tema Estratégico:</em></strong></h3>
+<p><u>Gerenciamento de compra e venda de produtos perto do vencimento</u></p>
+<h3 id="epicos">Épicos</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Tema</strong></th>
+<th align="center"><strong>Épico</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">T1</td>
+<td align="center">E1</td>
+<td align="center">Gestão do usuário</td>
+</tr>
+<tr>
+<td align="center">T2</td>
+<td align="center">E2</td>
+<td align="center">Gestão da venda</td>
+</tr>
+</tbody>
+</table>
+<h3 id="capacidade">Capacidade</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Épico</strong></th>
+<th align="center"><strong>Capacidade</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">E1</td>
+<td align="center">C1</td>
+<td align="center">Administar conta</td>
+</tr>
+<tr>
+<td align="center">E1</td>
+<td align="center">C2</td>
+<td align="center">Gerenciar compra</td>
+</tr>
+<tr>
+<td align="center">E2</td>
+<td align="center">C3</td>
+<td align="center">Realizar compra</td>
+</tr>
+<tr>
+<td align="center">E2</td>
+<td align="center">C4</td>
+<td align="center">Gerenciar produto</td>
+</tr>
+</tbody>
+</table>
+<h3 id="funcionalidade">Funcionalidade</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Capacidade</strong></th>
+<th align="center"><strong>Funcionalidade</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">C1</td>
+<td align="center">F1</td>
+<td align="center">Gerenciamento de usuário-comprador</td>
+</tr>
+<tr>
+<td align="center">C1</td>
+<td align="center">F2</td>
+<td align="center">Gerenciamento de usuário-vendedor</td>
+</tr>
+<tr>
+<td align="center">C2</td>
+<td align="center">F3</td>
+<td align="center">Administração da compra</td>
+</tr>
+<tr>
+<td align="center">C2</td>
+<td align="center">F4</td>
+<td align="center">Administração da venda</td>
+</tr>
+<tr>
+<td align="center">C3</td>
+<td align="center">F5</td>
+<td align="center">Caminho de compra</td>
+</tr>
+<tr>
+<td align="center">C3</td>
+<td align="center">F6</td>
+<td align="center">Finalizar a compra</td>
+</tr>
+<tr>
+<td align="center">C4</td>
+<td align="center">F7</td>
+<td align="center">Gerir produto</td>
+</tr>
+<tr>
+<td align="center">C4</td>
+<td align="center">F8</td>
+<td align="center">Visualização do produto</td>
+</tr>
+</tbody>
+</table>
+<h3 id="user-story">User Story</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Funcionalidade</strong></th>
+<th align="center"><strong>US</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+<th align="center"><strong>Critérios de Aceitação</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F1</td>
+<td align="center">US01</td>
+<td align="center">Eu, como usuário-comprador, desejo criar minha conta com as minhas informações pessoais para poder usufruir de descontos exclusivos em produtos perto do vencimento</td>
+<td align="center">1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais. <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números</td>
+</tr>
+<tr>
+<td align="center">F1</td>
+<td align="center">US02</td>
+<td align="center">Eu, como usuário-comprador, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa gerar cupons exclusivos para os produtos selecionados no carrinho de compras</td>
+<td align="center">1. O login deve ser feito com o e-mail e a senha cadastrados</td>
+</tr>
+<tr>
+<td align="center">F2</td>
+<td align="center">US03</td>
+<td align="center">Eu, como usuário-vendedor, desejo criar minha conta, adicionando minhas informações pessoais, para poder aumentar minhas vendas e diminuir o desperdício dos meus produtos perto do vencimento</td>
+<td align="center">1. O cadastro do usuário-comprador deve conter nome, endereço de e-mail e senha <br>2. O nome não pode conter caracteres especiais. <br>3. O endereço de e-mail deve conter o caracter especial "@" <br>4. Não deve ser possível cadastrar um e-mail já cadastrado <br>5. A senha deve conter oito caracteres <br>6. A senha pode conter caracteres especiais <br>7. A senha pode conter números</td>
+</tr>
+<tr>
+<td align="center">F2</td>
+<td align="center">US04</td>
+<td align="center">Eu, como usuário-vendedor, desejo fazer login na minha conta utilizando meu endereço de e-mail e senha, para que eu possa disponibilizar meus produtos no site e visualizar o andamento das minhas vendas</td>
+<td align="center">1. O login deve ser feito com o e-mail e a senha cadastrados</td>
+</tr>
+<tr>
+<td align="center">F3</td>
+<td align="center">US09</td>
+<td align="center">Eu, como usuário-comprador, desejo visualizar um resumo de cada um dos produtos comprados após finalizar a compra com sucesso, para que eu possa ter todas as informações necessárias para consultas futuras</td>
+<td align="center">1. Os produtos comprados devem ser agrupados em colunas. <br>2. A lista de compras finalizadas deve conter o histórico de compras do usuário <br>3. O resumo da compra deve conter as descrições dos produtos, data, valor, quantidade, desconto da compra e vendedor</td>
+</tr>
+<tr>
+<td align="center">F4</td>
+<td align="center">US17</td>
+<td align="center">Eu, como usuário-vendedor, desejo visualizar os detalhes de cada um dos meus produtos, que estão na lista de produtos, para que eu possa tomar decisões sobre o estoque, promoções e estratégia de marketing</td>
+<td align="center">1. Deve ser possível visualizar nome do produto, descrição, preço, validade e foto <br>2. Deve ser possível visualizar a quantidade de unidades disponíveis, quantidade de cupons gerados até o momento, a disponibilidade do produto e a etiqueta de disponível ou não</td>
+</tr>
+<tr>
+<td align="center">F5</td>
+<td align="center">US12</td>
+<td align="center">Eu, como usuário-comprador, desejo adicionar os produtos, que estão na lista de produtos cadastrados, no meu carrinho de compras, para que eu possa montar uma lista de produtos que eu desejo comprar com desconto</td>
+<td align="center">1. Deve ser possível adicionar um produto ao carrinho de compras através da lista geral de produtos <br>2. Deve ser possível aumentar e diminuir a quantidade do produto a ser adicionado ao carrinho de compras</td>
+</tr>
+<tr>
+<td align="center">F5</td>
+<td align="center">US05</td>
+<td align="center">Eu, como usuário-comprador, quero ter a capacidade de salvar itens em meu carrinho, para que eu possa voltar a eles mais tarde sem perder minha seleção</td>
+<td align="center">1. Uma lista de itens salvos deve ser visualizada com os itens agrupados em colunas <br>2. Uma lista de itens salvos anteriormente deve ser visualizada <br>3. A visualização do item deve conter o nome, a quantidade que se está comprando, preço e desconto <br>4. Os itens salvos devem ser listados dos mais antigos para os mais novos</td>
+</tr>
+<tr>
+<td align="center">F6</td>
+<td align="center">US06</td>
+<td align="center">Eu, como usuário-comprador, desejo visualizar a lista de itens que eu adicionei no meu carrinho de compras para que eu possa revisar meu pedido antes de finalizar a compra</td>
+<td align="center">1. A lista de itens deve deve conter o nome, quantidade, preço e desconto <br> 2. O carrinho de compras deve mostrar o valor total da compra <br>3. O carrinho de compras deve mostrar o valor total do desconto <br>4. Cada produto deve conter uma quantidade mínima</td>
+</tr>
+<tr>
+<td align="center">F6</td>
+<td align="center">US07</td>
+<td align="center">Eu, como usuário-comprador, quero modificar a quantidade de itens do meu carrinho de compras, para que eu possa ajustar o pedido às minhas necessidades</td>
+<td align="center">1. O usário-comprador pode modificar a quantidade de itens <br>2. O usuário-comprador não pode ultrapassar o número máximo de itens para cada produto <br>3. O item deve ter no mínimo uma quantidade para permanecer no carrinho de compras <br>4. O valor total do carrinho deve ser atualizado instantaneamente após as edições</td>
+</tr>
+<tr>
+<td align="center">F7</td>
+<td align="center">US08</td>
+<td align="center">Eu, como usuário-comprador, desejo finalizar a compra no meu carrinho, para que eu possa ir à loja física retirar meus produtos</td>
+<td align="center">1. Deve ser gerado um comprovante de confirmação da compra <br>2. O comprovante de compra deve apresentar cupom dos produtos, local e horário de retirada <br>3. O carrinho de compras deve ter pelo menos um item para finalizar a compra</td>
+</tr>
+<tr>
+<td align="center">F8</td>
+<td align="center">US09</td>
+<td align="center">Eu, como usuário-comprador, desejo visualizar um resumo de cada um dos produtos comprados após finalizar a compra com sucesso, para que eu possa ter todas as informações necessárias para consultas futuras</td>
+<td align="center">1. Os produtos comprados devem ser agrupados em colunas. <br>2. A lista de compras finalizadas deve conter o histórico de compras do usuário <br>3. O resumo da compra deve conter as descrições dos produtos, data, valor, desconto da compra e vendedor</td>
+</tr>
+<tr>
+<td align="center">F9</td>
+<td align="center">US10</td>
+<td align="center">Eu, como usuário-comprador, desejo navegar pelos produtos disponíveis na lista de produtos cadastrados dentro do mercado on-line, para que eu possa acompanhar facilmente os produtos que estou interessado em comprar</td>
+<td align="center"><br>1. Os produtos devem ser agrupados em colunas <br>2. Cada produto deve conter o nome, uma foto, o preço e a data de validade <br>3. Deve ser possível acessar os detalhes de produtos individuais <br>4. Produtos fora de estoque não devem ser exibidos</td>
+</tr>
+<tr>
+<td align="center">F10</td>
+<td align="center">US11</td>
+<td align="center">Eu, como usuário-comprador, desejo pesquisar produtos específicos, que estão presentes na lista de produtos cadastrados no mercado on-line, para que eu possa encontrar e selecionar rapidamente os itens que estou procurando</td>
+<td align="center">1. Deve haver uma barra de pesquisa onde se possa digitar palavras para buscar um produto específico desejado <br>2. Através da busca, deve-se exibir uma lista de todos os produtos cujo título ou descrição contenham a palavra ou conjunto de palavras pesquisados <br>3. Deve ser possível acessar os detalhes de produtos individuais através do clique em um produto específico <br>4. Caso nenhum produto contenha em seu título ou descrição a palavra ou conjunto de palavras pesquisados, deve ser gerado um aviso informando que não foram encontrados produtos correspondentes aos parâmetros buscados</td>
+</tr>
+<tr>
+<td align="center">F5</td>
+<td align="center">US12</td>
+<td align="center">Eu, como usuário-comprador, desejo adicionar os produtos, que estão na lista de produtos cadastrados no mercado on-line, no meu carrinho de compras, para que eu possa montar uma lista de produtos que eu desejo comprar com desconto</td>
+<td align="center">1. Deve ser possível adicionar um produto ao carrinho de compras através da lista geral de produtos <br>2. Deve ser possível aumentar e diminuir a quantidade do produto a ser adicionado ao carrinho de compras</td>
+</tr>
+<tr>
+<td align="center">F11</td>
+<td align="center">US13</td>
+<td align="center">Eu, como usuário-comprador, desejo visualizar os detalhes de um produto, incluindo título, descrição, vendedor do produto, local de retirada do produto, preço e disponibilidade, para que eu possa tomar uma decisão informada sobre a compra</td>
+<td align="center">1. Através da lista geral de produtos, deve ser possível ter acesso aos detalhes de produtos individuais <br>2. Nos detalhes de um produto deve haver título, descrição, vendedor do produto, local de retirada do produto, preço, data de validade e disponibilidade</td>
+</tr>
+<tr>
+<td align="center">F12</td>
+<td align="center">US14</td>
+<td align="center">Eu, como usuário-vendedor, quero poder adicionar novos produtos ao mercado on-line, para que potenciais clientes possam vê-los e comprá-los</td>
+<td align="center">1. O cadastro de produtos novos deve conter título, descrição, preço, disponibilidade, validade, foto e quantidade disponível</td>
+</tr>
+<tr>
+<td align="center">F13</td>
+<td align="center">US15</td>
+<td align="center">Eu, como usuário-vendedor, quero poder retirar um produto do mercado on-line, para que os clientes não possam comprá-lo</td>
+<td align="center">1. Deve ser possível por parte do usuário-vendedor a seleção de produtos a serem ocultados da lista de produtos disponíveis <br>2. Deve ser possível por parte do usuário-vendedor a exclusão de produtos da sua lista de produtos</td>
+</tr>
+<tr>
+<td align="center">F9</td>
+<td align="center">US16</td>
+<td align="center">Eu, como usuário-vendedor, quero visualizar todos os produtos dentro da lista de produtos, para que eu possa administrar meus produtos</td>
+<td align="center">1. Deve ser possível visualizar tanto os produtos disponíveis como os produtos fora de estoque <br>2. Deve ser possível visualizar nome do produto, preço, data de validade e a etiqueta de disponível ou não</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Data</strong></th>
+<th align="center"><strong>Versão</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+<th align="center"><strong>Editores</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">16/06/2023</td>
+<td align="center"><code>1.0</code></td>
+<td align="center">Criação do Framework</td>
+<td align="center">Sabrina</td>
+</tr>
+<tr>
+<td align="center">17/06/2023</td>
+<td align="center"><code>1.1</code></td>
+<td align="center">Adição dos épicos e capacidades</td>
+<td align="center">Gabrielly</td>
+</tr>
+<tr>
+<td align="center">18/06/2023</td>
+<td align="center"><code>1.2</code></td>
+<td align="center">Adição das features e user stories</td>
+<td align="center">Gabrielly</td>
+</tr>
+<tr>
+<td align="center">18/06/2023</td>
+<td align="center"><code>1.3</code></td>
+<td align="center">Correções</td>
+<td align="center">Gabrielly</td>
+</tr>
+<tr>
+<td align="center">11/07/2023</td>
+<td align="center"><code>2.0</code></td>
+<td align="center">Atualização com base nos feedbacks das entregas</td>
+<td align="center">Sabrina</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Voltar para o topo
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023.1 <a href="https://mdsreq-fga-unb.github.io/2023.1-VenciNaPromo.git"  target="_blank" rel="noopener">Grupo GPT - 2023.1 - Requisitos de Software - FGA - UnB</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

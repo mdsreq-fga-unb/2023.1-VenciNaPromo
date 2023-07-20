@@ -53,3 +53,10 @@
     background-color: rgba(36, 0, 255, 0.60);
     color: black;
 }
+
+.form-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  

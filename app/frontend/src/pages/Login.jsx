@@ -8,6 +8,7 @@ import '../styles/Confirmations.css';
 
 function Login({ setIsVisitor }) {
   const [showRegisterConfirmation, setShowRegisterConfirmation] = useState(false);
+  const [showRegisterError, setShowRegisterError] = useState(false);
   const [showLoginError, setShowLoginError] = useState(false);
 
   const handleLogin = async (values, { resetForm }) => {
@@ -44,6 +45,7 @@ function Login({ setIsVisitor }) {
       setShowRegisterConfirmation(true);
     } catch (error) {
       console.error(error);
+      setShowRegisterError(true);
     }
   };
 
@@ -65,6 +67,9 @@ function Login({ setIsVisitor }) {
       .required("O email é obrigatório"),
     username: yup
       .string()
+      .test("no-numbers", "O nome não pode conter números", (value) => {
+        return !/\d/.test(value); // Verifica se o valor contém algum dígito numérico (número)
+      })
       .required("O nome é obrigatório"),
     password: yup
       .string()
@@ -76,6 +81,8 @@ function Login({ setIsVisitor }) {
       .required("A confirmação da senha é obrigatória"),
     flag: yup
       .number()
+      .required("Selecione uma opção: (Cliente ou Vendedor)")
+      .oneOf([0, 1], "Selecione uma opção válida (Cliente ou Vendedor)")
   });
 
   return (
@@ -102,6 +109,11 @@ function Login({ setIsVisitor }) {
                     <option value={0}>Cliente</option>
                     <option value={1}>Vendedor</option>
                   </Field>
+                  <ErrorMessage
+                    name="flag"
+                    component="span"
+                    className="form-error"
+                  />
                 </div>
 
                 <div className="form-group">
@@ -213,7 +225,22 @@ function Login({ setIsVisitor }) {
               <button
                 className="confirmation-modal-button"
                 onClick={() => setShowLoginError(false)}>
-                Ok
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showRegisterError && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>O email já está cadastrado!</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+                className="confirmation-modal-button"
+                onClick={() => setShowRegisterError(false)}>
+                Fechar
               </button>
             </div>
           </div>

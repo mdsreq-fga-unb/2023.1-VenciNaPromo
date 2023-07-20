@@ -51,6 +51,9 @@ nav:
       - Unidade 3: 
           - Apresentação para o Cliente: "entregas/apresentacao-cliente-3.md"
           - Apresentação Equipe: "entregas/apresentacao-3"
+      - Unidade 4:
+          - Apresentação para o Cliente: "entregas/apresentacao-cliente-4.md"
+          - Apresentação Equipe: "entregas/apresentacao-4"
   - Sprints:
       - Sprint 1: "sprints/sprint1.md"
       - Sprint 2: "sprints/sprint2.md"

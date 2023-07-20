@@ -3,7 +3,6 @@ import axios from "axios";
 import '../styles/ProductInList.css';
 import '../styles/ProductDetail.css';
 import '../styles/ShoppingList.css';
-import '../styles/Confirmations.css';
 import QuantityButton from './QuantityButton';
 import { removeProduct } from '../services/products';
 import { removeProductFromCart, saveProductInCart, getCart, clearCart } from '../services/cart';
@@ -90,7 +89,7 @@ const ProductInList = (props) => {
           <h3 onClick={togglePopup}>{props.product.product_name}</h3>
         </div>
         <div className="product-in-list__info__price">
-          <h4>R$ {props.product.product_price.toFixed(2)}</h4>
+          <h4>R$ {props.product.product_price}</h4>
         </div>
         <div className="product-in-list__info__validade">
           {validadeProduto < currentDate ? (
@@ -161,12 +160,12 @@ const ProductInList = (props) => {
       )}
 
       {showRemovingConfirmation && (
-        <div className="confirmation-modal">
-          <div className="confirmation-modal-content">
+        <div className="removing-confirmation-modal">
+          <div className="removing-confirmation-modal-content">
             <h2>Remover o produto do seu mercado?</h2>
-            <div className="confirmation-modal-buttons">
-              <button className="confirmation-modal-button" onClick={() => toggleRemovingConfirmation()}>Cancelar</button>
-              <button className="confirmation-modal-button" onClick={() => handleRemoveProduct()}>Remover</button>
+            <div className="removing-confirmation-modal-buttons">
+              <button className="removing-confirmation-modal-button" onClick={() => toggleRemovingConfirmation()}>Cancelar</button>
+              <button className="removing-confirmation-modal-button" onClick={() => handleRemoveProduct()}>Remover</button>
             </div>
           </div>
         </div>

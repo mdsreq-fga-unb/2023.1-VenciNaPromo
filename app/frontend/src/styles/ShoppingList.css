@@ -25,44 +25,6 @@
     }
 }
 
-.product-in-list {
-    cursor: pointer;
-    padding: 20px;
-    background-color: #F5B396;
-    border-radius: 12px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
-.product-in-list-button {
-    background-color: transparent;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    width: auto;
-}
-
-
-.product-in-list img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-
-.product-in-list h3 {
-    color: #282c34;
-    margin: 0;
-    font-size: 18px;
-}
-
-.product-in-list p {
-    color: #845C5C;
-    margin: 0;
-    font-size: 14px;
-}
-
 .product-detail-container {
     display: flex;
     justify-content: flex-start;
@@ -232,31 +194,31 @@
 }
 
 .new-product-button {
-    /* padding: 20px; */
-    border: none;
-    font-size: 20px;
-    background-color: rgba(36, 0, 255, 0.60);
-    cursor: pointer;
-    font-family: 'Baloo';
-    color: white;
-    border-radius: 20px;
-    max-width: 210px;
-    background-color: rgba(36, 0, 255, 0.60);
-    padding: 10px 10px 10px 10px;
-    width: auto;
-    margin-left: 40px;
+	background-color: rgba(36, 0, 255, 0.60);
+	border: none;
+	border-radius: 20px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: 'Baloo';
+    padding: 14px 10px 14px 10px;
+	width: 100%;
+	max-width: 210px;
+	min-width: 100px;
 }
 
 .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
     transform: translate(-50%, -50%);
     padding: 30px;
     background-color: white;
     border-radius: 12px;
     width: 30%;
+    min-width: 350px;
     height: 70%;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     border: 10px solid #F5B396;
@@ -275,6 +237,7 @@
 }
 
 .new-product-form {
+    position: relative;
     flex: 1;
     padding: 25px;
     width: 300px;
@@ -302,6 +265,7 @@
 }
 
 .h3-modal {
+    position: relative;
     text-align: center;
     align-items: center;
     display: flex;
@@ -309,8 +273,8 @@
 }
 
 .button-add {
+    position: relative;
     margin-top: 40px;
-    margin-left: 90px;
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -321,17 +285,18 @@
     border-radius: 8px;
     width: 150px;
     height: 40px;
+    margin-bottom: 20px;
 }
 
 .form-label {
     border: none;
     outline: none;
     width: 400px;
-    margin-right: 210px;
     font-family: 'Baloo';
     color: rgba(0, 0, 0, 0.60);
     font-size: 20px;
 }
+
 .modal-close-button {
     cursor: pointer;
     position: absolute;

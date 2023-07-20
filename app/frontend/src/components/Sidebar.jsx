@@ -5,6 +5,7 @@ import Carrinho from '../img/carrinho-de-compras.png';
 import QuantityButton from './QuantityButton';
 import Lixeira from '../img/lixeira.png';
 import Menu from '../img/menu.png';
+import '../styles/Confirmations.css';
 import { getCart, removeProductFromCart } from '../services/cart';
 import { clearCart, checkout, getCheckoutTotal } from '../services/cart';
 
@@ -13,7 +14,9 @@ const Sidebar = (props) => {
   const user_data = props.props.UserData;
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  let checkoutTotal;
+  const [showOrderConfirmation, setShowOrderConfirmation] = useState(false);
+
+  let [checkoutTotal, setCheckoutTotal] = useState(null);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -25,9 +28,11 @@ const Sidebar = (props) => {
     checkoutTotal = getCheckoutTotal();
     if (checkoutTotal) {
       console.log(checkoutTotal);
-      alert(`Compra realizada ! seu código: ${checkoutTotal.order.code}`);
+      // alert(`Compra realizada ! seu código: ${checkoutTotal.order.code}`);
       clearCart();
-      window.location.href= '/checkout';
+      // window.location.href = '/checkout';
+      setCheckoutTotal(checkoutTotal);
+      setShowOrderConfirmation(true);
     } else {
       alert("Erro ao realizar compra!");
     }
@@ -41,7 +46,7 @@ const Sidebar = (props) => {
       p._id === product._id
     ))
   ) : [];
-  
+
 
   const [quantity, setQuantity] = useState(1);
 
@@ -129,15 +134,31 @@ const Sidebar = (props) => {
           </div>
           <div className="sidebar-footer">
             <div className="sidebar-footer-container">
-            <button className="sidebar-button" onClick={user_data ? () => window.location.href='/checkout' : doNothing}> Histórico </button>
-            <button className="sidebar-button" onClick={() => logout()}><span> Sair </span> </button>
+              <button className="sidebar-button" onClick={user_data ? () => window.location.href = '/checkout' : doNothing}> Histórico </button>
+              <button className="sidebar-button" onClick={() => logout()}><span> Sair </span> </button>
             </div>
           </div>
         </div>
       ) : (
         <div className="sidebar-footer">
           <div className="sidebar-footer-container">
-            <button className="sidebar-button" onClick={() => window.location.href='/'}> Login </button>
+            <button className="sidebar-button" onClick={() => window.location.href = '/'}> Login </button>
+          </div>
+        </div>
+      )}
+
+      {checkoutTotal && showOrderConfirmation && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>Compra realizada com sucesso!</h2>
+            <h2>Seu código é: {checkoutTotal.order.code}</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+                className="confirmation-modal-button"
+                onClick={() => setShowOrderConfirmation(false)}>
+                Fechar
+              </button>
+            </div>
           </div>
         </div>
       )}

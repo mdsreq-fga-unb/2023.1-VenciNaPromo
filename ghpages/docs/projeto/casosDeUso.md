@@ -80,7 +80,8 @@ São utilizados para representar, através de setas legendadas, as interações 
 
 ## Diagrama de Casos de Uso
 
-![Casos de Uso](https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo/blob/documentacao/ghpages/assets/images/UC/image-1.png)
+<br><div align="center" style="text-align: left">
+<img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/documentacao/ghpages/assets/images/UC/CasosDeUso.png">
 
 ## Especificação dos Casos de Uso
 

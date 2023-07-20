@@ -392,6 +392,24 @@ Apesar dos esforços para melhorar nossa organização e planejamento, enfrentam
 Como resultado dessas lições, nos sentimos mais preparados para enfrentar os desafios futuros. Aprendemos a importância do planejamento, da comunicação eficiente, da colaboração em equipe e do aproveitamento adequado dos recursos disponíveis, incluindo a valiosa assistência da monitora.
 </p>
 
+### Unidade 4
+
+<p align="justify"> &emsp;&emsp;
+Para o grupo, a unidade 4 foi uma unidade particularmente "corrida". Percebemos que por mais que tenhamos conseguido fazer tudo o que nos propomos, as atividades da unidade exigiram uma dedicação ainda maior do que as das unidades anteriores. As atividades de Engenharia de Requisitos que foram feitas na disciplina exigiram bastante ajuda da monitora, e por vezes tiveram que ser refeitas, mas compreendemos que tudo faz parte do processo de aprendizagem e crescimento.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+Quanto às atividades referentes ao desenvolvimento do projeto, foi na unidade 4 que juntamos as pontas de algumas questões, levamos outras questões para revisão do professor, da monitora e também do cliente, para que pudéssemos ter um produto alinhado com as expectativas e acordos de todos. Por vezes, foi feito retrabalho de algumas funcionalidades ou artefatos, e aprendemos com isso a importância do planejamento, das revisões e da comunicação entre o grupo, com o cliente, com o professor e com a monitora.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+No geral, chegamos ao final do período de duração da disciplina com muitos aprendizados e lições para a vida. Um dos consensos do grupo é de que foi muito interessante poder compartilhar os diversos conhecimentos de cada pessoa da equipe. Aprendemos uns com os outros, cada um utilizando suas habilidades em prol do grupo e ajudando seus pares a evoluir em conhecimento técnico, acadêmico e interpessoal.
+</p>
+
+<p align="justify"> &emsp;&emsp;
+Por último, mas não menos importante, registramos aqui que a forma como o trabalho foi realizado nos permitiu aprender profundamente questões chave da Engenharia de Requisitos, assim como nos permitiu praticar a aplicação de técnicas que serão muito úteis em nossas carreiras de Engenheiros de Software.
+</p>
+
 ## 6. Referências
 
 > Handbook IREB CPRE Foundation Level, Version 1.1.0, september 2022.
@@ -418,3 +436,4 @@ Como resultado dessas lições, nos sentimos mais preparados para enfrentar os d
 | 25/05/2023 |  1.5   | Adição das lições aprendidas na Unidade 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
 | 15/06/2023 | 1.6 | Atualização do cronograma das sprints com as US | [Sabrina Berno](https://github.com/sabrinaberno) |
 | 17/06/2023 | 1.7 | Atualização das tecnologias e ferramentas, arquitetura e atividades | [Charles Serafim](https://github.com/charles-serafim) e [Sabrina Berno](https://github.com/sabrinaberno) |
+| 20/07/2023 | 1.8 | Adição das Lições Aprendidas da Unidade 4 | [Charles Serafim](https://github.com/charles-serafim) |

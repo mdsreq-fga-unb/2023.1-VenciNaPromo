@@ -436,4 +436,4 @@ Por último, mas não menos importante, registramos aqui que a forma como o trab
 | 25/05/2023 |  1.5   | Adição das lições aprendidas na Unidade 2 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |
 | 15/06/2023 | 1.6 | Atualização do cronograma das sprints com as US | [Sabrina Berno](https://github.com/sabrinaberno) |
 | 17/06/2023 | 1.7 | Atualização das tecnologias e ferramentas, arquitetura e atividades | [Charles Serafim](https://github.com/charles-serafim) e [Sabrina Berno](https://github.com/sabrinaberno) |
-| 20/07/2023 | 1.8 | Adição das Lições Aprendidas da Unidade 4 | [Charles Serafim](https://github.com/charles-serafim) |
+| 20/07/2023 | 1.8 | Adição das Lições Aprendidas da Unidade 4 | [Cainã Freitas](https://github.com/freitasc), [Charles Serafim](https://github.com/charles-serafim), [Gabrielly Assunção](https://github.com/GabriellyAssuncao), [Lucas Heler](https://github.com/Akaeboshi) e [Sabrina Berno](https://github.com/sabrinaberno) |

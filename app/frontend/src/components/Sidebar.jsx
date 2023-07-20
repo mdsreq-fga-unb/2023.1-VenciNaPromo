@@ -137,6 +137,7 @@ const Sidebar = (props) => {
       ) : (
         <div className="sidebar-footer">
           <div className="sidebar-footer-container">
+            <button className="sidebar-button" onClick={() => window.location.href='/'}> Login </button>
           </div>
         </div>
       )}

@@ -53,7 +53,7 @@ nav:
           - Apresentação Equipe: "entregas/apresentacao-3"
       - Unidade 4:
           - Apresentação para o Cliente: "entregas/apresentacao-cliente-4.md"
-          - Apresentação Equipe: "entregas/apresentacao-4"
+          - Apresentação Equipe: "entregas/apresentacao-4.md"
   - Sprints:
       - Sprint 1: "sprints/sprint1.md"
       - Sprint 2: "sprints/sprint2.md"
@@ -68,7 +68,6 @@ nav:
       - Sprint 11: "sprints/sprint11.md"
       - Sprint 12: "sprints/sprint12.md"
       - Sprint 13: "sprints/sprint13.md"
-      - Sprint 14: "sprints/sprint14.md"
 
 repo_url: https://github.com/mdsreq-fga-unb/2023.1-VenciNaPromo
 repo_name: mdsreq-fga-unb.github.io/2023.1-VenciNaPromo

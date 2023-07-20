@@ -89,7 +89,7 @@ const ProductInList = (props) => {
           <h3 onClick={togglePopup}>{props.product.product_name}</h3>
         </div>
         <div className="product-in-list__info__price">
-          <h4>R$ {props.product.product_price}</h4>
+          <h4>R$ {props.product.product_price.toFixed(2)}</h4>
         </div>
         <div className="product-in-list__info__validade">
           {validadeProduto < currentDate ? (

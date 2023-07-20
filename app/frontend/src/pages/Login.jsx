@@ -8,6 +8,7 @@ import '../styles/Confirmations.css';
 
 function Login({ setIsVisitor }) {
   const [showRegisterConfirmation, setShowRegisterConfirmation] = useState(false);
+  const [showLoginError, setShowLoginError] = useState(false);
 
   const handleLogin = async (values, { resetForm }) => {
     try {
@@ -23,9 +24,10 @@ function Login({ setIsVisitor }) {
       resetForm();
     } catch (error) {
       console.error(error);
+      setShowLoginError(true);
     }
   };
-  
+
 
   const handleRegister = async (values, { resetForm }) => {
     try {
@@ -41,7 +43,7 @@ function Login({ setIsVisitor }) {
       resetForm();
       setShowRegisterConfirmation(true);
     } catch (error) {
-      console.error(error); 
+      console.error(error);
     }
   };
 
@@ -85,7 +87,7 @@ function Login({ setIsVisitor }) {
           <div className="register-form-container">
             <h3>Crie Sua Conta</h3>
             <Formik
-              initialValues={{username: "", email: "", password: "", flag: "", confirmation: "" }}
+              initialValues={{ username: "", email: "", password: "", flag: "", confirmation: "" }}
               onSubmit={handleRegister}
               validationSchema={validationsRegister}
             >
@@ -101,7 +103,7 @@ function Login({ setIsVisitor }) {
                     <option value={1}>Vendedor</option>
                   </Field>
                 </div>
-                
+
                 <div className="form-group">
                   <Field name="username" className="form-field" placeholder="Nome" />
                   <ErrorMessage
@@ -153,7 +155,7 @@ function Login({ setIsVisitor }) {
           <div className="login-form-container">
             <h3>Já é Cadastrado?</h3>
             <Formik
-              initialValues={{email: "", password: ""}}
+              initialValues={{ email: "", password: "" }}
               onSubmit={handleLogin}
               validationSchema={validationsLogin}
             >
@@ -194,8 +196,23 @@ function Login({ setIsVisitor }) {
             <h2>Cadastro realizado com sucesso!</h2>
             <div className="confirmation-modal-buttons">
               <button
-              className="confirmation-modal-button"
-              onClick={() => setShowRegisterConfirmation(false)}>
+                className="confirmation-modal-button"
+                onClick={() => setShowRegisterConfirmation(false)}>
+                Ok
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showLoginError && (
+        <div className="confirmation-modal">
+          <div className="confirmation-modal-content">
+            <h2>Email ou senha incorretos</h2>
+            <div className="confirmation-modal-buttons">
+              <button
+                className="confirmation-modal-button"
+                onClick={() => setShowLoginError(false)}>
                 Ok
               </button>
             </div>

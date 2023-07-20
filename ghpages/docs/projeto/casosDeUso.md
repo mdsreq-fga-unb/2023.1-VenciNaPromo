@@ -22,7 +22,7 @@ UC-07 | Editar visibilidade do produto |
 UC-08 | Pesquisar produto |
 UC-09 | Adicionar produto no carrinho de compras | 
 UC-10 | Visualizar carrinho de compras | 
-UC-14 | Visualizar históricos | 
+UC-11 | Visualizar históricos | 
 
 ## Identificação das dependências
 
@@ -84,6 +84,7 @@ São utilizados para representar, através de setas legendadas, as interações 
 <img src="https://raw.githubusercontent.com/mdsreq-fga-unb/2023.1-VenciNaPromo/documentacao/ghpages/assets/images/UC/CasosDeUso.png">
 
 ## Especificação dos Casos de Uso
+
 
 ### Caso de Uso:  UC-01 x Cadastrar Usuário
 ##### Por: Gabrielly Assunção Rodrigues
